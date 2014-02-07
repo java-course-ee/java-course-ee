@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <error-page>
+        <error-code>403</error-code>
+        <location>/public/forbidden.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>401</error-code>
+        <location>/public/unauthorized.jsp</location>
+    </error-page>
+
+    <security-constraint>
+        <display-name>Private area</display-name>
+        <web-resource-collection>
+            <web-resource-name>private</web-resource-name>
+            <description>Private area location</description>
+            <url-pattern>/private/*</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <description>Available only for users with tomcat role</description>
+            <role-name>tomcat</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+
+    <login-config>
+        <auth-method>BASIC</auth-method>
+        <realm-name>My Realm Name Here</realm-name>
+    </login-config>
+
+
+
+</web-app>

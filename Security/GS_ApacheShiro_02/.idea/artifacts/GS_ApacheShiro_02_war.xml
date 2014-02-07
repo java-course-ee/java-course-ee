@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="GS_ApacheShiro_02:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="GS_ApacheShiro_02-1.0.war">
+      <element id="artifact" artifact-name="GS_ApacheShiro_02:war exploded" />
+    </root>
+  </artifact>
+</component>

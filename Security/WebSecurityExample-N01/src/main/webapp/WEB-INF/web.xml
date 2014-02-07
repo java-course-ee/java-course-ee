@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>public/index.jsp</welcome-file>
+    </welcome-file-list>
+    <error-page>
+        <error-code>403</error-code>
+        <location>/public/forbidden.jsp</location>
+    </error-page>
+
+    <security-constraint>
+        <display-name>Secured admin area constraint</display-name>
+        <web-resource-collection>
+            <web-resource-name>admin</web-resource-name>
+            <description>Administrator console</description>
+            <url-pattern>/admin/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <description>Available only for users with administrator role</description>
+            <role-name>administrator</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+    <security-constraint>
+        <display-name>Secured manager area constraint</display-name>
+        <web-resource-collection>
+            <web-resource-name>manager</web-resource-name>
+            <description>Manager console</description>
+            <url-pattern>/manager_/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <description>Available only for users with manager role</description>
+            <role-name>manager</role-name>
+            <role-name>administrator</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+    <security-constraint>
+        <display-name>Public area</display-name>
+        <web-resource-collection>
+            <web-resource-name>public</web-resource-name>
+            <description>Public area</description>
+            <url-pattern>/public/*</url-pattern>
+        </web-resource-collection>
+    </security-constraint>
+
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <realm-name>file</realm-name>
+        <form-login-config>
+            <form-login-page>/public/login.jsp</form-login-page>
+            <form-error-page>/public/error.jsp</form-error-page>
+        </form-login-config>
+    </login-config>
+
+    <security-role>
+        <description>Manager Role</description>
+        <role-name>manager</role-name>
+    </security-role>
+
+    <security-role>
+        <description>Administrator Role</description>
+        <role-name>administrator</role-name>
+    </security-role>
+
+</web-app>

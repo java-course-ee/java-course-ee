@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+
+    <!-- DAta Source REALM -->
+
+
+    <Resource name="jdbc/securityrealm"
+              auth="Container"
+              type="javax.sql.DataSource"
+              maxActive="100" maxIdle="30" maxWait="10000"
+              username="root"
+              password="root"
+              driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://localhost/securityrealm"/>
+
+    <Realm localDataSource="true" className="org.apache.catalina.realm.DataSourceRealm"
+           dataSourceName="jdbc/securityrealm"
+           userTable="users"
+           userNameCol="user_name"
+           userCredCol="user_pass"
+           userRoleTable="user_roles"
+           roleNameCol="role_name"/>
+
+
+
+
+    <!-- JDBC REALM, put mysql driver to catalina/lib -->
+    <!-- To use this realm comment DataSourceRealm above  -->
+
+    <!--<Realm  className="org.apache.catalina.realm.JDBCRealm"-->
+           <!--driverName="com.mysql.jdbc.Driver"-->
+           <!--connectionURL="jdbc:mysql://localhost/securityrealm?user=root&amp;password=root"-->
+           <!--userTable="users" userNameCol="user_name" userCredCol="user_pass"-->
+           <!--userRoleTable="user_roles" roleNameCol="role_name"/>-->
+
+</Context>
