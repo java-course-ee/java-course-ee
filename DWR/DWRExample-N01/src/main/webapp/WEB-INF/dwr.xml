@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC
+    "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN"
+    "http://getahead.org/dwr/dwr20.dtd">
+<dwr>
+    <allow>
+        <convert converter="bean" match="test.*" />
+        
+        <create creator="new" javascript="JDate">
+            <param name="class" value="java.util.Date"/>
+        </create>
+        <create creator="spring" javascript="RegionFacade" scope="session">
+            <param name="beanName" value="regionFacade" />
+        </create>
+
+        <!-- Exceptions -->
+        <convert converter="exception" match="test.exception.*"/>
+        <convert converter="exception" match="java.lang.Exception">
+            <param name='include' value='message,lineNumber,stackTrace,detailMessage,cause'/>
+        </convert>
+        <convert converter="exception" match="java.lang.RuntimeException">
+            <param name='include' value='message,lineNumber,stackTrace,detailMessage,cause'/>
+        </convert>
+        <convert converter="bean" match="java.lang.StackTraceElement"/>
+        <convert converter="bean" match="java.lang.Throwable"/>
+
+    </allow>
+</dwr>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" id="ru.gs.test.simple.portlet">
+    <portlet>
+        <portlet-name>SimplePortlet</portlet-name>
+        <display-name>SimplePortlet</display-name>
+        <portlet-class>ru.gs.test.simpleportlet.SimplePortlet</portlet-class>
+        <init-param>
+            <name>wps.markup</name>
+            <value>html</value>
+        </init-param>
+        <expiration-cache>0</expiration-cache>
+        <supports>
+            <mime-type>text/html</mime-type>
+            <portlet-mode>view</portlet-mode>
+        </supports>
+        <resource-bundle>ru.gs.test.simpleportlet.nl.SimplePortletResource</resource-bundle>
+        <portlet-info>
+            <title>SimplePortlet</title>
+            <short-title>SimplePortlet</short-title>
+            <keywords>SimplePortlet</keywords>
+        </portlet-info>
+		
+    </portlet>
+</portlet-app>
