@@ -1,0 +1,15 @@
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.3//EN"
+       "http://www.opensymphony.com/xwork/xwork-validator-1.0.3.dtd">
+
+<validators>
+	<field name="loginBean.username">
+		<field-validator type="requiredstring">
+			<message>Имя пользователя должно быть заполнено</message>
+		</field-validator>
+	</field>
+	<field name="loginBean.password">
+		<field-validator type="requiredstring">
+			<message>Пароль должен быть заполнен</message>
+		</field-validator>
+	</field>
+</validators>
