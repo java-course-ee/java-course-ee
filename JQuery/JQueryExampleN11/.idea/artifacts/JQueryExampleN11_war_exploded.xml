@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="JQueryExampleN11:war exploded">
+    <output-path>$PROJECT_DIR$/target/JQueryExampleN11-1.0</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="JQueryExampleN11/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JQueryExampleN11" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
