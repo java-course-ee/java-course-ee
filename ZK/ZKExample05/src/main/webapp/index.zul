@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+	<window title="ZK Window" border="normal" apply="ru.gs.zk.MyComposer">
+		<datebox id="dateBox" format="mm:ss.SSS"/>
+		<button id="start" label="Start" onClick="ru.gs.zk.PushToServer.start(dateBox)" />
+		<button id="stop" label="Stop" onClick="ru.gs.zk.PushToServer.stop()" />
+	</window>
+</zk>

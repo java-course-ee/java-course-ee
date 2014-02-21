@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+	<style>
+		.textbox {
+			display:block;
+			width: 200px;
+		}
+		
+		.label {
+			display:block;
+			width: 100px;
+		}
+	</style>
+	<window title="ZK Window" border="normal" apply="ru.gs.zk.MyComposer" >
+		<vlayout>
+			<label>Регистрация</label>
+			<hlayout>
+				<label class="label">Имя: </label>
+				<textbox id="name" class="textbox" />
+			</hlayout>
+			<hlayout>
+				<label class="label">Логин: </label>
+				<textbox id="login" class="textbox" constraint="no empty" />
+			</hlayout>
+			<hlayout>
+				<label class="label">E-Mail: </label>
+				<textbox id="email" class="textbox" constraint="/.+@.+\.[a-z]+/: Поле E-Mail обязательно для заполнения  и это должен быть именно e-mail" />
+			</hlayout>
+			<hlayout>
+				<label class="label">Дата рождения: </label>
+				<datebox id="birthDate" constraint="no empty: Необходимо заполнить дату рождения. И не пытайся ввести будущую дату, ты не Марти Макфлай ;)" format="dd.MM.yyyy" />
+			</hlayout>
+			<button id="ok">ОК</button>
+		</vlayout>
+	</window>
+</zk>

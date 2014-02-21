@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window title="ZK Window" border="normal" apply="ru.gs.zk.MyComposer" >
+        <hlayout>
+            <label>Запросить отчет с </label>
+            <datebox id="firstDate" format="dd.MM.yyyy HH:mm:ss" />
+            <label> по </label>
+            <datebox id="secondDate" />
+            <button id="request">Запросить</button>
+        </hlayout>
+        <hlayout>
+            <label>Данные с </label>
+            <label id="fromDate" />
+            <label> по </label>
+            <label id="toDate" />
+        </hlayout>
+        <hlayout>
+            <label>Количество строк: </label>
+            <label id="count" style="color: blue;" />
+        </hlayout>
+        <hlayout>
+            <label>Еще какой-то параметр: </label>
+            <label id="someElseParam" style="color: blue;" />
+        </hlayout>
+    </window>
+</zk>
