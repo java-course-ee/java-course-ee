@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Macros Test</title>
+    <link type="text/css" rel="stylesheet" href="../css/styles.css"/>
+</head>
+<body>
+<table class="product-table">
+    #writeTable($products)
+</table>
+
+
+    #if ($errors.size() > 0)
+        #foreach($error in $errors)
+        <h2 style="color:red;">$error</h2>
+        #end
+    #end
+
+<form action="test" method="post">
+    <table>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td><input type="text" name="price"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" name="submit" value="submit"></td>
+        </tr>
+    </table>
+</form>
+
+<a href="$link.relative('about.vm').param('name', 'Gemini Systems')">About</a>
+
+##<br>
+## $cookie.add("bar",'woogie')
+## $import.read("http://www.google.com")
+## $link.path('footer.vm').anchor('view')
+## $params.p
+##<br>
+
+    #parse("footer.vm")
+</body>
+</html>

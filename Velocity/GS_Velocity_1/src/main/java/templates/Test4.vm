@@ -1,0 +1,29 @@
+a = $a  b = $b
+#if ($a > $b)
+a > b
+#elseif($a < $b)
+a < b
+#else
+a = b
+#end
+
+#set($a=35)
+#set($b=16)
+
+a = $a  b = $b
+#if ($a > $b)
+a > b
+#elseif($a < $b)
+a < b
+#else
+a = b
+#end
+
+s1 = $s1  s2 = $s2
+
+#if ($s1 == $s2)
+s1 equals s2
+#else
+s1 not equals s2    
+#end
+

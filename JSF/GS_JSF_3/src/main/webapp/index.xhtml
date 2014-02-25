@@ -1,0 +1,31 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+<f:view>
+    <head>
+        <title>A Simple JavaServer Faces Application</title>
+    </head>
+    <body>
+    <h:form>
+        <h3>Please enter your name and password.</h3>
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td>
+                    <h:inputText value="#{user.name}"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td>
+                    <h:inputSecret value="#{user.password}"/>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <h:commandButton value="Login" action="welcome"/>
+        </p>
+    </h:form>
+    </body>
+</f:view>
+</html>

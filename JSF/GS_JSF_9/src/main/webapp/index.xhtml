@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+        >
+<f:view>
+
+    <h:head>
+        <title>A Simple JavaServer Faces Application</title>
+        <h:outputStylesheet library="css" name="style.css"/>
+    </h:head>
+
+
+    <h:body>
+        <h:form>
+
+            Name   :<h:inputText id="name" value="#{user.name}"/> <br/>
+            Surname:<h:inputText id="surname" value="#{user.surname}"/><br/>
+            <h:commandButton value="Show Welcome Message">
+                <f:ajax execute="name surname" render="message"/>
+            </h:commandButton>
+
+
+            <br/>
+            Ajax Message: <h:outputLabel id="message" value="#{user.fullName}" />
+        </h:form>
+    </h:body>
+</f:view>
+</html>

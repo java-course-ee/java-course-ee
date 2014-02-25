@@ -1,0 +1,7 @@
+Hello $name! Your age $age! Flag is $flag! Today $today!
+
+Day: $today.getDate()
+Month: $today.getMonth()
+Year: $today.getYear()
+
+Method invokation example: $product.getNameAndPrice()

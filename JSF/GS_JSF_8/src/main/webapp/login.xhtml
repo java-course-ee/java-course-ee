@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+        >
+
+<ui:composition template="template.xhtml">
+    <ui:define name="title">Login page</ui:define>
+
+    <ui:define name="content">
+
+        <h:form>
+            Login:<h:inputText value="#{user.name}" label="username"/>
+            Email:<h:inputText value="#{user.emal}" label="email"/>
+            <h:commandButton action="#{user.login}" value="Login" type="submit"/>
+        </h:form>
+
+    </ui:define>
+
+</ui:composition>
+
+</html>

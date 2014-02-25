@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+      <bean name="diplomDS" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/users"/>
+        <property name="username" value="root"/>
+        <property name="password" value="root"/>
+    </bean>
+
+    <bean name="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean" id="sessionFac">
+        <property name="dataSource" ref="diplomDS"/>
+        <property name="annotatedClasses">
+            <list>
+                <value>entity.User</value>
+            </list>
+        </property>
+        <property name="hibernateProperties">
+            <value>
+                hibernate.dialect=org.hibernate.dialect.MySQLInnoDBDialect
+                hibernate.show_sql=true
+            </value>
+        </property>
+    </bean>
+
+    <bean name="txManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean name="abstractTransactionProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean"
+          abstract="true">
+        <property name="transactionManager" ref="txManager"/>
+        <property name="transactionAttributes">
+            <props>
+                <prop key="find*">PROPAGATION_REQUIRED, readOnly
+                </prop>
+                <prop key="get*">PROPAGATION_REQUIRED, readOnly
+                </prop>
+                <prop key="create*">PROPAGATION_REQUIRED,-Exception
+                </prop>
+                <prop key="update*">PROPAGATION_REQUIRED,-Exception
+                </prop>
+                <prop key="delete*">PROPAGATION_REQUIRED,-Exception
+                </prop>
+            </props>
+        </property>
+    </bean>
+
+     <bean name="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    </beans>

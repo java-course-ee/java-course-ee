@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <import resource="database-config.xml"/>
+
+
+    <bean name="userDao" class="dao.UserDAOImpl">
+        <property name="template" ref="hibernateTemplate"/>
+    </bean>
+
+    <bean name="userService"  parent="abstractTransactionProxy">
+        <property name="target">
+            <bean class="service.UserService">
+                <property name="userDAO" ref="userDao"/>
+            </bean>
+        </property>
+    </bean>
+
+</beans>

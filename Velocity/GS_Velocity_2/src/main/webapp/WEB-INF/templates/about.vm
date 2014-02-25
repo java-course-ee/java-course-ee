@@ -1,0 +1,8 @@
+
+#set ($company = $params.getString("name"))
+<P>$company is a premier global IT consulting company working with customers worldwide to provide business analysis, architecture design, application development, system integration, operation support, and maintenance of sophisticated technology solutions. We know that each company has a unique and often complex set of requirements. We have perfected the art of listening to the needs of the customer and we pride ourselves for our innovation and creativity. We are persistent in our goal to ensure that our clients achieve theirs. Since 1987, we have successfully completed over 280,000 person-days of consulting services for our clients. </P>
+<P>With delivery centers around the world, the United States, Russia, India and China, Gemini has the resources to tackle the most challenging system design, integration, and application development projects. By combining rigorous, structured development methodologies with broad-based technological knowledge, Gemini is able to create innovative, long-living, flexible, and functional systems and applications that propel companies into the future.</P>
+<P>Even more important than technical expertise is our emphasis on people. Gemini Systems consultants are trained to listen to what clients need and demand from the use of technology first. By helping clients clearly articulate their own requirements using our Shared Vision Workshop, Gemini Systems actually makes it possible for clients to design their own technology to suit their very specific needs.</P>
+<P>It's our unique approach that allows you to truly be in the driver's seat. It is indeed, Technology Designed By You. It is what we do.</P>
+
+#parse("footer.vm")

@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+        >
+<f:view>
+
+    <head>
+        <title>A Simple JavaServer Faces Application</title>
+    </head>
+    <body>
+
+
+           h:inputText: #{formbean.text}<br/>
+           h:inputSecret: #{formbean.password}<br/>
+           h:inputTextarea: #{formbean.textArea}<br/>
+           h:selectBooleanCheckbox: #{formbean.rememberMe}<br/>
+           h:selectManyCheckbox: #{formbean.selectedBox}<br/>
+           h:selectOneRadio: #{formbean.radio}<br/>
+           h:selectOneListbox: #{formbean.select}<br/>
+           h:selectOneMenu: #{formbean.dropdown}<br/>
+
+    </body>
+</f:view>
+</html>

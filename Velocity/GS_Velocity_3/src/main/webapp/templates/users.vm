@@ -1,0 +1,59 @@
+<h2 style="color:cadetblue;">Users</h2>
+<table>
+    <tr>
+        <td bgcolor="cadetblue"><b>Login</b></td>
+        <td bgcolor="cadetblue"><b>Password</b></td>
+        <td bgcolor="cadetblue"><b>Email</b></td>
+        <td bgcolor="cadetblue"><b>Actions</b></td>
+    </tr>
+    #set ($rowCount = 1)
+    #foreach ($user in $users)
+    #if ($rowCount % 2 == 0)
+    #set ($bgcolor = "#FFFFFF")
+    #else
+    #set ($bgcolor = "#CCCCCC")
+    #end
+    <tr>
+        <td bgcolor="$bgcolor">$user.Login</td>
+        <td bgcolor="$bgcolor">$user.Password</td>
+        <td bgcolor="$bgcolor">$user.Email</td>
+        #set( $editLink = $link.relative('users.htm').param('action','edit').param('userId', $user.UserId))
+        #set( $deleteLink = $link.relative('users.htm').param('action','delete').param('userId', $user.UserId))
+
+        <td><a href="$editLink">edit</a>&nbsp;<a href="$deleteLink">delete</a></td>
+    </tr>
+    #set ($rowCount = $rowCount + 1)
+    #end
+</table>
+
+
+<form action="" method="post">
+    <table>
+        <tr>
+            <td>Login</td>
+            <td>
+                #springFormInput("newUser.login" "")
+                #springShowErrors("<br>" "color:red;")
+            </td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td>
+                #springFormPasswordInput("newUser.password" "")
+                #springShowErrors("<br>" "color:red;")
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>
+                #springFormInput("newUser.email" "")
+                #springShowErrors("<br>" "color:red;")
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="submit"/></td>
+        </tr>
+    </table>
+
+</form>

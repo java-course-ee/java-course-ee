@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean name="userController" class="controller.UserController">
+        <property name="userService" ref="userService"/>
+        <property name="formView" value="users"/>
+        <property name="successView" value="users"/>
+        <property name="validator" ref="userValidator"/>
+    </bean>
+
+    <bean name="userValidator" class="validator.UserValidator"/>
+
+    <bean id="velocityConfig" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
+        <property name="resourceLoaderPath" value="/templates/"/>
+    </bean>
+
+
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
+        <property name="toolboxConfigLocation" value="/WEB-INF/toolbox.xml"/>
+        <property name="cache" value="true"/>
+        <property name="prefix" value=""/>
+        <property name="suffix" value=".vm"/>
+        <property name="exposeSpringMacroHelpers" value="true"/>
+    </bean>
+
+    <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="mappings">
+            <props>
+                <prop key="/users.htm">userController</prop>
+            </props>
+        </property>
+    </bean>
+
+
+</beans>

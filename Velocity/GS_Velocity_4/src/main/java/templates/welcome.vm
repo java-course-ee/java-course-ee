@@ -1,0 +1,16 @@
+<html>
+<head>Welcome ${username}</head>
+
+<body>
+    <h1>Hello ${username}!</h1>
+    <p>Welcome to our site <a href="${url}">${sitename}</a>!</p>
+
+    To edit your subscription please follow ${subscriptionUrl}<br/>
+    <hr/>
+
+    <div style="font-size: 12px; color: #6495ed">
+        Thank you for choosing us!<br/>
+        Best Regards, ${sender}
+    </div>
+</body>
+</html>

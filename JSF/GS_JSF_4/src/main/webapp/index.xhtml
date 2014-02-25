@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+        >
+<f:view>
+
+    <head>
+        <title>A Simple JavaServer Faces Application</title>
+    </head>
+    <body>
+    <h:form>
+        <ul>
+            <ui:repeat value="#{controller.users}" var="u">
+
+                <li>
+                    <h:link value="#{u.name} #{u.surname}" outcome="user">
+                        <f:param name="username" value="#{u.name}"/>
+
+                    </h:link>
+                    &nbsp;&nbsp;
+                    <h:commandLink action="#{controller.editUser(u.name)}" value="Edit"/>  &nbsp;&nbsp;
+
+                    <h:commandLink action="#{controller.deleteUser}" value="Delete">
+                        <f:param name="action" value="#{u.name}" />
+                    </h:commandLink>
+                </li>
+
+            </ui:repeat>
+        </ul>
+
+    </h:form>
+    <h:form>
+        <h3>Please provide new user information</h3>
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><h:inputText value="#{controller.currentUser.name}"/></td>
+            </tr>
+            <tr>
+                <td>Surname:</td>
+                <td><h:inputText value="#{controller.currentUser.surname}"/></td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td><h:inputText value="#{controller.currentUser.email}"/></td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><h:inputText value="#{controller.currentUser.age}"/></td>
+            </tr>
+        </table>
+        <p>
+            <h:commandButton value="Add" action="#{controller.addUser}"/>
+        </p>
+    </h:form>
+
+    </body>
+</f:view>
+</html>

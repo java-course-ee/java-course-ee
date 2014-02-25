@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<toolbox>
+ 
+    <tool>
+        <key>link</key>
+        <scope>request</scope>
+        <class>org.apache.velocity.tools.view.tools.LinkTool</class>
+    </tool>
+    <tool>
+        <key>params</key>
+        <scope>request</scope>
+        <class>org.apache.velocity.tools.view.tools.ParameterParser</class>
+    </tool>
+</toolbox>

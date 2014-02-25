@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+        >
+<f:view>
+
+    <h:head>
+        <title>A Simple JavaServer Faces Application</title>
+        <h:outputStylesheet library="css" name="style.css"/>
+    </h:head>
+
+    <h:body>
+
+        <ui:composition template="template.xhtml">
+            <ui:define name="title">Breaking News</ui:define>
+            <ui:define name="content">
+
+                <b>LATEST NEWS:</b>
+
+                <ul class="normal padding-top">
+                    <li class="first"><a type="resource"
+                                         href="http://www.washingtonpost.com/blogs/compost/wp/2013/04/18/the-stages-of-grief-after-the-senates-poor-gun-showing/">Petri: Grieving for the gun bill</a>
+                    </li>
+                    <li><a type="resource"
+                           href="http://www.washingtonpost.com/blogs/post-partisan/wp/2013/04/18/obama-and-giffords-shame-the-senate/">Capehart: Obama, Giffords shame the Senate</a>
+                    </li>
+                    <li><a type="resource"
+                           href="http://www.washingtonpost.com/opinions/ej-dionne-to-boston-with-love/2013/04/17/416fa268-a790-11e2-a8e2-5b98cb59187f_story.html">Dionne: To Boston, with love</a>
+                        <a href="http://www.washingtonpost.com/blogs/erik-wemple/wp/2013/04/18/jon-stewart-skewers-cnn/"
+                           id="U6061783481949GzG" style="" title="www.washingtonpost.com" type="resource"></a></li>
+                    <li><a type="resource"
+                           href="http://www.washingtonpost.com/opinions/george-f-will-whats-behind-the-funding-of-the-welfare-state/2013/04/17/8686d412-a6bd-11e2-8302-3c7e0ea97057_story.html">Will: Perverse progressivism’s hidden costs</a>
+                    </li>
+                    <li><a type="resource"
+                           href="http://www.washingtonpost.com/blogs/right-turn/wp/2013/04/17/white-house-loses-big-on-manchin-toomey/">Rubin: Obama loses on background checks</a>
+                    </li>
+                    <li><a type="resource"
+                           href="http://www.washingtonpost.com/opinions/helping-the-worlds-poorest-children-requires-radical-reform/2013/04/17/84b50b38-a792-11e2-8302-3c7e0ea97057_story.html">Gordon Brown: The new civil rights struggle</a>
+                    </li>
+                    <li class="last"><a type="resource"
+                                        href="http://www.washingtonpost.com/opinions/toles">Toles cartoon: Republican border crossing</a>
+                    </li>
+                </ul>
+
+
+            </ui:define>
+
+            <ui:define name="footer">
+                <h2>This is news footer</h2>
+            </ui:define>
+
+        </ui:composition>
+
+    </h:body>
+</f:view>
+</html>

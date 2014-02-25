@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+        >
+<f:view>
+
+    <h:head>
+        <title>A Simple JavaServer Faces Application</title>
+
+    </h:head>
+
+    <h:body>
+        <h:form>
+            <h:dataTable value="#{user.users}" var="u">
+
+                <h:column>
+                    <f:facet name="header">Login</f:facet>
+                    #{u.login}
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">Password</f:facet>
+                    #{u.password}
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">Email</f:facet>
+                    #{u.email}
+                </h:column>
+
+                <h:column>
+
+                    <h:commandLink value="Delete" action="#{user.deleteUser(u)}"/>
+
+                </h:column>
+
+            </h:dataTable>
+
+            Addd new user
+
+            <table>
+                <tr>
+                    <td>Name :</td>
+                    <td><h:inputText  value="#{user.user.login}"/></td>
+                </tr>
+                <tr>
+                    <td>Password :</td>
+                    <td><h:inputText  value="#{user.user.password}"/></td>
+                </tr>
+                <tr>
+                    <td>Email :</td>
+                    <td><h:inputText  value="#{user.user.email}"/></td>
+                </tr>
+            </table>
+
+            <h:commandButton value="Add" action="#{user.addUser}"/>
+
+        </h:form>
+
+    </h:body>
+</f:view>
+</html>

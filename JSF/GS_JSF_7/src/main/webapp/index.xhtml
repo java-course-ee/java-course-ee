@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+        >
+<f:view>
+
+    <h:head>
+        <title>A Simple JavaServer Faces Application</title>
+        <h:outputStylesheet library="css" name="style.css" />
+    </h:head>
+
+    <h:body>
+        <h:form>
+            <h:dataTable value="#{user.users}" var="u"
+                         styleClass="users-table"
+                         headerClass="users-table-header"
+                    >
+
+                <h:column>
+                    <f:facet name="header">Name</f:facet>
+                    #{u.name}
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">Surname</f:facet>
+                    #{u.surname}
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">Email</f:facet>
+                    #{u.emal}
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">Age</f:facet>
+                    #{u.age}
+                </h:column>
+
+                <h:column>
+
+                    <h:commandLink value="Delete" action="#{user.delete(u)}"/>
+
+                </h:column>
+
+            </h:dataTable>
+
+            Addd new user
+
+            <table>
+                <tr>
+                    <td>Name :</td>
+                    <td><h:inputText size="10" value="#{user.name}" /></td>
+                </tr>
+                <tr>
+                    <td>Surname :</td>
+                    <td><h:inputText size="20" value="#{user.surname}" /></td>
+                </tr>
+                <tr>
+                    <td>Email :</td>
+                    <td><h:inputText size="5" value="#{user.emal}" /></td>
+                </tr>
+                <tr>
+                    <td>Age :</td>
+                    <td><h:inputText size="10" value="#{user.age}" /></td>
+                </tr>
+            </table>
+
+            <h:commandButton value="Add" action="#{user.addUser}" />
+
+        </h:form>
+
+    </h:body>
+</f:view>
+</html>
