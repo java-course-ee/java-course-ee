@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rest-client version="3.1"><request><http-version>1.1</http-version><http-follow-redirects/><URL>http://localhost:8080/users/create</URL><method>POST</method><headers><header key="Cotnent-Type" value="application/json"/><header key="Accept" value="application/json"/></headers><body><string content-type="text/plain" charset="UTF-8">{"login":"user2","password":"user2","email":"user2@mail.ru"}</string></body></request></rest-client>
