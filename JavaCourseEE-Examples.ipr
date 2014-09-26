@@ -1,0 +1,1503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactManager">
+    <artifact type="war" name="VaadinExampleN02:war">
+      <output-path>$PROJECT_DIR$/Vaadin/VaadinExampleN02/target</output-path>
+      <root id="archive" name="VaadinExampleN02-1.0.war">
+        <element id="artifact" artifact-name="VaadinExampleN02:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="VaadinExampleN02:war exploded">
+      <output-path>$PROJECT_DIR$/Vaadin/VaadinExampleN02/target/VaadinExampleN02-1.0</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="VaadinExampleN02/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="VaadinExampleN02" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="JQueryExampleN01:war">
+      <output-path>$PROJECT_DIR$/JQuery/JQueryExampleN01/target</output-path>
+      <root id="archive" name="JQueryExampleN01-1.0.war">
+        <element id="artifact" artifact-name="JQueryExampleN01:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="JQueryExampleN01:war exploded">
+      <output-path>$PROJECT_DIR$/JQuery/JQueryExampleN01/target/JQueryExampleN01-1.0</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="JQueryExampleN01/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="JQueryExampleN01" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="ClientAuthentication:war">
+      <output-path>$PROJECT_DIR$/Security/ClientAuthentication/target</output-path>
+      <root id="archive" name="ClientAuthentication-1.0-SNAPSHOT.war">
+        <element id="artifact" artifact-name="ClientAuthentication:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="ClientAuthentication:war exploded">
+      <output-path>$PROJECT_DIR$/Security/ClientAuthentication/target/ClientAuthentication-1.0-SNAPSHOT</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="ClientAuthentication/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="ClientAuthentication" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="JQueryExampleN11:war">
+      <output-path>$PROJECT_DIR$/JQuery/JQueryExampleN11/target</output-path>
+      <root id="archive" name="JQueryExampleN11-1.0.war">
+        <element id="artifact" artifact-name="JQueryExampleN11:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="JQueryExampleN11:war exploded">
+      <output-path>$PROJECT_DIR$/JQuery/JQueryExampleN11/target/JQueryExampleN11-1.0</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="JQueryExampleN11/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="JQueryExampleN11" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="WebSecurityExample-N00:war">
+      <output-path>$PROJECT_DIR$/Security/WebSecurityExample-N00/target</output-path>
+      <root id="archive" name="WebSecurityExample-N00-1.0-SNAPSHOT.war">
+        <element id="artifact" artifact-name="WebSecurityExample-N00:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="WebSecurityExample-N00:war exploded">
+      <output-path>$PROJECT_DIR$/Security/WebSecurityExample-N00/target/WebSecurityExample-N00-1.0-SNAPSHOT</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="WebSecurityExample-N00/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="WebSecurityExample-N00" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="GS_JSF_4:war">
+      <output-path>$PROJECT_DIR$/JSF/GS_JSF_4/target</output-path>
+      <root id="archive" name="GS_JSF_4.war">
+        <element id="artifact" artifact-name="GS_JSF_4:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="GS_JSF_4:war exploded">
+      <output-path>$PROJECT_DIR$/JSF/GS_JSF_4/target/GS_JSF_4</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="GS_JSF_4/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="GS_JSF_4" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="GS_Spring_002:war">
+      <output-path>$PROJECT_DIR$/SpringMVC/GS_Spring_002/target</output-path>
+      <root id="archive" name="GS_Spring_002.war">
+        <element id="artifact" artifact-name="GS_Spring_002:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="GS_Spring_002:war exploded">
+      <output-path>$PROJECT_DIR$/SpringMVC/GS_Spring_002/target/GS_Spring_002</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="GS_Spring_002/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="GS_Spring_002" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="webservice-jax-ws-0:war">
+      <output-path>$PROJECT_DIR$/WebServices/JAX_WS/WebService_0_JAX-WS/target</output-path>
+      <root id="archive" name="sayHello.war">
+        <element id="artifact" artifact-name="webservice-jax-ws-0:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="webservice-jax-ws-0:war exploded">
+      <output-path>$PROJECT_DIR$/WebServices/JAX_WS/WebService_0_JAX-WS/target/sayHello</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="webservice-jax-ws-0/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="webservice-jax-ws-0" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="GS_ApacheShiro_02:war">
+      <output-path>$PROJECT_DIR$/Security/GS_ApacheShiro_02/target</output-path>
+      <root id="archive" name="GS_ApacheShiro_02-1.0.war">
+        <element id="artifact" artifact-name="GS_ApacheShiro_02:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="GS_ApacheShiro_02:war exploded">
+      <output-path>$PROJECT_DIR$/Security/GS_ApacheShiro_02/target/GS_ApacheShiro_02-1.0</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="GS_ApacheShiro_02/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="GS_ApacheShiro_02" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="VaadinExampleN01:war">
+      <output-path>$PROJECT_DIR$/Vaadin/VaadinExampleN01/target</output-path>
+      <root id="archive" name="VaadinExampleN01-1.0.war">
+        <element id="artifact" artifact-name="VaadinExampleN01:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="VaadinExampleN01:war exploded">
+      <output-path>$PROJECT_DIR$/Vaadin/VaadinExampleN01/target/VaadinExampleN01-1.0</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="VaadinExampleN01/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="VaadinExampleN01" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="GS_Spring_006:war">
+      <output-path>$PROJECT_DIR$/SpringMVC/GS_Spring_006/target</output-path>
+      <root id="archive" name="GS_Spring_006.war">
+        <element id="artifact" artifact-name="GS_Spring_006:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="GS_Spring_006:war exploded">
+      <output-path>$PROJECT_DIR$/SpringMVC/GS_Spring_006/target/GS_Spring_006</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="GS_Spring_006/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="GS_Spring_006" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="DWRExample-N01:war">
+      <output-path>$PROJECT_DIR$/DWR/DWRExample-N01/target</output-path>
+      <root id="archive" name="DWRExample-N01-1.0-SNAPSHOT.war">
+        <element id="artifact" artifact-name="DWRExample-N01:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="DWRExample-N01:war exploded">
+      <output-path>$PROJECT_DIR$/DWR/DWRExample-N01/target/DWRExample-N01-1.0-SNAPSHOT</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="DWRExample-N01/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="DWRExample-N01" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="MyFirstServlet_JSP:war">
+      <output-path>$PROJECT_DIR$/Servlet-JSP/MyFirstServlet_JSP/target</output-path>
+      <root id="archive" name="MyFirstServlet_JSP-1.0-SNAPSHOT.war">
+        <element id="artifact" artifact-name="MyFirstServlet_JSP:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="MyFirstServlet_JSP:war exploded">
+      <output-path>$PROJECT_DIR$/Servlet-JSP/MyFirstServlet_JSP/target/MyFirstServlet_JSP-1.0-SNAPSHOT</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="MyFirstServlet_JSP/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="MyFirstServlet_JSP" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="Struts2ExampleN02-web:war">
+      <output-path>$PROJECT_DIR$/Struts/Struts2ExampleN02-web/target</output-path>
+      <root id="archive" name="Struts2ExampleN02-web-1.0.war">
+        <element id="artifact" artifact-name="Struts2ExampleN02-web:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="Struts2ExampleN02-web:war exploded">
+      <output-path>$PROJECT_DIR$/Struts/Struts2ExampleN02-web/target/Struts2ExampleN02-web-1.0</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="Struts2ExampleN02-web/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="Struts2ExampleN02-web" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="WebSecurityExample-N01:war">
+      <output-path>$PROJECT_DIR$/Security/WebSecurityExample-N01/target</output-path>
+      <root id="archive" name="WebSecurityExample-N01-1.0-SNAPSHOT.war">
+        <element id="artifact" artifact-name="WebSecurityExample-N01:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="WebSecurityExample-N01:war exploded">
+      <output-path>$PROJECT_DIR$/Security/WebSecurityExample-N01/target/WebSecurityExample-N01-1.0-SNAPSHOT</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="WebSecurityExample-N01/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="WebSecurityExample-N01" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="Struts2ExampleN03-web:war">
+      <output-path>$PROJECT_DIR$/Struts/Struts2ExampleN03-web/target</output-path>
+      <root id="archive" name="Struts2ExampleN03-web-1.0.war">
+        <element id="artifact" artifact-name="Struts2ExampleN03-web:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="Struts2ExampleN03-web:war exploded">
+      <output-path>$PROJECT_DIR$/Struts/Struts2ExampleN03-web/target/Struts2ExampleN03-web-1.0</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="Struts2ExampleN03-web/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="Struts2ExampleN03-web" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="Expomap:war">
+      <output-path>$PROJECT_DIR$/SpringMVC/GS_Spring_005/target</output-path>
+      <root id="archive" name="Expomap.war">
+        <element id="artifact" artifact-name="Expomap:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="Expomap:war exploded">
+      <output-path>$PROJECT_DIR$/SpringMVC/GS_Spring_005/target/Expomap</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="Expomap/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="Expomap" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="GS_JSF_1:war">
+      <output-path>$PROJECT_DIR$/JSF/GS_JSF_1/target</output-path>
+      <root id="archive" name="GS_JSF_1.war">
+        <element id="artifact" artifact-name="GS_JSF_1:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="GS_JSF_1:war exploded">
+      <output-path>$PROJECT_DIR$/JSF/GS_JSF_1/target/GS_JSF_1</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="GS_JSF_1/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="GS_JSF_1" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="JQueryExampleN09:war">
+      <output-path>$PROJECT_DIR$/JQuery/JQueryExampleN09/target</output-path>
+      <root id="archive" name="JQueryExampleN09-1.0.war">
+        <element id="artifact" artifact-name="JQueryExampleN09:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="JQueryExampleN09:war exploded">
+      <output-path>$PROJECT_DIR$/JQuery/JQueryExampleN09/target/JQueryExampleN09-1.0</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="JQueryExampleN09/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="JQueryExampleN09" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="DojoExampleN03:war">
+      <output-path>$PROJECT_DIR$/Dojo/DojoExampleN03/target</output-path>
+      <root id="archive" name="DojoExampleN03-1.0.war">
+        <element id="artifact" artifact-name="DojoExampleN03:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="DojoExampleN03:war exploded">
+      <output-path>$PROJECT_DIR$/Dojo/DojoExampleN03/target/DojoExampleN03-1.0</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="DojoExampleN03/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="DojoExampleN03" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="JQueryExampleN03:war">
+      <output-path>$PROJECT_DIR$/JQuery/JQueryExampleN03/target</output-path>
+      <root id="archive" name="JQueryExampleN03-1.0.war">
+        <element id="artifact" artifact-name="JQueryExampleN03:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="JQueryExampleN03:war exploded">
+      <output-path>$PROJECT_DIR$/JQuery/JQueryExampleN03/target/JQueryExampleN03-1.0</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="JQueryExampleN03/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="JQueryExampleN03" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="GS_JSF_8:war">
+      <output-path>$PROJECT_DIR$/JSF/GS_JSF_8/target</output-path>
+      <root id="archive" name="GS_JSF_8.war">
+        <element id="artifact" artifact-name="GS_JSF_8:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="GS_JSF_8:war exploded">
+      <output-path>$PROJECT_DIR$/JSF/GS_JSF_8/target/GS_JSF_8</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="GS_JSF_8/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="GS_JSF_8" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="GS_JSF_7:war">
+      <output-path>$PROJECT_DIR$/JSF/GS_JSF_7/target</output-path>
+      <root id="archive" name="GS_JSF_7.war">
+        <element id="artifact" artifact-name="GS_JSF_7:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="GS_JSF_7:war exploded">
+      <output-path>$PROJECT_DIR$/JSF/GS_JSF_7/target/GS_JSF_7</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="GS_JSF_7/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="GS_JSF_7" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="Struts2ExampleN01-web:war">
+      <output-path>$PROJECT_DIR$/Struts/Struts2ExampleN01-web/target</output-path>
+      <root id="archive" name="Struts2ExampleN01-web-1.0.war">
+        <element id="artifact" artifact-name="Struts2ExampleN01-web:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="Struts2ExampleN01-web:war exploded">
+      <output-path>$PROJECT_DIR$/Struts/Struts2ExampleN01-web/target/Struts2ExampleN01-web-1.0</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="Struts2ExampleN01-web/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="Struts2ExampleN01-web" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="GS_Spring_Security_003:war">
+      <output-path>$PROJECT_DIR$/Security/GS_Spring_Security_003/target</output-path>
+      <root id="archive" name="GS_Spring_Security_003.war">
+        <element id="artifact" artifact-name="GS_Spring_Security_003:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="GS_Spring_Security_003:war exploded">
+      <output-path>$PROJECT_DIR$/Security/GS_Spring_Security_003/target/GS_Spring_Security_003</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="GS_Spring_Security_003/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="GS_Spring_Security_003" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="JQueryExampleN04:war">
+      <output-path>$PROJECT_DIR$/JQuery/JQueryExampleN04/target</output-path>
+      <root id="archive" name="JQueryExampleN04-1.0.war">
+        <element id="artifact" artifact-name="JQueryExampleN04:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="JQueryExampleN04:war exploded">
+      <output-path>$PROJECT_DIR$/JQuery/JQueryExampleN04/target/JQueryExampleN04-1.0</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="JQueryExampleN04/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="JQueryExampleN04" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="GS_JSF_10:war">
+      <output-path>$PROJECT_DIR$/JSF/GS_JSF_10/target</output-path>
+      <root id="archive" name="GS_JSF_10.war">
+        <element id="artifact" artifact-name="GS_JSF_10:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="GS_JSF_10:war exploded">
+      <output-path>$PROJECT_DIR$/JSF/GS_JSF_10/target/GS_JSF_10</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="GS_JSF_10/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="GS_JSF_10" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="VaadinExampleN03:war">
+      <output-path>$PROJECT_DIR$/Vaadin/VaadinExampleN03/target</output-path>
+      <root id="archive" name="VaadinExampleN03-1.0.war">
+        <element id="artifact" artifact-name="VaadinExampleN03:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="VaadinExampleN03:war exploded">
+      <output-path>$PROJECT_DIR$/Vaadin/VaadinExampleN03/target/VaadinExampleN03-1.0</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="VaadinExampleN03/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="VaadinExampleN03" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="GS_JSF_6:war">
+      <output-path>$PROJECT_DIR$/JSF/GS_JSF_6/target</output-path>
+      <root id="archive" name="GS_JSF_6.war">
+        <element id="artifact" artifact-name="GS_JSF_6:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="GS_JSF_6:war exploded">
+      <output-path>$PROJECT_DIR$/JSF/GS_JSF_6/target/GS_JSF_6</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="GS_JSF_6/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="GS_JSF_6" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="DojoExampleN01:war">
+      <output-path>$PROJECT_DIR$/Dojo/DojoExampleN01/target</output-path>
+      <root id="archive" name="DojoExampleN01-1.0.war">
+        <element id="artifact" artifact-name="DojoExampleN01:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="DojoExampleN01:war exploded">
+      <output-path>$PROJECT_DIR$/Dojo/DojoExampleN01/target/DojoExampleN01-1.0</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="DojoExampleN01/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="DojoExampleN01" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="GS_JSF_5:war">
+      <output-path>$PROJECT_DIR$/JSF/GS_JSF_5/target</output-path>
+      <root id="archive" name="GS_JSF_5.war">
+        <element id="artifact" artifact-name="GS_JSF_5:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="GS_JSF_5:war exploded">
+      <output-path>$PROJECT_DIR$/JSF/GS_JSF_5/target/GS_JSF_5</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="GS_JSF_5/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="GS_JSF_5" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="WebSecurity:war">
+      <output-path>$PROJECT_DIR$/Security/WebSecurity/target</output-path>
+      <root id="archive" name="WebSecurity-1.0-SNAPSHOT.war">
+        <element id="artifact" artifact-name="WebSecurity:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="WebSecurity:war exploded">
+      <output-path>$PROJECT_DIR$/Security/WebSecurity/target/WebSecurity-1.0-SNAPSHOT</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="WebSecurity/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="WebSecurity" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="JQueryExampleN02:war">
+      <output-path>$PROJECT_DIR$/JQuery/JQueryExampleN02/target</output-path>
+      <root id="archive" name="JQueryExampleN02-1.0.war">
+        <element id="artifact" artifact-name="JQueryExampleN02:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="JQueryExampleN02:war exploded">
+      <output-path>$PROJECT_DIR$/JQuery/JQueryExampleN02/target/JQueryExampleN02-1.0</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="JQueryExampleN02/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="JQueryExampleN02" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="ZKExample02:war">
+      <output-path>$PROJECT_DIR$/ZK/ZKExample02/target</output-path>
+      <root id="archive" name="ZKExample02.war">
+        <element id="artifact" artifact-name="ZKExample02:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="ZKExample02:war exploded">
+      <output-path>$PROJECT_DIR$/ZK/ZKExample02/target/ZKExample02</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="ZKExample02/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="ZKExample02" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="GS_Spring_Security_004:war">
+      <output-path>$PROJECT_DIR$/Security/GS_Spring_Security_004/target</output-path>
+      <root id="archive" name="GS_Spring_Security_004.war">
+        <element id="artifact" artifact-name="GS_Spring_Security_004:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="GS_Spring_Security_004:war exploded">
+      <output-path>$PROJECT_DIR$/Security/GS_Spring_Security_004/target/GS_Spring_Security_004</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="GS_Spring_Security_004/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="GS_Spring_Security_004" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="ZKExample03:war">
+      <output-path>$PROJECT_DIR$/ZK/ZKExample03/target</output-path>
+      <root id="archive" name="ZKExample03.war">
+        <element id="artifact" artifact-name="ZKExample03:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="ZKExample03:war exploded">
+      <output-path>$PROJECT_DIR$/ZK/ZKExample03/target/ZKExample03</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="ZKExample03/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="ZKExample03" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="VaadinExampleN04:war">
+      <output-path>$PROJECT_DIR$/Vaadin/VaadinExampleN04/target</output-path>
+      <root id="archive" name="VaadinExampleN04-1.0.war">
+        <element id="artifact" artifact-name="VaadinExampleN04:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="VaadinExampleN04:war exploded">
+      <output-path>$PROJECT_DIR$/Vaadin/VaadinExampleN04/target/VaadinExampleN04-1.0</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="VaadinExampleN04/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="VaadinExampleN04" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="GS_ApacheShiro_03:war">
+      <output-path>$PROJECT_DIR$/Security/GS_ApacheShiro_03/target</output-path>
+      <root id="archive" name="GS_ApacheShiro_03-1.0.war">
+        <element id="artifact" artifact-name="GS_ApacheShiro_03:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="GS_ApacheShiro_03:war exploded">
+      <output-path>$PROJECT_DIR$/Security/GS_ApacheShiro_03/target/GS_ApacheShiro_03-1.0</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="GS_ApacheShiro_03/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="GS_ApacheShiro_03" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="GS_Spring_003:war">
+      <output-path>$PROJECT_DIR$/SpringMVC/GS_Spring_003/target</output-path>
+      <root id="archive" name="GS_Spring_003.war">
+        <element id="artifact" artifact-name="GS_Spring_003:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="GS_Spring_003:war exploded">
+      <output-path>$PROJECT_DIR$/SpringMVC/GS_Spring_003/target/GS_Spring_003</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="GS_Spring_003/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="GS_Spring_003" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="JQueryExampleN10:war">
+      <output-path>$PROJECT_DIR$/JQuery/JQueryExampleN10/target</output-path>
+      <root id="archive" name="JQueryExampleN10-1.0.war">
+        <element id="artifact" artifact-name="JQueryExampleN10:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="JQueryExampleN10:war exploded">
+      <output-path>$PROJECT_DIR$/JQuery/JQueryExampleN10/target/JQueryExampleN10-1.0</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="JQueryExampleN10/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="JQueryExampleN10" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="GS_Spring_Security_001:war">
+      <output-path>$PROJECT_DIR$/Security/GS_Spring_Security_001/target</output-path>
+      <root id="archive" name="GS_Spring_Security_001.war">
+        <element id="artifact" artifact-name="GS_Spring_Security_001:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="GS_Spring_Security_001:war exploded">
+      <output-path>$PROJECT_DIR$/Security/GS_Spring_Security_001/target/GS_Spring_Security_001</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="GS_Spring_Security_001/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="GS_Spring_Security_001" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="JQueryExampleN08:war">
+      <output-path>$PROJECT_DIR$/JQuery/JQueryExampleN08/target</output-path>
+      <root id="archive" name="JQueryExampleN08-1.0.war">
+        <element id="artifact" artifact-name="JQueryExampleN08:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="JQueryExampleN08:war exploded">
+      <output-path>$PROJECT_DIR$/JQuery/JQueryExampleN08/target/JQueryExampleN08-1.0</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="JQueryExampleN08/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="JQueryExampleN08" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="JQueryExampleN05:war">
+      <output-path>$PROJECT_DIR$/JQuery/JQueryExampleN05/target</output-path>
+      <root id="archive" name="JQueryExampleN05-1.0.war">
+        <element id="artifact" artifact-name="JQueryExampleN05:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="JQueryExampleN05:war exploded">
+      <output-path>$PROJECT_DIR$/JQuery/JQueryExampleN05/target/JQueryExampleN05-1.0</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="JQueryExampleN05/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="JQueryExampleN05" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="GS_Spring_Security_002:war">
+      <output-path>$PROJECT_DIR$/Security/GS_Spring_Security_002/target</output-path>
+      <root id="archive" name="GS_Spring_Security_002.war">
+        <element id="artifact" artifact-name="GS_Spring_Security_002:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="GS_Spring_Security_002:war exploded">
+      <output-path>$PROJECT_DIR$/Security/GS_Spring_Security_002/target/GS_Spring_Security_002</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="GS_Spring_Security_002/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="GS_Spring_Security_002" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="ZKExample01:war">
+      <output-path>$PROJECT_DIR$/ZK/ZKExample01/target</output-path>
+      <root id="archive" name="ZKExample01.war">
+        <element id="artifact" artifact-name="ZKExample01:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="ZKExample01:war exploded">
+      <output-path>$PROJECT_DIR$/ZK/ZKExample01/target/ZKExample01</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="ZKExample01/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="ZKExample01" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="ejb-jar" name="SimpleWebService-ejb:ejb">
+      <output-path>$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ejb/target</output-path>
+      <root id="archive" name="SimpleWebService-ejb-1.0-SNAPSHOT.jar">
+        <element id="artifact" artifact-name="SimpleWebService-ejb:ejb exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-ejb" name="SimpleWebService-ejb:ejb exploded">
+      <output-path>$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ejb/target/SimpleWebService-ejb-1.0-SNAPSHOT</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="SimpleWebService-ejb/ejb/EJB" />
+        <element id="module-output" name="SimpleWebService-ejb" />
+      </root>
+    </artifact>
+    <artifact type="war" name="GS_JSF_9:war">
+      <output-path>$PROJECT_DIR$/JSF/GS_JSF_9/target</output-path>
+      <root id="archive" name="GS_JSF_9.war">
+        <element id="artifact" artifact-name="GS_JSF_9:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="GS_JSF_9:war exploded">
+      <output-path>$PROJECT_DIR$/JSF/GS_JSF_9/target/GS_JSF_9</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="GS_JSF_9/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="GS_JSF_9" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="ZKExample04:war">
+      <output-path>$PROJECT_DIR$/ZK/ZKExample04/target</output-path>
+      <root id="archive" name="ZKExample04.war">
+        <element id="artifact" artifact-name="ZKExample04:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="ZKExample04:war exploded">
+      <output-path>$PROJECT_DIR$/ZK/ZKExample04/target/ZKExample04</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="ZKExample04/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="ZKExample04" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="ear" name="SimpleWebService-ear:ear">
+      <output-path>$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ear/target</output-path>
+      <root id="archive" name="SimpleWebService-ear-1.0-SNAPSHOT.ear">
+        <element id="artifact" artifact-name="SimpleWebService-ear:ear exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-ear" name="SimpleWebService-ear:ear exploded">
+      <output-path>$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ear/target/SimpleWebService-ear-1.0-SNAPSHOT</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="SimpleWebService-ear/javaeeApplication/JavaEE" />
+        <element id="dir-copy" path="$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ear/src/main/application" />
+      </root>
+    </artifact>
+    <artifact type="war" name="JQueryExampleN07:war">
+      <output-path>$PROJECT_DIR$/JQuery/JQueryExampleN07/target</output-path>
+      <root id="archive" name="JQueryExampleN07-1.0.war">
+        <element id="artifact" artifact-name="JQueryExampleN07:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="JQueryExampleN07:war exploded">
+      <output-path>$PROJECT_DIR$/JQuery/JQueryExampleN07/target/JQueryExampleN07-1.0</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="JQueryExampleN07/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="JQueryExampleN07" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="GS_Spring_001:war">
+      <output-path>$PROJECT_DIR$/SpringMVC/GS_Spring_001/target</output-path>
+      <root id="archive" name="GS_Spring_001.war">
+        <element id="artifact" artifact-name="GS_Spring_001:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="GS_Spring_001:war exploded">
+      <output-path>$PROJECT_DIR$/SpringMVC/GS_Spring_001/target/GS_Spring_001</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="GS_Spring_001/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="GS_Spring_001" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="ZKExample05:war">
+      <output-path>$PROJECT_DIR$/ZK/ZKExample05/target</output-path>
+      <root id="archive" name="ZKExample05.war">
+        <element id="artifact" artifact-name="ZKExample05:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="ZKExample05:war exploded">
+      <output-path>$PROJECT_DIR$/ZK/ZKExample05/target/ZKExample05</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="ZKExample05/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="ZKExample05" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="JQueryExampleN06:war">
+      <output-path>$PROJECT_DIR$/JQuery/JQueryExampleN06/target</output-path>
+      <root id="archive" name="JQueryExampleN06-1.0.war">
+        <element id="artifact" artifact-name="JQueryExampleN06:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="JQueryExampleN06:war exploded">
+      <output-path>$PROJECT_DIR$/JQuery/JQueryExampleN06/target/JQueryExampleN06-1.0</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="JQueryExampleN06/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="JQueryExampleN06" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="GS_JSF_2:war">
+      <output-path>$PROJECT_DIR$/JSF/GS_JSF_2/target</output-path>
+      <root id="archive" name="GS_JSF_2.war">
+        <element id="artifact" artifact-name="GS_JSF_2:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="GS_JSF_2:war exploded">
+      <output-path>$PROJECT_DIR$/JSF/GS_JSF_2/target/GS_JSF_2</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="GS_JSF_2/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="GS_JSF_2" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="WebSecurityExample-N03:war">
+      <output-path>$PROJECT_DIR$/Security/WebSecurityExample-N03/target</output-path>
+      <root id="archive" name="WebSecurityExample-N03-1.0-SNAPSHOT.war">
+        <element id="artifact" artifact-name="WebSecurityExample-N03:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="WebSecurityExample-N03:war exploded">
+      <output-path>$PROJECT_DIR$/Security/WebSecurityExample-N03/target/WebSecurityExample-N03-1.0-SNAPSHOT</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="WebSecurityExample-N03/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="WebSecurityExample-N03" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="webservice-rest-4:war">
+      <output-path>$PROJECT_DIR$/WebServices/WEB-REST/WebService_6_REST/target</output-path>
+      <root id="archive" name="webservice-rest-4-1.0-SNAPSHOT.war">
+        <element id="artifact" artifact-name="webservice-rest-4:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="webservice-rest-4:war exploded">
+      <output-path>$PROJECT_DIR$/WebServices/WEB-REST/WebService_6_REST/target/webservice-rest-4-1.0-SNAPSHOT</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="webservice-rest-4/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="webservice-rest-4" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="SimplePortlet:war">
+      <output-path>$PROJECT_DIR$/Portlets/SimplePortlet/target</output-path>
+      <root id="archive" name="SimplePortlet-1.0-SNAPSHOT.war">
+        <element id="artifact" artifact-name="SimplePortlet:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="SimplePortlet:war exploded">
+      <output-path>$PROJECT_DIR$/Portlets/SimplePortlet/target/SimplePortlet-1.0-SNAPSHOT</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="SimplePortlet/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="SimplePortlet" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="RESTExample:war">
+      <output-path>$PROJECT_DIR$/WebServices/WEB-REST/RESTExample/target</output-path>
+      <root id="archive" name="RESTExample-1.0-SNAPSHOT.war">
+        <element id="artifact" artifact-name="RESTExample:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="RESTExample:war exploded">
+      <output-path>$PROJECT_DIR$/WebServices/WEB-REST/RESTExample/target/RESTExample-1.0-SNAPSHOT</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="RESTExample/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="RESTExample" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="WebSecurityExample-N02:war">
+      <output-path>$PROJECT_DIR$/Security/WebSecurityExample-N02/target</output-path>
+      <root id="archive" name="WebSecurityExample-N02-1.0-SNAPSHOT.war">
+        <element id="artifact" artifact-name="WebSecurityExample-N02:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="WebSecurityExample-N02:war exploded">
+      <output-path>$PROJECT_DIR$/Security/WebSecurityExample-N02/target/WebSecurityExample-N02-1.0-SNAPSHOT</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="WebSecurityExample-N02/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="WebSecurityExample-N02" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="MyFirstServlet:war">
+      <output-path>$PROJECT_DIR$/Servlet-JSP/MyFirstServlet/target</output-path>
+      <root id="archive" name="MyFirstServlet-1.0-SNAPSHOT.war">
+        <element id="artifact" artifact-name="MyFirstServlet:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="MyFirstServlet:war exploded">
+      <output-path>$PROJECT_DIR$/Servlet-JSP/MyFirstServlet/target/MyFirstServlet-1.0-SNAPSHOT</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="MyFirstServlet/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="MyFirstServlet" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="GS_JSF_3:war">
+      <output-path>$PROJECT_DIR$/JSF/GS_JSF_3/target</output-path>
+      <root id="archive" name="GS_JSF_3.war">
+        <element id="artifact" artifact-name="GS_JSF_3:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="GS_JSF_3:war exploded">
+      <output-path>$PROJECT_DIR$/JSF/GS_JSF_3/target/GS_JSF_3</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="GS_JSF_3/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="GS_JSF_3" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="VelocityExample-N02:war">
+      <output-path>$PROJECT_DIR$/Velocity/GS_Velocity_2/target</output-path>
+      <root id="archive" name="VelocityExample-N02-1.0-SNAPSHOT.war">
+        <element id="artifact" artifact-name="VelocityExample-N02:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="VelocityExample-N02:war exploded">
+      <output-path>$PROJECT_DIR$/Velocity/GS_Velocity_2/target/VelocityExample-N02-1.0-SNAPSHOT</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="VelocityExample-N02/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="VelocityExample-N02" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="webservice-rest-3:war">
+      <output-path>$PROJECT_DIR$/WebServices/WEB-REST/WebService_5_REST/target</output-path>
+      <root id="archive" name="webservice-rest-3-1.0-SNAPSHOT.war">
+        <element id="artifact" artifact-name="webservice-rest-3:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="webservice-rest-3:war exploded">
+      <output-path>$PROJECT_DIR$/WebServices/WEB-REST/WebService_5_REST/target/webservice-rest-3-1.0-SNAPSHOT</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="webservice-rest-3/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="webservice-rest-3" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="DojoExampleN02:war">
+      <output-path>$PROJECT_DIR$/Dojo/DojoExampleN02/target</output-path>
+      <root id="archive" name="DojoExampleN02-1.0.war">
+        <element id="artifact" artifact-name="DojoExampleN02:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="DojoExampleN02:war exploded">
+      <output-path>$PROJECT_DIR$/Dojo/DojoExampleN02/target/DojoExampleN02-1.0</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="DojoExampleN02/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="DojoExampleN02" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="VelocityExample-N03:war">
+      <output-path>$PROJECT_DIR$/Velocity/GS_Velocity_3/target</output-path>
+      <root id="archive" name="VelocityExample-N03-1.0-SNAPSHOT.war">
+        <element id="artifact" artifact-name="VelocityExample-N03:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="VelocityExample-N03:war exploded">
+      <output-path>$PROJECT_DIR$/Velocity/GS_Velocity_3/target/VelocityExample-N03-1.0-SNAPSHOT</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="VelocityExample-N03/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="VelocityExample-N03" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="DojoExampleN04:war">
+      <output-path>$PROJECT_DIR$/Dojo/DojoExampleN04/target</output-path>
+      <root id="archive" name="DojoExampleN04-1.0.war">
+        <element id="artifact" artifact-name="DojoExampleN04:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="DojoExampleN04:war exploded">
+      <output-path>$PROJECT_DIR$/Dojo/DojoExampleN04/target/DojoExampleN04-1.0</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="DojoExampleN04/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="DojoExampleN04" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+  </component>
+  <component name="CompilerConfiguration">
+    <option name="DEFAULT_COMPILER" value="Javac" />
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="ClientAuthentication" />
+        <module name="DojoExampleN01" />
+        <module name="DojoExampleN02" />
+        <module name="DojoExampleN03" />
+        <module name="DojoExampleN04" />
+        <module name="DWRExample-N01" />
+        <module name="Expomap" />
+        <module name="GS_ApacheShiro_01" />
+        <module name="GS_ApacheShiro_02" />
+        <module name="GS_ApacheShiro_03" />
+        <module name="GS_JSF_1" />
+        <module name="GS_JSF_10" />
+        <module name="GS_JSF_2" />
+        <module name="GS_JSF_3" />
+        <module name="GS_JSF_4" />
+        <module name="GS_JSF_5" />
+        <module name="GS_JSF_6" />
+        <module name="GS_JSF_7" />
+        <module name="GS_JSF_8" />
+        <module name="GS_JSF_9" />
+        <module name="GS_Spring_001" />
+        <module name="GS_Spring_002" />
+        <module name="GS_Spring_003" />
+        <module name="GS_Spring_006" />
+        <module name="GS_Spring_Security_001" />
+        <module name="GS_Spring_Security_002" />
+        <module name="GS_Spring_Security_003" />
+        <module name="GS_Spring_Security_004" />
+        <module name="JQueryExampleN01" />
+        <module name="JQueryExampleN02" />
+        <module name="JQueryExampleN03" />
+        <module name="JQueryExampleN04" />
+        <module name="JQueryExampleN05" />
+        <module name="JQueryExampleN06" />
+        <module name="JQueryExampleN07" />
+        <module name="JQueryExampleN08" />
+        <module name="JQueryExampleN09" />
+        <module name="JQueryExampleN10" />
+        <module name="JQueryExampleN11" />
+        <module name="MyFirstServlet" />
+        <module name="MyFirstServlet_JSP" />
+        <module name="RESTExample" />
+        <module name="SimplePortlet" />
+        <module name="SimpleWebService-ear" />
+        <module name="SimpleWebService-ejb" />
+        <module name="Struts2ExampleN01-web" />
+        <module name="Struts2ExampleN02-web" />
+        <module name="Struts2ExampleN03-web" />
+        <module name="VaadinExampleN01" />
+        <module name="VaadinExampleN02" />
+        <module name="VaadinExampleN03" />
+        <module name="VaadinExampleN04" />
+        <module name="VelocityExample-N01" />
+        <module name="VelocityExample-N02" />
+        <module name="VelocityExample-N03" />
+        <module name="VelocityExample-N04" />
+        <module name="WebSecurity" />
+        <module name="WebSecurityExample-N00" />
+        <module name="WebSecurityExample-N01" />
+        <module name="WebSecurityExample-N02" />
+        <module name="WebSecurityExample-N03" />
+        <module name="webservice-jax-ws" />
+        <module name="webservice-jax-ws-0" />
+        <module name="webservice-rest" />
+        <module name="webservice-rest-2" />
+        <module name="webservice-rest-3" />
+        <module name="webservice-rest-4" />
+        <module name="WSTest" />
+        <module name="ZKExample01" />
+        <module name="ZKExample02" />
+        <module name="ZKExample03" />
+        <module name="ZKExample04" />
+        <module name="ZKExample05" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="DependencyValidationManager">
+    <option name="SKIP_IMPORT_STATEMENTS" value="false" />
+  </component>
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/DWR/DWRExample-N01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Dojo/DojoExampleN01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Dojo/DojoExampleN02" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Dojo/DojoExampleN03" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Dojo/DojoExampleN04" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JQuery/JQueryExampleN01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JQuery/JQueryExampleN02" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JQuery/JQueryExampleN03" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JQuery/JQueryExampleN04" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JQuery/JQueryExampleN05" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JQuery/JQueryExampleN06" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JQuery/JQueryExampleN07" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JQuery/JQueryExampleN08" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JQuery/JQueryExampleN09" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JQuery/JQueryExampleN10" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JQuery/JQueryExampleN11" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Portlets/SimplePortlet" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Security/ClientAuthentication" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Security/GS_Spring_Security_001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Security/GS_Spring_Security_002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Security/GS_Spring_Security_003" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Security/GS_Spring_Security_004" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Security/WebSecurity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Security/WebSecurityExample-N00" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Security/WebSecurityExample-N01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Security/WebSecurityExample-N02" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Security/WebSecurityExample-N03" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Servlet-JSP/MyFirstServlet" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Servlet-JSP/MyFirstServlet_JSP" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringMVC/GS_Spring_005" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Struts/Struts2ExampleN01-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Struts/Struts2ExampleN02-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Struts/Struts2ExampleN03-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Vaadin/VaadinExampleN01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Vaadin/VaadinExampleN02" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Vaadin/VaadinExampleN03" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Vaadin/VaadinExampleN04" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Velocity/GS_Velocity_1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Velocity/GS_Velocity_2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Velocity/GS_Velocity_3" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Velocity/GS_Velocity_4" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ear" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ejb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebServices/JAX_WS/WSTest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebServices/WEB-REST/RESTExample" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ZK/ZKExample01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ZK/ZKExample02" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ZK/ZKExample03" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ZK/ZKExample04" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ZK/ZKExample05" charset="UTF-8" />
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="ejb" url="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ejb" />
+    <file type="javaeeApplication" url="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ear" />
+    <file type="web" url="file://$PROJECT_DIR$/Dojo/DojoExampleN01" />
+    <file type="web" url="file://$PROJECT_DIR$/Dojo/DojoExampleN02" />
+    <file type="web" url="file://$PROJECT_DIR$/Dojo/DojoExampleN03" />
+    <file type="web" url="file://$PROJECT_DIR$/Dojo/DojoExampleN04" />
+    <file type="web" url="file://$PROJECT_DIR$/DWR/DWRExample-N01" />
+    <file type="web" url="file://$PROJECT_DIR$/JQuery/JQueryExampleN01" />
+    <file type="web" url="file://$PROJECT_DIR$/JQuery/JQueryExampleN02" />
+    <file type="web" url="file://$PROJECT_DIR$/JQuery/JQueryExampleN03" />
+    <file type="web" url="file://$PROJECT_DIR$/JQuery/JQueryExampleN04" />
+    <file type="web" url="file://$PROJECT_DIR$/JQuery/JQueryExampleN05" />
+    <file type="web" url="file://$PROJECT_DIR$/JQuery/JQueryExampleN06" />
+    <file type="web" url="file://$PROJECT_DIR$/JQuery/JQueryExampleN07" />
+    <file type="web" url="file://$PROJECT_DIR$/JQuery/JQueryExampleN08" />
+    <file type="web" url="file://$PROJECT_DIR$/JQuery/JQueryExampleN09" />
+    <file type="web" url="file://$PROJECT_DIR$/JQuery/JQueryExampleN10" />
+    <file type="web" url="file://$PROJECT_DIR$/JQuery/JQueryExampleN11" />
+    <file type="web" url="file://$PROJECT_DIR$/JSF/GS_JSF_1" />
+    <file type="web" url="file://$PROJECT_DIR$/JSF/GS_JSF_10" />
+    <file type="web" url="file://$PROJECT_DIR$/JSF/GS_JSF_2" />
+    <file type="web" url="file://$PROJECT_DIR$/JSF/GS_JSF_3" />
+    <file type="web" url="file://$PROJECT_DIR$/JSF/GS_JSF_4" />
+    <file type="web" url="file://$PROJECT_DIR$/JSF/GS_JSF_5" />
+    <file type="web" url="file://$PROJECT_DIR$/JSF/GS_JSF_6" />
+    <file type="web" url="file://$PROJECT_DIR$/JSF/GS_JSF_7" />
+    <file type="web" url="file://$PROJECT_DIR$/JSF/GS_JSF_8" />
+    <file type="web" url="file://$PROJECT_DIR$/JSF/GS_JSF_9" />
+    <file type="web" url="file://$PROJECT_DIR$/Portlets/SimplePortlet" />
+    <file type="web" url="file://$PROJECT_DIR$/Security/ClientAuthentication" />
+    <file type="web" url="file://$PROJECT_DIR$/Security/GS_ApacheShiro_02" />
+    <file type="web" url="file://$PROJECT_DIR$/Security/GS_ApacheShiro_03" />
+    <file type="web" url="file://$PROJECT_DIR$/Security/GS_Spring_Security_001" />
+    <file type="web" url="file://$PROJECT_DIR$/Security/GS_Spring_Security_002" />
+    <file type="web" url="file://$PROJECT_DIR$/Security/GS_Spring_Security_003" />
+    <file type="web" url="file://$PROJECT_DIR$/Security/GS_Spring_Security_004" />
+    <file type="web" url="file://$PROJECT_DIR$/Security/WebSecurity" />
+    <file type="web" url="file://$PROJECT_DIR$/Security/WebSecurityExample-N00" />
+    <file type="web" url="file://$PROJECT_DIR$/Security/WebSecurityExample-N01" />
+    <file type="web" url="file://$PROJECT_DIR$/Security/WebSecurityExample-N02" />
+    <file type="web" url="file://$PROJECT_DIR$/Security/WebSecurityExample-N03" />
+    <file type="web" url="file://$PROJECT_DIR$/Servlet-JSP/MyFirstServlet" />
+    <file type="web" url="file://$PROJECT_DIR$/Servlet-JSP/MyFirstServlet_JSP" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringMVC/GS_Spring_001" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringMVC/GS_Spring_002" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringMVC/GS_Spring_003" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringMVC/GS_Spring_005" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringMVC/GS_Spring_006" />
+    <file type="web" url="file://$PROJECT_DIR$/Struts/Struts2ExampleN01-web" />
+    <file type="web" url="file://$PROJECT_DIR$/Struts/Struts2ExampleN02-web" />
+    <file type="web" url="file://$PROJECT_DIR$/Struts/Struts2ExampleN03-web" />
+    <file type="web" url="file://$PROJECT_DIR$/Vaadin/VaadinExampleN01" />
+    <file type="web" url="file://$PROJECT_DIR$/Vaadin/VaadinExampleN02" />
+    <file type="web" url="file://$PROJECT_DIR$/Vaadin/VaadinExampleN03" />
+    <file type="web" url="file://$PROJECT_DIR$/Vaadin/VaadinExampleN04" />
+    <file type="web" url="file://$PROJECT_DIR$/Velocity/GS_Velocity_2" />
+    <file type="web" url="file://$PROJECT_DIR$/Velocity/GS_Velocity_3" />
+    <file type="web" url="file://$PROJECT_DIR$/WebServices/JAX_WS/WebService_0_JAX-WS" />
+    <file type="web" url="file://$PROJECT_DIR$/WebServices/WEB-REST/RESTExample" />
+    <file type="web" url="file://$PROJECT_DIR$/WebServices/WEB-REST/WebService_5_REST" />
+    <file type="web" url="file://$PROJECT_DIR$/WebServices/WEB-REST/WebService_6_REST" />
+    <file type="web" url="file://$PROJECT_DIR$/ZK/ZKExample01" />
+    <file type="web" url="file://$PROJECT_DIR$/ZK/ZKExample02" />
+    <file type="web" url="file://$PROJECT_DIR$/ZK/ZKExample03" />
+    <file type="web" url="file://$PROJECT_DIR$/ZK/ZKExample04" />
+    <file type="web" url="file://$PROJECT_DIR$/ZK/ZKExample05" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/ZK/ZKExample01/pom.xml" />
+        <option value="$PROJECT_DIR$/ZK/ZKExample02/pom.xml" />
+        <option value="$PROJECT_DIR$/ZK/ZKExample03/pom.xml" />
+        <option value="$PROJECT_DIR$/ZK/ZKExample04/pom.xml" />
+        <option value="$PROJECT_DIR$/ZK/ZKExample05/pom.xml" />
+        <option value="$PROJECT_DIR$/DWR/DWRExample-N01/pom.xml" />
+        <option value="$PROJECT_DIR$/JSF/GS_JSF_1/pom.xml" />
+        <option value="$PROJECT_DIR$/JSF/GS_JSF_2/pom.xml" />
+        <option value="$PROJECT_DIR$/JSF/GS_JSF_3/pom.xml" />
+        <option value="$PROJECT_DIR$/JSF/GS_JSF_4/pom.xml" />
+        <option value="$PROJECT_DIR$/JSF/GS_JSF_5/pom.xml" />
+        <option value="$PROJECT_DIR$/JSF/GS_JSF_6/pom.xml" />
+        <option value="$PROJECT_DIR$/JSF/GS_JSF_7/pom.xml" />
+        <option value="$PROJECT_DIR$/JSF/GS_JSF_8/pom.xml" />
+        <option value="$PROJECT_DIR$/JSF/GS_JSF_9/pom.xml" />
+        <option value="$PROJECT_DIR$/JSF/GS_JSF_10/pom.xml" />
+        <option value="$PROJECT_DIR$/Dojo/DojoExampleN01/pom.xml" />
+        <option value="$PROJECT_DIR$/Dojo/DojoExampleN02/pom.xml" />
+        <option value="$PROJECT_DIR$/Dojo/DojoExampleN03/pom.xml" />
+        <option value="$PROJECT_DIR$/Dojo/DojoExampleN04/pom.xml" />
+        <option value="$PROJECT_DIR$/JQuery/JQueryExampleN01/pom.xml" />
+        <option value="$PROJECT_DIR$/JQuery/JQueryExampleN02/pom.xml" />
+        <option value="$PROJECT_DIR$/JQuery/JQueryExampleN03/pom.xml" />
+        <option value="$PROJECT_DIR$/JQuery/JQueryExampleN04/pom.xml" />
+        <option value="$PROJECT_DIR$/JQuery/JQueryExampleN05/pom.xml" />
+        <option value="$PROJECT_DIR$/JQuery/JQueryExampleN06/pom.xml" />
+        <option value="$PROJECT_DIR$/JQuery/JQueryExampleN07/pom.xml" />
+        <option value="$PROJECT_DIR$/JQuery/JQueryExampleN08/pom.xml" />
+        <option value="$PROJECT_DIR$/JQuery/JQueryExampleN09/pom.xml" />
+        <option value="$PROJECT_DIR$/JQuery/JQueryExampleN10/pom.xml" />
+        <option value="$PROJECT_DIR$/JQuery/JQueryExampleN11/pom.xml" />
+        <option value="$PROJECT_DIR$/Struts/Struts2ExampleN01-web/pom.xml" />
+        <option value="$PROJECT_DIR$/Struts/Struts2ExampleN02-web/pom.xml" />
+        <option value="$PROJECT_DIR$/Struts/Struts2ExampleN03-web/pom.xml" />
+        <option value="$PROJECT_DIR$/Vaadin/VaadinExampleN01/pom.xml" />
+        <option value="$PROJECT_DIR$/Vaadin/VaadinExampleN02/pom.xml" />
+        <option value="$PROJECT_DIR$/Vaadin/VaadinExampleN03/pom.xml" />
+        <option value="$PROJECT_DIR$/Vaadin/VaadinExampleN04/pom.xml" />
+        <option value="$PROJECT_DIR$/Portlets/SimplePortlet/pom.xml" />
+        <option value="$PROJECT_DIR$/Security/WebSecurity/pom.xml" />
+        <option value="$PROJECT_DIR$/Security/GS_ApacheShiro_01/pom.xml" />
+        <option value="$PROJECT_DIR$/Security/GS_ApacheShiro_02/pom.xml" />
+        <option value="$PROJECT_DIR$/Security/GS_ApacheShiro_03/pom.xml" />
+        <option value="$PROJECT_DIR$/Security/ClientAuthentication/pom.xml" />
+        <option value="$PROJECT_DIR$/Security/GS_Spring_Security_001/pom.xml" />
+        <option value="$PROJECT_DIR$/Security/GS_Spring_Security_002/pom.xml" />
+        <option value="$PROJECT_DIR$/Security/GS_Spring_Security_003/pom.xml" />
+        <option value="$PROJECT_DIR$/Security/GS_Spring_Security_004/pom.xml" />
+        <option value="$PROJECT_DIR$/Security/WebSecurityExample-N00/pom.xml" />
+        <option value="$PROJECT_DIR$/Security/WebSecurityExample-N01/pom.xml" />
+        <option value="$PROJECT_DIR$/Security/WebSecurityExample-N02/pom.xml" />
+        <option value="$PROJECT_DIR$/Security/WebSecurityExample-N03/pom.xml" />
+        <option value="$PROJECT_DIR$/Velocity/GS_Velocity_1/pom.xml" />
+        <option value="$PROJECT_DIR$/Velocity/GS_Velocity_2/pom.xml" />
+        <option value="$PROJECT_DIR$/Velocity/GS_Velocity_3/pom.xml" />
+        <option value="$PROJECT_DIR$/Velocity/GS_Velocity_4/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMVC/GS_Spring_001/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMVC/GS_Spring_002/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMVC/GS_Spring_003/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMVC/GS_Spring_005/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMVC/GS_Spring_006/pom.xml" />
+        <option value="$PROJECT_DIR$/Servlet-JSP/MyFirstServlet/pom.xml" />
+        <option value="$PROJECT_DIR$/Servlet-JSP/MyFirstServlet_JSP/pom.xml" />
+        <option value="$PROJECT_DIR$/WebServices/JAX_WS/WSTest/pom.xml" />
+        <option value="$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/pom.xml" />
+        <option value="$PROJECT_DIR$/WebServices/JAX_WS/WebService_0_JAX-WS/pom.xml" />
+        <option value="$PROJECT_DIR$/WebServices/JAX_WS/WebService_1_JAX-WS/pom.xml" />
+        <option value="$PROJECT_DIR$/WebServices/WEB-REST/RESTExample/pom.xml" />
+        <option value="$PROJECT_DIR$/WebServices/WEB-REST/WebService_3_REST/pom.xml" />
+        <option value="$PROJECT_DIR$/WebServices/WEB-REST/WebService_4_REST/pom.xml" />
+        <option value="$PROJECT_DIR$/WebServices/WEB-REST/WebService_5_REST/pom.xml" />
+        <option value="$PROJECT_DIR$/WebServices/WEB-REST/WebService_6_REST/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Security/ClientAuthentication/ClientAuthentication.iml" filepath="$PROJECT_DIR$/Security/ClientAuthentication/ClientAuthentication.iml" group="Security" />
+      <module fileurl="file://$PROJECT_DIR$/DWR/DWRExample-N01/DWRExample-N01.iml" filepath="$PROJECT_DIR$/DWR/DWRExample-N01/DWRExample-N01.iml" group="Dojo" />
+      <module fileurl="file://$PROJECT_DIR$/Dojo/DojoExampleN01/DojoExampleN01.iml" filepath="$PROJECT_DIR$/Dojo/DojoExampleN01/DojoExampleN01.iml" group="Dojo" />
+      <module fileurl="file://$PROJECT_DIR$/Dojo/DojoExampleN02/DojoExampleN02.iml" filepath="$PROJECT_DIR$/Dojo/DojoExampleN02/DojoExampleN02.iml" group="Dojo" />
+      <module fileurl="file://$PROJECT_DIR$/Dojo/DojoExampleN03/DojoExampleN03.iml" filepath="$PROJECT_DIR$/Dojo/DojoExampleN03/DojoExampleN03.iml" group="Dojo" />
+      <module fileurl="file://$PROJECT_DIR$/Dojo/DojoExampleN04/DojoExampleN04.iml" filepath="$PROJECT_DIR$/Dojo/DojoExampleN04/DojoExampleN04.iml" group="Dojo" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC/GS_Spring_005/Expomap.iml" filepath="$PROJECT_DIR$/SpringMVC/GS_Spring_005/Expomap.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Security/GS_ApacheShiro_01/GS_ApacheShiro_01.iml" filepath="$PROJECT_DIR$/Security/GS_ApacheShiro_01/GS_ApacheShiro_01.iml" group="Shiro" />
+      <module fileurl="file://$PROJECT_DIR$/Security/GS_ApacheShiro_02/GS_ApacheShiro_02.iml" filepath="$PROJECT_DIR$/Security/GS_ApacheShiro_02/GS_ApacheShiro_02.iml" group="Shiro" />
+      <module fileurl="file://$PROJECT_DIR$/Security/GS_ApacheShiro_03/GS_ApacheShiro_03.iml" filepath="$PROJECT_DIR$/Security/GS_ApacheShiro_03/GS_ApacheShiro_03.iml" group="Shiro" />
+      <module fileurl="file://$PROJECT_DIR$/JSF/GS_JSF_1/GS_JSF_1.iml" filepath="$PROJECT_DIR$/JSF/GS_JSF_1/GS_JSF_1.iml" group="JSF" />
+      <module fileurl="file://$PROJECT_DIR$/JSF/GS_JSF_10/GS_JSF_10.iml" filepath="$PROJECT_DIR$/JSF/GS_JSF_10/GS_JSF_10.iml" group="JSF" />
+      <module fileurl="file://$PROJECT_DIR$/JSF/GS_JSF_2/GS_JSF_2.iml" filepath="$PROJECT_DIR$/JSF/GS_JSF_2/GS_JSF_2.iml" group="JSF" />
+      <module fileurl="file://$PROJECT_DIR$/JSF/GS_JSF_3/GS_JSF_3.iml" filepath="$PROJECT_DIR$/JSF/GS_JSF_3/GS_JSF_3.iml" group="JSF" />
+      <module fileurl="file://$PROJECT_DIR$/JSF/GS_JSF_4/GS_JSF_4.iml" filepath="$PROJECT_DIR$/JSF/GS_JSF_4/GS_JSF_4.iml" group="JSF" />
+      <module fileurl="file://$PROJECT_DIR$/JSF/GS_JSF_5/GS_JSF_5.iml" filepath="$PROJECT_DIR$/JSF/GS_JSF_5/GS_JSF_5.iml" group="JSF" />
+      <module fileurl="file://$PROJECT_DIR$/JSF/GS_JSF_6/GS_JSF_6.iml" filepath="$PROJECT_DIR$/JSF/GS_JSF_6/GS_JSF_6.iml" group="JSF" />
+      <module fileurl="file://$PROJECT_DIR$/JSF/GS_JSF_7/GS_JSF_7.iml" filepath="$PROJECT_DIR$/JSF/GS_JSF_7/GS_JSF_7.iml" group="JSF" />
+      <module fileurl="file://$PROJECT_DIR$/JSF/GS_JSF_8/GS_JSF_8.iml" filepath="$PROJECT_DIR$/JSF/GS_JSF_8/GS_JSF_8.iml" group="JSF" />
+      <module fileurl="file://$PROJECT_DIR$/JSF/GS_JSF_9/GS_JSF_9.iml" filepath="$PROJECT_DIR$/JSF/GS_JSF_9/GS_JSF_9.iml" group="JSF" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC/GS_Spring_001/GS_Spring_001.iml" filepath="$PROJECT_DIR$/SpringMVC/GS_Spring_001/GS_Spring_001.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC/GS_Spring_002/GS_Spring_002.iml" filepath="$PROJECT_DIR$/SpringMVC/GS_Spring_002/GS_Spring_002.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC/GS_Spring_003/GS_Spring_003.iml" filepath="$PROJECT_DIR$/SpringMVC/GS_Spring_003/GS_Spring_003.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC/GS_Spring_006/GS_Spring_006.iml" filepath="$PROJECT_DIR$/SpringMVC/GS_Spring_006/GS_Spring_006.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Security/GS_Spring_Security_001/GS_Spring_Security_001.iml" filepath="$PROJECT_DIR$/Security/GS_Spring_Security_001/GS_Spring_Security_001.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Security/GS_Spring_Security_002/GS_Spring_Security_002.iml" filepath="$PROJECT_DIR$/Security/GS_Spring_Security_002/GS_Spring_Security_002.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Security/GS_Spring_Security_003/GS_Spring_Security_003.iml" filepath="$PROJECT_DIR$/Security/GS_Spring_Security_003/GS_Spring_Security_003.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Security/GS_Spring_Security_004/GS_Spring_Security_004.iml" filepath="$PROJECT_DIR$/Security/GS_Spring_Security_004/GS_Spring_Security_004.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/JQuery/JQueryExampleN01/JQueryExampleN01.iml" filepath="$PROJECT_DIR$/JQuery/JQueryExampleN01/JQueryExampleN01.iml" group="JQuery" />
+      <module fileurl="file://$PROJECT_DIR$/JQuery/JQueryExampleN02/JQueryExampleN02.iml" filepath="$PROJECT_DIR$/JQuery/JQueryExampleN02/JQueryExampleN02.iml" group="JQuery" />
+      <module fileurl="file://$PROJECT_DIR$/JQuery/JQueryExampleN03/JQueryExampleN03.iml" filepath="$PROJECT_DIR$/JQuery/JQueryExampleN03/JQueryExampleN03.iml" group="JQuery" />
+      <module fileurl="file://$PROJECT_DIR$/JQuery/JQueryExampleN04/JQueryExampleN04.iml" filepath="$PROJECT_DIR$/JQuery/JQueryExampleN04/JQueryExampleN04.iml" group="JQuery" />
+      <module fileurl="file://$PROJECT_DIR$/JQuery/JQueryExampleN05/JQueryExampleN05.iml" filepath="$PROJECT_DIR$/JQuery/JQueryExampleN05/JQueryExampleN05.iml" group="JQuery" />
+      <module fileurl="file://$PROJECT_DIR$/JQuery/JQueryExampleN06/JQueryExampleN06.iml" filepath="$PROJECT_DIR$/JQuery/JQueryExampleN06/JQueryExampleN06.iml" group="JQuery" />
+      <module fileurl="file://$PROJECT_DIR$/JQuery/JQueryExampleN07/JQueryExampleN07.iml" filepath="$PROJECT_DIR$/JQuery/JQueryExampleN07/JQueryExampleN07.iml" group="JQuery" />
+      <module fileurl="file://$PROJECT_DIR$/JQuery/JQueryExampleN08/JQueryExampleN08.iml" filepath="$PROJECT_DIR$/JQuery/JQueryExampleN08/JQueryExampleN08.iml" group="JQuery" />
+      <module fileurl="file://$PROJECT_DIR$/JQuery/JQueryExampleN09/JQueryExampleN09.iml" filepath="$PROJECT_DIR$/JQuery/JQueryExampleN09/JQueryExampleN09.iml" group="JQuery" />
+      <module fileurl="file://$PROJECT_DIR$/JQuery/JQueryExampleN10/JQueryExampleN10.iml" filepath="$PROJECT_DIR$/JQuery/JQueryExampleN10/JQueryExampleN10.iml" group="JQuery" />
+      <module fileurl="file://$PROJECT_DIR$/JQuery/JQueryExampleN11/JQueryExampleN11.iml" filepath="$PROJECT_DIR$/JQuery/JQueryExampleN11/JQueryExampleN11.iml" group="JQuery" />
+      <module fileurl="file://$PROJECT_DIR$/Servlet-JSP/MyFirstServlet/MyFirstServlet.iml" filepath="$PROJECT_DIR$/Servlet-JSP/MyFirstServlet/MyFirstServlet.iml" group="Servlet/JSP" />
+      <module fileurl="file://$PROJECT_DIR$/Servlet-JSP/MyFirstServlet_JSP/MyFirstServlet_JSP.iml" filepath="$PROJECT_DIR$/Servlet-JSP/MyFirstServlet_JSP/MyFirstServlet_JSP.iml" group="Servlet/JSP" />
+      <module fileurl="file://$PROJECT_DIR$/WebServices/WEB-REST/RESTExample/RESTExample.iml" filepath="$PROJECT_DIR$/WebServices/WEB-REST/RESTExample/RESTExample.iml" group="REST" />
+      <module fileurl="file://$PROJECT_DIR$/Portlets/SimplePortlet/SimplePortlet.iml" filepath="$PROJECT_DIR$/Portlets/SimplePortlet/SimplePortlet.iml" group="Portlet" />
+      <module fileurl="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService.iml" filepath="$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService.iml" group="WebService" />
+      <module fileurl="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ear/SimpleWebService-ear.iml" filepath="$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ear/SimpleWebService-ear.iml" group="WebService" />
+      <module fileurl="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ejb/SimpleWebService-ejb.iml" filepath="$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ejb/SimpleWebService-ejb.iml" group="WebService" />
+      <module fileurl="file://$PROJECT_DIR$/Struts/Struts2ExampleN01-web/Struts2ExampleN01-web.iml" filepath="$PROJECT_DIR$/Struts/Struts2ExampleN01-web/Struts2ExampleN01-web.iml" group="StrutsII" />
+      <module fileurl="file://$PROJECT_DIR$/Struts/Struts2ExampleN02-web/Struts2ExampleN02-web.iml" filepath="$PROJECT_DIR$/Struts/Struts2ExampleN02-web/Struts2ExampleN02-web.iml" group="StrutsII" />
+      <module fileurl="file://$PROJECT_DIR$/Struts/Struts2ExampleN03-web/Struts2ExampleN03-web.iml" filepath="$PROJECT_DIR$/Struts/Struts2ExampleN03-web/Struts2ExampleN03-web.iml" group="StrutsII" />
+      <module fileurl="file://$PROJECT_DIR$/Vaadin/VaadinExampleN01/VaadinExampleN01.iml" filepath="$PROJECT_DIR$/Vaadin/VaadinExampleN01/VaadinExampleN01.iml" group="Vaadin" />
+      <module fileurl="file://$PROJECT_DIR$/Vaadin/VaadinExampleN02/VaadinExampleN02.iml" filepath="$PROJECT_DIR$/Vaadin/VaadinExampleN02/VaadinExampleN02.iml" group="Vaadin" />
+      <module fileurl="file://$PROJECT_DIR$/Vaadin/VaadinExampleN03/VaadinExampleN03.iml" filepath="$PROJECT_DIR$/Vaadin/VaadinExampleN03/VaadinExampleN03.iml" group="Vaadin" />
+      <module fileurl="file://$PROJECT_DIR$/Vaadin/VaadinExampleN04/VaadinExampleN04.iml" filepath="$PROJECT_DIR$/Vaadin/VaadinExampleN04/VaadinExampleN04.iml" group="Vaadin" />
+      <module fileurl="file://$PROJECT_DIR$/Velocity/GS_Velocity_1/VelocityExample-N01.iml" filepath="$PROJECT_DIR$/Velocity/GS_Velocity_1/VelocityExample-N01.iml" group="Velocity" />
+      <module fileurl="file://$PROJECT_DIR$/Velocity/GS_Velocity_2/VelocityExample-N02.iml" filepath="$PROJECT_DIR$/Velocity/GS_Velocity_2/VelocityExample-N02.iml" group="Velocity" />
+      <module fileurl="file://$PROJECT_DIR$/Velocity/GS_Velocity_3/VelocityExample-N03.iml" filepath="$PROJECT_DIR$/Velocity/GS_Velocity_3/VelocityExample-N03.iml" group="Velocity" />
+      <module fileurl="file://$PROJECT_DIR$/Velocity/GS_Velocity_4/VelocityExample-N04.iml" filepath="$PROJECT_DIR$/Velocity/GS_Velocity_4/VelocityExample-N04.iml" group="Velocity" />
+      <module fileurl="file://$PROJECT_DIR$/WebServices/JAX_WS/WSTest/WSTest.iml" filepath="$PROJECT_DIR$/WebServices/JAX_WS/WSTest/WSTest.iml" group="WebService" />
+      <module fileurl="file://$PROJECT_DIR$/Security/WebSecurity/WebSecurity.iml" filepath="$PROJECT_DIR$/Security/WebSecurity/WebSecurity.iml" group="Security" />
+      <module fileurl="file://$PROJECT_DIR$/Security/WebSecurityExample-N00/WebSecurityExample-N00.iml" filepath="$PROJECT_DIR$/Security/WebSecurityExample-N00/WebSecurityExample-N00.iml" group="Security" />
+      <module fileurl="file://$PROJECT_DIR$/Security/WebSecurityExample-N01/WebSecurityExample-N01.iml" filepath="$PROJECT_DIR$/Security/WebSecurityExample-N01/WebSecurityExample-N01.iml" group="Security" />
+      <module fileurl="file://$PROJECT_DIR$/Security/WebSecurityExample-N02/WebSecurityExample-N02.iml" filepath="$PROJECT_DIR$/Security/WebSecurityExample-N02/WebSecurityExample-N02.iml" group="Security" />
+      <module fileurl="file://$PROJECT_DIR$/Security/WebSecurityExample-N03/WebSecurityExample-N03.iml" filepath="$PROJECT_DIR$/Security/WebSecurityExample-N03/WebSecurityExample-N03.iml" group="Security" />
+      <module fileurl="file://$PROJECT_DIR$/ZK/ZKExample01/ZKExample01.iml" filepath="$PROJECT_DIR$/ZK/ZKExample01/ZKExample01.iml" group="ZK" />
+      <module fileurl="file://$PROJECT_DIR$/ZK/ZKExample02/ZKExample02.iml" filepath="$PROJECT_DIR$/ZK/ZKExample02/ZKExample02.iml" group="ZK" />
+      <module fileurl="file://$PROJECT_DIR$/ZK/ZKExample03/ZKExample03.iml" filepath="$PROJECT_DIR$/ZK/ZKExample03/ZKExample03.iml" group="ZK" />
+      <module fileurl="file://$PROJECT_DIR$/ZK/ZKExample04/ZKExample04.iml" filepath="$PROJECT_DIR$/ZK/ZKExample04/ZKExample04.iml" group="ZK" />
+      <module fileurl="file://$PROJECT_DIR$/ZK/ZKExample05/ZKExample05.iml" filepath="$PROJECT_DIR$/ZK/ZKExample05/ZKExample05.iml" group="ZK" />
+      <module fileurl="file://$PROJECT_DIR$/WebServices/JAX_WS/WebService_1_JAX-WS/webservice-jax-ws.iml" filepath="$PROJECT_DIR$/WebServices/JAX_WS/WebService_1_JAX-WS/webservice-jax-ws.iml" group="WebService" />
+      <module fileurl="file://$PROJECT_DIR$/WebServices/JAX_WS/WebService_0_JAX-WS/webservice-jax-ws-0.iml" filepath="$PROJECT_DIR$/WebServices/JAX_WS/WebService_0_JAX-WS/webservice-jax-ws-0.iml" group="WebService" />
+      <module fileurl="file://$PROJECT_DIR$/WebServices/WEB-REST/WebService_3_REST/webservice-rest.iml" filepath="$PROJECT_DIR$/WebServices/WEB-REST/WebService_3_REST/webservice-rest.iml" group="WebService" />
+      <module fileurl="file://$PROJECT_DIR$/WebServices/WEB-REST/WebService_4_REST/webservice-rest-2.iml" filepath="$PROJECT_DIR$/WebServices/WEB-REST/WebService_4_REST/webservice-rest-2.iml" group="WebService" />
+      <module fileurl="file://$PROJECT_DIR$/WebServices/WEB-REST/WebService_5_REST/webservice-rest-3.iml" filepath="$PROJECT_DIR$/WebServices/WEB-REST/WebService_5_REST/webservice-rest-3.iml" group="WebService" />
+      <module fileurl="file://$PROJECT_DIR$/WebServices/WEB-REST/WebService_6_REST/webservice-rest-4.iml" filepath="$PROJECT_DIR$/WebServices/WEB-REST/WebService_6_REST/webservice-rest-4.iml" group="WebService" />
+    </modules>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="" />
+  </component>
+</project>
+
