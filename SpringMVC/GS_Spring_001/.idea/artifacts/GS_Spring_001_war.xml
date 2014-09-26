@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="GS_Spring_001:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="GS_Spring_001.war">
-      <element id="artifact" artifact-name="GS_Spring_001:war exploded" />
-    </root>
-  </artifact>
-</component>
