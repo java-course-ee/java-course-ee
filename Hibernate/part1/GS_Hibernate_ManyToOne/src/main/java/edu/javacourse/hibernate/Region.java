@@ -26,9 +26,8 @@ public class Region implements Serializable {
     private Long regionId;
     @Column(name = "region_name", nullable = true)
     private String regionName;
-//    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "region")
-//    @OrderBy(value="cityName")
-    
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "region")
+    @OrderBy(value="cityName")
     private List<City> cityList;
 
     public Region() {

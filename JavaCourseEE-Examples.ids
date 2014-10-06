@@ -7,7 +7,4 @@
     <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact"/>
     <schema name="public" catalog="region_db"/>
   </data-source>
-  <data-source source="LOCAL" name="hibernate.cfg.xml" uuid="387ea87a-8fc3-48de-a0d3-cf52a20ca349">
-    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
-  </data-source>
 </component>
