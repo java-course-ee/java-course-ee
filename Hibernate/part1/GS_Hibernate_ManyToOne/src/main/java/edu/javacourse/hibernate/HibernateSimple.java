@@ -2,9 +2,11 @@ package edu.javacourse.hibernate;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.criterion.Restrictions;
 
 /**
  * Простой пример работы со связанными таблицами
@@ -18,14 +20,28 @@ public class HibernateSimple {
 
         Session s = hs.getSessionFactory().getCurrentSession();
         s.beginTransaction();
-        List<Region> regionList = s.createCriteria(Region.class).list();
         
-        for(Region r : regionList) {
-            System.out.println("Region name:" + r);
-            for(City c : r.getCityList()) {
-                System.out.println("     City name:" + c);
-            }
+        Criteria criteria = s.createCriteria(City.class);
+        List<City> cityList = criteria.list();
+        
+        for (City city: cityList) {
+            System.out.println("city id: " + city.getCityId());
+            System.out.println("city name: " + city.getCityName());
+            System.out.println("city region id: " + city.getRegion().getRegionId());
+            System.out.println("city region name: " + city.getRegion().getRegionName());
+            System.out.println("");
         }
+        
+        
+//        List<Region> regionList = s.createQuery("from Region").list();
+        
+//        for(Region r : regionList) {
+//            System.out.println("Region name:" + r);
+//            for(City c : r.getCityList()) {
+//                System.out.println("     City name:" + c);
+//            }
+//        }
+
 
 //        Region spb = new Region("SPb");
 //        s.save(spb);
@@ -39,6 +55,10 @@ public class HibernateSimple {
 //        pushkin.setCityName("Pushkin");
 //        pushkin.setRegion(spb);
 //        s.save(pushkin);
+//
+//        s.save(spb);
+
+
 
         s.getTransaction().commit();
     }

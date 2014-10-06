@@ -10,6 +10,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 /**
  *
@@ -23,11 +25,10 @@ public class City {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "city_id")
     private Integer cityId;
-
-    @Column(name = "city_name", length = 1000)
+    @Column(name = "city_name")
     private String cityName;
-
-    @ManyToOne(cascade = {CascadeType.ALL}, fetch = FetchType.LAZY)
+    @ManyToOne(cascade={CascadeType.MERGE, CascadeType.REFRESH}, fetch= FetchType.LAZY)
+//    @Fetch(FetchMode.SUBSELECT)
     @JoinColumn(name = "region_id")
     private Region region;
 

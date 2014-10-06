@@ -4,6 +4,8 @@ import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistry;
+import org.hibernate.service.ServiceRegistryBuilder;
 
 /**
  * Простой пример для конфигурации в виде XML
@@ -19,19 +21,22 @@ public class HibernateSimple {
         Session s = sessionFactory.getCurrentSession();
         s.beginTransaction();
 
-        List<Region> regionList = s.createCriteria(Region.class).list();
+        List<Region> regionList = s.createQuery("from Region").list();
         for (Region r : regionList) {
             System.out.println(r);
         }
-
+        
         s.getTransaction().commit();
+
     }
 
     private SessionFactory getSessionFactory() {
-//        return new Configuration().configure().buildSessionFactory();
+        
         Configuration configuration = new Configuration();
-        configuration = configuration.configure();
-        SessionFactory sessionFactory = configuration.buildSessionFactory();
+        configuration.configure();
+        SessionFactory sessionFactory = configuration.buildSessionFactory(
+                new ServiceRegistryBuilder().applySettings(configuration.getProperties()).buildServiceRegistry());
         return sessionFactory;
+
     }
 }

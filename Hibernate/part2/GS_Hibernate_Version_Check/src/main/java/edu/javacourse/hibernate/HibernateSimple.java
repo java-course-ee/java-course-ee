@@ -26,15 +26,16 @@ public class HibernateSimple {
         
         // Остановим процесс на 10 секунд (можно запустить SimpleHibernateTwo
         try {
-            Thread.sleep(10000);
+            Thread.sleep(15000);
         } catch(Exception e) {
         }
         
         Region region = regionList.get(0);
-        System.out.println("Region name before:" + region.getRegionName());
+        System.out.println("Region name before:" + region.getRegionName() + ", version: " + region.getVersion());
         region.setRegionName("Saint-Petersburg " + System.currentTimeMillis());
         s.save(region);
-        System.out.println("Region name after:" + region.getRegionName());
+        s.flush();
+        System.out.println("Region name after:" + region.getRegionName() + ", version: " + region.getVersion());
 
         s.getTransaction().commit();
     }

@@ -21,10 +21,11 @@ public class HibernateSimpleTwo {
         List<Region> regionList = s.createQuery("from Region").list();
         
         Region region = regionList.get(0);
-        System.out.println("Region name before:" + region.getRegionName());
+        System.out.println("Region name before:" + region.getRegionName() + ", version: " + region.getVersion());
         region.setRegionName("Saint-Petersburg " + System.currentTimeMillis());
         s.save(region);
-        System.out.println("Region name after:" + region.getRegionName());
+        s.flush();
+        System.out.println("Region name after:" + region.getRegionName() + ", version: " + region.getVersion());
 
         s.getTransaction().commit();
     }

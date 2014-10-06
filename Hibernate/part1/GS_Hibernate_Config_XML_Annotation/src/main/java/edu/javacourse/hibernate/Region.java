@@ -7,18 +7,16 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
 @Entity
-@Table(name = "jc_region", schema = "public")
+@Table(name = "jc_region")
 public class Region implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "region_id")
     private Long regionId;
-
-
-
     @Column(name = "region_name", nullable = true)
     private String regionName;
 

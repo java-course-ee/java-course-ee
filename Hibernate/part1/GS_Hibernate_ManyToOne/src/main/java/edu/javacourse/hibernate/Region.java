@@ -9,6 +9,8 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
 import javax.persistence.OneToMany;
 import javax.persistence.OrderBy;
 import javax.persistence.OrderColumn;
@@ -22,11 +24,11 @@ public class Region implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "region_id")
     private Long regionId;
-
     @Column(name = "region_name", nullable = true)
     private String regionName;
-
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "region")
+//    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "region")
+//    @OrderBy(value="cityName")
+    
     private List<City> cityList;
 
     public Region() {

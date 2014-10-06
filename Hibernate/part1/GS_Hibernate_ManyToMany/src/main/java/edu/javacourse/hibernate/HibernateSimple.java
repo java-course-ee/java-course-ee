@@ -70,6 +70,7 @@ public class HibernateSimple {
         newBook.addAuthor(newAuthor);
         s.save(newAuthor);
         
+       
         s.save(newBook);
     }
     

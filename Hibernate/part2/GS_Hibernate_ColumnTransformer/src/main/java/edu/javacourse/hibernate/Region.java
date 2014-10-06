@@ -18,7 +18,7 @@ public class Region implements Serializable {
     @Column(name = "region_id")
     private Long regionId;
     @Column(name = "region_name", nullable = true)
-    @ColumnTransformer(read="concat('Region=', region_name)")
+    @ColumnTransformer(read="concat('Region=', region_name)", write="")
     private String regionName;
 
     public Region() {
