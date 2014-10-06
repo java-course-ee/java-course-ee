@@ -1,0 +1,70 @@
+INFO  2014-10-02 20:15:52,647 [Version] - Hibernate Commons Annotations 3.2.0.Final
+INFO  2014-10-02 20:15:52,678 [Environment] - Hibernate 3.6.9.Final
+INFO  2014-10-02 20:15:52,678 [Environment] - hibernate.properties not found
+INFO  2014-10-02 20:15:52,678 [Environment] - Bytecode provider name : javassist
+INFO  2014-10-02 20:15:52,694 [Environment] - using JDK 1.4 java.sql.Timestamp handling
+INFO  2014-10-02 20:15:52,866 [Configuration] - configuring from resource: /hibernate.cfg.xml
+INFO  2014-10-02 20:15:52,866 [Configuration] - Configuration resource: /hibernate.cfg.xml
+WARN  2014-10-02 20:15:52,975 [DTDEntityResolver] - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+INFO  2014-10-02 20:15:53,100 [Configuration] - Configured SessionFactory: null
+INFO  2014-10-02 20:15:53,303 [AnnotationBinder] - Binding entity from annotated class: edu.javacourse.hibernate.Region
+INFO  2014-10-02 20:15:53,475 [EntityBinder] - Bind entity edu.javacourse.hibernate.Region on table jc_region
+INFO  2014-10-02 20:15:53,710 [Configuration] - Hibernate Validator not found: ignoring
+INFO  2014-10-02 20:15:53,741 [HibernateSearchEventListenerRegister] - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+INFO  2014-10-02 20:15:53,757 [DriverManagerConnectionProvider] - Using Hibernate built-in connection pool (not for production use!)
+INFO  2014-10-02 20:15:53,757 [DriverManagerConnectionProvider] - Hibernate connection pool size: 2
+INFO  2014-10-02 20:15:53,757 [DriverManagerConnectionProvider] - autocommit mode: false
+INFO  2014-10-02 20:15:53,803 [DriverManagerConnectionProvider] - using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/region_db
+INFO  2014-10-02 20:15:53,803 [DriverManagerConnectionProvider] - connection properties: {user=postgres, password=****}
+INFO  2014-10-02 20:15:54,022 [Dialect] - Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  2014-10-02 20:15:54,053 [JdbcSupportLoader] - Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  2014-10-02 20:15:54,069 [SettingsFactory] - Database ->
+       name : PostgreSQL
+    version : 9.3.4
+      major : 9
+      minor : 3
+INFO  2014-10-02 20:15:54,069 [SettingsFactory] - Driver ->
+       name : PostgreSQL Native Driver
+    version : PostgreSQL 9.3 JDBC4.1 (build 1100)
+      major : 9
+      minor : 3
+INFO  2014-10-02 20:15:54,069 [TransactionFactoryFactory] - Using default transaction strategy (direct JDBC transactions)
+INFO  2014-10-02 20:15:54,069 [TransactionManagerLookupFactory] - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO  2014-10-02 20:15:54,069 [SettingsFactory] - Automatic flush during beforeCompletion(): disabled
+INFO  2014-10-02 20:15:54,069 [SettingsFactory] - Automatic session close at end of transaction: disabled
+INFO  2014-10-02 20:15:54,069 [SettingsFactory] - JDBC batch size: 15
+INFO  2014-10-02 20:15:54,069 [SettingsFactory] - JDBC batch updates for versioned data: disabled
+INFO  2014-10-02 20:15:54,069 [SettingsFactory] - Scrollable result sets: enabled
+INFO  2014-10-02 20:15:54,069 [SettingsFactory] - JDBC3 getGeneratedKeys(): enabled
+INFO  2014-10-02 20:15:54,069 [SettingsFactory] - Connection release mode: auto
+INFO  2014-10-02 20:15:54,069 [SettingsFactory] - Default batch fetch size: 1
+INFO  2014-10-02 20:15:54,069 [SettingsFactory] - Generate SQL with comments: disabled
+INFO  2014-10-02 20:15:54,069 [SettingsFactory] - Order SQL updates by primary key: disabled
+INFO  2014-10-02 20:15:54,069 [SettingsFactory] - Order SQL inserts for batching: disabled
+INFO  2014-10-02 20:15:54,069 [SettingsFactory] - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO  2014-10-02 20:15:54,085 [ASTQueryTranslatorFactory] - Using ASTQueryTranslatorFactory
+INFO  2014-10-02 20:15:54,085 [SettingsFactory] - Query language substitutions: {}
+INFO  2014-10-02 20:15:54,085 [SettingsFactory] - JPA-QL strict compliance: disabled
+INFO  2014-10-02 20:15:54,085 [SettingsFactory] - Second-level cache: enabled
+INFO  2014-10-02 20:15:54,085 [SettingsFactory] - Query cache: disabled
+INFO  2014-10-02 20:15:54,085 [SettingsFactory] - Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+INFO  2014-10-02 20:15:54,085 [RegionFactoryCacheProviderBridge] - Cache provider: org.hibernate.cache.NoCacheProvider
+INFO  2014-10-02 20:15:54,085 [SettingsFactory] - Optimize cache for minimal puts: disabled
+INFO  2014-10-02 20:15:54,085 [SettingsFactory] - Structured second-level cache entries: disabled
+INFO  2014-10-02 20:15:54,100 [SettingsFactory] - Echoing all SQL to stdout
+INFO  2014-10-02 20:15:54,100 [SettingsFactory] - Statistics: disabled
+INFO  2014-10-02 20:15:54,100 [SettingsFactory] - Deleted entity synthetic identifier rollback: disabled
+INFO  2014-10-02 20:15:54,100 [SettingsFactory] - Default entity-mode: pojo
+INFO  2014-10-02 20:15:54,100 [SettingsFactory] - Named query checking : enabled
+INFO  2014-10-02 20:15:54,100 [SettingsFactory] - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+INFO  2014-10-02 20:15:54,147 [SessionFactoryImpl] - building session factory
+INFO  2014-10-02 20:15:54,178 [BasicTypeRegistry] - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@3384c0
+INFO  2014-10-02 20:15:54,710 [SessionFactoryObjectFactory] - Not binding factory to JNDI, no JNDI name configured
+INFO  2014-10-02 20:15:54,725 [SchemaUpdate] - Running hbm2ddl schema update
+INFO  2014-10-02 20:15:54,725 [SchemaUpdate] - fetching database metadata
+INFO  2014-10-02 20:15:54,772 [SchemaUpdate] - updating schema
+INFO  2014-10-02 20:15:54,882 [TableMetadata] - table found: public.jc_region
+INFO  2014-10-02 20:15:54,882 [TableMetadata] - columns: [region_name, region_id]
+INFO  2014-10-02 20:15:54,882 [TableMetadata] - foreign keys: []
+INFO  2014-10-02 20:15:54,882 [TableMetadata] - indexes: [jc_region_pkey]
+INFO  2014-10-02 20:15:54,882 [SchemaUpdate] - schema update complete

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration>
+
+    <appender name="fileLog" class="org.apache.log4j.ConsoleAppender">
+        <param name="target" value="System.out" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <!-- see API PatternLayout -->
+            <param name="ConversionPattern" value="%-5p %d{ISO8601} [%C{1}] - %m%n" />
+        </layout>
+    </appender>
+
+    <category name="edu.javacourse.hibernate">
+        <priority value="trace" />
+        <!-- all, trace, debug, info, warn, error, fatal, off -->
+        <appender-ref ref="fileLog" />
+    </category>
+
+    <category name="org.hibernate">
+        <priority value="info" />
+        <!-- all, trace, debug, info, warn, error, fatal, off -->
+        <appender-ref ref="fileLog" />
+    </category>
+
+</log4j:configuration>

@@ -1166,6 +1166,37 @@
         <module name="GS_Spring_Security_002" />
         <module name="GS_Spring_Security_003" />
         <module name="GS_Spring_Security_004" />
+        <module name="hibernate-batch" />
+        <module name="hibernate-cache" />
+        <module name="hibernate-column-transformer" />
+        <module name="hibernate-config-annotations" />
+        <module name="hibernate-config-property" />
+        <module name="hibernate-config-xml" />
+        <module name="hibernate-criteria" />
+        <module name="hibernate-crud" />
+        <module name="hibernate-custom-sql" />
+        <module name="hibernate-embedded" />
+        <module name="hibernate-filter-formula" />
+        <module name="hibernate-hbm2ddl" />
+        <module name="hibernate-hql-1" />
+        <module name="hibernate-inheritance-joined-table" />
+        <module name="hibernate-inheritance-per-class-table" />
+        <module name="hibernate-inheritance-single-table" />
+        <module name="hibernate-inteeceptor" />
+        <module name="hibernate-iterator" />
+        <module name="hibernate-lazy" />
+        <module name="hibernate-many-to-many" />
+        <module name="hibernate-many-to-one" />
+        <module name="hibernate-no-entity" />
+        <module name="hibernate-one-to-one" />
+        <module name="hibernate-parent" />
+        <module name="hibernate-prog-annotations" />
+        <module name="hibernate-prog-xml" />
+        <module name="hibernate-sql" />
+        <module name="hibernate-thread" />
+        <module name="hibernate-transient" />
+        <module name="hibernate-version" />
+        <module name="hibernate-version-check" />
         <module name="JQueryExampleN01" />
         <module name="JQueryExampleN02" />
         <module name="JQueryExampleN03" />
@@ -1263,6 +1294,19 @@
       <module name="ZKExample04" target="1.6" />
       <module name="ZKExample05" target="1.7" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="DataSourceManagerImpl" format="xml" hash="375072514">
+    <data-source source="LOCAL" name="PostgreSQL - region_db@localhost" uuid="8b037192-4e15-44b1-90e2-b71c297e1007">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/region_db</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfdadfc5dfd9dfdedfcddfd8dfcfdfd9</user-password>
+      <schema-pattern>region_db.public</schema-pattern>
+      <default-schemas>region_db.pg_catalog region_db.public</default-schemas>
+      <libraries />
+    </data-source>
   </component>
   <component name="DependencyValidationManager">
     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
@@ -1467,6 +1511,37 @@
         <option value="$PROJECT_DIR$/WebServices/WEB-REST/WebService_5_REST/pom.xml" />
         <option value="$PROJECT_DIR$/WebServices/WEB-REST/WebService_6_REST/pom.xml" />
         <option value="$PROJECT_DIR$/Logging/log4j/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_HQL1/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_Lazy/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate__SQL/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate__CRUD/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_HBM2DDL/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_Criteria/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_OneToOne/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_CustomSQL/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_ManyToOne/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_Transient/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_Config_XML/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_ManyToMany/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_ConfigProg_XML/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_Config_Property/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_ConfigProg_Annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_Config_XML_Annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Batch/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Parent/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Thread/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Version/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Embedded/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_NoEntity/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Interceptor/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_SecondCache/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_FilterFormula/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Version_Check/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_ColumnTransformer/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Iterator_Multitable/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Inherite_joined_table/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Inherite_single_table/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Inherite_per_class_table/pom.xml" />
       </list>
     </option>
   </component>
@@ -1661,6 +1736,37 @@
       <module fileurl="file://$PROJECT_DIR$/ZK/ZKExample03/ZKExample03.iml" filepath="$PROJECT_DIR$/ZK/ZKExample03/ZKExample03.iml" group="ZK" />
       <module fileurl="file://$PROJECT_DIR$/ZK/ZKExample04/ZKExample04.iml" filepath="$PROJECT_DIR$/ZK/ZKExample04/ZKExample04.iml" group="ZK" />
       <module fileurl="file://$PROJECT_DIR$/ZK/ZKExample05/ZKExample05.iml" filepath="$PROJECT_DIR$/ZK/ZKExample05/ZKExample05.iml" group="ZK" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Batch/hibernate-batch.iml" filepath="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Batch/hibernate-batch.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_SecondCache/hibernate-cache.iml" filepath="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_SecondCache/hibernate-cache.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_ColumnTransformer/hibernate-column-transformer.iml" filepath="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_ColumnTransformer/hibernate-column-transformer.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_Config_XML_Annotation/hibernate-config-annotations.iml" filepath="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_Config_XML_Annotation/hibernate-config-annotations.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_Config_Property/hibernate-config-property.iml" filepath="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_Config_Property/hibernate-config-property.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_Config_XML/hibernate-config-xml.iml" filepath="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_Config_XML/hibernate-config-xml.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_Criteria/hibernate-criteria.iml" filepath="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_Criteria/hibernate-criteria.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/GS_Hibernate__CRUD/hibernate-crud.iml" filepath="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate__CRUD/hibernate-crud.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_CustomSQL/hibernate-custom-sql.iml" filepath="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_CustomSQL/hibernate-custom-sql.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Embedded/hibernate-embedded.iml" filepath="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Embedded/hibernate-embedded.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_FilterFormula/hibernate-filter-formula.iml" filepath="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_FilterFormula/hibernate-filter-formula.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_HBM2DDL/hibernate-hbm2ddl.iml" filepath="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_HBM2DDL/hibernate-hbm2ddl.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_HQL1/hibernate-hql-1.iml" filepath="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_HQL1/hibernate-hql-1.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Inherite_joined_table/hibernate-inheritance-joined-table.iml" filepath="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Inherite_joined_table/hibernate-inheritance-joined-table.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Inherite_per_class_table/hibernate-inheritance-per-class-table.iml" filepath="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Inherite_per_class_table/hibernate-inheritance-per-class-table.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Inherite_single_table/hibernate-inheritance-single-table.iml" filepath="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Inherite_single_table/hibernate-inheritance-single-table.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Interceptor/hibernate-inteeceptor.iml" filepath="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Interceptor/hibernate-inteeceptor.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Iterator_Multitable/hibernate-iterator.iml" filepath="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Iterator_Multitable/hibernate-iterator.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_Lazy/hibernate-lazy.iml" filepath="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_Lazy/hibernate-lazy.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_ManyToMany/hibernate-many-to-many.iml" filepath="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_ManyToMany/hibernate-many-to-many.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_ManyToOne/hibernate-many-to-one.iml" filepath="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_ManyToOne/hibernate-many-to-one.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_NoEntity/hibernate-no-entity.iml" filepath="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_NoEntity/hibernate-no-entity.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_OneToOne/hibernate-one-to-one.iml" filepath="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_OneToOne/hibernate-one-to-one.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Parent/hibernate-parent.iml" filepath="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Parent/hibernate-parent.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_ConfigProg_Annotation/hibernate-prog-annotations.iml" filepath="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_ConfigProg_Annotation/hibernate-prog-annotations.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_ConfigProg_XML/hibernate-prog-xml.iml" filepath="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_ConfigProg_XML/hibernate-prog-xml.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/GS_Hibernate__SQL/hibernate-sql.iml" filepath="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate__SQL/hibernate-sql.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Thread/hibernate-thread.iml" filepath="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Thread/hibernate-thread.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_Transient/hibernate-transient.iml" filepath="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_Transient/hibernate-transient.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Version/hibernate-version.iml" filepath="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Version/hibernate-version.iml" group="Hibernate" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Version_Check/hibernate-version-check.iml" filepath="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Version_Check/hibernate-version-check.iml" group="Hibernate" />
       <module fileurl="file://$PROJECT_DIR$/Logging/log4j/log4j.iml" filepath="$PROJECT_DIR$/Logging/log4j/log4j.iml" group="Logging" />
       <module fileurl="file://$PROJECT_DIR$/WebServices/JAX_WS/WebService_1_JAX-WS/webservice-jax-ws.iml" filepath="$PROJECT_DIR$/WebServices/JAX_WS/WebService_1_JAX-WS/webservice-jax-ws.iml" group="WebService" />
       <module fileurl="file://$PROJECT_DIR$/WebServices/JAX_WS/WebService_0_JAX-WS/webservice-jax-ws-0.iml" filepath="$PROJECT_DIR$/WebServices/JAX_WS/WebService_0_JAX-WS/webservice-jax-ws-0.iml" group="WebService" />
@@ -1670,13 +1776,112 @@
       <module fileurl="file://$PROJECT_DIR$/WebServices/WEB-REST/WebService_6_REST/webservice-rest-4.iml" filepath="$PROJECT_DIR$/WebServices/WEB-REST/WebService_6_REST/webservice-rest-4.iml" group="WebService" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="Oracle 1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="" />
   </component>
   <component name="libraryTable">
+    <library name="Maven: antlr:antlr:2.7.6">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/antlr/antlr/2.7.6/antlr-2.7.6.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/antlr/antlr/2.7.6/antlr-2.7.6-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/antlr/antlr/2.7.6/antlr-2.7.6-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: backport-util-concurrent:backport-util-concurrent:3.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: c3p0:c3p0:0.9.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/c3p0/c3p0/0.9.1/c3p0-0.9.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/c3p0/c3p0/0.9.1/c3p0-0.9.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/c3p0/c3p0/0.9.1/c3p0-0.9.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-collections:commons-collections:3.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-collections/commons-collections/3.1/commons-collections-3.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-collections/commons-collections/3.1/commons-collections-3.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-collections/commons-collections/3.1/commons-collections-3.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-logging:commons-logging:1.0.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: dom4j:dom4j:1.6.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1/dom4j-1.6.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1/dom4j-1.6.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: javassist:javassist:3.12.1.GA">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/javassist/javassist/3.12.1.GA/javassist-3.12.1.GA.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/javassist/javassist/3.12.1.GA/javassist-3.12.1.GA-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/javassist/javassist/3.12.1.GA/javassist-3.12.1.GA-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: javax.persistence:persistence-api:1.0.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/persistence/persistence-api/1.0.2/persistence-api-1.0.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/persistence/persistence-api/1.0.2/persistence-api-1.0.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/persistence/persistence-api/1.0.2/persistence-api-1.0.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: javax.transaction:jta:1.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/transaction/jta/1.1/jta-1.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/transaction/jta/1.1/jta-1.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/transaction/jta/1.1/jta-1.1-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: log4j:log4j:1.2.17">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/" />
@@ -1686,6 +1891,226 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: mysql:mysql-connector-java:5.1.18">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.18/mysql-connector-java-5.1.18.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.18/mysql-connector-java-5.1.18-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.18/mysql-connector-java-5.1.18-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: net.sf.ehcache:ehcache:1.5.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/ehcache/ehcache/1.5.0/ehcache-1.5.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/ehcache/ehcache/1.5.0/ehcache-1.5.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/ehcache/ehcache/1.5.0/ehcache-1.5.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: net.sf.jsr107cache:jsr107cache:1.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/jsr107cache/jsr107cache/1.0/jsr107cache-1.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/jsr107cache/jsr107cache/1.0/jsr107cache-1.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/jsr107cache/jsr107cache/1.0/jsr107cache-1.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.0.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.0.Final/hibernate-jpa-2.0-api-1.0.0.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.0.Final/hibernate-jpa-2.0-api-1.0.0.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.0.Final/hibernate-jpa-2.0-api-1.0.0.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hibernate:hibernate-annotations:3.5.6-Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-annotations/3.5.6-Final/hibernate-annotations-3.5.6-Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-annotations/3.5.6-Final/hibernate-annotations-3.5.6-Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-annotations/3.5.6-Final/hibernate-annotations-3.5.6-Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hibernate:hibernate-c3p0:3.6.9.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-c3p0/3.6.9.Final/hibernate-c3p0-3.6.9.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-c3p0/3.6.9.Final/hibernate-c3p0-3.6.9.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-c3p0/3.6.9.Final/hibernate-c3p0-3.6.9.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hibernate:hibernate-commons-annotations:3.2.0.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-commons-annotations/3.2.0.Final/hibernate-commons-annotations-3.2.0.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-commons-annotations/3.2.0.Final/hibernate-commons-annotations-3.2.0.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-commons-annotations/3.2.0.Final/hibernate-commons-annotations-3.2.0.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hibernate:hibernate-core:3.5.0-Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/3.5.0-Final/hibernate-core-3.5.0-Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/3.5.0-Final/hibernate-core-3.5.0-Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/3.5.0-Final/hibernate-core-3.5.0-Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hibernate:hibernate-core:3.5.5-Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/3.5.5-Final/hibernate-core-3.5.5-Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/3.5.5-Final/hibernate-core-3.5.5-Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/3.5.5-Final/hibernate-core-3.5.5-Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hibernate:hibernate-core:3.6.9.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/3.6.9.Final/hibernate-core-3.6.9.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/3.6.9.Final/hibernate-core-3.6.9.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/3.6.9.Final/hibernate-core-3.6.9.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hibernate:hibernate-ehcache:3.6.2.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-ehcache/3.6.2.Final/hibernate-ehcache-3.6.2.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-ehcache/3.6.2.Final/hibernate-ehcache-3.6.2.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-ehcache/3.6.2.Final/hibernate-ehcache-3.6.2.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.postgresql:postgresql:9.3-1100-jdbc41">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/9.3-1100-jdbc41/postgresql-9.3-1100-jdbc41.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/9.3-1100-jdbc41/postgresql-9.3-1100-jdbc41-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/9.3-1100-jdbc41/postgresql-9.3-1100-jdbc41-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.slf4j:slf4j-api:1.5.8">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.5.8/slf4j-api-1.5.8.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.5.8/slf4j-api-1.5.8-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.5.8/slf4j-api-1.5.8-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.slf4j:slf4j-api:1.6.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.slf4j:slf4j-api:1.7.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.slf4j:slf4j-api:1.7.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.slf4j:slf4j-log4j12:1.7.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.slf4j:slf4j-log4j12:1.7.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.7.7/slf4j-log4j12-1.7.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.7.7/slf4j-log4j12-1.7.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.7.7/slf4j-log4j12-1.7.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: xml-apis:xml-apis:1.0.b2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2-sources.jar!/" />
       </SOURCES>
     </library>
   </component>

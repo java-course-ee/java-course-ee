@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="edu.javacourse.hibernate.City" table="jc_city">
+        <id name="cityId" column="city_id">
+            <generator class="identity"/>
+        </id>
+
+        <property name="cityName" type="string">
+            <column name="city_name" length="10" not-null="true" unique="true" />
+        </property>
+
+        <many-to-one name="region" class="edu.javacourse.hibernate.Region" fetch="select">
+            <column name="region_id"/>
+        </many-to-one>
+
+    </class>
+
+</hibernate-mapping>

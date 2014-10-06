@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/GS_Hibernate_JNDI">
+
+    <Resource
+      name="jdbc/regionDS"
+      type="javax.sql.DataSource"
+      username="root"
+      password="root"
+      driverClassName="com.mysql.jdbc.Driver"
+      maxIdle="2"
+      maxWait="5000"
+      validationQuery="SELECT 1"
+      url="jdbc:mysql://127.0.0.1:3306/java_backend"
+      maxActive="4"/>
+    
+</Context>
