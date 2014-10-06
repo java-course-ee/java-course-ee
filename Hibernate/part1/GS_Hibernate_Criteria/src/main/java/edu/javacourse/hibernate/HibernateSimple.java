@@ -1,6 +1,7 @@
 package edu.javacourse.hibernate;
 
 import java.util.List;
+
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -18,18 +19,18 @@ public class HibernateSimple {
         s.beginTransaction();
 
         Criteria criteria1 = s.createCriteria(Region.class)
-                .add( Restrictions.or(
-                    Restrictions.like("regionName", "Region=region%"),
-                    Restrictions.or(
-                        Restrictions.like("regionName", "Region=A%"),
-                        Restrictions.like("regionName", "Region=M%")
-                    )))
-                .addOrder( Order.asc("regionName"));
-        
+                .add(Restrictions.or(
+                        Restrictions.like("regionName", "Region=region%"),
+                        Restrictions.or(
+                                Restrictions.like("regionName", "Region=A%"),
+                                Restrictions.like("regionName", "Region=M%")
+                        )))
+                .addOrder(Order.asc("regionName"));
+
         criteria1.setMaxResults(50);
         List<Region> regions = criteria1.list();
-        
-        for(Region r : regions) {
+
+        for (Region r : regions) {
             System.out.println(r);
         }
 
@@ -62,10 +63,6 @@ public class HibernateSimple {
         for (Catalog catalog : catalogs3) {
             System.out.println(catalog);
         }
-
-
-
-
 
 
         s.getTransaction().commit();

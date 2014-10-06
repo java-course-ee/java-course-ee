@@ -3,21 +3,26 @@ package edu.javacourse.hibernate;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
-import javax.persistence.OrderBy;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
-@Table(name = "jc_book")
+@Table(name = "jc_book",
+        uniqueConstraints = {
+                @UniqueConstraint(
+                        name = "my_uc_1",
+                        columnNames = {
+                                "book_id",
+                                "author_id"
+                        }
+                ),
+                @UniqueConstraint(
+                        name = "my_uc_2",
+                        columnNames = {
+                                "book_id",
+                                "author_id"
+                        }
+                )
+        })
 public class Book implements Serializable {
 
     @Id
@@ -31,7 +36,6 @@ public class Book implements Serializable {
     @JoinTable(name = "jc_book_author",
         joinColumns = @JoinColumn(name = "book_id"),
         inverseJoinColumns = @JoinColumn(name = "author_id"))
-    @OrderBy(value="authorName")
     private Set<Author> authorList;
 
     public Set<Author> getAuthorList() {

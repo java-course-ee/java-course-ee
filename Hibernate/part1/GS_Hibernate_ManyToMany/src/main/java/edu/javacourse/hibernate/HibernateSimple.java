@@ -21,7 +21,7 @@ public class HibernateSimple {
         Session s = hs.getSessionFactory().getCurrentSession();
         s.beginTransaction();
         
-        List<Book> bookList = s.createQuery("from Book").list();
+        List<Book> bookList = s.createCriteria(Book.class).list();
         for(Book book: bookList) {
             System.out.println();
             System.out.println(book);
@@ -41,7 +41,7 @@ public class HibernateSimple {
         s = hs.getSessionFactory().getCurrentSession();
         s.beginTransaction();
         
-        bookList = s.createQuery("from Book").list();
+        bookList = s.createCriteria(Book.class).list();
         for(Book book: bookList) {
             System.out.println();
             System.out.println(book);

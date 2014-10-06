@@ -22,5 +22,10 @@
         <!-- all, trace, debug, info, warn, error, fatal, off -->
         <appender-ref ref="fileLog" />
     </category>
+    <category name="org.jboss.logging">
+        <priority value="info" />
+        <!-- all, trace, debug, info, warn, error, fatal, off -->
+        <appender-ref ref="fileLog" />
+    </category>
 
 </log4j:configuration>

@@ -5,8 +5,11 @@ import java.util.List;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.criterion.Restrictions;
+import org.hibernate.service.ServiceRegistry;
+import org.hibernate.service.internal.SessionFactoryServiceRegistryFactoryImpl;
 
 /**
  * Простой пример работы со связанными таблицами
@@ -64,6 +67,7 @@ public class HibernateSimple {
     }
 
     private SessionFactory getSessionFactory() {
-        return new Configuration().configure().buildSessionFactory();
+        Configuration cfg = new Configuration();
+        return cfg.buildSessionFactory(new StandardServiceRegistryBuilder().build());
     }
 }

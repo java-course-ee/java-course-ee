@@ -28,11 +28,11 @@ public class Author implements Serializable {
     @Column(name = "author_name")
     private String authorName;
     
-    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.LAZY)
-    @JoinTable(name = "jc_book_author",
-        joinColumns = @JoinColumn(name = "author_id"),
-        inverseJoinColumns = @JoinColumn(name = "book_id"))
-    @OrderBy(value="bookName")
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.LAZY, mappedBy = "authorList")
+//    @JoinTable(name = "jc_book_author",
+//        joinColumns = @JoinColumn(name = "author_id"),
+//        inverseJoinColumns = @JoinColumn(name = "book_id"))
+//    @OrderBy(value="bookName")
     //@Transient
     private Set<Book> bookList;
 

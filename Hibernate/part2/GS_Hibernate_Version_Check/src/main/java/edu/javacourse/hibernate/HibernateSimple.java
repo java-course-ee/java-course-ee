@@ -26,7 +26,7 @@ public class HibernateSimple {
         
         // Остановим процесс на 10 секунд (можно запустить SimpleHibernateTwo
         try {
-            Thread.sleep(15000);
+            Thread.sleep(20000);
         } catch(Exception e) {
         }
         

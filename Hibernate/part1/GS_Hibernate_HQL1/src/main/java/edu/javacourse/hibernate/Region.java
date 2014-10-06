@@ -1,5 +1,8 @@
 package edu.javacourse.hibernate;
 
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+
 import java.io.Serializable;
 import java.util.List;
 import javax.persistence.CascadeType;
@@ -16,6 +19,11 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "jc_region")
+@NamedQueries(
+        {
+                @NamedQuery(name = "Region.MyQueryName", query = "from Region")
+        }
+)
 public class Region implements Serializable {
 
     @Id

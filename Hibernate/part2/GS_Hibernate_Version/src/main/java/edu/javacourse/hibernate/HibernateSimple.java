@@ -20,17 +20,17 @@ public class HibernateSimple {
         
         List<Region> regionList = s.createQuery("from Region").list();
         for (Region r : regionList) {
-            System.out.println("Region name:" + r.getRegionName() + " " + r.getVersion());
+            System.out.println("Region name:" + r.getRegionId() + ", " + r.getRegionName() + " " + r.getVersion());
             r.setRegionName(r.getRegionName() + " new");
         }
-        
+        System.out.println("=================");
         Region region = new Region();
         region.setRegionName("Saint-Petersburg");
         s.save(region);
-
+        System.out.println("=================");
         regionList = s.createQuery("from Region").list();
         for (Region r : regionList) {
-            System.out.println("Region name:" + r.getRegionName() + " " + r.getVersion());
+            System.out.println("Region name:" + r.getRegionId() + ", " + r.getRegionName() + " " + r.getVersion());
         }
         s.getTransaction().commit();
     }

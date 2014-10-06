@@ -7,6 +7,8 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+import javax.persistence.NamedQuery;
+
 /**
  * @author Georgy Gobozov
  */
@@ -72,8 +74,12 @@ public class HibernateSimple {
     // select cities by region name
     private static void test4(Session s){
 
-        Query q = s.createQuery("from City c where c.region.regionName=:name");
-        q.setParameter("name", "Moscow");
+//        Query namedQuery = s.getNamedQuery("Region.MyQueryName");
+
+
+
+        Query q = s.createQuery("from City c where c.region.regionName=:n");
+        q.setParameter("n", "Moscow");
 
         List<City> cityList = q.list();
         for (City c : cityList) {
