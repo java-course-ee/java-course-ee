@@ -1754,9 +1754,9 @@
     <data-source source="LOCAL" name="hibernate.cfg.xml" uuid="59034099-a66f-4a97-8095-addbdfbb2aeb">
       <driver-ref>mysql</driver-ref>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/region_db</jdbc-url>
-      <user-name>postgres</user-name>
-      <user-password>dfdadfc5dfd9dfdedfcddfd8dfcfdfd9</user-password>
+      <jdbc-url>jdbc:mysql://127.0.0.1:3306/java_backend</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>dfd8dfc5dfc5dfde</user-password>
       <libraries>
         <library>
           <url>file://C:\src\.m2\repository\mysql\mysql-connector-java\5.1.18\mysql-connector-java-5.1.18.jar</url>
