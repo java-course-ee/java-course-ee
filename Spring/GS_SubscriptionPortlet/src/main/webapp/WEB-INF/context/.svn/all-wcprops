@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/hmao_portal/!svn/ver/853/trunk/external/GS_SubscriptionPortlet/src/main/webapp/WEB-INF/context
+END
+mail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/hmao_portal/!svn/ver/217/trunk/external/GS_SubscriptionPortlet/src/main/webapp/WEB-INF/context/mail.xml
+END
+scheduler.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/hmao_portal/!svn/ver/853/trunk/external/GS_SubscriptionPortlet/src/main/webapp/WEB-INF/context/scheduler.xml
+END
+subscription.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/hmao_portal/!svn/ver/217/trunk/external/GS_SubscriptionPortlet/src/main/webapp/WEB-INF/context/subscription.xml
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/hmao_portal/!svn/ver/545/trunk/external/GS_SubscriptionPortlet/src/main/webapp/WEB-INF/context/applicationContext.xml
+END
+database-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/hmao_portal/!svn/ver/545/trunk/external/GS_SubscriptionPortlet/src/main/webapp/WEB-INF/context/database-config.xml
+END

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="spring-lookup:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="spring-lookup.war">
+      <element id="artifact" artifact-name="spring-lookup:war exploded" />
+    </root>
+  </artifact>
+</component>

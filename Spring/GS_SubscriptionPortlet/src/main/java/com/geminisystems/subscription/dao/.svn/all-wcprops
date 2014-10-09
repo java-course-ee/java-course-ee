@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/hmao_portal/!svn/ver/545/trunk/external/GS_SubscriptionPortlet/src/main/java/com/geminisystems/subscription/dao
+END
+MediaContentDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/hmao_portal/!svn/ver/545/trunk/external/GS_SubscriptionPortlet/src/main/java/com/geminisystems/subscription/dao/MediaContentDao.java
+END
+MediaContentDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/hmao_portal/!svn/ver/545/trunk/external/GS_SubscriptionPortlet/src/main/java/com/geminisystems/subscription/dao/MediaContentDaoImpl.java
+END
+SubscriptionDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/hmao_portal/!svn/ver/545/trunk/external/GS_SubscriptionPortlet/src/main/java/com/geminisystems/subscription/dao/SubscriptionDao.java
+END
+SubscriptionDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/hmao_portal/!svn/ver/545/trunk/external/GS_SubscriptionPortlet/src/main/java/com/geminisystems/subscription/dao/SubscriptionDaoImpl.java
+END
+CategoryDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/hmao_portal/!svn/ver/545/trunk/external/GS_SubscriptionPortlet/src/main/java/com/geminisystems/subscription/dao/CategoryDao.java
+END
+CategoryDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/hmao_portal/!svn/ver/545/trunk/external/GS_SubscriptionPortlet/src/main/java/com/geminisystems/subscription/dao/CategoryDaoImpl.java
+END

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:jee="http://www.springframework.org/schema/jee" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.0.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
+
+
+    <context:component-scan base-package="com.geminisystems.subscription.dao"/>
+    <context:annotation-config/>
+    <jee:jndi-lookup jndi-name="jdbc/HMAOSUBSCR" id="dataSource"/>
+
+
+    <bean name="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <tx:annotation-driven transaction-manager="txManager"/>
+
+
+    <bean id="txManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="packagesToScan" value="com.geminisystems.subscription.domain"/>
+        <property name="hibernateProperties">
+            <value>
+                hibernate.default_schema=SUBSCR
+                hibernate.dialect=org.hibernate.dialect.DB2Dialect
+                hibernate.show_sql=false
+                <!--hibernate.hbm2ddl.auto=create-->
+            </value>
+        </property>
+    </bean>
+
+
+    <bean id="subscriptionDao" class="com.geminisystems.subscription.dao.SubscriptionDaoImpl"/>
+    <bean id="categoryDao" class="com.geminisystems.subscription.dao.CategoryDaoImpl"/>
+    <bean id="mediaContentDao" class="com.geminisystems.subscription.dao.MediaContentDaoImpl"/>
+
+
+</beans>

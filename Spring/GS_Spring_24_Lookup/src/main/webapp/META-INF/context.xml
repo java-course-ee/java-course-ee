@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context path="/spring-lookup" docBase="myApp"
+         crossContext="true" reloadable="true" debug="1">
+
+
+    <Resource name="jdbc/java_backend" auth="Container" type="javax.sql.DataSource"
+              maxActive="50" maxIdle="30" maxWait="10000"
+              username="root" password="root"
+              driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/java_backend"/>
+
+</Context>

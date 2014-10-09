@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="servletContextProvider" class="com.geminisystems.subscription.service.ServletContextProvider"/>
+
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basename" value="messages"/>
+    </bean>
+
+    
+
+    <!-- Default View Resolver -->
+
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="cache" value="false"/>
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+
+    <!-- Abstract Default Exception Handler -->
+
+    <bean id="defaultExceptionHandlerTemplate"
+          class="org.springframework.web.portlet.handler.SimpleMappingExceptionResolver" abstract="true">
+        <property name="defaultErrorView" value="defError"/>
+        <property name="exceptionMappings">
+            <props>
+                <prop key="javax.portlet.PortletSecurityException">notAuthorized</prop>
+                <prop key="javax.portlet.UnavailableException">notAvailable</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="subscriptionService" class="com.geminisystems.subscription.service.SubscriptionService"/>
+    <bean id="subscriptionValidator" class="com.geminisystems.subscription.domain.SBeanValidator"/>
+    <bean id="categoryService" class="com.geminisystems.subscription.service.CategoryService"/>
+    <bean id="categoryValidator" class="com.geminisystems.subscription.domain.SCategoryValidator"/>
+    <bean id="wcmService" class="com.geminisystems.subscription.service.WcmService"/>
+    <bean id="mediaContentService" class="com.geminisystems.subscription.service.MediaContentService"/>
+
+</beans>

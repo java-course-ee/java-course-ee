@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/hmao_portal/!svn/ver/545/trunk/external/GS_SubscriptionPortlet/src/main/java/com/geminisystems/subscription/service
+END
+MediaContentService.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/hmao_portal/!svn/ver/545/trunk/external/GS_SubscriptionPortlet/src/main/java/com/geminisystems/subscription/service/MediaContentService.java
+END
+MailService.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/hmao_portal/!svn/ver/299/trunk/external/GS_SubscriptionPortlet/src/main/java/com/geminisystems/subscription/service/MailService.java
+END
+ServletContextProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/hmao_portal/!svn/ver/217/trunk/external/GS_SubscriptionPortlet/src/main/java/com/geminisystems/subscription/service/ServletContextProvider.java
+END
+SubscriptionService.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/hmao_portal/!svn/ver/545/trunk/external/GS_SubscriptionPortlet/src/main/java/com/geminisystems/subscription/service/SubscriptionService.java
+END
+CategoryService.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/hmao_portal/!svn/ver/545/trunk/external/GS_SubscriptionPortlet/src/main/java/com/geminisystems/subscription/service/CategoryService.java
+END
+WcmService.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/hmao_portal/!svn/ver/854/trunk/external/GS_SubscriptionPortlet/src/main/java/com/geminisystems/subscription/service/WcmService.java
+END

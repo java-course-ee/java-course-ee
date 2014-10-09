@@ -1,0 +1,16 @@
+# Console log  output...
+log4j.rootLogger = INFO, stdout
+log4j.appender.stdout=org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
+log4j.appender.stdout.layout.ConversionPattern=%c{1} %-5p  - %m%n
+
+# Rolling log file output...
+log4j.logger.com.geminisystems.subscription=INFO, fileout
+log4j.appender.fileout=org.apache.log4j.RollingFileAppender
+log4j.appender.fileout.Encoding=UTF-8
+log4j.appender.fileout.File=logs/WebSphere_Portal/scheduler/scheduler.log
+log4j.appender.fileout.MaxFileSize=8192KB
+log4j.appender.fileout.MaxBackupIndex=3
+log4j.appender.fileout.layout=org.apache.log4j.PatternLayout
+log4j.appender.fileout.layout.conversionPattern=%d{dd.MM.yyyy HH:mm:ss z} [%t]: %5p %c{1} - %m%n
+

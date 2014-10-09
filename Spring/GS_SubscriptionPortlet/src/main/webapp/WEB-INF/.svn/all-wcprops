@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/hmao_portal/!svn/ver/853/trunk/external/GS_SubscriptionPortlet/src/main/webapp/WEB-INF
+END
+portlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/hmao_portal/!svn/ver/386/trunk/external/GS_SubscriptionPortlet/src/main/webapp/WEB-INF/portlet.xml
+END
+ibm-web-ext.xmi
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/hmao_portal/!svn/ver/217/trunk/external/GS_SubscriptionPortlet/src/main/webapp/WEB-INF/ibm-web-ext.xmi
+END
+scheduler.properties
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/hmao_portal/!svn/ver/854/trunk/external/GS_SubscriptionPortlet/src/main/webapp/WEB-INF/scheduler.properties
+END
+ibm-web-bnd.xmi
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/hmao_portal/!svn/ver/217/trunk/external/GS_SubscriptionPortlet/src/main/webapp/WEB-INF/ibm-web-bnd.xmi
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/hmao_portal/!svn/ver/545/trunk/external/GS_SubscriptionPortlet/src/main/webapp/WEB-INF/web.xml
+END

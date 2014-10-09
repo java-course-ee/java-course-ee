@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" version="2.0"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd">
+    <portlet>
+        <portlet-name>GS_SubscriptionPortlet</portlet-name>
+        <display-name xml:lang="en">GS_SubscriptionPortlet</display-name>
+        <display-name xml:lang="ru">GS_SubscriptionPortlet</display-name>
+        <display-name>GS_SubscriptionPortlet</display-name>
+        <portlet-class>org.springframework.web.portlet.DispatcherPortlet</portlet-class>
+        
+        <init-param>
+            <name>contextConfigLocation</name>
+            <value>/WEB-INF/context/subscription.xml</value>
+        </init-param>
+
+        <expiration-cache>0</expiration-cache>
+        <supports>
+            <mime-type>text/html</mime-type>
+            <portlet-mode>view</portlet-mode>
+            <portlet-mode>config</portlet-mode>
+        </supports>
+        <supported-locale>en</supported-locale>
+        <supported-locale>ru</supported-locale>
+        <resource-bundle>messages</resource-bundle>
+        <portlet-info>
+            <title>GS_SubscriptionPortlet</title>
+            <short-title>GS_SubscriptionPortlet</short-title>
+            <keywords>GS_SubscriptionPortlet</keywords>
+        </portlet-info>
+        
+        <portlet-preferences>
+            <preference>
+                <name>Новости</name>
+                <value>Web Content/hmao/news/</value>
+            </preference>
+            <preference>
+                <name>Документы</name>
+                <value>Web Content/hmao/hmao-news-docs/</value>
+            </preference>
+             <preference>
+                <name>logLevel</name>
+                <value>INFO</value>
+            </preference>
+        </portlet-preferences>
+    </portlet>
+    <custom-portlet-mode>
+        <portlet-mode>config</portlet-mode>
+    </custom-portlet-mode>
+    <default-namespace>http://GS_SubscriptionPortlet/</default-namespace>
+</portlet-app>

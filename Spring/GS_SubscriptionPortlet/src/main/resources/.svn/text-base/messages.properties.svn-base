@@ -1,0 +1,24 @@
+javax.portlet.title=\u041f\u043e\u0434\u043f\u0438\u0441\u043a\u0430
+javax.portlet.short-title=\u041f\u043e\u0434\u043f\u0438\u0441\u043a\u0430
+javax.portlet.keywords=\u041f\u043e\u0434\u043f\u0438\u0441\u043a\u0430
+subscription.session.name=mail/Admin2UsersMailSession
+subscription.subject=Hmao Government Portal subscription
+subscription.from=admin@admhmao.ru
+subscription.invalid=Invalid email
+subscription.invalid.categories=Invalid categories, please choose one at least
+subscription.invalid.title=Invalid title
+subscription.invalid.path=Invalid path
+subscription.invalid.atname=Invalid authoring template name
+subscription.confirm.subscribe=To confirm your subscription check your email
+subscription.confirm.unsubscribe=To confirm your unsubscription check your email
+subscription.subscribe.success=You subscribed successfully
+subscription.subscribe.failure=Your subscribe is failure
+subscription.unsubscribe.success=You unscubscribed from  Hmao Government Portal news
+subscription.unsubscribe.failure=Your ubsubscribe is failure
+subscription.update.success=You updated your subscribe successfully
+subscription.email.exists=email already exists
+subscription.email.not.exists=email not exists
+subscription.link.expired=Link is invalid
+subscription.active=Your subscription is active
+subscription.inactive=Your subscription is inactive
+

@@ -1,0 +1,22 @@
+<html>
+<body>
+
+<h3>Последние новости от <a target="_blank" href="http://admhmao.ru">Портала Ханты-Мансийского округа - Югры</a>:</h3>
+<br/>
+    #foreach ($mapEntry in $data.entrySet())
+        <h2>$mapEntry.key</h2>
+        <ul>
+            #foreach ($link in $mapEntry.value)
+                <li>$link</li>
+            #end
+        </ul>
+        <br/>
+    #end
+<br/>
+
+<div>
+    Для того, чтобы изменить параметры подписки или отписаться от обновлений, перейдите по ссылке: <br/>
+    ${edit_link}
+</div>
+</body>
+</html>

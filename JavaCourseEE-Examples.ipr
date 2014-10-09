@@ -1558,6 +1558,70 @@
         </element>
       </root>
     </artifact>
+    <artifact type="war" name="GS_Subscription:war">
+      <output-path>$PROJECT_DIR$/Spring/GS_SubscriptionPortlet/target</output-path>
+      <root id="archive" name="GS_Subscription.war">
+        <element id="artifact" artifact-name="GS_Subscription:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="GS_Subscription:war exploded">
+      <output-path>$PROJECT_DIR$/Spring/GS_SubscriptionPortlet/target/GS_Subscription</output-path>
+      <root id="root">
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="GS_Subscription" />
+          </element>
+        </element>
+        <element id="javaee-facet-resources" facet="GS_Subscription/web/Web" />
+      </root>
+    </artifact>
+    <artifact type="war" name="spring-lookup:war">
+      <output-path>$PROJECT_DIR$/Spring/GS_Spring_24_Lookup/target</output-path>
+      <root id="archive" name="spring-lookup.war">
+        <element id="artifact" artifact-name="spring-lookup:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="spring-lookup:war exploded">
+      <output-path>$PROJECT_DIR$/Spring/GS_Spring_24_Lookup/target/spring-lookup</output-path>
+      <root id="root">
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="spring-lookup" />
+          </element>
+          <element id="directory" name="lib">
+            <element id="library" level="project" name="Maven: org.springframework:spring-context:3.1.4.RELEASE" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-aop:3.1.4.RELEASE" />
+            <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-asm:3.1.4.RELEASE" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-beans:3.1.4.RELEASE" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-core:3.1.4.RELEASE" />
+            <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-expression:3.1.4.RELEASE" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-tx:3.1.4.RELEASE" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:3.1.4.RELEASE" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-orm:3.1.4.RELEASE" />
+            <element id="library" level="project" name="Maven: org.hibernate:hibernate-core:3.5.0-Final" />
+            <element id="library" level="project" name="Maven: antlr:antlr:2.7.6" />
+            <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.1" />
+            <element id="library" level="project" name="Maven: dom4j:dom4j:1.6.1" />
+            <element id="library" level="project" name="Maven: xml-apis:xml-apis:1.0.b2" />
+            <element id="library" level="project" name="Maven: javax.transaction:jta:1.1" />
+            <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.5" />
+            <element id="library" level="project" name="Maven: org.hibernate:hibernate-annotations:3.5.6-Final" />
+            <element id="library" level="project" name="Maven: org.hibernate:hibernate-commons-annotations:3.2.0.Final" />
+            <element id="library" level="project" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.0.Final" />
+            <element id="library" level="project" name="Maven: javassist:javassist:3.12.1.GA" />
+            <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.18" />
+            <element id="library" level="project" name="Maven: cglib:cglib:2.2" />
+            <element id="library" level="project" name="Maven: asm:asm:3.1" />
+            <element id="library" level="project" name="Maven: org.aspectj:aspectjlib:1.6.2" />
+            <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.7.3" />
+            <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
+          </element>
+        </element>
+        <element id="javaee-facet-resources" facet="spring-lookup/web/Web" />
+      </root>
+    </artifact>
   </component>
   <component name="CompilerConfiguration">
     <option name="DEFAULT_COMPILER" value="Javac" />
@@ -1609,6 +1673,7 @@
         <module name="GS_Spring_Security_002" />
         <module name="GS_Spring_Security_003" />
         <module name="GS_Spring_Security_004" />
+        <module name="GS_Subscription" />
         <module name="hibernate-batch" />
         <module name="hibernate-cache" />
         <module name="hibernate-column-transformer" />
@@ -1658,6 +1723,31 @@
         <module name="SimplePortlet" />
         <module name="SimpleWebService-ear" />
         <module name="SimpleWebService-ejb" />
+        <module name="spring-aop-advice" />
+        <module name="spring-aop-advisor" />
+        <module name="spring-aop-aspect" />
+        <module name="spring-aop-aspect-xml" />
+        <module name="spring-aware" />
+        <module name="spring-bean-validation" />
+        <module name="spring-exp-lang" />
+        <module name="spring-exp-lang-func" />
+        <module name="spring-hibernate" />
+        <module name="spring-hibernate-aspect" />
+        <module name="spring-ioc-1" />
+        <module name="spring-ioc-2" />
+        <module name="spring-ioc-3" />
+        <module name="spring-jdbc" />
+        <module name="spring-jdbc-dao" />
+        <module name="spring-junit" />
+        <module name="spring-life" />
+        <module name="spring-lookup" />
+        <module name="spring-method-inject" />
+        <module name="spring-property" />
+        <module name="spring-resource" />
+        <module name="spring-scope" />
+        <module name="spring-transaction" />
+        <module name="spring-validation" />
+        <module name="SpringFirst" />
         <module name="Struts2ExampleN01-web" />
         <module name="Struts2ExampleN02-web" />
         <module name="Struts2ExampleN03-web" />
@@ -1804,6 +1894,12 @@
     <file url="file://$PROJECT_DIR$/Security/WebSecurityExample-N03" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Servlet-JSP/MyFirstServlet" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Servlet-JSP/MyFirstServlet_JSP" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/GS_Spring_12_EL_First" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/GS_Spring_1_IoC" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/GS_Spring_2_Annotation" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/GS_Spring_9_Resource" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/GS_SubscriptionPortlet" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/SpringFirst" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringMVC/GS_Spring_005" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Struts/Struts2ExampleN01-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Struts/Struts2ExampleN02-web" charset="UTF-8" />
@@ -1873,6 +1969,8 @@
     <file type="web" url="file://$PROJECT_DIR$/Security/WebSecurityExample-N03" />
     <file type="web" url="file://$PROJECT_DIR$/Servlet-JSP/MyFirstServlet" />
     <file type="web" url="file://$PROJECT_DIR$/Servlet-JSP/MyFirstServlet_JSP" />
+    <file type="web" url="file://$PROJECT_DIR$/Spring/GS_Spring_24_Lookup" />
+    <file type="web" url="file://$PROJECT_DIR$/Spring/GS_SubscriptionPortlet" />
     <file type="web" url="file://$PROJECT_DIR$/SpringMVC/GS_Spring_001" />
     <file type="web" url="file://$PROJECT_DIR$/SpringMVC/GS_Spring_002" />
     <file type="web" url="file://$PROJECT_DIR$/SpringMVC/GS_Spring_003" />
@@ -2159,6 +2257,7 @@
       <module fileurl="file://$PROJECT_DIR$/Security/GS_Spring_Security_002/GS_Spring_Security_002.iml" filepath="$PROJECT_DIR$/Security/GS_Spring_Security_002/GS_Spring_Security_002.iml" group="Spring" />
       <module fileurl="file://$PROJECT_DIR$/Security/GS_Spring_Security_003/GS_Spring_Security_003.iml" filepath="$PROJECT_DIR$/Security/GS_Spring_Security_003/GS_Spring_Security_003.iml" group="Spring" />
       <module fileurl="file://$PROJECT_DIR$/Security/GS_Spring_Security_004/GS_Spring_Security_004.iml" filepath="$PROJECT_DIR$/Security/GS_Spring_Security_004/GS_Spring_Security_004.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/GS_SubscriptionPortlet/GS_Subscription.iml" filepath="$PROJECT_DIR$/Spring/GS_SubscriptionPortlet/GS_Subscription.iml" group="Spring" />
       <module fileurl="file://$PROJECT_DIR$/JQuery/JQueryExampleN01/JQueryExampleN01.iml" filepath="$PROJECT_DIR$/JQuery/JQueryExampleN01/JQueryExampleN01.iml" group="JQuery" />
       <module fileurl="file://$PROJECT_DIR$/JQuery/JQueryExampleN02/JQueryExampleN02.iml" filepath="$PROJECT_DIR$/JQuery/JQueryExampleN02/JQueryExampleN02.iml" group="JQuery" />
       <module fileurl="file://$PROJECT_DIR$/JQuery/JQueryExampleN03/JQueryExampleN03.iml" filepath="$PROJECT_DIR$/JQuery/JQueryExampleN03/JQueryExampleN03.iml" group="JQuery" />
@@ -2177,6 +2276,7 @@
       <module fileurl="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService.iml" filepath="$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService.iml" group="WebService" />
       <module fileurl="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ear/SimpleWebService-ear.iml" filepath="$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ear/SimpleWebService-ear.iml" group="WebService" />
       <module fileurl="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ejb/SimpleWebService-ejb.iml" filepath="$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ejb/SimpleWebService-ejb.iml" group="WebService" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/SpringFirst/SpringFirst.iml" filepath="$PROJECT_DIR$/Spring/SpringFirst/SpringFirst.iml" group="Spring" />
       <module fileurl="file://$PROJECT_DIR$/Struts/Struts2ExampleN01-web/Struts2ExampleN01-web.iml" filepath="$PROJECT_DIR$/Struts/Struts2ExampleN01-web/Struts2ExampleN01-web.iml" group="StrutsII" />
       <module fileurl="file://$PROJECT_DIR$/Struts/Struts2ExampleN02-web/Struts2ExampleN02-web.iml" filepath="$PROJECT_DIR$/Struts/Struts2ExampleN02-web/Struts2ExampleN02-web.iml" group="StrutsII" />
       <module fileurl="file://$PROJECT_DIR$/Struts/Struts2ExampleN03-web/Struts2ExampleN03-web.iml" filepath="$PROJECT_DIR$/Struts/Struts2ExampleN03-web/Struts2ExampleN03-web.iml" group="StrutsII" />
@@ -2231,6 +2331,30 @@
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Version/hibernate-version.iml" filepath="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Version/hibernate-version.iml" group="Hibernate" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Version_Check/hibernate-version-check.iml" filepath="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Version_Check/hibernate-version-check.iml" group="Hibernate" />
       <module fileurl="file://$PROJECT_DIR$/Logging/log4j/log4j.iml" filepath="$PROJECT_DIR$/Logging/log4j/log4j.iml" group="Logging" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring_14_AOP_Advice/spring-aop-advice.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring_14_AOP_Advice/spring-aop-advice.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring_15_AOP_Advisor/spring-aop-advisor.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring_15_AOP_Advisor/spring-aop-advisor.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring_16_AOP_AspectJ/spring-aop-aspect.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring_16_AOP_AspectJ/spring-aop-aspect.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring_18_AOP_AspectJPointcut_XML/spring-aop-aspect-xml.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring_18_AOP_AspectJPointcut_XML/spring-aop-aspect-xml.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring_8_Aware/spring-aware.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring_8_Aware/spring-aware.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring_11_BeanValidation/spring-bean-validation.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring_11_BeanValidation/spring-bean-validation.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring_12_EL_First/spring-exp-lang.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring_12_EL_First/spring-exp-lang.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring_13_EL_Function/spring-exp-lang-func.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring_13_EL_Function/spring-exp-lang-func.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring_22_Hibernate/spring-hibernate.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring_22_Hibernate/spring-hibernate.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring_23_HibernateAspect/spring-hibernate-aspect.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring_23_HibernateAspect/spring-hibernate-aspect.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring_1_IoC/spring-ioc-1.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring_1_IoC/spring-ioc-1.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring_2_Annotation/spring-ioc-2.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring_2_Annotation/spring-ioc-2.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring_3_AnnotationConfig/spring-ioc-3.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring_3_AnnotationConfig/spring-ioc-3.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring_20_JDBC/spring-jdbc.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring_20_JDBC/spring-jdbc.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring_21_JDBC_DAO/spring-jdbc-dao.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring_21_JDBC_DAO/spring-jdbc-dao.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring_17_JUnit/spring-junit.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring_17_JUnit/spring-junit.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring_4_Lifecycle/spring-life.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring_4_Lifecycle/spring-life.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring_24_Lookup/spring-lookup.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring_24_Lookup/spring-lookup.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring_7_MethodInject/spring-method-inject.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring_7_MethodInject/spring-method-inject.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring_5_PropertyConfigurer/spring-property.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring_5_PropertyConfigurer/spring-property.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring_9_Resource/spring-resource.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring_9_Resource/spring-resource.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring_6_Scope/spring-scope.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring_6_Scope/spring-scope.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring_19_Transaction/spring-transaction.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring_19_Transaction/spring-transaction.iml" group="Spring" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring_10_Validation/spring-validation.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring_10_Validation/spring-validation.iml" group="Spring" />
       <module fileurl="file://$PROJECT_DIR$/WebServices/JAX_WS/WebService_1_JAX-WS/webservice-jax-ws.iml" filepath="$PROJECT_DIR$/WebServices/JAX_WS/WebService_1_JAX-WS/webservice-jax-ws.iml" group="WebService" />
       <module fileurl="file://$PROJECT_DIR$/WebServices/JAX_WS/WebService_0_JAX-WS/webservice-jax-ws-0.iml" filepath="$PROJECT_DIR$/WebServices/JAX_WS/WebService_0_JAX-WS/webservice-jax-ws-0.iml" group="WebService" />
       <module fileurl="file://$PROJECT_DIR$/WebServices/WEB-REST/WebService_3_REST/webservice-rest.iml" filepath="$PROJECT_DIR$/WebServices/WEB-REST/WebService_3_REST/webservice-rest.iml" group="WebService" />
@@ -2239,7 +2363,7 @@
       <module fileurl="file://$PROJECT_DIR$/WebServices/WEB-REST/WebService_6_REST/webservice-rest-4.iml" filepath="$PROJECT_DIR$/WebServices/WEB-REST/WebService_6_REST/webservice-rest-4.iml" group="WebService" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="Oracle 1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="VcsDirectoryMappings">
@@ -2994,6 +3118,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/javax/transaction/jta/1.1/jta-1.1-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: javax.validation:validation-api:1.0.0.GA">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: javax.xml.bind:jaxb-api:2.2.2">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.jar!/" />
@@ -3368,6 +3503,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/apache/velocity/velocity/1.7/velocity-1.7-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.aspectj:aspectjlib:1.6.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjlib/1.6.2/aspectjlib-1.6.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjlib/1.6.2/aspectjlib-1.6.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjlib/1.6.2/aspectjlib-1.6.2-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.aspectj:aspectjrt:1.6.8">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjrt/1.6.8/aspectjrt-1.6.8.jar!/" />
@@ -3388,6 +3534,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjweaver/1.6.8/aspectjweaver-1.6.8-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.aspectj:aspectjweaver:1.7.3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjweaver/1.7.3/aspectjweaver-1.7.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjweaver/1.7.3/aspectjweaver-1.7.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjweaver/1.7.3/aspectjweaver-1.7.3-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.beanshell:bsh:2.0b4">
@@ -3720,6 +3877,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-ehcache/3.6.2.Final/hibernate-ehcache-3.6.2.Final-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.hibernate:hibernate-validator:4.2.0.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-validator/4.2.0.Final/hibernate-validator-4.2.0.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-validator/4.2.0.Final/hibernate-validator-4.2.0.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-validator/4.2.0.Final/hibernate-validator-4.2.0.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.hibernate:hibernate:3.2.6.ga">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate/3.2.6.ga/hibernate-3.2.6.ga.jar!/" />
@@ -4039,6 +4207,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.1.0.RELEASE/spring-aop-3.1.0.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.springframework:spring-aop:3.1.4.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.1.4.RELEASE/spring-aop-3.1.4.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.1.4.RELEASE/spring-aop-3.1.4.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.1.4.RELEASE/spring-aop-3.1.4.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.springframework:spring-asm:3.0.5.RELEASE">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-asm/3.0.5.RELEASE/spring-asm-3.0.5.RELEASE.jar!/" />
@@ -4072,6 +4251,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-asm/3.1.0.RELEASE/spring-asm-3.1.0.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.springframework:spring-asm:3.1.4.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-asm/3.1.4.RELEASE/spring-asm-3.1.4.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-asm/3.1.4.RELEASE/spring-asm-3.1.4.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-asm/3.1.4.RELEASE/spring-asm-3.1.4.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.springframework:spring-beans:3.0.5.RELEASE">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/3.0.5.RELEASE/spring-beans-3.0.5.RELEASE.jar!/" />
@@ -4103,6 +4293,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/3.1.0.RELEASE/spring-beans-3.1.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-beans:3.1.4.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/3.1.4.RELEASE/spring-beans-3.1.4.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/3.1.4.RELEASE/spring-beans-3.1.4.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/3.1.4.RELEASE/spring-beans-3.1.4.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.springframework:spring-context-support:3.0.5.RELEASE">
@@ -4171,6 +4372,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/3.1.0.RELEASE/spring-context-3.1.0.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.springframework:spring-context:3.1.4.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/3.1.4.RELEASE/spring-context-3.1.4.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/3.1.4.RELEASE/spring-context-3.1.4.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/3.1.4.RELEASE/spring-context-3.1.4.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.springframework:spring-core:3.0.5.RELEASE">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/3.0.5.RELEASE/spring-core-3.0.5.RELEASE.jar!/" />
@@ -4202,6 +4414,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/3.1.0.RELEASE/spring-core-3.1.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-core:3.1.4.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/3.1.4.RELEASE/spring-core-3.1.4.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/3.1.4.RELEASE/spring-core-3.1.4.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/3.1.4.RELEASE/spring-core-3.1.4.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.springframework:spring-dao:2.0.8">
@@ -4248,6 +4471,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-expression/3.1.0.RELEASE/spring-expression-3.1.0.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.springframework:spring-expression:3.1.4.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-expression/3.1.4.RELEASE/spring-expression-3.1.4.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-expression/3.1.4.RELEASE/spring-expression-3.1.4.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-expression/3.1.4.RELEASE/spring-expression-3.1.4.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.springframework:spring-hibernate3:2.0.8">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-hibernate3/2.0.8/spring-hibernate3-2.0.8.jar!/" />
@@ -4292,6 +4526,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/3.1.0.RELEASE/spring-jdbc-3.1.0.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.springframework:spring-jdbc:3.1.4.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/3.1.4.RELEASE/spring-jdbc-3.1.4.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/3.1.4.RELEASE/spring-jdbc-3.1.4.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/3.1.4.RELEASE/spring-jdbc-3.1.4.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.springframework:spring-orm:3.0.5.RELEASE">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/3.0.5.RELEASE/spring-orm-3.0.5.RELEASE.jar!/" />
@@ -4325,6 +4570,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/3.1.0.RELEASE/spring-orm-3.1.0.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.springframework:spring-orm:3.1.4.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/3.1.4.RELEASE/spring-orm-3.1.4.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/3.1.4.RELEASE/spring-orm-3.1.4.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/3.1.4.RELEASE/spring-orm-3.1.4.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.springframework:spring-oxm:3.1.0.RELEASE">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-oxm/3.1.0.RELEASE/spring-oxm-3.1.0.RELEASE.jar!/" />
@@ -4345,6 +4601,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/3.0.6.RELEASE/spring-test-3.0.6.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-test:3.1.4.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/3.1.4.RELEASE/spring-test-3.1.4.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/3.1.4.RELEASE/spring-test-3.1.4.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/3.1.4.RELEASE/spring-test-3.1.4.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.springframework:spring-tx:3.0.3.RELEASE">
@@ -4389,6 +4656,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/3.1.0.RELEASE/spring-tx-3.1.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-tx:3.1.4.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/3.1.4.RELEASE/spring-tx-3.1.4.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/3.1.4.RELEASE/spring-tx-3.1.4.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/3.1.4.RELEASE/spring-tx-3.1.4.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.springframework:spring-web:3.0.5.RELEASE">

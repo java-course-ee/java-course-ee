@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/hmao_portal/!svn/ver/853/trunk/external/GS_SubscriptionPortlet/src/main/java/com/geminisystems/subscription/job
+END
+SendMediaMailJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/hmao_portal/!svn/ver/853/trunk/external/GS_SubscriptionPortlet/src/main/java/com/geminisystems/subscription/job/SendMediaMailJob.java
+END
+SendUsersMailJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/hmao_portal/!svn/ver/853/trunk/external/GS_SubscriptionPortlet/src/main/java/com/geminisystems/subscription/job/SendUsersMailJob.java
+END

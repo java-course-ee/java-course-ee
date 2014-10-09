@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/hmao_portal/!svn/ver/853/trunk/external/GS_SubscriptionPortlet/src/main/resources
+END
+messages_en_US.properties
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/hmao_portal/!svn/ver/262/trunk/external/GS_SubscriptionPortlet/src/main/resources/messages_en_US.properties
+END
+messages.properties
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/hmao_portal/!svn/ver/229/trunk/external/GS_SubscriptionPortlet/src/main/resources/messages.properties
+END
+messages_ru_RU.properties
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/hmao_portal/!svn/ver/229/trunk/external/GS_SubscriptionPortlet/src/main/resources/messages_ru_RU.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/hmao_portal/!svn/ver/386/trunk/external/GS_SubscriptionPortlet/src/main/resources/log4j.properties
+END
+config.properties
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/hmao_portal/!svn/ver/854/trunk/external/GS_SubscriptionPortlet/src/main/resources/config.properties
+END
