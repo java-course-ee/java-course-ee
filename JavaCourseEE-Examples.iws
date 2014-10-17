@@ -82,9 +82,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
-    <option name="y" value="26" />
-    <option name="width" value="1282" />
-    <option name="height" value="972" />
+    <option name="width" value="1922" />
+    <option name="height" value="1045" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -99,7 +98,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
+    <option name="STATE" value="2" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -114,6 +113,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -124,8 +125,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -139,7 +138,7 @@
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Spring" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/JavaCourseEE-Examples.ipr" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
   </component>
@@ -262,31 +261,13 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
       <option name="VM_PARAMETERS" value="" />
       <option name="USER_CFG_CLASS" />
       <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -300,6 +281,16 @@
       <option name="VM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -361,7 +352,7 @@
     <option name="totallyTimeSpent" value="17060000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="26" width="1282" height="972" extended-state="6" />
+    <frame x="-1" y="0" width="1922" height="1045" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -370,13 +361,13 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48850575" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24878837" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4095315" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27582535" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1631664" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="EJB" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -395,7 +386,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32873562" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
@@ -464,7 +455,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="1602">
           <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -472,7 +462,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="1026">
           <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="26" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -480,7 +469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="1098">
           <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -488,7 +476,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="1062">
           <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -512,7 +499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1178">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -578,7 +564,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="148" max-vertical-offset="954">
           <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -589,118 +574,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="uml://MAVEN/edu.javacourse:hibernate-many-to-one:1.0-SNAPSHOT">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>MAVEN</ID>
-          <OriginalElement>edu.javacourse:hibernate-many-to-one:1.0-SNAPSHOT</OriginalElement>
-          <nodes>
-            <node x="344.0" y="240.0">org.hibernate:hibernate-core:jar:4.2.3.Final/org.javassist:javassist:jar:3.15.0-GA</node>
-            <node x="344.0" y="0.0">org.hibernate:hibernate-core:jar:4.2.3.Final/antlr:antlr:jar:2.7.7</node>
-            <node x="331.0" y="360.0">org.slf4j:slf4j-log4j12:jar:1.7.5/log4j:log4j:jar:1.2.17</node>
-            <node x="344.0" y="160.0">org.hibernate:hibernate-core:jar:4.2.3.Final/org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final</node>
-            <node x="344.0" y="120.0">org.hibernate:hibernate-core:jar:4.2.3.Final/org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:jar:1.0.1.Final</node>
-            <node x="593.0" y="200.0">org.hibernate:hibernate-core:jar:4.2.3.Final/org.hibernate.common:hibernate-commons-annotations:jar:4.0.2.Final/org.jboss.logging:jboss-logging:jar:3.1.0.CR2</node>
-            <node x="344.0" y="80.0">org.hibernate:hibernate-core:jar:4.2.3.Final/dom4j:dom4j:jar:1.6.1</node>
-            <node x="196.0" y="280.0">org.slf4j:slf4j-api:jar:1.7.5</node>
-            <node x="196.0" y="0.0">org.hibernate:hibernate-core:jar:4.2.3.Final</node>
-            <node x="344.0" y="200.0">org.hibernate:hibernate-core:jar:4.2.3.Final/org.hibernate.common:hibernate-commons-annotations:jar:4.0.2.Final</node>
-            <node x="344.0" y="40.0">org.hibernate:hibernate-core:jar:4.2.3.Final/org.jboss.logging:jboss-logging:jar:3.1.0.GA</node>
-            <node x="0.0" y="0.0">edu.javacourse:hibernate-many-to-one:1.0-SNAPSHOT</node>
-            <node x="196.0" y="440.0">org.postgresql:postgresql:jar:9.3-1102-jdbc41</node>
-            <node x="196.0" y="400.0">log4j:log4j:jar:1.2.17</node>
-            <node x="331.0" y="320.0">org.slf4j:slf4j-log4j12:jar:1.7.5/org.slf4j:slf4j-api:jar:1.7.5</node>
-            <node x="196.0" y="320.0">org.slf4j:slf4j-log4j12:jar:1.7.5</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="org.hibernate:hibernate-core:jar:4.2.3.Final" target="org.hibernate:hibernate-core:jar:4.2.3.Final/dom4j:dom4j:jar:1.6.1">
-              <point x="0.0" y="0.0" />
-              <point x="255.0" y="95.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:4.2.3.Final" target="org.hibernate:hibernate-core:jar:4.2.3.Final/org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:jar:1.0.1.Final">
-              <point x="0.0" y="0.0" />
-              <point x="255.0" y="135.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:4.2.3.Final" target="org.hibernate:hibernate-core:jar:4.2.3.Final/org.hibernate.common:hibernate-commons-annotations:jar:4.0.2.Final">
-              <point x="0.0" y="0.0" />
-              <point x="255.0" y="215.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.slf4j:slf4j-log4j12:jar:1.7.5" target="org.slf4j:slf4j-log4j12:jar:1.7.5/log4j:log4j:jar:1.2.17">
-              <point x="0.0" y="0.0" />
-              <point x="248.5" y="375.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:4.2.3.Final" target="org.hibernate:hibernate-core:jar:4.2.3.Final/antlr:antlr:jar:2.7.7">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:4.2.3.Final" target="org.hibernate:hibernate-core:jar:4.2.3.Final/org.javassist:javassist:jar:3.15.0-GA">
-              <point x="0.0" y="0.0" />
-              <point x="255.0" y="255.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:4.2.3.Final" target="org.hibernate:hibernate-core:jar:4.2.3.Final/org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final">
-              <point x="0.0" y="0.0" />
-              <point x="255.0" y="175.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.slf4j:slf4j-log4j12:jar:1.7.5" target="org.slf4j:slf4j-log4j12:jar:1.7.5/org.slf4j:slf4j-api:jar:1.7.5">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="edu.javacourse:hibernate-many-to-one:1.0-SNAPSHOT" target="org.slf4j:slf4j-api:jar:1.7.5">
-              <point x="0.0" y="0.0" />
-              <point x="83.0" y="295.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="edu.javacourse:hibernate-many-to-one:1.0-SNAPSHOT" target="org.postgresql:postgresql:jar:9.3-1102-jdbc41">
-              <point x="0.0" y="0.0" />
-              <point x="83.0" y="455.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="edu.javacourse:hibernate-many-to-one:1.0-SNAPSHOT" target="org.slf4j:slf4j-log4j12:jar:1.7.5">
-              <point x="0.0" y="0.0" />
-              <point x="83.0" y="335.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="edu.javacourse:hibernate-many-to-one:1.0-SNAPSHOT" target="log4j:log4j:jar:1.2.17">
-              <point x="0.0" y="0.0" />
-              <point x="83.0" y="415.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:4.2.3.Final/org.hibernate.common:hibernate-commons-annotations:jar:4.0.2.Final" target="org.hibernate:hibernate-core:jar:4.2.3.Final/org.hibernate.common:hibernate-commons-annotations:jar:4.0.2.Final/org.jboss.logging:jboss-logging:jar:3.1.0.CR2">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:4.2.3.Final" target="org.hibernate:hibernate-core:jar:4.2.3.Final/org.jboss.logging:jboss-logging:jar:3.1.0.GA">
-              <point x="0.0" y="0.0" />
-              <point x="255.0" y="55.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="edu.javacourse:hibernate-many-to-one:1.0-SNAPSHOT" target="org.hibernate:hibernate-core:jar:4.2.3.Final">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-27.0" y="68.0" />
-          <SelectedNodes>
-            <node>org.hibernate:hibernate-core:jar:4.2.3.Final/org.javassist:javassist:jar:3.15.0-GA</node>
-          </SelectedNodes>
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>All</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_ManyToOne/src/main/java/edu/javacourse/hibernate/HibernateSimple.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22436671" vertical-offset="80" max-vertical-offset="2660">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -708,7 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6791315" vertical-offset="349" max-vertical-offset="1368">
           <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -716,7 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.5585042" vertical-offset="342" max-vertical-offset="2850">
           <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -724,7 +599,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27503017" vertical-offset="114" max-vertical-offset="3306">
           <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -732,7 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.3293124" vertical-offset="228" max-vertical-offset="3762">
           <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -740,7 +613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6875754" vertical-offset="228" max-vertical-offset="2774">
           <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -748,7 +620,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22263682" vertical-offset="847" max-vertical-offset="1748">
           <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -891,7 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1482">
           <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -899,7 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21836229" vertical-offset="292" max-vertical-offset="1098">
           <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -915,7 +784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.12" vertical-offset="821" max-vertical-offset="1602">
           <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -923,7 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21836229" vertical-offset="220" max-vertical-offset="1026">
           <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="26" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -931,6 +798,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24069479" vertical-offset="580" max-vertical-offset="1386">
           <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring/GS_Spring_13_EL_Function/src/main/java/edu/javacourse/spring/bean/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring/GS_Spring_13_EL_Function/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
