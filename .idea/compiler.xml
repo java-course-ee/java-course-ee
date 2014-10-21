@@ -27,7 +27,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ejb-ear-module" target="1.6" />
       <module name="ejb-war-module" target="1.6" />
+      <module name="examples" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
