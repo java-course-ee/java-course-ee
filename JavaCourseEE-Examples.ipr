@@ -1622,6 +1622,38 @@
         <element id="javaee-facet-resources" facet="spring-lookup/web/Web" />
       </root>
     </artifact>
+    <artifact type="war" name="ejb-war-module:war">
+      <output-path>$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war-module/target</output-path>
+      <root id="archive" name="ejb-war-module-1.0-SNAPSHOT.war">
+        <element id="artifact" artifact-name="ejb-war-module:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="ejb-war-module:war exploded">
+      <output-path>$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war-module/target/ejb-war-module-1.0-SNAPSHOT</output-path>
+      <root id="root">
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="ejb-war-module" />
+          </element>
+        </element>
+        <element id="javaee-facet-resources" facet="ejb-war-module/web/Web" />
+      </root>
+    </artifact>
+    <artifact type="ear" name="ejb-ear-module:ear">
+      <output-path>$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear-module/target</output-path>
+      <root id="archive" name="ejb-ear-module-1.0-SNAPSHOT.ear">
+        <element id="artifact" artifact-name="ejb-ear-module:ear exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-ear" name="ejb-ear-module:ear exploded">
+      <output-path>$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear-module/target/ejb-ear-module-1.0-SNAPSHOT</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="ejb-ear-module/javaeeApplication/JavaEE" />
+        <element id="archive" name="ejb-war-module-1.0-SNAPSHOT.war">
+          <element id="artifact" artifact-name="ejb-war-module:war exploded" />
+        </element>
+      </root>
+    </artifact>
   </component>
   <component name="CompilerConfiguration">
     <option name="DEFAULT_COMPILER" value="Javac" />
@@ -1651,6 +1683,8 @@
         <module name="DojoExampleN03" />
         <module name="DojoExampleN04" />
         <module name="DWRExample-N01" />
+        <module name="ejb-ear-module" />
+        <module name="ejb-war-module" />
         <module name="Expomap" />
         <module name="GS_ApacheShiro_01" />
         <module name="GS_ApacheShiro_02" />
@@ -1785,6 +1819,7 @@
       <module name="DojoExampleN03" target="1.6" />
       <module name="DojoExampleN04" target="1.6" />
       <module name="DWRExample-N01" target="1.6" />
+      <module name="ejb-war-module" target="1.6" />
       <module name="Expomap" target="1.5" />
       <module name="GS_Spring_Security_001" target="1.6" />
       <module name="GS_Spring_Security_002" target="1.6" />
@@ -1927,12 +1962,14 @@
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="ejb" url="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ejb" />
+    <file type="javaeeApplication" url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear-module" />
     <file type="javaeeApplication" url="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ear" />
     <file type="web" url="file://$PROJECT_DIR$/Dojo/DojoExampleN01" />
     <file type="web" url="file://$PROJECT_DIR$/Dojo/DojoExampleN02" />
     <file type="web" url="file://$PROJECT_DIR$/Dojo/DojoExampleN03" />
     <file type="web" url="file://$PROJECT_DIR$/Dojo/DojoExampleN04" />
     <file type="web" url="file://$PROJECT_DIR$/DWR/DWRExample-N01" />
+    <file type="web" url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war-module" />
     <file type="web" url="file://$PROJECT_DIR$/JQuery/JQueryExampleN01" />
     <file type="web" url="file://$PROJECT_DIR$/JQuery/JQueryExampleN02" />
     <file type="web" url="file://$PROJECT_DIR$/JQuery/JQueryExampleN03" />
@@ -2105,6 +2142,7 @@
         <option value="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Inherite_per_class_table/pom.xml" />
         <option value="$PROJECT_DIR$/Spring/GS_Spring_6_Scope/pom.xml" />
         <option value="$PROJECT_DIR$/Spring/GS_Spring_1_IoC/pom.xml" />
+        <option value="$PROJECT_DIR$/EJB/ejb-pom-module/pom.xml" />
       </list>
     </option>
   </component>
@@ -2301,6 +2339,9 @@
       <module fileurl="file://$PROJECT_DIR$/ZK/ZKExample03/ZKExample03.iml" filepath="$PROJECT_DIR$/ZK/ZKExample03/ZKExample03.iml" group="ZK" />
       <module fileurl="file://$PROJECT_DIR$/ZK/ZKExample04/ZKExample04.iml" filepath="$PROJECT_DIR$/ZK/ZKExample04/ZKExample04.iml" group="ZK" />
       <module fileurl="file://$PROJECT_DIR$/ZK/ZKExample05/ZKExample05.iml" filepath="$PROJECT_DIR$/ZK/ZKExample05/ZKExample05.iml" group="ZK" />
+      <module fileurl="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear-module/ejb-ear-module.iml" filepath="$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear-module/ejb-ear-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-pom-module.iml" filepath="$PROJECT_DIR$/EJB/ejb-pom-module/ejb-pom-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war-module/ejb-war-module.iml" filepath="$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war-module/ejb-war-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Batch/hibernate-batch.iml" filepath="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_Batch/hibernate-batch.iml" group="Hibernate" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_SecondCache/hibernate-cache.iml" filepath="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_SecondCache/hibernate-cache.iml" group="Hibernate" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_ColumnTransformer/hibernate-column-transformer.iml" filepath="$PROJECT_DIR$/Hibernate/part2/GS_Hibernate_ColumnTransformer/hibernate-column-transformer.iml" group="Hibernate" />
@@ -2365,11 +2406,11 @@
       <module fileurl="file://$PROJECT_DIR$/WebServices/WEB-REST/WebService_6_REST/webservice-rest-4.iml" filepath="$PROJECT_DIR$/WebServices/WEB-REST/WebService_6_REST/webservice-rest-4.iml" group="WebService" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="Oracle 1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="" vcs="" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
   <component name="libraryTable">
     <library name="Maven: antlr:antlr:2.7.6">
@@ -2581,6 +2622,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: javax:javaee-api:6.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/javaee-api/6.0/javaee-api-6.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/javaee-api/6.0/javaee-api-6.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/javaee-api/6.0/javaee-api-6.0-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: javax:javaee-web-api:6.0">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/javax/javaee-web-api/6.0/javaee-web-api-6.0.jar!/" />
@@ -2590,6 +2642,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/javax/javaee-web-api/6.0/javaee-web-api-6.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: jstl:jstl:1.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/jstl/jstl/1.2/jstl-1.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/jstl/jstl/1.2/jstl-1.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/jstl/jstl/1.2/jstl-1.2-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: junit:junit:4.8.2">
@@ -2777,6 +2840,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.6.6/slf4j-api-1.6.6-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.slf4j:slf4j-api:1.7.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.slf4j:slf4j-api:1.7.5">
