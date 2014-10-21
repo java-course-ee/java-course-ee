@@ -3,9 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>edu.javacourse</groupId>
-	<artifactId>integration</artifactId>
+	<artifactId>examples</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
+
+    <name>JavaCourse EE Examples</name>
 
 	<modules>
 		<module>EJB</module>

@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ejb-war-module:war exploded">
+    <output-path>$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war-module/target/ejb-war-module-1.0-SNAPSHOT</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ejb-war-module" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="ejb-war-module/web/Web" />
+    </root>
+  </artifact>
+</component>

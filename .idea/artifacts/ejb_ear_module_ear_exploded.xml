@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="ejb-ear-module:ear exploded">
+    <output-path>$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear-module/target/ejb-ear-module-1.0-SNAPSHOT</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="ejb-ear-module/javaeeApplication/JavaEE" />
+      <element id="archive" name="ejb-war-module-1.0-SNAPSHOT.war">
+        <element id="artifact" artifact-name="ejb-war-module:war exploded" />
+      </element>
+    </root>
+  </artifact>
+</component>

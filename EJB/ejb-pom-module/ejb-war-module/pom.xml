@@ -7,6 +7,8 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
+    <name>EJB ejb-war-module</name>
+
     <dependencies>
         <dependency>
             <groupId>javax</groupId>
