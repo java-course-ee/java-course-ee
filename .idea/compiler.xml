@@ -22,11 +22,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="DojoExampleN01" />
+        <module name="DojoExampleN02" />
+        <module name="DojoExampleN03" />
+        <module name="DojoExampleN04" />
         <module name="ejb-ear-module" />
         <module name="ejb-war-module" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="DojoExampleN01" target="1.6" />
+      <module name="DojoExampleN02" target="1.6" />
+      <module name="DojoExampleN03" target="1.6" />
+      <module name="DojoExampleN04" target="1.6" />
       <module name="ejb-ear-module" target="1.6" />
       <module name="ejb-war-module" target="1.6" />
       <module name="examples" target="1.6" />
