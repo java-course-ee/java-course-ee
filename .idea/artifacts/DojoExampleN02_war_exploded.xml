@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="DojoExampleN02:war exploded">
+    <output-path>$PROJECT_DIR$/Dojo/DojoExampleN02/target/DojoExampleN02</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="DojoExampleN02" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="DojoExampleN02/web/Web" />
+    </root>
+  </artifact>
+</component>

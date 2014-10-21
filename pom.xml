@@ -12,6 +12,7 @@
 	<modules>
         <module>Dojo</module>
 		<module>EJB</module>
+        <module>Logging</module>
 	</modules>
 
     <properties>
@@ -31,6 +32,11 @@
                 <artifactId>javaee-api</artifactId>
                 <version>7.0</version>
                 <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>1.2.17</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

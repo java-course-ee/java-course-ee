@@ -12,6 +12,8 @@
       <module fileurl="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-pom-module.iml" filepath="$PROJECT_DIR$/EJB/ejb-pom-module/ejb-pom-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war-module/ejb-war-module.iml" filepath="$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war-module/ejb-war-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/examples.iml" filepath="$PROJECT_DIR$/examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Logging/log4j/log4j.iml" filepath="$PROJECT_DIR$/Logging/log4j/log4j.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Logging/logging.iml" filepath="$PROJECT_DIR$/Logging/logging.iml" />
     </modules>
   </component>
 </project>
