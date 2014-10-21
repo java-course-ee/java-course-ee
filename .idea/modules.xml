@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Dojo/Dojo.iml" filepath="$PROJECT_DIR$/Dojo/Dojo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Dojo/DojoExampleN01/DojoExampleN01.iml" filepath="$PROJECT_DIR$/Dojo/DojoExampleN01/DojoExampleN01.iml" />
       <module fileurl="file://$PROJECT_DIR$/Dojo/DojoExampleN02/DojoExampleN02.iml" filepath="$PROJECT_DIR$/Dojo/DojoExampleN02/DojoExampleN02.iml" />
       <module fileurl="file://$PROJECT_DIR$/Dojo/DojoExampleN03/DojoExampleN03.iml" filepath="$PROJECT_DIR$/Dojo/DojoExampleN03/DojoExampleN03.iml" />
       <module fileurl="file://$PROJECT_DIR$/Dojo/DojoExampleN04/DojoExampleN04.iml" filepath="$PROJECT_DIR$/Dojo/DojoExampleN04/DojoExampleN04.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/EJB.iml" filepath="$PROJECT_DIR$/EJB/EJB.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Dojo/dojo.iml" filepath="$PROJECT_DIR$/Dojo/dojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Logging/Logging.iml" filepath="$PROJECT_DIR$/Logging/Logging.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear-module/ejb-ear-module.iml" filepath="$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear-module/ejb-ear-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-pom-module.iml" filepath="$PROJECT_DIR$/EJB/ejb-pom-module/ejb-pom-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war-module/ejb-war-module.iml" filepath="$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war-module/ejb-war-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/examples.iml" filepath="$PROJECT_DIR$/examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/Logging/log4j/log4j.iml" filepath="$PROJECT_DIR$/Logging/log4j/log4j.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Logging/logging.iml" filepath="$PROJECT_DIR$/Logging/logging.iml" />
     </modules>
   </component>
 </project>

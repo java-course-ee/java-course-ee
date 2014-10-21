@@ -32,14 +32,14 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="DojoExampleN01" target="1.6" />
-      <module name="DojoExampleN02" target="1.6" />
-      <module name="DojoExampleN03" target="1.6" />
-      <module name="DojoExampleN04" target="1.6" />
-      <module name="ejb-ear-module" target="1.6" />
-      <module name="ejb-war-module" target="1.6" />
-      <module name="examples" target="1.6" />
-      <module name="log4j" target="1.6" />
+      <module name="DojoExampleN01" target="1.7" />
+      <module name="DojoExampleN02" target="1.7" />
+      <module name="DojoExampleN03" target="1.7" />
+      <module name="DojoExampleN04" target="1.7" />
+      <module name="ejb-ear-module" target="1.7" />
+      <module name="ejb-war-module" target="1.7" />
+      <module name="examples" target="1.7" />
+      <module name="log4j" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
