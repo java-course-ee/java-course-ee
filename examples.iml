@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_13_EL_Function/target/classes/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_24_Lookup/target/spring-lookup/WEB-INF/classes/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_5_PropertyConfigurer/target/classes/config.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_19_Transaction/src/main/resources/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_5_PropertyConfigurer/src/main/resources/config.xml</file>
+          <file>file://$MODULE_DIR$/DWR/DWRExample-N01/src/main/webapp/WEB-INF/conf/region-cfg.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_22_Hibernate/target/classes/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_21_JDBC_DAO/src/main/resources/springExample.xml</file>
+          <file>file://$MODULE_DIR$/SpringMVC/GS_Spring_004/web/WEB-INF/database-config.xml</file>
+          <file>file://$MODULE_DIR$/Security/GS_ApacheShiro_03/src/main/webapp/WEB-INF/sprhib-servlet.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_11_BeanValidation/target/classes/springExample.xml</file>
+          <file>file://$MODULE_DIR$/SpringMVC/GS_Spring_004/web/WEB-INF/dispatcher-servlet.xml</file>
+          <file>file://$MODULE_DIR$/Security/GS_ApacheShiro_03/src/main/webapp/WEB-INF/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_17_JUnit/src/main/resources/springExample.xml</file>
+          <file>file://$MODULE_DIR$/SpringMVC/GS_Spring_001/src/main/webapp/WEB-INF/dispatcher-servlet.xml</file>
+          <file>file://$MODULE_DIR$/Security/GS_Spring_Security_002/src/main/webapp/WEB-INF/spring-security.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_13_EL_Function/src/main/resources/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_20_JDBC/src/main/resources/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_15_AOP_Advisor/target/classes/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_3_AnnotationConfig/target/classes/config.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_17_JUnit/target/classes/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_16_AOP_AspectJ/target/classes/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_9_Resource/target/classes/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_12_EL_First/target/classes/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_8_Aware/target/classes/springExample.xml</file>
+          <file>file://$MODULE_DIR$/SpringMVC/GS_Spring_002/src/main/webapp/WEB-INF/database-config.xml</file>
+          <file>file://$MODULE_DIR$/SpringMVC/GS_Spring_002/src/main/webapp/WEB-INF/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/SpringMVC/GS_Spring_002/src/main/webapp/WEB-INF/dispatcher-servlet.xml</file>
+          <file>file://$MODULE_DIR$/Security/GS_Spring_Security_001/src/main/webapp/WEB-INF/spring-security.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_24_Lookup/target/classes/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_22_Hibernate/src/main/resources/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_SubscriptionPortlet/src/main/webapp/WEB-INF/context/database-config.xml</file>
+          <file>file://$MODULE_DIR$/Security/GS_Spring_Security_001/src/main/webapp/WEB-INF/dispatcher-servlet.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_1_IoC/target/classes/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_4_Lifecycle/target/classes/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_1_IoC/target/classes/springSuit.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_2_Annotation/src/main/resources/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_3_AnnotationConfig/src/main/resources/config.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_14_AOP_Advice/target/classes/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_16_AOP_AspectJ/src/main/resources/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_7_MethodInject/target/classes/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_11_BeanValidation/src/main/resources/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_12_EL_First/src/main/resources/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_8_Aware/src/main/resources/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Security/GS_Spring_Security_002/src/main/webapp/WEB-INF/dispatcher-servlet.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_SubscriptionPortlet/src/main/webapp/WEB-INF/context/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_SubscriptionPortlet/src/main/webapp/WEB-INF/context/scheduler.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_SubscriptionPortlet/src/main/webapp/WEB-INF/context/mail.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_14_AOP_Advice/src/main/resources/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_18_AOP_AspectJPointcut_XML/target/classes/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_1_IoC/src/main/resources/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_1_IoC/src/main/resources/springSuit.xml</file>
+          <file>file://$MODULE_DIR$/Security/GS_Spring_Security_003/src/main/webapp/WEB-INF/spring-security.xml</file>
+          <file>file://$MODULE_DIR$/DWR/DWRExample-N01/src/main/webapp/WEB-INF/conf/springDatabase.xml</file>
+          <file>file://$MODULE_DIR$/SpringMVC/GS_Spring_004/build/web/WEB-INF/database-config.xml</file>
+          <file>file://$MODULE_DIR$/Security/GS_Spring_Security_003/src/main/webapp/WEB-INF/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/Security/GS_Spring_Security_003/src/main/webapp/WEB-INF/dispatcher-servlet.xml</file>
+          <file>file://$MODULE_DIR$/SpringMVC/GS_Spring_004/build/web/WEB-INF/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/SpringMVC/GS_Spring_004/build/web/WEB-INF/dispatcher-servlet.xml</file>
+          <file>file://$MODULE_DIR$/JSF/GS_JSF_10/src/main/webapp/WEB-INF/database-config.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_23_HibernateAspect/target/classes/springExample.xml</file>
+          <file>file://$MODULE_DIR$/SpringMVC/GS_Spring_005/src/main/webapp/WEB-INF/db-config.xml</file>
+          <file>file://$MODULE_DIR$/JSF/GS_JSF_10/src/main/webapp/WEB-INF/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/SpringMVC/GS_Spring_005/src/main/webapp/WEB-INF/dispatcher-servlet.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_7_MethodInject/src/main/resources/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_2_Annotation/target/classes/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_4_Lifecycle/src/main/resources/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_2_Annotation/target/classes/springSuit.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_18_AOP_AspectJPointcut_XML/src/main/resources/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_SubscriptionPortlet/src/main/webapp/WEB-INF/context/subscription.xml</file>
+          <file>file://$MODULE_DIR$/Security/GS_Spring_Security_004/src/main/webapp/WEB-INF/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_24_Lookup/src/main/resources/springExample.xml</file>
+          <file>file://$MODULE_DIR$/SpringMVC/GS_Spring_005/src/main/webapp/WEB-INF/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/SpringMVC/GS_Spring_004/web/WEB-INF/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/SpringMVC/GS_Spring_003/src/main/webapp/WEB-INF/dispatcher-servlet.xml</file>
+          <file>file://$MODULE_DIR$/SpringMVC/GS_Spring_006/src/main/webapp/WEB-INF/dispatcher-servlet.xml</file>
+          <file>file://$MODULE_DIR$/Spring/SpringFirst/target/classes/spring-context.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_15_AOP_Advisor/src/main/resources/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_10_Validation/target/classes/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/SpringFirst/src/main/resources/spring-context.xml</file>
+          <file>file://$MODULE_DIR$/Velocity/GS_Velocity_3/src/main/webapp/WEB-INF/database-config.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_19_Transaction/target/classes/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Velocity/GS_Velocity_3/src/main/webapp/WEB-INF/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/Velocity/GS_Velocity_3/src/main/webapp/WEB-INF/dispatcher-servlet.xml</file>
+          <file>file://$MODULE_DIR$/Security/GS_Spring_Security_004/src/main/webapp/WEB-INF/dispatcher-servlet.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_6_Scope/target/classes/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_21_JDBC_DAO/target/classes/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_6_Scope/src/main/resources/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_10_Validation/src/main/resources/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_9_Resource/src/main/resources/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_2_Annotation/src/main/resources/springSuit.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_23_HibernateAspect/src/main/resources/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Struts/Struts2ExampleN03-web/src/main/webapp/WEB-INF/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/Spring/GS_Spring_20_JDBC/target/classes/springExample.xml</file>
+          <file>file://$MODULE_DIR$/Security/GS_Spring_Security_004/src/main/webapp/WEB-INF/spring-security.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/JSF/GS_JSF_1/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/JSF/GS_JSF_1/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web2">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/JSF/GS_JSF_2/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/JSF/GS_JSF_2/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web3">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Servlet-JSP/MyFirstServlet_JSP/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Servlet-JSP/MyFirstServlet_JSP/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web4">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/WebServices/JAX_WS/WebService_1_JAX-WS/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/WebServices/JAX_WS/WebService_1_JAX-WS/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web5">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/SpringMVC/GS_Spring_004/build/web/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/SpringMVC/GS_Spring_004/build/web" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web6">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Security/WebSecurityExample-N02/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Security/WebSecurityExample-N02/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web7">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/SpringMVC/GS_Spring_001/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/SpringMVC/GS_Spring_001/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web8">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Velocity/GS_Velocity_2/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Velocity/GS_Velocity_2/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web9">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/SpringMVC/GS_Spring_002/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/SpringMVC/GS_Spring_002/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web10">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/WebServices/WEB-REST/WebService_6_REST/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/WebServices/WEB-REST/WebService_6_REST/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web11">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/SpringMVC/GS_Spring_004/web/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/SpringMVC/GS_Spring_004/web" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web12">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Security/GS_Spring_Security_004/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Security/GS_Spring_Security_004/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web13">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/JSF/GS_JSF_8/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/JSF/GS_JSF_8/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web14">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Struts/Struts2ExampleN01-web/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Struts/Struts2ExampleN01-web/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web15">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/SpringMVC/GS_Spring_005/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/SpringMVC/GS_Spring_005/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web16">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Security/ClientAuthentication/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Security/ClientAuthentication/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web17">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Security/WebSecurity/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Security/WebSecurity/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web18">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Vaadin/VaadinExampleN04/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Vaadin/VaadinExampleN04/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web19">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Vaadin/VaadinExampleN03/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Vaadin/VaadinExampleN03/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web20">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/JSF/GS_JSF_4/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/JSF/GS_JSF_4/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web21">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/JSF/GS_JSF_9/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/JSF/GS_JSF_9/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web22">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Security/GS_ApacheShiro_02/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Security/GS_ApacheShiro_02/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web23">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/JSF/GS_JSF_6/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/JSF/GS_JSF_6/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web24">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/JSF/GS_JSF_3/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/JSF/GS_JSF_3/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web25">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Security/GS_Spring_Security_001/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Security/GS_Spring_Security_001/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web26">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Struts/Struts2ExampleN03-web/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Struts/Struts2ExampleN03-web/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web27">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/ZK/ZKExample01/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/ZK/ZKExample01/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web28">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/DWR/DWRExample-N01/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/DWR/DWRExample-N01/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web29">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Security/WebSecurityExample-N00/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Security/WebSecurityExample-N00/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web30">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/WebServices/WEB-REST/WebService_3_REST/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/WebServices/WEB-REST/WebService_3_REST/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web31">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Security/WebSecurityExample-N03/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Security/WebSecurityExample-N03/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web32">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Portlets/SimplePortlet/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Portlets/SimplePortlet/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web33">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/SpringMVC/GS_Spring_006/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/SpringMVC/GS_Spring_006/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web34">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/JSF/GS_JSF_5/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/JSF/GS_JSF_5/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web35">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/SpringMVC/GS_Spring_003/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/SpringMVC/GS_Spring_003/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web36">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Security/GS_Spring_Security_003/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Security/GS_Spring_Security_003/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web37">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Security/GS_ApacheShiro_03/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Security/GS_ApacheShiro_03/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web38">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/ZK/ZKExample02/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/ZK/ZKExample02/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web39">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/JQuery/JQueryExampleN10/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/JQuery/JQueryExampleN10/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web40">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Security/GS_Spring_Security_002/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Security/GS_Spring_Security_002/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web41">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/JSF/GS_JSF_10/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/JSF/GS_JSF_10/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web42">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Spring/GS_Spring_24_Lookup/target/spring-lookup/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Spring/GS_Spring_24_Lookup/target/spring-lookup" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web43">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Spring/GS_Spring_24_Lookup/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Spring/GS_Spring_24_Lookup/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web44">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Servlet-JSP/MyFirstServlet/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Servlet-JSP/MyFirstServlet/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web45">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/JQuery/JQueryExampleN11/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/JQuery/JQueryExampleN11/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web46">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Security/WebSecurityExample-N01/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Security/WebSecurityExample-N01/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web47">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/WebServices/JAX_WS/WebService_0_JAX-WS/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/WebServices/JAX_WS/WebService_0_JAX-WS/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web48">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/ZK/ZKExample03/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/ZK/ZKExample03/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web49">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Struts/Struts2ExampleN02-web/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Struts/Struts2ExampleN02-web/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web50">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/JQuery/JQueryExampleN07/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/JQuery/JQueryExampleN07/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web51">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Velocity/GS_Velocity_3/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Velocity/GS_Velocity_3/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web52">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/ZK/ZKExample04/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/ZK/ZKExample04/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web53">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Spring/GS_SubscriptionPortlet/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Spring/GS_SubscriptionPortlet/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web54">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Vaadin/VaadinExampleN01/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Vaadin/VaadinExampleN01/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web55">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/WebServices/WEB-REST/WebService_4_REST/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/WebServices/WEB-REST/WebService_4_REST/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web56">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Vaadin/VaadinExampleN02/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Vaadin/VaadinExampleN02/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web57">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/ZK/ZKExample05/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/ZK/ZKExample05/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web58">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/JSF/GS_JSF_7/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/JSF/GS_JSF_7/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web59">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/WebServices/WEB-REST/WebService_5_REST/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/WebServices/WEB-REST/WebService_5_REST/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="javaeeApplication" name="javaEEApplication">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="application.xml" url="file://$MODULE_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ear/target/application.xml" />
+        </descriptors>
+      </configuration>
+    </facet>
+    <facet type="hibernate" name="Hibernate">
+      <configuration>
+        <datasource-map />
+        <naming-strategy-map />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/DWR/DWRExample-N01/src/main/resources/hibernate.cfg.xml" />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/Security/GS_ApacheShiro_03/src/main/resources/hibernate.cfg.xml" />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/Struts/Struts2ExampleN03-web/src/main/webapp/WEB-INF/hibernate.cfg.xml" />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/WebServices/JAX_WS/WebService_1_JAX-WS/src/main/resources/hibernate.cfg.xml" />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/WebServices/WEB-REST/WebService_3_REST/src/main/resources/hibernate.cfg.xml" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
+
