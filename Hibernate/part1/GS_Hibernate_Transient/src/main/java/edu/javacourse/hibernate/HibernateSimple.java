@@ -1,13 +1,14 @@
 package edu.javacourse.hibernate;
 
-import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+import java.util.List;
+
 /**
  * Простой пример работы с программно загружаемой конфигурацией и мапингом в виде XML
- * 
+ *
  * @author ASaburov
  */
 public class HibernateSimple {
@@ -18,8 +19,8 @@ public class HibernateSimple {
         Session s = hs.getSessionFactory().getCurrentSession();
         s.beginTransaction();
         List<Region> regionList = s.createQuery("from Region").list();
-        
-        for(Region r : regionList) {
+
+        for (Region r : regionList) {
             System.out.println("Region name:" + r.getRegionName());
         }
 

@@ -8,6 +8,6 @@
     <title></title>
 </head>
 <body>
-    <% response.sendRedirect("/books"); %>
+<% response.sendRedirect("/books"); %>
 </body>
 </html>

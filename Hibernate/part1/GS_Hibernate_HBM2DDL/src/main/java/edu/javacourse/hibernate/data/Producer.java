@@ -1,8 +1,5 @@
 package edu.javacourse.hibernate.data;
 
-import org.hibernate.annotations.Index;
-
-import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 

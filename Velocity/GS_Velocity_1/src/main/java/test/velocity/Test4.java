@@ -1,12 +1,12 @@
 package test.velocity;
 
-import org.apache.velocity.app.Velocity;
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
+import org.apache.velocity.app.Velocity;
 import org.apache.velocity.context.Context;
 
-import java.io.Writer;
 import java.io.StringWriter;
+import java.io.Writer;
 
 /**
  * Created by IntelliJ IDEA.
@@ -17,9 +17,9 @@ import java.io.StringWriter;
  */
 public class Test4 {
 
-    public Test4() throws Exception{
+    public Test4() throws Exception {
 
-         Velocity.init("src/main/java/velocity.properties");
+        Velocity.init("src/main/java/velocity.properties");
         // get Template
         Template template = Velocity.getTemplate("Test4.vm");
         // getContext

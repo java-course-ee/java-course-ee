@@ -1,8 +1,8 @@
 package ru.geminisystems.validator;
 
-import org.springframework.validation.Validator;
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
+import org.springframework.validation.Validator;
 import ru.geminisystems.entity.Order;
 
 /**
@@ -18,7 +18,6 @@ public class OrderValidator implements Validator {
     public boolean supports(Class clazz) {
         return Order.class.equals(clazz);
     }
-
 
 
     public void validate(Object o, Errors errors) {

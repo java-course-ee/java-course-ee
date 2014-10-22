@@ -1,6 +1,5 @@
 package edu.javacourse.webservice.rest;
 
-import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
 import java.io.File;
 import java.net.URISyntaxException;
@@ -31,14 +30,9 @@ public class RestService {
     public Response getImage() throws URISyntaxException {
         File file = new File(getClass().getResource("logo.png").toURI());
         Response.ResponseBuilder response = Response.ok(file);
-        response.header("Content-Disposition", "attachment; filename='" + file.getName()+ "'");
+        response.header("Content-Disposition", "attachment; filename='" + file.getName() + "'");
         return response.build();
     }
-
-
-
-
-
 
 
 }

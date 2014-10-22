@@ -1,207 +1,206 @@
 package ru.test.struts2.action;
 
 import com.opensymphony.xwork2.ActionSupport;
-import java.util.List;
-import java.util.Map;
 import org.apache.log4j.Logger;
 import org.apache.struts2.interceptor.SessionAware;
-import org.springframework.beans.factory.annotation.Autowired;
 import ru.test.struts2.entity.Account;
 import ru.test.struts2.entity.Person;
 import ru.test.struts2.service.AccountService;
 import ru.test.struts2.service.TransferService;
 import ru.test.struts2.service.UserService;
 
+import java.util.List;
+import java.util.Map;
+
 /**
- *
  * @author APronchakov <artem.pronchakov@gmail.com>
  */
 public class TransferAction extends ActionSupport implements SessionAware {
-	private Logger log = Logger.getLogger(TransferAction.class);
-	
-	private TransferService transferService;
-	private UserService userService;
-	private AccountService accountService;
-	
-	private Map session;
-	
-	private Person person;
-	private List<Account> accountList;
-	private Account fromAccount;
-	private Long fromAccountVal;
-	private List<Person> allPersons;
-	private Person toPerson;
-	private Long toPersonVal;
-	private Account toPersonAccount;
-	private Long toPersonAccountVal;
-	private double amount;
-	private String comment;
+    private Logger log = Logger.getLogger(TransferAction.class);
 
-	
-	public String transferOne() throws Exception {
-		person = userService.getPerson(Long.valueOf("1"), false);
-		allPersons = userService.findAllPersons(false);
-		getSession().put("person", person);
-		return "success";
-	}
+    private TransferService transferService;
+    private UserService userService;
+    private AccountService accountService;
 
-	public String transferTwo() throws Exception {
-		person = (Person) getSession().get("person");
-		toPerson = userService.getPerson(toPersonVal,false);
-		
-		getSession().put("toPerson", toPerson);
-		return "success";
-	}
-	
-	public String doTransfer() throws Exception {
-		fromAccount = accountService.getAccount(fromAccountVal,false);
-		toPersonAccount = accountService.getAccount(toPersonAccountVal,false);
-		
-		try {
-			transferService.proccessTransfer(fromAccount, toPersonAccount, amount, comment);
-			
-			getSession().remove("toPerson");
-			
-			return "success";
-		} catch (Throwable ex) {
-			log.error("EXCEPTION: " + ex.getMessage());
-			getSession().put("fromAccount", fromAccount);
-			getSession().put("toPersonAccount", toPersonAccount);
-			return "failure";
-		}
-		
-	}
-	
-	public String listAccounts() throws Exception {
-		person = userService.getPerson(Long.valueOf("1"), false);
-		
-		return "success";
-	}
-	
-	public String listTransfers() throws Exception {
-		fromAccount = accountService.getAccount(fromAccountVal, false);
-		return "success";
-	}
-	
-	public Person getPerson() {
-		return person;
-	}
+    private Map session;
 
-	public void setPerson(Person person) {
-		this.person = person;
-	}
+    private Person person;
+    private List<Account> accountList;
+    private Account fromAccount;
+    private Long fromAccountVal;
+    private List<Person> allPersons;
+    private Person toPerson;
+    private Long toPersonVal;
+    private Account toPersonAccount;
+    private Long toPersonAccountVal;
+    private double amount;
+    private String comment;
 
-	public TransferService getTransferService() {
-		return transferService;
-	}
 
-	public void setTransferService(TransferService transferService) {
-		this.transferService = transferService;
-	}
+    public String transferOne() throws Exception {
+        person = userService.getPerson(Long.valueOf("1"), false);
+        allPersons = userService.findAllPersons(false);
+        getSession().put("person", person);
+        return "success";
+    }
 
-	public UserService getUserService() {
-		return userService;
-	}
+    public String transferTwo() throws Exception {
+        person = (Person) getSession().get("person");
+        toPerson = userService.getPerson(toPersonVal, false);
 
-	public void setUserService(UserService userService) {
-		this.userService = userService;
-	}
+        getSession().put("toPerson", toPerson);
+        return "success";
+    }
 
-	public List<Account> getAccountList() {
-		return accountList;
-	}
+    public String doTransfer() throws Exception {
+        fromAccount = accountService.getAccount(fromAccountVal, false);
+        toPersonAccount = accountService.getAccount(toPersonAccountVal, false);
 
-	public void setAccountList(List<Account> accountList) {
-		this.accountList = accountList;
-	}
+        try {
+            transferService.proccessTransfer(fromAccount, toPersonAccount, amount, comment);
 
-	public Account getFromAccount() {
-		return fromAccount;
-	}
+            getSession().remove("toPerson");
 
-	public void setFromAccount(Account fromAccount) {
-		this.fromAccount = fromAccount;
-	}
+            return "success";
+        } catch (Throwable ex) {
+            log.error("EXCEPTION: " + ex.getMessage());
+            getSession().put("fromAccount", fromAccount);
+            getSession().put("toPersonAccount", toPersonAccount);
+            return "failure";
+        }
 
-	public Person getToPerson() {
-		return toPerson;
-	}
+    }
 
-	public void setToPerson(Person toPerson) {
-		this.toPerson = toPerson;
-	}
+    public String listAccounts() throws Exception {
+        person = userService.getPerson(Long.valueOf("1"), false);
 
-	public List<Person> getAllPersons() {
-		return allPersons;
-	}
+        return "success";
+    }
 
-	public void setAllPersons(List<Person> allPersons) {
-		this.allPersons = allPersons;
-	}
+    public String listTransfers() throws Exception {
+        fromAccount = accountService.getAccount(fromAccountVal, false);
+        return "success";
+    }
 
-	public Account getToPersonAccount() {
-		return toPersonAccount;
-	}
+    public Person getPerson() {
+        return person;
+    }
 
-	public void setToPersonAccount(Account toPersonAccount) {
-		this.toPersonAccount = toPersonAccount;
-	}
+    public void setPerson(Person person) {
+        this.person = person;
+    }
 
-	@Override
-	public void setSession(Map<String, Object> session) {
-		this.session = session;
-	}
+    public TransferService getTransferService() {
+        return transferService;
+    }
 
-	public Map getSession() {
-		return session;
-	}
+    public void setTransferService(TransferService transferService) {
+        this.transferService = transferService;
+    }
 
-	public Long getToPersonVal() {
-		return toPersonVal;
-	}
+    public UserService getUserService() {
+        return userService;
+    }
 
-	public void setToPersonVal(Long toPersonVal) {
-		this.toPersonVal = toPersonVal;
-	}
+    public void setUserService(UserService userService) {
+        this.userService = userService;
+    }
 
-	public double getAmount() {
-		return amount;
-	}
+    public List<Account> getAccountList() {
+        return accountList;
+    }
 
-	public void setAmount(double amount) {
-		this.amount = amount;
-	}
+    public void setAccountList(List<Account> accountList) {
+        this.accountList = accountList;
+    }
 
-	public Long getFromAccountVal() {
-		return fromAccountVal;
-	}
+    public Account getFromAccount() {
+        return fromAccount;
+    }
 
-	public void setFromAccountVal(Long fromAccountVal) {
-		this.fromAccountVal = fromAccountVal;
-	}
+    public void setFromAccount(Account fromAccount) {
+        this.fromAccount = fromAccount;
+    }
 
-	public Long getToPersonAccountVal() {
-		return toPersonAccountVal;
-	}
+    public Person getToPerson() {
+        return toPerson;
+    }
 
-	public void setToPersonAccountVal(Long toPersonAccountVal) {
-		this.toPersonAccountVal = toPersonAccountVal;
-	}
+    public void setToPerson(Person toPerson) {
+        this.toPerson = toPerson;
+    }
 
-	public AccountService getAccountService() {
-		return accountService;
-	}
+    public List<Person> getAllPersons() {
+        return allPersons;
+    }
 
-	public void setAccountService(AccountService accountService) {
-		this.accountService = accountService;
-	}
+    public void setAllPersons(List<Person> allPersons) {
+        this.allPersons = allPersons;
+    }
 
-	public String getComment() {
-		return comment;
-	}
+    public Account getToPersonAccount() {
+        return toPersonAccount;
+    }
 
-	public void setComment(String comment) {
-		this.comment = comment;
-	}
+    public void setToPersonAccount(Account toPersonAccount) {
+        this.toPersonAccount = toPersonAccount;
+    }
+
+    public Map getSession() {
+        return session;
+    }
+
+    @Override
+    public void setSession(Map<String, Object> session) {
+        this.session = session;
+    }
+
+    public Long getToPersonVal() {
+        return toPersonVal;
+    }
+
+    public void setToPersonVal(Long toPersonVal) {
+        this.toPersonVal = toPersonVal;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public void setAmount(double amount) {
+        this.amount = amount;
+    }
+
+    public Long getFromAccountVal() {
+        return fromAccountVal;
+    }
+
+    public void setFromAccountVal(Long fromAccountVal) {
+        this.fromAccountVal = fromAccountVal;
+    }
+
+    public Long getToPersonAccountVal() {
+        return toPersonAccountVal;
+    }
+
+    public void setToPersonAccountVal(Long toPersonAccountVal) {
+        this.toPersonAccountVal = toPersonAccountVal;
+    }
+
+    public AccountService getAccountService() {
+        return accountService;
+    }
+
+    public void setAccountService(AccountService accountService) {
+        this.accountService = accountService;
+    }
+
+    public String getComment() {
+        return comment;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
 
 }

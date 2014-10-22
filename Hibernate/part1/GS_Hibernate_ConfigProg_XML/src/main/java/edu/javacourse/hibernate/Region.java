@@ -3,9 +3,9 @@ package edu.javacourse.hibernate;
 import java.io.Serializable;
 
 public class Region implements Serializable {
-  
+
     private Long regionId;
-    
+
     private String regionName;
 
     public Region() {
@@ -14,7 +14,7 @@ public class Region implements Serializable {
     public Region(String name) {
         this.regionName = name;
     }
-    
+
     public Long getRegionId() {
         return regionId;
     }
@@ -33,6 +33,6 @@ public class Region implements Serializable {
 
     @Override
     public String toString() {
-        return regionId+":"+regionName;
+        return regionId + ":" + regionName;
     }
 }

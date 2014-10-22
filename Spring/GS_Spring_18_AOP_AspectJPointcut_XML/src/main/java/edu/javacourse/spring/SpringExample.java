@@ -1,6 +1,5 @@
 package edu.javacourse.spring;
 
-import edu.javacourse.spring.bean.BuildingManager;
 import edu.javacourse.spring.bean.CityManager;
 import edu.javacourse.spring.bean.RegionManager;
 import org.springframework.context.ApplicationContext;
@@ -13,7 +12,7 @@ public class SpringExample {
         ApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"springExample.xml"});
 
 
-       // pointcut1(context);
+        // pointcut1(context);
 
         //pointcut2(context);
 
@@ -22,7 +21,6 @@ public class SpringExample {
 
 
     }
-
 
 
     private static void pointcut1(ApplicationContext context) {
@@ -52,8 +50,6 @@ public class SpringExample {
         System.out.println(regionManager.getClass());
         regionManager.createRegion("SPB");
     }
-
-
 
 
 }

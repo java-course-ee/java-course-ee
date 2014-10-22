@@ -13,7 +13,7 @@ import org.springframework.validation.Validator;
  */
 public class SCategoryValidator implements Validator {
 
-     public boolean supports(Class<?> aClass) {
+    public boolean supports(Class<?> aClass) {
         return SBean.class.equals(aClass);
     }
 
@@ -22,7 +22,7 @@ public class SCategoryValidator implements Validator {
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, "title", "subscription.invalid.title");
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, "paths", "subscription.invalid.path");
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, "atName", "subscription.invalid.atname");
-        
+
     }
 
 }

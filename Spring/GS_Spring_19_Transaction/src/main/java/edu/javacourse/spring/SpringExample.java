@@ -21,7 +21,6 @@ public class SpringExample {
         //test4(regionService);
 
 
-
     }
 
     private static void test1(RegionService regionService) {
@@ -40,7 +39,7 @@ public class SpringExample {
     }
 
     private static void test4(RegionService regionService) {
-        Region region =  regionService.getRegionByName("cccccccc");
+        Region region = regionService.getRegionByName("cccccccc");
         regionService.deleteRegion(region);
 
     }

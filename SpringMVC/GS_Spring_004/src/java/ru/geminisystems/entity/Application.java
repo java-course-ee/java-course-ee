@@ -1,9 +1,5 @@
 package ru.geminisystems.entity;
 
-import javax.persistence.*;
-import java.util.Set;
-import java.util.HashSet;
-
 /**
  * Created by IntelliJ IDEA.
  * User: gb
@@ -15,20 +11,19 @@ import java.util.HashSet;
 @Table(name = "applications")
 public class Application {
     @Id
-	@GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "applicationId", nullable = false)
     private Long applicationId;
 
     @Column(name = "applicationName", nullable = false)
-	private String applicationName;
+    private String applicationName;
 
     @Column(name = "description", nullable = true)
-	private String description;
+    private String description;
 
     @ManyToOne(cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
-	@JoinColumn(name="statusId", nullable = false)
-	private Status status;
-
+    @JoinColumn(name = "statusId", nullable = false)
+    private Status status;
 
 
     public Long getApplicationId() {

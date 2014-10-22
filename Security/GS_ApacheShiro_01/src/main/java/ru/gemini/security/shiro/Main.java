@@ -7,7 +7,6 @@ import org.apache.shiro.config.IniSecurityManagerFactory;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
 import org.apache.shiro.util.Factory;
-import org.apache.shiro.mgt.SecurityManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -105,10 +104,10 @@ public class Main {
         System.exit(0);
 
     }
-    
-    public static void log(String s){
+
+    public static void log(String s) {
         System.out.println(s);
     }
-  
+
 
 }

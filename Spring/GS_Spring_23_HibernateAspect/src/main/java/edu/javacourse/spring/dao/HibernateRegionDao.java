@@ -4,7 +4,6 @@ import edu.javacourse.spring.model.Region;
 import org.hibernate.Query;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 
 /**
  * Author: Georgy Gobozov
@@ -28,7 +27,7 @@ public class HibernateRegionDao implements RegionDao {
 
     @Override
     public Region getRegionByName(String name) {
-        Query query =  sFactory.getCurrentSession().createQuery("from Region r where r.name = ?");
+        Query query = sFactory.getCurrentSession().createQuery("from Region r where r.name = ?");
         query.setParameter(0, name);
         return (Region) query.uniqueResult();
     }

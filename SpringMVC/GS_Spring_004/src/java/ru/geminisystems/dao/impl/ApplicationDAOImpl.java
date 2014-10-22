@@ -1,13 +1,11 @@
 package ru.geminisystems.dao.impl;
 
 
-import java.util.List;
-import java.util.logging.Logger;
-
 import org.springframework.orm.hibernate3.HibernateTemplate;
-
 import ru.geminisystems.dao.IApplicationDAO;
 import ru.geminisystems.entity.Application;
+
+import java.util.List;
 
 /**
  * Created by IntelliJ IDEA.

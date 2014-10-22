@@ -17,40 +17,35 @@ import java.util.List;
  * @author Artem Pronchakov | email/xmpp: artem.pronchakov@calisto.email
  */
 
-@WebServlet(name = "BookServlet", urlPatterns = { "/bookServlet" })
-public class BookServlet
-        extends HttpServlet
-{
+@WebServlet(name = "BookServlet", urlPatterns = {"/bookServlet"})
+public class BookServlet extends HttpServlet {
 
-    private static final Logger log = LoggerFactory.getLogger( BookServlet.class );
+    private static final Logger log = LoggerFactory.getLogger(BookServlet.class);
 
     @EJB
     private BookEJBLocal bookEJBLocal;
 
     @Override
-    protected void doGet( HttpServletRequest request, HttpServletResponse response )
-    throws ServletException, IOException
-    {
-        log.trace( "Servlet BookServlet doGet begin" );
-        log.debug( "BookEJBLocal class: {}", bookEJBLocal == null ? "EJB not initialized" : bookEJBLocal.getClass().getCanonicalName() );
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        log.trace("Servlet BookServlet doGet begin");
+        log.debug("BookEJBLocal class: {}", bookEJBLocal == null ? "EJB not initialized" : bookEJBLocal.getClass().getCanonicalName());
 
-        List< Book > books = bookEJBLocal.getBooks();
+        List<Book> books = bookEJBLocal.getBooks();
 
-        log.debug( "Books returned by EJB: {}", books );
+        log.debug("Books returned by EJB: {}", books);
 
-        request.setAttribute( "books", books );
+        request.setAttribute("books", books);
 
-        getServletContext().getRequestDispatcher( "/index.jsp" ).forward( request, response );
-        log.trace( "Servlet BookServlet doGet end" );
+        getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
+        log.trace("Servlet BookServlet doGet end");
     }
 
-    public BookEJBLocal getBookEJBLocal()
-    {
+    public BookEJBLocal getBookEJBLocal() {
         return bookEJBLocal;
     }
 
-    public void setBookEJBLocal( BookEJBLocal bookEJBLocal )
-    {
+    public void setBookEJBLocal(BookEJBLocal bookEJBLocal) {
         this.bookEJBLocal = bookEJBLocal;
     }
 }

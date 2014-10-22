@@ -9,7 +9,9 @@ import edu.javacourse.spring.model.Region;
 public interface RegionDao {
 
     public Integer createRegion(Region region);
+
     public void deleteRegion(Region region);
+
     public Region getRegionByName(String name);
 
 }

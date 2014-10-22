@@ -1,6 +1,5 @@
 package com.gemini.spring.entity;
 
-import javax.persistence.*;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
@@ -9,7 +8,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  */
 @Entity
 @Table(name = "users")
-@XmlRootElement(name="user")
+@XmlRootElement(name = "user")
 public class User {
 
     @Id

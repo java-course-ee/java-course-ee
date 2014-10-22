@@ -1,7 +1,6 @@
 package com.gemini.spring.rest;
 
 import com.gemini.spring.entity.User;
-import com.gemini.spring.entity.Users;
 import com.gemini.spring.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

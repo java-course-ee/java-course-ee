@@ -1,10 +1,10 @@
 package ru.gs.test.restexample;
 
-import java.util.Date;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.util.Date;
 
 
-@XmlRootElement(name="person")
+@XmlRootElement(name = "person")
 public class Person {
     private Long id;
     private String name;
@@ -52,6 +52,6 @@ public class Person {
     public void setBirth(Date birth) {
         this.birth = birth;
     }
-    
-    
+
+
 }

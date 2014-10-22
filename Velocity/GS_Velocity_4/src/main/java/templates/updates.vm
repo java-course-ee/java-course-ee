@@ -2,20 +2,21 @@
 <head>Updates on ${currentDate}</head>
 
 
-<h1>Updates on ${currentDate}<h1>
+<h1>Updates on ${currentDate}
+    <h1>
 
 
-    #foreach($category in $categories)
-        <ul>
-            $category.name
-            #foreach($new in $category.content)
-                <li>$new.date &nbsp;&nbsp; <a href="">$new.title</a><br/>
-                    $new.content
-                </li>
-            #end
-        </ul>
-        <br/>
-        <br/>
-    #end
+        #foreach($category in $categories)
+            <ul>
+                $category.name
+                #foreach($new in $category.content)
+                    <li>$new.date &nbsp;&nbsp; <a href="">$new.title</a><br/>
+                        $new.content
+                    </li>
+                #end
+            </ul>
+            <br/>
+            <br/>
+        #end
 
 </html>

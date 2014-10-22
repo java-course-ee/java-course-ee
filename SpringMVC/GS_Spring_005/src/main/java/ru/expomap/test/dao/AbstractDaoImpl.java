@@ -3,7 +3,6 @@ package ru.expomap.test.dao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate3.HibernateTemplate;
 import org.springframework.transaction.annotation.Transactional;
-import ru.expomap.test.model.Project;
 
 import java.util.List;
 
@@ -17,10 +16,9 @@ import java.util.List;
 @Transactional
 public class AbstractDaoImpl<T> implements AbstractDao<T> {
 
-    private Class<T> type;
-
     @Autowired
     protected HibernateTemplate ht;
+    private Class<T> type;
 
     public AbstractDaoImpl(Class<T> type) {
         this.type = type;

@@ -1,7 +1,6 @@
 package edu.javacourse.hibernate;
 
 import java.io.Serializable;
-import javax.persistence.*;
 
 @Entity
 @Table(name = "jc_address")
@@ -43,8 +42,8 @@ public class User implements Serializable {
     public String toString() {
         return userId + " " + middleName;
     }
-    
-    
+
+
 }
 
 @Embeddable
@@ -75,6 +74,6 @@ class UserId implements Serializable {
     public String toString() {
         return firstName + " " + lastName;
     }
-    
-    
+
+
 }

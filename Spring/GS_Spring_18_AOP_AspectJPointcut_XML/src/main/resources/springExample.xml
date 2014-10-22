@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans
-        xmlns="http://www.springframework.org/schema/beans"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:aop="http://www.springframework.org/schema/aop" xmlns="http://www.springframework.org/schema/beans"
         xsi:schemaLocation="http://www.springframework.org/schema/beans
             http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <aop:aspectj-autoproxy />
+    <aop:aspectj-autoproxy/>
 
     <bean id="regionManager" class="edu.javacourse.spring.bean.RegionManager">
         <property name="name" value="I am region manager"/>
@@ -39,12 +39,14 @@
 
         </aop:aspect>
         <aop:aspect id="log" ref="log">
-            <aop:pointcut id="actionWithCity" expression="execution(* edu.javacourse.spring.bean.CityManager.*City(..))"/>
-            <aop:after pointcut-ref="actionWithCity" method="doAfterAnyActionCity" />
+            <aop:pointcut id="actionWithCity"
+                          expression="execution(* edu.javacourse.spring.bean.CityManager.*City(..))"/>
+            <aop:after pointcut-ref="actionWithCity" method="doAfterAnyActionCity"/>
         </aop:aspect>
 
         <aop:aspect id="log" ref="log">
-            <aop:pointcut id="allRegionManagerMethods" expression="execution(* edu.javacourse.spring.bean.RegionManager.*(..))"/>
+            <aop:pointcut id="allRegionManagerMethods"
+                          expression="execution(* edu.javacourse.spring.bean.RegionManager.*(..))"/>
             <aop:before pointcut-ref="allRegionManagerMethods" method="doBeforeAnyActionRegion"/>
         </aop:aspect>
 

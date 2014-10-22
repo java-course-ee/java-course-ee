@@ -1,15 +1,15 @@
 package edu.javacourse.hibernate;
 
-import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
+
+import java.util.List;
 
 /**
  * Простой пример для конфигурации в виде XML
- * 
+ *
  * @author ASaburov
  */
 public class HibernateSimple {
@@ -25,13 +25,13 @@ public class HibernateSimple {
         for (Region r : regionList) {
             System.out.println(r);
         }
-        
+
         s.getTransaction().commit();
 
     }
 
     private SessionFactory getSessionFactory() {
-        
+
         Configuration configuration = new Configuration();
         configuration.configure();
         SessionFactory sessionFactory = configuration.buildSessionFactory(

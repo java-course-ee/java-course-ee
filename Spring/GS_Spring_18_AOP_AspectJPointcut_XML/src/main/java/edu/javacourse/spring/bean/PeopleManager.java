@@ -7,15 +7,15 @@ package edu.javacourse.spring.bean;
 public class PeopleManager {
 
     private String name;
-    private  int number;
+    private int number;
 
-    public void createHuman(String name) throws IllegalArgumentException{
+    public void createHuman(String name) throws IllegalArgumentException {
         if (name == null)
             throw new IllegalArgumentException("Name must be not null");
         System.out.println("Create human...");
     }
 
-    public void deleteHuman(){
+    public void deleteHuman() {
         System.out.println("Delete human...");
     }
 

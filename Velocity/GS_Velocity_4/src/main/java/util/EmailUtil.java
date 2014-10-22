@@ -1,6 +1,5 @@
 package util;
 
-import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.util.Properties;
@@ -11,11 +10,7 @@ import java.util.Properties;
  */
 public class EmailUtil {
 
-    public enum EmailType{
-        TEXT, HTML
-    }
-
-    public static void send(String to, String subject, String text, EmailType type){
+    public static void send(String to, String subject, String text, EmailType type) {
 
         final String username = "georgy.gobozov@gmail.com";
         final String password = "";
@@ -41,7 +36,7 @@ public class EmailUtil {
             message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(to));
             message.setSubject(subject);
 
-            if (type == EmailType.TEXT){
+            if (type == EmailType.TEXT) {
                 message.setText(text);
             } else {
                 message.setContent(text, "text/html; charset=utf-8");
@@ -55,7 +50,9 @@ public class EmailUtil {
         }
     }
 
-
+    public enum EmailType {
+        TEXT, HTML
+    }
 
 
 }

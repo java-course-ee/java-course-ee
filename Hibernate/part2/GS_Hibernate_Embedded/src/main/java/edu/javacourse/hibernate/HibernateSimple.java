@@ -1,13 +1,10 @@
 package edu.javacourse.hibernate;
 
-import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 /**
- *
- * 
  * @author ASaburov
  */
 public class HibernateSimple {
@@ -17,7 +14,7 @@ public class HibernateSimple {
 
         Session s = hs.getSessionFactory().getCurrentSession();
         s.beginTransaction();
-        
+
 //        List<User> userList = s.createQuery("from User").list();
 //        for(User user : userList) {
 //            System.out.println("User:" + user);
@@ -48,8 +45,6 @@ public class HibernateSimple {
         s.save(withAddress);
 
 
-
-        
         s.getTransaction().commit();
     }
 

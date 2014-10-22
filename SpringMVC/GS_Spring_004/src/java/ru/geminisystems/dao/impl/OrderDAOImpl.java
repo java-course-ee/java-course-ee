@@ -1,11 +1,11 @@
 package ru.geminisystems.dao.impl;
 
 
-import java.util.List;
-
 import org.springframework.orm.hibernate3.HibernateTemplate;
 import ru.geminisystems.dao.IOrderDAO;
 import ru.geminisystems.entity.Order;
+
+import java.util.List;
 
 /**
  * Created by IntelliJ IDEA.
@@ -23,7 +23,7 @@ public class OrderDAOImpl implements IOrderDAO {
     }
 
     //public void create(Order order) {
-        //template.save(order);
+    //template.save(order);
     //}
 
     public void update(Order order) {

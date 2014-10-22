@@ -11,11 +11,11 @@ public class Price {
 
     private int price;
 
-    public int getWorstPrice(){
+    public int getWorstPrice() {
         return 999;
     }
 
-    public int getBestPrice(){
+    public int getBestPrice() {
         return 100;
     }
 

@@ -16,9 +16,9 @@ public class Gubernator implements Serializable {
 
     @Id
     @Column(name = "region_ext_id", unique = true, nullable = false)
-    @GenericGenerator(name="gen", strategy="foreign",
-            parameters=@Parameter(name="property", value="region"))
-    @GeneratedValue(generator="gen")
+    @GenericGenerator(name = "gen", strategy = "foreign",
+            parameters = @Parameter(name = "property", value = "region"))
+    @GeneratedValue(generator = "gen")
     private Long regionId;
 
 

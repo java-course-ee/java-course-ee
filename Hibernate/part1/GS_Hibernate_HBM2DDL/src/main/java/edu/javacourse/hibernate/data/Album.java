@@ -1,6 +1,5 @@
 package edu.javacourse.hibernate.data;
 
-import javax.persistence.*;
 import java.io.Serializable;
 
 /**

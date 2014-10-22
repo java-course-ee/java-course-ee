@@ -1,14 +1,5 @@
 package test.velocity;
 
-import org.apache.velocity.app.Velocity;
-import org.apache.velocity.Template;
-import org.apache.velocity.VelocityContext;
-import org.apache.velocity.context.Context;
-
-import java.util.Properties;
-import java.io.StringWriter;
-import java.io.Writer;
-
 /**
  * Created by IntelliJ IDEA.
  * User: gb
@@ -28,11 +19,11 @@ public class Main {
 //        Velocity.init(p);
 
 
-     //   Test1 test1 = new Test1();
-     //   Test2 test2 = new Test2();
-     //   Test3 test3 = new Test3();
-     //   Test4 test4 = new Test4();
-     //   Test5 test5 = new Test5();
+        //   Test1 test1 = new Test1();
+        //   Test2 test2 = new Test2();
+        //   Test3 test3 = new Test3();
+        //   Test4 test4 = new Test4();
+        //   Test5 test5 = new Test5();
         Test6 test6 = new Test6();
 
     }

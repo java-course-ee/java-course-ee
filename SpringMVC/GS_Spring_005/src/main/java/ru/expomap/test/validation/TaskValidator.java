@@ -3,8 +3,6 @@ package ru.expomap.test.validation;
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
-import org.springframework.web.bind.annotation.InitBinder;
-import ru.expomap.test.model.Project;
 import ru.expomap.test.model.Task;
 
 /**
@@ -22,7 +20,7 @@ public class TaskValidator implements Validator {
     }
 
     public void validate(Object o, Errors errors) {
-        Task task = (Task)o;
+        Task task = (Task) o;
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, "name", "", "Task name is required");
         if (task.getProject() == null)
             errors.rejectValue("project", "", "Task project is required, choose s project");
@@ -30,8 +28,6 @@ public class TaskValidator implements Validator {
             errors.rejectValue("users", "", "Task users is required, choose at least one");
 
     }
-
-    
 
 
 }

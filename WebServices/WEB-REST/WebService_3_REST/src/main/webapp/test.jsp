@@ -7,12 +7,13 @@
 
 <form action="rest/hello/add" method="post">
     <p>
-        Name : <input type="text" name="name" />
+        Name : <input type="text" name="name"/>
     </p>
+
     <p>
-        Age : <input type="text" name="age" />
+        Age : <input type="text" name="age"/>
     </p>
-    <input type="submit" value="Add User" />
+    <input type="submit" value="Add User"/>
 </form>
 
 </body>

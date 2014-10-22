@@ -21,7 +21,7 @@ public class ThreadScope implements Scope {
     public Object get(String name, ObjectFactory objectFactory) {
         Map scope = (Map) threadScope.get();
         Object object = scope.get(name);
-        if(object==null) {
+        if (object == null) {
             object = objectFactory.getObject();
             scope.put(name, object);
         }

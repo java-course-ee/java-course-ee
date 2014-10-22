@@ -24,8 +24,8 @@ public class SubscriptionDaoImpl implements SubscriptionDao {
     protected HibernateTemplate ht;
 
     public SBean getByEmail(String email) {
-        List<SBean> beans = (List<SBean> ) ht.find("from SBean b where b.email = ?", email.toLowerCase());
-       if (beans == null || beans.size() == 0) return null;
+        List<SBean> beans = (List<SBean>) ht.find("from SBean b where b.email = ?", email.toLowerCase());
+        if (beans == null || beans.size() == 0) return null;
         return beans.get(0);
     }
 

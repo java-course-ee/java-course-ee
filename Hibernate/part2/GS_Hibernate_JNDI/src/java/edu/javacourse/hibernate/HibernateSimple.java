@@ -1,13 +1,14 @@
 package edu.javacourse.hibernate;
 
-import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+import java.util.List;
+
 /**
  * Простой пример вызова через JNDI
- * 
+ *
  * @author ASaburov
  */
 public class HibernateSimple {

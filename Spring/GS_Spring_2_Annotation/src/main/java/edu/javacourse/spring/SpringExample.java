@@ -11,7 +11,7 @@ public class SpringExample {
         SpringExample se = new SpringExample();
         se.demoSpring();
     }
-    
+
     public void demoSpring() {
         ApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"springExample.xml"});
 
@@ -21,7 +21,7 @@ public class SpringExample {
         System.out.println("Annotated other:" + sa.getOtherString());
         System.out.println("Annotated spring bean:" + sa.getSpringTest().getNumber());
         System.out.println();
-        
+
         // Обратить внимание на то. что объект создается через вызов метода
         BeanExample be = context.getBean(BeanExample.class);
         System.out.println("Method bean:" + be.getBasicString());

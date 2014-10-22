@@ -26,11 +26,11 @@ public class RegionManager {
         this.number = number;
     }
 
-    public void getInfo(){
+    public void getInfo() {
         System.out.println("Name = " + name + " number= " + number);
     }
 
-    public void throwException(){
+    public void throwException() {
         throw new IllegalArgumentException();
     }
 

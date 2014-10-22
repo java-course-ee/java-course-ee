@@ -1,11 +1,11 @@
 package edu.javacourse.hibernate;
 
-import java.util.List;
-import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+
+import java.util.List;
 
 /**
  * @author Georgy Gobozov
@@ -32,15 +32,10 @@ public class HibernateSimple {
         s.close();
 
 
-       // AnotherClass.printAgain(regionList); // uncomment this and comment this System.out.println("Cities size:" + r.getCityList().size());
-
-
+        // AnotherClass.printAgain(regionList); // uncomment this and comment this System.out.println("Cities size:" + r.getCityList().size());
 
 
     }
-
-
-
 
 
     private SessionFactory getSessionFactory() {

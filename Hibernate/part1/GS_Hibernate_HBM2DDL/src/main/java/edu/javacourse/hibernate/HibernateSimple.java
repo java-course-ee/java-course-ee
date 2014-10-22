@@ -8,7 +8,7 @@ import org.hibernate.cfg.AnnotationConfiguration;
 
 /**
  * Простой пример работы со связанными таблицами
- * 
+ *
  * @author ASaburov
  */
 public class HibernateSimple {
@@ -18,8 +18,6 @@ public class HibernateSimple {
 
         Session s = hs.getSessionFactory().getCurrentSession();
         s.beginTransaction();
-
-
 
 
         Author metallica = new Author();
@@ -40,9 +38,6 @@ public class HibernateSimple {
 //        List<Album> albums = new ArrayList<Album>();
 //        albums.add(album1);
 //        albums.add(album2);
-
-
-
 
 
         s.getTransaction().commit();

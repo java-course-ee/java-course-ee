@@ -1,13 +1,11 @@
 package edu.javacourse.hibernate;
 
-import java.util.List;
-import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import javax.persistence.NamedQuery;
+import java.util.List;
 
 /**
  * @author Georgy Gobozov
@@ -33,7 +31,7 @@ public class HibernateSimple {
     }
 
     // select all regions
-    private static void test1(Session s){
+    private static void test1(Session s) {
 
         Query q = s.createQuery("from Region");
         List<Region> regionList = q.list();
@@ -45,7 +43,7 @@ public class HibernateSimple {
     }
 
     // select all regions with cities
-    private static void test2(Session s){
+    private static void test2(Session s) {
 
         Query q = s.createQuery("from Region order by regionName");
         List<Region> regionList = q.list();
@@ -60,7 +58,7 @@ public class HibernateSimple {
 
 
     // select regions where id < 3
-    private static void test3(Session s){
+    private static void test3(Session s) {
 
         Query q = s.createQuery("from Region as r where r.regionId < 3");
         List<Region> regionList = q.list();
@@ -72,10 +70,9 @@ public class HibernateSimple {
 
 
     // select cities by region name
-    private static void test4(Session s){
+    private static void test4(Session s) {
 
 //        Query namedQuery = s.getNamedQuery("Region.MyQueryName");
-
 
 
         Query q = s.createQuery("from City c where c.region.regionName=:n");
@@ -89,7 +86,7 @@ public class HibernateSimple {
     }
 
     // select cities order by
-    private static void test5(Session s){
+    private static void test5(Session s) {
 
         Query q = s.createQuery("from City c  ORDER BY c.cityName");
 
@@ -101,7 +98,7 @@ public class HibernateSimple {
     }
 
     // select cities order by
-    private static void test6(Session s){
+    private static void test6(Session s) {
 
         Query q = s.createQuery("from Region r  where r.cityList  is empty");
 
@@ -111,9 +108,6 @@ public class HibernateSimple {
         }
         System.out.println("======================================");
     }
-
-
-
 
 
     private SessionFactory getSessionFactory() {

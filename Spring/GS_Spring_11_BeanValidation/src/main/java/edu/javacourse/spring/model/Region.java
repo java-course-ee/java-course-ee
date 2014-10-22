@@ -13,12 +13,12 @@ import javax.validation.constraints.Size;
  */
 public class Region {
 
-    @NotNull(message="Имя должно быть задано")
+    @NotNull(message = "Имя должно быть задано")
     private Integer regionId;
 
     @NotNull
     @NotEmpty
-    @Size(min = 3, message="Длина фамилии должна быть больше трех")
+    @Size(min = 3, message = "Длина фамилии должна быть больше трех")
     private String regionName;
 
     @Range(min = 1000, max = 1500000000)

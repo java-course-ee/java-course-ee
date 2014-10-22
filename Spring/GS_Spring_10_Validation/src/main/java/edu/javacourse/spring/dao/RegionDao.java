@@ -24,9 +24,9 @@ public class RegionDao {
     public void saveRegion(Region region) {
         final BindException errors = new BindException(region, region.getClass().getName());
         validator.validate(region, errors);
-        if (errors.hasErrors()){
-            for (ObjectError e :errors.getAllErrors()){
-                System.out.println(e.getCode() + " "  + e.getDefaultMessage());
+        if (errors.hasErrors()) {
+            for (ObjectError e : errors.getAllErrors()) {
+                System.out.println(e.getCode() + " " + e.getDefaultMessage());
                 System.out.println(messageSource.getMessage(e, Locale.getDefault()));
             }
             return;

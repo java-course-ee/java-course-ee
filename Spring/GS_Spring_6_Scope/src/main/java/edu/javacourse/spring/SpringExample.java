@@ -1,8 +1,8 @@
 package edu.javacourse.spring;
 
-import edu.javacourse.spring.bean.ThreadScopeBean;
 import edu.javacourse.spring.bean.PrototypeBean;
 import edu.javacourse.spring.bean.SingletonBean;
+import edu.javacourse.spring.bean.ThreadScopeBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -12,7 +12,7 @@ public class SpringExample {
         SpringExample se = new SpringExample();
         se.demoSpring();
     }
-    
+
     // Пример для демонстрации
     public void demoSpring() {
         final ApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"springExample.xml"});
@@ -45,7 +45,7 @@ public class SpringExample {
         System.out.println("=========================================================");
 
 
-        new Thread(){
+        new Thread() {
             @Override
             public void run() {
                 ThreadScopeBean cst3 = (ThreadScopeBean) context.getBean("customScopeBean");
@@ -53,7 +53,7 @@ public class SpringExample {
                 System.out.println("=========================================================");
             }
         }.start();
-        
-        ((ClassPathXmlApplicationContext)context).destroy();
+
+        ((ClassPathXmlApplicationContext) context).destroy();
     }
 }

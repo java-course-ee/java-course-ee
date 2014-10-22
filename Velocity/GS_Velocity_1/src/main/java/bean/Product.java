@@ -21,19 +21,19 @@ public class Product {
         return name;
     }
 
-    public double getPrice() {
-        return price;
-    }
-
     public void setName(String val) {
         name = val;
+    }
+
+    public double getPrice() {
+        return price;
     }
 
     public void setPrice(double val) {
         price = val;
     }
 
-    public String getNameAndPrice(){
+    public String getNameAndPrice() {
         return "Name: " + getName() + " Price: " + getPrice();
     }
 }

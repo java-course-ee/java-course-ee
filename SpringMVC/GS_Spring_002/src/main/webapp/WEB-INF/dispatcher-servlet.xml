@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 
@@ -14,14 +14,15 @@
         <property name="supportedMediaTypes" value="application/xml"/>
     </bean>
 
-    <bean id="jsonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+    <bean id="jsonHttpMessageConverter"
+          class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
         <property name="prefixJson" value="false"/>
         <property name="supportedMediaTypes" value="application/json"/>
     </bean>
 
-    <bean  class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
         <property name="messageConverters">
-            <list >
+            <list>
                 <ref bean="xmlMessageConverter"/>
                 <ref bean="jsonHttpMessageConverter"/>
             </list>
@@ -34,13 +35,11 @@
     <mvc:annotation-driven/>
 
 
-
-
     <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
         <property name="order" value="1"/>
         <property name="mediaTypes">
             <map>
-                <entry key="json" value="application/json" />
+                <entry key="json" value="application/json"/>
                 <entry key="xml" value="application/xml"/>
                 <entry key="html" value="text/html"/>
             </map>
@@ -52,8 +51,8 @@
                 <bean class="org.springframework.web.servlet.view.json.MappingJacksonJsonView"/>
 
                 <!-- XMl VIEW -->
-                <bean  class="org.springframework.web.servlet.view.xml.MarshallingView">
-                    <constructor-arg ref="jaxbMarshaller" />
+                <bean class="org.springframework.web.servlet.view.xml.MarshallingView">
+                    <constructor-arg ref="jaxbMarshaller"/>
                 </bean>
 
             </list>
@@ -73,15 +72,12 @@
     </bean>
 
 
-
-            <!--<bean class="org.springframework.web.servlet.view.BeanNameViewResolver"/>-->
-            <bean id="viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
-                <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
-                <property name="prefix" value="/jsp/"/>
-                <property name="suffix" value=".jsp"/>
-            </bean>
-
-
+    <!--<bean class="org.springframework.web.servlet.view.BeanNameViewResolver"/>-->
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+        <property name="prefix" value="/jsp/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
 
 
 </beans>

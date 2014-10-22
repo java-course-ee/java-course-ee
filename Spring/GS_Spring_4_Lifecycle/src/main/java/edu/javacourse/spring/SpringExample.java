@@ -11,17 +11,17 @@ public class SpringExample {
         SpringExample se = new SpringExample();
         se.demoSpring();
     }
-    
+
     public void demoSpring() {
         ApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"springExample.xml"});
 
         LifeTest lt = context.getBean("lifeTest", LifeTest.class);
         LifeTest2 lt2 = context.getBean("lifeTest2", LifeTest2.class);
-        
+
         // Надо привести к типу ClassPathXmlApplicationContext для использования destroy
-        ((ClassPathXmlApplicationContext)context).start();
-        ((ClassPathXmlApplicationContext)context).stop();
+        ((ClassPathXmlApplicationContext) context).start();
+        ((ClassPathXmlApplicationContext) context).stop();
         //((ClassPathXmlApplicationContext)context).close();
-        ((ClassPathXmlApplicationContext)context).refresh();
+        ((ClassPathXmlApplicationContext) context).refresh();
     }
 }

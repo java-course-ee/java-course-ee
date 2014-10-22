@@ -47,8 +47,8 @@ public class CurrentUserInterceptor extends HandlerInterceptorAdapter {
     public void postHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, ModelAndView modelAndView) throws Exception {
         // Add the current user into the request
         User currentUser = userService.getCurrentUser();
-        if( currentUser != null ) {
-            httpServletRequest.setAttribute( "currentUser", currentUser );
+        if (currentUser != null) {
+            httpServletRequest.setAttribute("currentUser", currentUser);
         }
     }
 }

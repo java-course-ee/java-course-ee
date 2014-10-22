@@ -1,15 +1,11 @@
 package edu.javacourse.hibernate;
 
-import org.hibernate.CacheMode;
-import org.hibernate.ScrollMode;
-import org.hibernate.ScrollableResults;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
+import org.hibernate.*;
 import org.hibernate.cfg.Configuration;
 
 /**
  * Простой пример для interceptor
- * 
+ *
  * @author ASaburov
  */
 public class HibernateSimple {
@@ -35,7 +31,7 @@ public class HibernateSimple {
         s.getTransaction().commit();
         s = hs.getSessionFactory().getCurrentSession();
         s.beginTransaction();
-        
+
         ScrollableResults regionList = s.createQuery("from Region")
                 .setCacheMode(CacheMode.IGNORE)
                 .scroll(ScrollMode.FORWARD_ONLY);

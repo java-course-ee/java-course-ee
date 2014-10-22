@@ -36,11 +36,10 @@ public class SendMediaMailJob extends QuartzJobBean {
     private Properties configProperites;
 
 
-
     @Override
     protected void executeInternal(JobExecutionContext jobExecutionContext) throws JobExecutionException {
 
-         try {
+        try {
             String denyHost = configProperites.getProperty(PROP_DENY_JOBS_HOST);
             if (denyHost.equalsIgnoreCase(InetAddress.getLocalHost().getHostName())) {
                 logger.info("ATTEMP TO RUN SEND MEDIA UPDATES JOB AT DENIED HOST : " + InetAddress.getLocalHost().getHostName());

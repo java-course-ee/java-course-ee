@@ -1,12 +1,12 @@
 package test.velocity;
 
-import org.apache.velocity.app.Velocity;
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
+import org.apache.velocity.app.Velocity;
 import org.apache.velocity.context.Context;
 
-import java.io.Writer;
 import java.io.StringWriter;
+import java.io.Writer;
 
 /**
  * Created by IntelliJ IDEA.

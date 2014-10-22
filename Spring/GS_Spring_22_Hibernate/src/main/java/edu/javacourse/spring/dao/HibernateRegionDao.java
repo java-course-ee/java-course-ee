@@ -29,7 +29,7 @@ public class HibernateRegionDao implements RegionDao {
 
     @Override
     public Region getRegionByName(String name) {
-        Query query =  sFactory.getCurrentSession().createQuery("from Region r where r.name = ?");
+        Query query = sFactory.getCurrentSession().createQuery("from Region r where r.name = ?");
         query.setParameter(0, name);
         return (Region) query.uniqueResult();
     }

@@ -20,7 +20,7 @@ public class OrderService {
     }
 
     //public void create(Order order) {
-        //orderDAO.create(order);
+    //orderDAO.create(order);
     //}
 
     public void update(Order order) {
@@ -39,5 +39,5 @@ public class OrderService {
         orderDAO.delete(order);
     }
 
-    
+
 }

@@ -11,7 +11,7 @@
     <title></title>
 </head>
 <body>
-        <h1>You not authorized to see this page!</h1>
-        <a href="../index.jsp">Go Away!</a>
+<h1>You not authorized to see this page!</h1>
+<a href="../index.jsp">Go Away!</a>
 </body>
 </html>

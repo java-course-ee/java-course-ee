@@ -4,8 +4,6 @@ import com.gemini.spring.entity.User;
 import org.hibernate.Query;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.orm.hibernate3.HibernateTemplate;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -16,7 +14,6 @@ import java.util.List;
  */
 @Repository
 public class UserDaoImpl implements UserDao {
-
 
 
     @Autowired

@@ -1,18 +1,14 @@
 package ru.gs.test.restexample;
 
-import java.util.Date;
-import javax.ws.rs.ApplicationPath;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.Application;
 import javax.ws.rs.core.MediaType;
+import java.util.Date;
 
 @ApplicationPath("/rest")
 @Path("/SimpleRestService")
-public class SimpleRestService extends Application{
-    
+public class SimpleRestService extends Application {
+
     @GET
     @Path("/id/{id}/{name}")
     @Produces(MediaType.APPLICATION_JSON)

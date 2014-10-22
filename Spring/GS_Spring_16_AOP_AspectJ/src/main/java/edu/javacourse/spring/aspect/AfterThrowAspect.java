@@ -14,7 +14,7 @@ public class AfterThrowAspect implements ThrowsAdvice {
 
     @AfterThrowing(
             pointcut = "execution(* edu.javacourse.spring.bean.RegionManager.createRegion(..))",
-            throwing= "error")
+            throwing = "error")
     public void logAfterThrowing(JoinPoint joinPoint, Throwable error) {
 
         System.out.println("logAfterThrowing() is running!");

@@ -1,13 +1,12 @@
 package edu.javacourse.spring;
 
 
-import java.io.*;
-
 import edu.javacourse.spring.dao.RegionDao;
 import edu.javacourse.spring.model.Region;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.core.io.Resource;
+
+import java.io.IOException;
 
 public class SpringExample {
 

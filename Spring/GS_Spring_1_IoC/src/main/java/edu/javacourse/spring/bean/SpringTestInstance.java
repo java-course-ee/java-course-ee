@@ -9,7 +9,7 @@ public class SpringTestInstance {
 
     public static synchronized SpringTestInstance getInstance() {
         System.out.println("getInstance is called");
-        if(instance==null) {
+        if (instance == null) {
             instance = new SpringTestInstance();
             System.out.println("Instance is created");
         }

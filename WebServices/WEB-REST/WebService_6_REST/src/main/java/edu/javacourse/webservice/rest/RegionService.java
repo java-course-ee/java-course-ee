@@ -3,10 +3,7 @@ package edu.javacourse.webservice.rest;
 import model.Region;
 
 import javax.annotation.PostConstruct;
-import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-import java.io.File;
 import java.net.URISyntaxException;
 import java.util.*;
 
@@ -22,7 +19,7 @@ public class RegionService {
     Map<String, Region> regions = new HashMap<String, Region>();
 
     @PostConstruct
-    public void init(){
+    public void init() {
         regions.put("1", new Region(1, "Moscow", 10000000));
         regions.put("2", new Region(2, "SPB", 7000000));
         regions.put("3", new Region(3, "Ekaterinburg", 2000000));
@@ -32,9 +29,9 @@ public class RegionService {
     @GET
     @Path("/id/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Region getRegion(@PathParam ("id") String id) {
+    public Region getRegion(@PathParam("id") String id) {
         Region region = regions.get(id);
-        return region != null ? region : null ;
+        return region != null ? region : null;
     }
 
     @GET
@@ -45,7 +42,6 @@ public class RegionService {
     }
 
 
-
     @POST
     @Path("/add")
     @Produces(MediaType.APPLICATION_JSON)
@@ -54,8 +50,6 @@ public class RegionService {
         regions.put(String.valueOf(next), new Region(next, name, population));
         return getAll();
     }
-
-
 
 
 }

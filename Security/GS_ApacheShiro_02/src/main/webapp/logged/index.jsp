@@ -15,7 +15,6 @@
 <p><a href="<c:url value="/logout"/>">Log out.</a></p>
 
 
-
 <p>
 
     <shiro:hasPermission name="user:view">

@@ -7,10 +7,10 @@ import javax.jws.WebService;
 @WebService
 @Stateless
 public class SimpleWebService {
-    
+
     @WebMethod
     public String sayHello(String name) {
         return "Hello " + name;
     }
-    
+
 }

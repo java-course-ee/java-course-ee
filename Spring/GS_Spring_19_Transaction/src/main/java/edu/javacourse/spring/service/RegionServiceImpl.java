@@ -41,7 +41,7 @@ public class RegionServiceImpl implements RegionService {
     }
 
     @Override
-    @Transactional(readOnly = true, propagation= Propagation.REQUIRES_NEW)
+    @Transactional(readOnly = true, propagation = Propagation.REQUIRES_NEW)
     public void readOnly(String name) {
         // write operation
         createRegion(new Region(name));

@@ -1,18 +1,8 @@
 package edu.javacourse.hibernate;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
- *
  * @author Demo
  */
 @Entity
@@ -32,7 +22,7 @@ public class City {
     @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.LAZY, targetEntity = Region.class)
     // Можно определить несколько столбцов для связи
     //@JoinColumns({
-        //@JoinColumn(name = "region_id")
+    //@JoinColumn(name = "region_id")
     //})
     @JoinColumn(name = "region_id")  //
     private Region region;

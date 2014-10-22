@@ -19,13 +19,13 @@ public class SpringExample {
         ApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"springExample.xml"});
 
         CommandManager cm = context.getBean("commandManager", CommandManager.class);
-        
+
         System.out.println("class: " + cm.getClass().getCanonicalName());
-        
+
         Command c1 = cm.createCommand();
         System.out.println("Hash C1:" + c1.hashCode());
         c1.execute();
-        
+
         Command c2 = cm.createCommand();
         System.out.println("Hash C2:" + c2.hashCode());
         System.out.println("State C2:" + c2.getState());

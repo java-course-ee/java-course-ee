@@ -1,9 +1,8 @@
 package ru.geminisystems.entity;
 
-import javax.persistence.*;
 import java.util.Date;
-import java.util.Set;
 import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by IntelliJ IDEA.
@@ -45,8 +44,8 @@ public class Order {
 
     @ManyToMany(cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
     @JoinTable(name = "orders_applications",
-    joinColumns = @JoinColumn(name = "orderId"),
-    inverseJoinColumns = @JoinColumn(name = "applicationId"))
+            joinColumns = @JoinColumn(name = "orderId"),
+            inverseJoinColumns = @JoinColumn(name = "applicationId"))
     private Set<Application> applications = new HashSet<Application>();
 
     public Long getOrderId() {
@@ -113,7 +112,7 @@ public class Order {
         this.status = status;
     }
 
-  
+
     public Set<Application> getApplications() {
         return applications;
     }
@@ -122,7 +121,7 @@ public class Order {
         this.applications = applications;
     }
 
-    public void addApplication(Application application){
+    public void addApplication(Application application) {
         this.applications.add(application);
     }
 }

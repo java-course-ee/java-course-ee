@@ -15,7 +15,7 @@ import java.io.IOException;
  * Author: Georgy Gobozov
  * Date: 25.07.13
  */
-public class SpringServlet  extends HttpServlet{
+public class SpringServlet extends HttpServlet {
 
     ApplicationContext context = null;
 

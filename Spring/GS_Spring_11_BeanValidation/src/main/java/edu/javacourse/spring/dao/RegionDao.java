@@ -4,14 +4,11 @@ import edu.javacourse.spring.model.Region;
 import edu.javacourse.spring.validation.RegionValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
-import org.springframework.validation.BindException;
-import org.springframework.validation.ObjectError;
 
 import javax.validation.ConstraintViolation;
 import javax.validation.Validation;
 import javax.validation.Validator;
 import javax.validation.ValidatorFactory;
-import java.util.Locale;
 import java.util.Set;
 
 /**
@@ -41,7 +38,7 @@ public class RegionDao {
 //            return;
 //        }
 
-        Set<ConstraintViolation<Region>> constraintViolations  = validator.validate(region);
+        Set<ConstraintViolation<Region>> constraintViolations = validator.validate(region);
         System.out.println(String.format("Кол-во ошибок: %d",
                 constraintViolations.size()));
 

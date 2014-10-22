@@ -20,9 +20,5 @@ public class SpringExample {
         regionManager.getInfo();
 
 
-
-
-
-
     }
 }

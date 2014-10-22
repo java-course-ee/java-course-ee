@@ -1,16 +1,14 @@
 package payment;
 
 import javax.persistence.Column;
-import javax.persistence.Entity;
 import javax.persistence.DiscriminatorValue;
-import javax.persistence.PrimaryKeyJoinColumn;
-import javax.persistence.Table;
+import javax.persistence.Entity;
 
 @Entity
 @DiscriminatorValue("1")
 public class CreditCardPayment extends Payment {
 
-    @Column(name="CARD_NUMBER")
+    @Column(name = "CARD_NUMBER")
     private String cardNumber;
 
     public String getCardNumber() {

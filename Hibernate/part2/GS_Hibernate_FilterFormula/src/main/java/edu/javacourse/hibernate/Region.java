@@ -1,13 +1,8 @@
 package edu.javacourse.hibernate;
 
-import java.io.Serializable;
-import javax.persistence.*;
+import org.hibernate.annotations.*;
 
-import org.hibernate.annotations.Filter;
-import org.hibernate.annotations.FilterDef;
-import org.hibernate.annotations.Filters;
-import org.hibernate.annotations.Formula;
-import org.hibernate.annotations.ParamDef;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "jc_region")
@@ -16,7 +11,7 @@ import org.hibernate.annotations.ParamDef;
 @FilterDef(name = "filterRegionId", parameters =
 @ParamDef(name = "minId", type = "integer"))
 @Filters({
-    @Filter(name = "filterRegionId", condition = "region_id <= :minId")
+        @Filter(name = "filterRegionId", condition = "region_id <= :minId")
 })
 public class Region implements Serializable {
 
@@ -42,16 +37,16 @@ public class Region implements Serializable {
     public Region() {
     }
 
+    public Region(String regionName) {
+        this.regionName = regionName;
+    }
+
     public int getCitiesCount() {
         return citiesCount;
     }
 
     public void setCitiesCount(int citiesCount) {
         this.citiesCount = citiesCount;
-    }
-
-    public Region(String regionName) {
-        this.regionName = regionName;
     }
 
     public Long getRegionId() {

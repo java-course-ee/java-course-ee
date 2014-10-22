@@ -9,7 +9,7 @@ import java.util.List;
 public class AnotherClass {
 
 
-    public static void printAgain(List<Region> regions){
+    public static void printAgain(List<Region> regions) {
         System.out.println("======================================");
         for (Region r : regions) {
             System.out.println("Region name:" + r);

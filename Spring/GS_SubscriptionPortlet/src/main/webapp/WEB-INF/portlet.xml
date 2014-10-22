@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" version="2.0"
-             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<portlet-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd"
+             version="2.0"
              xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd">
     <portlet>
         <portlet-name>GS_SubscriptionPortlet</portlet-name>
@@ -8,7 +8,7 @@
         <display-name xml:lang="ru">GS_SubscriptionPortlet</display-name>
         <display-name>GS_SubscriptionPortlet</display-name>
         <portlet-class>org.springframework.web.portlet.DispatcherPortlet</portlet-class>
-        
+
         <init-param>
             <name>contextConfigLocation</name>
             <value>/WEB-INF/context/subscription.xml</value>
@@ -28,7 +28,7 @@
             <short-title>GS_SubscriptionPortlet</short-title>
             <keywords>GS_SubscriptionPortlet</keywords>
         </portlet-info>
-        
+
         <portlet-preferences>
             <preference>
                 <name>Новости</name>
@@ -38,7 +38,7 @@
                 <name>Документы</name>
                 <value>Web Content/hmao/hmao-news-docs/</value>
             </preference>
-             <preference>
+            <preference>
                 <name>logLevel</name>
                 <value>INFO</value>
             </preference>

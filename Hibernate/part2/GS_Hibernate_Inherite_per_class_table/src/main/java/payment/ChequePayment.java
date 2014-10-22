@@ -1,15 +1,13 @@
 package payment;
 
-import javax.persistence.*;
-
 @Entity
-@Table(name="jc_cheque_payment_full")
+@Table(name = "jc_cheque_payment_full")
 @AttributeOverrides({
-        @AttributeOverride(name="amount", column=@Column(name="amount"))
+        @AttributeOverride(name = "amount", column = @Column(name = "amount"))
 })
 public class ChequePayment extends Payment {
 
-    @Column(name="BANK_ID")
+    @Column(name = "BANK_ID")
     private String bankId;
 
     public String getBankId() {

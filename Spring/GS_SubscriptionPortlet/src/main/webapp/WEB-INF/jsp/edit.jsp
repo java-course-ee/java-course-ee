@@ -9,7 +9,7 @@
 
 <portlet:actionURL var="url"/>
 
-<form:form commandName="subscribe"  action="${url}" cssClass="niceform">
+<form:form commandName="subscribe" action="${url}" cssClass="niceform">
     <table>
         <tr>
             <td></td>
@@ -37,7 +37,8 @@
             <tr>
                 <td style="font-weight:bold;" align="right">Разделы</td>
                 <td>
-                  <form:checkboxes path="categories"  delimiter="<br/>" items="${allCategories}" itemLabel="title" itemValue="categoryId"/>
+                    <form:checkboxes path="categories" delimiter="<br/>" items="${allCategories}" itemLabel="title"
+                                     itemValue="categoryId"/>
                 </td>
                 <td><form:errors path="categories"/></td>
             </tr>

@@ -1,30 +1,40 @@
-
 <ul class="UIAPIPlugin-toc">
-<li><a href="#overview">Overview</a></li>
-<li><a href="#options">Arguments</a></li>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#options">Arguments</a></li>
 </ul>
 <div class="UIAPIPlugin">
-  <h1>jQuery UI Position Utility</h1>
-  <div id="overview">
-    <h2 class="top-header">Overview</h2>
-    <div id="overview-main">
-        <p>Utility script for positioning any widget relative to the window, document, a particular element, or the cursor/mouse.</p>
-<p><em>Note: jQuery UI does not support positioning hidden elements.</em></p>
-<p>Does not need ui.core.js or effects.core.js.</p>
-    </div>
-    <div id="overview-dependencies">
-        <h3>Dependencies</h3>
-        <ul>
-<li><i>none (only jQuery core)</i></li>
-</ul>
-    </div>
-    <div id="overview-example">
-        <h3>Example</h3>
-        <div id="overview-example" class="example">
-<ul><li><a href="#demo"><span>Demo</span></a></li><li><a href="#source"><span>View Source</span></a></li></ul>
-<p><div id="demo" class="tabs-container" rel="300">
-Clicking on the green element transfers to the other.<br />
-</p>
+    <h1>jQuery UI Position Utility</h1>
+
+    <div id="overview">
+        <h2 class="top-header">Overview</h2>
+
+        <div id="overview-main">
+            <p>Utility script for positioning any widget relative to the window, document, a particular element, or the
+                cursor/mouse.</p>
+
+            <p><em>Note: jQuery UI does not support positioning hidden elements.</em></p>
+
+            <p>Does not need ui.core.js or effects.core.js.</p>
+        </div>
+        <div id="overview-dependencies">
+            <h3>Dependencies</h3>
+            <ul>
+                <li><i>none (only jQuery core)</i></li>
+            </ul>
+        </div>
+        <div id="overview-example">
+            <h3>Example</h3>
+
+            <div id="overview-example" class="example">
+                <ul>
+                    <li><a href="#demo"><span>Demo</span></a></li>
+                    <li><a href="#source"><span>View Source</span></a></li>
+                </ul>
+                <p>
+
+                <div id="demo" class="tabs-container" rel="300">
+                    Clicking on the green element transfers to the other.<br/>
+                </p>
 <pre>
 $(&quot;#position1&quot;).position({
   my: &quot;center&quot;,
@@ -51,8 +61,9 @@ $(document).mousemove(function(ev){
 });
 
 </pre>
-<p></div><div id="source" class="tabs-container">
-</p>
+                <p></div>
+            <div id="source" class="tabs-container">
+                </p>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -110,111 +121,128 @@ $(document).mousemove(function(ev){
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
-<p></div>
-</p><p></div>
+                <p></div>
+            </p><p></div>
     </div>
-  </div>
-  <div id="options">
+</div>
+<div id="options">
     <h2 class="top-header">Arguments</h2>
     <ul class="options-list">
-      
-<li class="option" id="option-my">
-  <div class="option-header">
-    <h3 class="option-name"><a href="#option-my">my</a></h3>
-    <dl>
-      <dt class="option-type-label">Type:</dt>
-        <dd class="option-type">String</dd>
-      
-    </dl>
-  </div>
-  <div class="option-description">
-    <p>Defines which position on <b>the element being positioned</b> to align with the target element: "horizontal vertical" alignment. A single value such as "right" will default to "right center", "top" will default to "center top" (following CSS convention). Acceptable values: "top", "center", "bottom", "left", "right". Example: "left top" or "center center"</p>
-  </div>
-</li>
+
+        <li class="option" id="option-my">
+            <div class="option-header">
+                <h3 class="option-name"><a href="#option-my">my</a></h3>
+                <dl>
+                    <dt class="option-type-label">Type:</dt>
+                    <dd class="option-type">String</dd>
+
+                </dl>
+            </div>
+            <div class="option-description">
+                <p>Defines which position on <b>the element being positioned</b> to align with the target element:
+                    "horizontal vertical" alignment. A single value such as "right" will default to "right center",
+                    "top" will default to "center top" (following CSS convention). Acceptable values: "top", "center",
+                    "bottom", "left", "right". Example: "left top" or "center center"</p>
+            </div>
+        </li>
 
 
-<li class="option" id="option-at">
-  <div class="option-header">
-    <h3 class="option-name"><a href="#option-at">at</a></h3>
-    <dl>
-      <dt class="option-type-label">Type:</dt>
-        <dd class="option-type">String</dd>
-      
-    </dl>
-  </div>
-  <div class="option-description">
-    <p>Defines which position on <b>the target element</b> to align the positioned element against: "horizontal vertical" alignment. A single value such as "right" will default to "right center", "top" will default to "center top" (following CSS convention). Acceptable values: "top", "center", "bottom", "left", "right". Example: "left top" or "center center"</p>
-  </div>
-</li>
+        <li class="option" id="option-at">
+            <div class="option-header">
+                <h3 class="option-name"><a href="#option-at">at</a></h3>
+                <dl>
+                    <dt class="option-type-label">Type:</dt>
+                    <dd class="option-type">String</dd>
+
+                </dl>
+            </div>
+            <div class="option-description">
+                <p>Defines which position on <b>the target element</b> to align the positioned element against:
+                    "horizontal vertical" alignment. A single value such as "right" will default to "right center",
+                    "top" will default to "center top" (following CSS convention). Acceptable values: "top", "center",
+                    "bottom", "left", "right". Example: "left top" or "center center"</p>
+            </div>
+        </li>
 
 
-<li class="option" id="option-of">
-  <div class="option-header">
-    <h3 class="option-name"><a href="#option-of">of</a></h3>
-    <dl>
-      <dt class="option-type-label">Type:</dt>
-        <dd class="option-type">Selector, Element, jQuery, Event</dd>
-      
-    </dl>
-  </div>
-  <div class="option-description">
-    <p>Element to position against. If you provide a selector, the first matching element will be used. If you provide a jQuery object, the first element will be used. If you provide an event object, the pageX and pageY properties will be used. Example: "#top-menu"</p>
-  </div>
-</li>
+        <li class="option" id="option-of">
+            <div class="option-header">
+                <h3 class="option-name"><a href="#option-of">of</a></h3>
+                <dl>
+                    <dt class="option-type-label">Type:</dt>
+                    <dd class="option-type">Selector, Element, jQuery, Event</dd>
+
+                </dl>
+            </div>
+            <div class="option-description">
+                <p>Element to position against. If you provide a selector, the first matching element will be used. If
+                    you provide a jQuery object, the first element will be used. If you provide an event object, the
+                    pageX and pageY properties will be used. Example: "#top-menu"</p>
+            </div>
+        </li>
 
 
-<li class="option" id="option-offset">
-  <div class="option-header">
-    <h3 class="option-name"><a href="#option-offset">offset</a></h3>
-    <dl>
-      <dt class="option-type-label">Type:</dt>
-        <dd class="option-type">String</dd>
-      
-    </dl>
-  </div>
-  <div class="option-description">
-    <p>Add these left-top values to the calculated position, eg. "50 50" (left top) A single value such as "50" will apply to both.</p>
-  </div>
-</li>
+        <li class="option" id="option-offset">
+            <div class="option-header">
+                <h3 class="option-name"><a href="#option-offset">offset</a></h3>
+                <dl>
+                    <dt class="option-type-label">Type:</dt>
+                    <dd class="option-type">String</dd>
+
+                </dl>
+            </div>
+            <div class="option-description">
+                <p>Add these left-top values to the calculated position, eg. "50 50" (left top) A single value such as
+                    "50" will apply to both.</p>
+            </div>
+        </li>
 
 
-<li class="option" id="option-collision">
-  <div class="option-header">
-    <h3 class="option-name"><a href="#option-collision">collision</a></h3>
-    <dl>
-      <dt class="option-type-label">Type:</dt>
-        <dd class="option-type">String</dd>
-      
-    </dl>
-  </div>
-  <div class="option-description">
-    <p>When the positioned element overflows the window in some direction, move it to an alternative position. Similar to my and at, this accepts a single value or a pair for horizontal/vertical, eg. "flip", "fit", "fit flip", "fit none".
-</p>
-<ul><li> <b>flip</b>: to the opposite side and the collision detection is run again to see if it will fit. If it won't fit in either position, the center option should be used as a fall back.
-</li><li> <b>fit</b>: so the element keeps in the desired direction, but is re-positioned so it fits.
-</li><li> <b>none</b>: not do collision detection.
-</li></ul>
-<p></p>
-  </div>
-</li>
+        <li class="option" id="option-collision">
+            <div class="option-header">
+                <h3 class="option-name"><a href="#option-collision">collision</a></h3>
+                <dl>
+                    <dt class="option-type-label">Type:</dt>
+                    <dd class="option-type">String</dd>
+
+                </dl>
+            </div>
+            <div class="option-description">
+                <p>When the positioned element overflows the window in some direction, move it to an alternative
+                    position. Similar to my and at, this accepts a single value or a pair for horizontal/vertical, eg.
+                    "flip", "fit", "fit flip", "fit none".
+                </p>
+                <ul>
+                    <li><b>flip</b>: to the opposite side and the collision detection is run again to see if it will
+                        fit. If it won't fit in either position, the center option should be used as a fall back.
+                    </li>
+                    <li><b>fit</b>: so the element keeps in the desired direction, but is re-positioned so it fits.
+                    </li>
+                    <li><b>none</b>: not do collision detection.
+                    </li>
+                </ul>
+                <p></p>
+            </div>
+        </li>
 
 
-<li class="option" id="option-using">
-  <div class="option-header">
-    <h3 class="option-name"><a href="#option-using">using</a></h3>
-    <dl>
-      <dt class="option-type-label">Type:</dt>
-        <dd class="option-type">Function</dd>
-      
-    </dl>
-  </div>
-  <div class="option-description">
-    <p>When specified the actual property setting is delegated to this callback. Receives a single parameter which is a hash of top and left values for the position that should be set.</p>
-  </div>
-</li>
+        <li class="option" id="option-using">
+            <div class="option-header">
+                <h3 class="option-name"><a href="#option-using">using</a></h3>
+                <dl>
+                    <dt class="option-type-label">Type:</dt>
+                    <dd class="option-type">Function</dd>
+
+                </dl>
+            </div>
+            <div class="option-description">
+                <p>When specified the actual property setting is delegated to this callback. Receives a single parameter
+                    which is a hash of top and left values for the position that should be set.</p>
+            </div>
+        </li>
 
     </ul>
-  </div>
+</div>
 </div>
 
 </p><!-- 

@@ -13,11 +13,19 @@ import javax.sql.DataSource;
 @ImportResource("classpath:config.xml")
 public class CoreConfig {
 
-    private @Value("${jdbc.url}") String url;
-    private @Value("${jdbc.username}") String username;
-    private @Value("${jdbc.password}") String password;
+    private
+    @Value("${jdbc.url}")
+    String url;
+    private
+    @Value("${jdbc.username}")
+    String username;
+    private
+    @Value("${jdbc.password}")
+    String password;
 
-    public @Bean(name = "datasourse") DataSource dataSource() {
+    public
+    @Bean(name = "datasourse")
+    DataSource dataSource() {
         return new DriverManagerDataSource(url, username, password);
     }
 
@@ -26,9 +34,6 @@ public class CoreConfig {
     public SimpleBean1 getSimpleBean1() {
         return new SimpleBean1();
     }
-
-
-
 
 
 }

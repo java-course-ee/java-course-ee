@@ -22,15 +22,13 @@
            roleNameCol="role_name"/>
 
 
-
-
     <!-- JDBC REALM, put mysql driver to catalina/lib -->
     <!-- To use this realm comment DataSourceRealm above  -->
 
     <!--<Realm  className="org.apache.catalina.realm.JDBCRealm"-->
-           <!--driverName="com.mysql.jdbc.Driver"-->
-           <!--connectionURL="jdbc:mysql://localhost/securityrealm?user=root&amp;password=root"-->
-           <!--userTable="users" userNameCol="user_name" userCredCol="user_pass"-->
-           <!--userRoleTable="user_roles" roleNameCol="role_name"/>-->
+    <!--driverName="com.mysql.jdbc.Driver"-->
+    <!--connectionURL="jdbc:mysql://localhost/securityrealm?user=root&amp;password=root"-->
+    <!--userTable="users" userNameCol="user_name" userCredCol="user_pass"-->
+    <!--userRoleTable="user_roles" roleNameCol="role_name"/>-->
 
 </Context>

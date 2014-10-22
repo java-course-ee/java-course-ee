@@ -5,9 +5,8 @@
 package ru.gs.test.springfirst.view;
 
 /**
- *
  * @author Intern
  */
 public interface View {
-    
+
 }

@@ -1,8 +1,5 @@
 package com.geminisystems.subscription.domain;
 
-import javax.persistence.*;
-import java.util.List;
-
 /**
  * Created by IntelliJ IDEA.
  * User: GGobozov
@@ -58,5 +55,5 @@ public class SPath {
         this.category = category;
     }
 
-   
+
 }

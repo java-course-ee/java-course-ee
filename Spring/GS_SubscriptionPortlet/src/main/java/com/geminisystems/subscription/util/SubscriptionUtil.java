@@ -11,7 +11,7 @@ import java.security.MessageDigest;
  */
 public class SubscriptionUtil {
 
-     public static String getHash(String s) {
+    public static String getHash(String s) {
         try {
             MessageDigest algorithm = MessageDigest.getInstance("MD5");
             algorithm.reset();

@@ -1,4 +1,5 @@
 package ru.gemini.security;
+
 import ru.gemini.bean.BookStore;
 
 import javax.servlet.RequestDispatcher;
@@ -17,7 +18,7 @@ public class BooksServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        if (request.getParameter("logout") != null){
+        if (request.getParameter("logout") != null) {
             request.getSession().invalidate();
             response.sendRedirect("/books");
             return;

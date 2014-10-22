@@ -1,8 +1,5 @@
 package edu.javacourse.hibernate;
 
-import java.io.Serializable;
-import java.util.Iterator;
-import java.util.List;
 import org.hibernate.EmptyInterceptor;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -10,9 +7,13 @@ import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.type.Type;
 
+import java.io.Serializable;
+import java.util.Iterator;
+import java.util.List;
+
 /**
  * Простой пример для interceptor
- * 
+ *
  * @author ASaburov
  * @author Georgy Gobozov
  */
@@ -43,12 +44,17 @@ public class HibernateSimple {
         s.close();
     }
 
+    private SessionFactory getSessionFactory() {
+        Configuration cfg = new Configuration();
+        return cfg.configure().buildSessionFactory();
+    }
+
     // Вариант объявления интерсептора - наследуемся от самого простого
     // готового класса. Иначе можно реализовать свой интерсептор от интерфейса Interceptor
     private static class SimpleInterceptor extends EmptyInterceptor {
 
         @Override
-        public boolean onLoad(Object entity, Serializable id, Object[] state,  String[] propertyNames, Type[] types) {
+        public boolean onLoad(Object entity, Serializable id, Object[] state, String[] propertyNames, Type[] types) {
             System.out.println("Interceptor: ON_LOAD");
             HibernateSimple.loads++;
             return false;
@@ -95,10 +101,5 @@ public class HibernateSimple {
             System.out.println("Interceptor: ON_TRANSACTION_COMPLETE");
             super.afterTransactionCompletion(tx);
         }
-    }
-
-    private SessionFactory getSessionFactory() {
-        Configuration cfg = new Configuration();
-        return cfg.configure().buildSessionFactory();
     }
 }

@@ -33,7 +33,7 @@ public class CategoryService {
     }
 
     public void delete(SCategory category) {
-         categoryDao.delete(category);
+        categoryDao.delete(category);
     }
 
     public SCategory getById(Integer id) {

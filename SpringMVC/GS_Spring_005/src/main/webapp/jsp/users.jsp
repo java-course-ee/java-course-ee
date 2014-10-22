@@ -10,7 +10,7 @@
         <tr>
             <td><c:out value="${u.name}"/></td>
             <td><c:out value="${u.email}"/></td>
-            
+
             <td><a href="users/edit/${u.userId}">Edit</a>&nbsp;<a href="users/delete/${u.userId}">Delete</a></td>
 
         </tr>
@@ -18,7 +18,7 @@
 </table>
 <br>
 
-<form:form commandName="user" method="POST" >
+<form:form commandName="user" method="POST">
     <form:hidden path="userId"/>
 
     <table>

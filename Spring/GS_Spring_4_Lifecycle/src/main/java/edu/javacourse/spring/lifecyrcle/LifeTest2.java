@@ -3,7 +3,7 @@ package edu.javacourse.spring.lifecyrcle;
 import org.springframework.context.LifecycleProcessor;
 
 public class LifeTest2 implements LifecycleProcessor {
-    
+
     private boolean started = false;
 
     @Override

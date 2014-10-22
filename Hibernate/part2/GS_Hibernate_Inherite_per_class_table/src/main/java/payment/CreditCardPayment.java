@@ -1,15 +1,13 @@
 package payment;
 
-import javax.persistence.*;
-
 @Entity
-@Table(name="jc_credit_payment_full")
+@Table(name = "jc_credit_payment_full")
 @AttributeOverrides({
-        @AttributeOverride(name="amount", column=@Column(name="amount"))
+        @AttributeOverride(name = "amount", column = @Column(name = "amount"))
 })
 public class CreditCardPayment extends Payment {
 
-    @Column(name="CARD_NUMBER")
+    @Column(name = "CARD_NUMBER")
     private String cardNumber;
 
     public String getCardNumber() {

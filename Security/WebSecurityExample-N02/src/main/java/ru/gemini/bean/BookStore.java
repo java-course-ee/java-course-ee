@@ -1,6 +1,5 @@
 package ru.gemini.bean;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -23,15 +22,15 @@ public class BookStore {
         return books;
     }
 
-    public static void addBook(Book book){
-         books.add(book);
+    public static void addBook(Book book) {
+        books.add(book);
     }
 
-    public static int getBooksSize(){
+    public static int getBooksSize() {
         return books.size();
     }
 
-    public static Book getBook(Integer number){
+    public static Book getBook(Integer number) {
         for (Book book : books) {
             if (book.getNumber().equals(number))
                 return book;

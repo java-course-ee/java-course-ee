@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans
-        xmlns="http://www.springframework.org/schema/beans"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.springframework.org/schema/beans"
         xsi:schemaLocation="http://www.springframework.org/schema/beans
             http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
@@ -18,16 +18,15 @@
     <bean id="throwAdvice" class="edu.javacourse.spring.advice.ThrowException"/>
 
 
-
     <!-- оперделяет метод входа -->
     <bean id="regionPointcut" class="org.springframework.aop.support.NameMatchMethodPointcut">
-        <property name="mappedName" value="getInfo" />
+        <property name="mappedName" value="getInfo"/>
     </bean>
 
     <!-- Связывает совет и срез-->
     <bean id="regionAdvisor" class="org.springframework.aop.support.DefaultPointcutAdvisor">
-        <property name="pointcut" ref="regionPointcut" />
-        <property name="advice" ref="beforeAdvice" />
+        <property name="pointcut" ref="regionPointcut"/>
+        <property name="advice" ref="beforeAdvice"/>
     </bean>
 
 
@@ -41,11 +40,10 @@
     </bean>
 
 
-
     <!--чтобы определить advisor и pointcut в одном бине -->
     <bean id="newRegionAdvisor" class="org.springframework.aop.support.NameMatchMethodPointcutAdvisor">
-        <property name="mappedName" value="getNumber" />
-        <property name="advice" ref="afterAdvice" />
+        <property name="mappedName" value="getNumber"/>
+        <property name="advice" ref="afterAdvice"/>
     </bean>
 
     <bean id="newRegionProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
@@ -58,16 +56,14 @@
     </bean>
 
 
-
-
     <!-- перехват по регулярному выражению -->
-    <bean id="regexpAdvisor"  class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+    <bean id="regexpAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
         <property name="patterns">
             <list>
                 <value>.*get.*</value>
             </list>
         </property>
-        <property name="advice" ref="aroundAdvice" />
+        <property name="advice" ref="aroundAdvice"/>
     </bean>
 
     <bean id="regexpRegionProxy" class="org.springframework.aop.framework.ProxyFactoryBean">

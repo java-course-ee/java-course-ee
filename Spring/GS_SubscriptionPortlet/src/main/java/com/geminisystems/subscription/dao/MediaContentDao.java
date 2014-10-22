@@ -14,7 +14,9 @@ import java.util.List;
  */
 public interface MediaContentDao {
     List<SMediaContent> getAll();
+
     void deleteAll();
+
     void deleteAll(Collection entries);
 
 }

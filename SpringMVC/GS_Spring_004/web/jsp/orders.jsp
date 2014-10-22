@@ -10,12 +10,12 @@
 <script type="text/javascript" src="js/ui.datetimepicker.js"></script>
 <script type="text/javascript">
 
-    $(function() {
+    $(function () {
 
         // dateTimePicker
-        $('.datetimepicker').datetimepicker({ dateFormat: 'dd-mm-yy',timeFormat: ' hh:ii:ss' });
+        $('.datetimepicker').datetimepicker({ dateFormat: 'dd-mm-yy', timeFormat: ' hh:ii:ss' });
 
-        $("#add_application").click(function() {
+        $("#add_application").click(function () {
             $("#applications").show()
             $("#applications option[value=default]").show()
             $("#applications option[value=default]").attr('selected', 'selected')
@@ -23,39 +23,39 @@
         });
 
 
-        $("#applications").change(function() {
+        $("#applications").change(function () {
             $("#applications option[value=default]").hide();
             $("#add").show()
         });
 
-        $("#add").click(function() {
-                   var application = $("#applications option:selected").text();
-                   var applicationId = $("#applications").val();
-                   var text = $("#results").find("option:eq(" + applicationId +")").text();
-                   if ($('#results option[value=' + applicationId + ']').length > 0){
-                       alert('Element already exists');
-                       return false;
-                   } else{
-                       $("#results").append("<option value='" + applicationId  + "'>" + application +"</option>")
-                       return false;
-                   }
+        $("#add").click(function () {
+            var application = $("#applications option:selected").text();
+            var applicationId = $("#applications").val();
+            var text = $("#results").find("option:eq(" + applicationId + ")").text();
+            if ($('#results option[value=' + applicationId + ']').length > 0) {
+                alert('Element already exists');
+                return false;
+            } else {
+                $("#results").append("<option value='" + applicationId + "'>" + application + "</option>")
+                return false;
+            }
 
-               });
-
-
-               $("#delete").click(function(){
-                   if ( typeof $("#results option:selected").val() === "undefined"){
-                       alert('Выберите элемент!')
-                       return false;
-                   }
-                   $("#results option:selected").remove()
-                   return false;
+        });
 
 
-               });
+        $("#delete").click(function () {
+            if (typeof $("#results option:selected").val() === "undefined") {
+                alert('Выберите элемент!')
+                return false;
+            }
+            $("#results option:selected").remove()
+            return false;
 
 
-        $("#submit").click(function(){
+        });
+
+
+        $("#submit").click(function () {
             $("#results option").attr('selected', 'yes');
         });
 
@@ -63,7 +63,6 @@
     });
 
 
-   
 </script>
 
 
@@ -100,7 +99,7 @@
                 <td><c:out value="${o.startDate}"/> - <c:out value="${o.finishDate}"/></td>
                 <td><c:out value="${o.description}"/></td>
                 <c:set var="statusName" value="${o.status.statusName}"/>
-                <td                                                           
+                <td
                         <c:if test="${statusName eq 'submitted'}"><c:out value="class=submitted"/></c:if>
                         <c:if test="${statusName eq 'in_progress'}"><c:out value="class=in_progress"/></c:if>
                         <c:if test="${statusName eq 'approved'}"><c:out value="class=approved"/></c:if>
@@ -183,11 +182,11 @@
                     <td><form:input path="finishDate" cssClass="datetimepicker"/></td>
                     <td><form:errors path="finishDate" cssStyle="color:red"/></td>
                 </tr>
-              
+
                 <tr>
                     <td>Applications</td>
                     <td>
-                        <form:select  path="applications"  multiple="multiple" size="7" id="results">
+                        <form:select path="applications" multiple="multiple" size="7" id="results">
                             <c:if test="${editedOrder ne null}">
                                 <c:forEach items="${editedOrder.applications}" var="a">
                                     <option value="${a.applicationId}"><c:out value="${a.applicationName}"/></option>

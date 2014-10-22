@@ -19,8 +19,8 @@ import java.util.List;
  */
 public class WcmService {
 
-    private Logger logger = Logger.getLogger(SendUsersMailJob.class);
     private static final String WCM_LIBRARY = "Web Content";
+    private Logger logger = Logger.getLogger(SendUsersMailJob.class);
     private Repository repository;
     private Workspace workspace;
 
@@ -38,26 +38,26 @@ public class WcmService {
     public List<Content> getModifiedContent(Date from, Date to) {
         List<Content> contentList = new ArrayList<Content>();
 
-            DocumentIdIterator iter = workspace.findContentModifiedBetween(from, to, Workspace.WORKFLOWSTATUS_PUBLISHED);
-            while (iter.hasNext()) {
-                try {
-                    DocumentId id = iter.nextId();
-                    if (id.isOfType(DocumentTypes.Content)) {
+        DocumentIdIterator iter = workspace.findContentModifiedBetween(from, to, Workspace.WORKFLOWSTATUS_PUBLISHED);
+        while (iter.hasNext()) {
+            try {
+                DocumentId id = iter.nextId();
+                if (id.isOfType(DocumentTypes.Content)) {
 
-                        Content content = (Content) workspace.getById(id);
-                        Date publishDate = content.getEffectiveDate();
-                        if (publishDate.before(from) || publishDate.after(to))
-                            continue;
-                        contentList.add(content);
-                    }
-                } catch (DocumentRetrievalException e) {
-                    e.printStackTrace();
-                } catch (AuthorizationException e) {
-                    e.printStackTrace();
-                } catch (PropertyRetrievalException e) {
-                    e.printStackTrace();
+                    Content content = (Content) workspace.getById(id);
+                    Date publishDate = content.getEffectiveDate();
+                    if (publishDate.before(from) || publishDate.after(to))
+                        continue;
+                    contentList.add(content);
                 }
+            } catch (DocumentRetrievalException e) {
+                e.printStackTrace();
+            } catch (AuthorizationException e) {
+                e.printStackTrace();
+            } catch (PropertyRetrievalException e) {
+                e.printStackTrace();
             }
+        }
 
         return contentList;
     }
@@ -73,7 +73,7 @@ public class WcmService {
             DocumentId authoringTemplateId = getDocIdByName(workspace, category.getAtName(), DocumentTypes.AuthoringTemplate);
 
 
-            String  categoryPath = path.replaceAll("\\s", "+");
+            String categoryPath = path.replaceAll("\\s", "+");
 
             for (Content c : allModifiedContent) {
 

@@ -9,7 +9,6 @@ import org.apache.log4j.Logger;
 import org.quartz.Scheduler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.beans.propertyeditors.CustomCollectionEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -22,9 +21,6 @@ import org.springframework.web.portlet.bind.annotation.ActionMapping;
 import org.springframework.web.portlet.bind.annotation.RenderMapping;
 
 import javax.portlet.*;
-import java.awt.*;
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyEditor;
 import java.beans.PropertyEditorSupport;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -68,12 +64,12 @@ public class ConfigController {
         validator.validate(category, bindingResult);
         if (!bindingResult.hasErrors()) {
             SCategory cat = categoryService.create(category);
-            for (SPath p: category.getPaths()){
+            for (SPath p : category.getPaths()) {
                 p.setCategory(cat);
                 //categoryService.createPath(p);
             }
             categoryService.update(cat);
-             model.addAttribute("category", new SCategory());
+            model.addAttribute("category", new SCategory());
         } else {
             model.addAttribute("category", category);
         }
@@ -81,9 +77,23 @@ public class ConfigController {
 
     @InitBinder
     public void initBinder(PortletRequestDataBinder binder, PortletPreferences preferences) {
-        binder.registerCustomEditor(List.class, "paths", new PropertyEditorSupport(){
+        binder.registerCustomEditor(List.class, "paths", new PropertyEditorSupport() {
 
-             public void setAsText(String text) {
+            @Override
+            public String getAsText() {
+                List<SPath> paths = (List<SPath>) getValue();
+                if (paths == null || paths.size() < 1) return "";
+                StringBuilder builder = new StringBuilder();
+                for (SPath path : paths) {
+                    if (builder.length() > 0)
+                        builder.append(", ");
+                    builder.append(path.getPathValue());
+
+                }
+                return builder.toString();
+            }
+
+            public void setAsText(String text) {
                 if (text instanceof String) {
                     String[] array = text.split(",");
                     List<SPath> paths = new ArrayList<SPath>();
@@ -95,20 +105,6 @@ public class ConfigController {
                     setValue(paths);
 
                 }
-            }
-
-             @Override
-            public String getAsText() {
-                List<SPath> paths = (List<SPath>) getValue();
-                if (paths == null || paths.size() < 1) return "";
-                StringBuilder builder = new StringBuilder();
-                for (SPath path: paths){
-                    if (builder.length() > 0)
-                        builder.append(", ");
-                    builder.append(path.getPathValue());
-
-                }
-                return builder.toString();
             }
 
         });
@@ -163,7 +159,7 @@ public class ConfigController {
         }
     }
 
-@ActionMapping(params = "runjobSMI")
+    @ActionMapping(params = "runjobSMI")
     public void runSchedulerMediaJob(Model model, ActionRequest request, ActionResponse response) {
         try {
             scheduler.triggerJob("sendMediaMailJob", Scheduler.DEFAULT_GROUP);

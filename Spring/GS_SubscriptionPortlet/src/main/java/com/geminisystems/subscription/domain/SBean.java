@@ -2,7 +2,6 @@ package com.geminisystems.subscription.domain;
 
 import com.geminisystems.subscription.util.SubscriptionUtil;
 
-import javax.persistence.*;
 import java.util.List;
 
 /**
@@ -93,7 +92,5 @@ public class SBean {
         this.categories = categories;
     }
 
-    
 
-  
 }

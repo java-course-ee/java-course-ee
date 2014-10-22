@@ -10,7 +10,6 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
 
 /**
  * @author : Georgy Gobozov
@@ -26,7 +25,7 @@ public class Main {
 
     }
 
-    public static void createuser() throws IOException{
+    public static void createuser() throws IOException {
 
         HttpClient client = new DefaultHttpClient();
         HttpPost post = new HttpPost("http://localhost:8080/users/create");
@@ -47,7 +46,7 @@ public class Main {
         int code = response.getStatusLine().getStatusCode();
         System.out.println("code = " + code);
 
-        if ( code != 200) {
+        if (code != 200) {
             throw new RuntimeException("Failed : HTTP error code : "
                     + response.getStatusLine().getStatusCode());
         }
@@ -74,7 +73,7 @@ public class Main {
         int code = response.getStatusLine().getStatusCode();
         System.out.println("code = " + code);
 
-        if ( code != 200) {
+        if (code != 200) {
             throw new RuntimeException("Failed : HTTP error code : "
                     + response.getStatusLine().getStatusCode());
         }
@@ -88,7 +87,6 @@ public class Main {
         while ((output = br.readLine()) != null) {
             System.out.println(output);
         }
-
 
 
     }

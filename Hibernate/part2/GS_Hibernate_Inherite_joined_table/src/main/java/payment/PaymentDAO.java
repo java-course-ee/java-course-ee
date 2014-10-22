@@ -1,10 +1,10 @@
 package payment;
 
-import java.io.Serializable;
-import java.util.List;
-import org.hibernate.Hibernate;
 import org.hibernate.Query;
 import org.hibernate.Session;
+
+import java.io.Serializable;
+import java.util.List;
 
 public class PaymentDAO {
 

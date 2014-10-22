@@ -1,4 +1,3 @@
-
 package org.me.calculator.client;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -9,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for addResponse complex type.
- * 
+ * <p/>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * <p/>
  * <pre>
  * &lt;complexType name="addResponse">
  *   &lt;complexContent>
@@ -23,12 +22,10 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "addResponse", propOrder = {
-    "_return"
+        "_return"
 })
 public class AddResponse {
 
@@ -37,7 +34,6 @@ public class AddResponse {
 
     /**
      * Gets the value of the return property.
-     * 
      */
     public int getReturn() {
         return _return;
@@ -45,7 +41,6 @@ public class AddResponse {
 
     /**
      * Sets the value of the return property.
-     * 
      */
     public void setReturn(int value) {
         this._return = value;

@@ -6,7 +6,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.ServletContext;
@@ -30,14 +29,13 @@ public class MultiUploadController {
     ServletContext context;
 
 
-
     @RequestMapping(method = RequestMethod.GET)
     public String getUpload() {
         return "multiUploadPage";
     }
 
     @ModelAttribute
-    public FileBucket getFileBucket(){
+    public FileBucket getFileBucket() {
         return new FileBucket();
     }
 
@@ -61,7 +59,6 @@ public class MultiUploadController {
         return "result";
 
     }
-
 
 
 }

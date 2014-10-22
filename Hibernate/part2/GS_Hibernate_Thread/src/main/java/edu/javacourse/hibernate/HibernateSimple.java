@@ -7,7 +7,7 @@ import org.hibernate.cfg.Configuration;
 /**
  * Пример для демонстрации работы пула коннектов для большого количества Session
  * Также можно посмотреть увеличение производительности при отключении "show_sql"
- * 
+ *
  * @author ASaburov
  */
 public class HibernateSimple {
@@ -41,6 +41,6 @@ class MyThread extends Thread {
         s1.beginTransaction();
         s1.createQuery("from Region").list();
         s1.getTransaction().commit();
-       // s1.close();
+        // s1.close();
     }
 }

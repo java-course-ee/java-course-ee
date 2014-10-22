@@ -1,10 +1,6 @@
 package edu.javacourse.spring.aspect;
 
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.annotation.After;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
 
 /**
  * Author: Georgy Gobozov
@@ -17,35 +13,39 @@ public class Logging {
     // сам метод просто маркер-ориентир для советов (advice) @Before, @After
 
     //@Pointcut("execution(* edu.javacourse.spring.bean.RegionManager.get*(..))")
-    private void getAnything(){}
+    private void getAnything() {
+    }
 
     //@Pointcut("execution(* edu.javacourse.spring.bean.CityManager.*City(..))")
-    private void actionWithCity(){}
+    private void actionWithCity() {
+    }
 
     //@Pointcut("execution(* edu.javacourse.spring.bean.RegionManager.*(..))")
-    private void allRegionManagerMethods(){}
+    private void allRegionManagerMethods() {
+    }
 
     //@Pointcut("bean(buildingManager)")
-    private void allMethodInBean(){}
+    private void allMethodInBean() {
+    }
 
 
     //@Before("getAnything()")
-    public void doBeforeGetAnything(JoinPoint joinPoint){
+    public void doBeforeGetAnything(JoinPoint joinPoint) {
         System.out.println("LOG POINTCUT 1: GET method called of " + joinPoint.getTarget().getClass().getName());
     }
 
     //@After("actionWithCity()")
-    public void doAfterAnyActionCity(JoinPoint joinPoint){
+    public void doAfterAnyActionCity(JoinPoint joinPoint) {
         System.out.println("LOG POINTCUT 2: CityManager method " + joinPoint.getSignature().getName() + " called, ends witt 'City'");
     }
 
     //@Before("allRegionManagerMethods()")
-    public void doBeforeAnyActionRegion(JoinPoint joinPoint){
+    public void doBeforeAnyActionRegion(JoinPoint joinPoint) {
         System.out.println("LOG POINTCUT 3: RegionManager method " + joinPoint.getSignature().getName() + " called");
     }
 
     //@After("allMethodInBean()")
-    public void doAfterWithBean(JoinPoint joinPoint){
+    public void doAfterWithBean(JoinPoint joinPoint) {
         System.out.println("LOG POINTCUT 4: buildingManager method " + joinPoint.getSignature().getName() + " called");
     }
 

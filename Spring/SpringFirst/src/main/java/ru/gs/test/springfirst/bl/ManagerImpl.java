@@ -2,7 +2,7 @@ package ru.gs.test.springfirst.bl;
 
 import ru.gs.test.springfirst.dao.DAO;
 
-public class ManagerImpl implements Manager{
+public class ManagerImpl implements Manager {
     private DAO dao;
     private String name;
     private Boolean isTrue;
@@ -35,6 +35,6 @@ public class ManagerImpl implements Manager{
     public String toString() {
         return "ManagerImpl{" + "dao=" + dao + ", name=" + name + ", isTrue=" + isTrue + '}';
     }
-    
-    
+
+
 }

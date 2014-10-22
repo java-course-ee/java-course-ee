@@ -15,12 +15,16 @@ import java.util.List;
 public interface SubscriptionDao {
 
     public SBean getByEmail(String email);
-    public SBean create(SBean bean);
-    public SBean update(SBean bean);
-    public void delete(SBean bean);
-    public List<SBean> getAll();
-    public List<SBean> getAllActive(SType type);
 
+    public SBean create(SBean bean);
+
+    public SBean update(SBean bean);
+
+    public void delete(SBean bean);
+
+    public List<SBean> getAll();
+
+    public List<SBean> getAllActive(SType type);
 
 
 }

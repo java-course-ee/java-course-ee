@@ -23,15 +23,14 @@ import org.hibernate.annotations.CacheConcurrencyStrategy;
 import org.hibernate.annotations.CollectionOfElements;
 import org.hibernate.annotations.Index;
 
-import javax.persistence.*;
 import java.util.Set;
 
 /**
  * Model object that represents a security role.
  */
 @Entity
-@Table(name="roles")
-@Cache(usage= CacheConcurrencyStrategy.READ_WRITE)
+@Table(name = "roles")
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class Role {
 
     private Long id;
@@ -57,9 +56,9 @@ public class Role {
         this.id = id;
     }
 
-    @Basic(optional=false)
-    @Column(length=100)
-    @Index(name="idx_roles_name")
+    @Basic(optional = false)
+    @Column(length = 100)
+    @Index(name = "idx_roles_name")
     public String getName() {
         return name;
     }
@@ -68,8 +67,8 @@ public class Role {
         this.name = name;
     }
 
-    @Basic(optional=false)
-    @Column(length=255)
+    @Basic(optional = false)
+    @Column(length = 255)
     public String getDescription() {
         return description;
     }
@@ -79,8 +78,8 @@ public class Role {
     }
 
     @CollectionOfElements
-    @JoinTable(name="roles_permissions")
-    @Cache(usage=CacheConcurrencyStrategy.READ_WRITE)
+    @JoinTable(name = "roles_permissions")
+    @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
     public Set<String> getPermissions() {
         return permissions;
     }

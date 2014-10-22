@@ -1,6 +1,5 @@
 package ru.expomap.test.model;
 
-import javax.persistence.*;
 import java.util.List;
 
 

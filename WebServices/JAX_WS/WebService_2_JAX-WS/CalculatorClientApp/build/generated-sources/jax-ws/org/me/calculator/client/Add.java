@@ -1,4 +1,3 @@
-
 package org.me.calculator.client;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for add complex type.
- * 
+ * <p/>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * <p/>
  * <pre>
  * &lt;complexType name="add">
  *   &lt;complexContent>
@@ -23,13 +22,11 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "add", propOrder = {
-    "i",
-    "j"
+        "i",
+        "j"
 })
 public class Add {
 
@@ -38,7 +35,6 @@ public class Add {
 
     /**
      * Gets the value of the i property.
-     * 
      */
     public int getI() {
         return i;
@@ -46,7 +42,6 @@ public class Add {
 
     /**
      * Sets the value of the i property.
-     * 
      */
     public void setI(int value) {
         this.i = value;
@@ -54,7 +49,6 @@ public class Add {
 
     /**
      * Gets the value of the j property.
-     * 
      */
     public int getJ() {
         return j;
@@ -62,7 +56,6 @@ public class Add {
 
     /**
      * Sets the value of the j property.
-     * 
      */
     public void setJ(int value) {
         this.j = value;

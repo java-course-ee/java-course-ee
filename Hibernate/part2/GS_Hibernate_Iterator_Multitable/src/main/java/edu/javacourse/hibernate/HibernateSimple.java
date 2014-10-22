@@ -1,13 +1,14 @@
 package edu.javacourse.hibernate;
 
-import java.util.Iterator;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+import java.util.Iterator;
+
 /**
  * Простой пример работы с итератором
- * 
+ *
  * @author ASaburov
  */
 public class HibernateSimple {
@@ -20,7 +21,7 @@ public class HibernateSimple {
 
         // read
         Iterator<Region> regionIt = s.createQuery("from Region").iterate();
-        while(regionIt.hasNext()) {
+        while (regionIt.hasNext()) {
             Region r = regionIt.next();
             System.out.println("Region iterator:" + r);
         }
@@ -32,7 +33,6 @@ public class HibernateSimple {
         s.save(pskov);
 
 
-        
         s.getTransaction().commit();
     }
 

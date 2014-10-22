@@ -15,10 +15,15 @@ import java.util.List;
 public interface CategoryDao {
 
     public SCategory create(SCategory category);
+
     public void update(SCategory category);
+
     public List<SCategory> getAll();
+
     public void delete(SCategory category);
+
     public SCategory getById(Integer id);
+
     public SPath createPath(SPath path);
 
 }

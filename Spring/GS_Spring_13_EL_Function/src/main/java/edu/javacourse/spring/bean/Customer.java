@@ -27,7 +27,7 @@ public class Customer {
     }
 
 
-    public String getSuperName(){
+    public String getSuperName() {
         return "Superman";
     }
 

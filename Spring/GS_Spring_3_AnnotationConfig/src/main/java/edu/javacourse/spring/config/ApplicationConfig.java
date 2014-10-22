@@ -16,7 +16,7 @@ public class ApplicationConfig {
     public SimpleBean2 getSimpleBean2() {
         return new SimpleBean2();
     }
-    
+
     @Bean
     public SimpleInterface getSimpleInterface() {
         return new SimpleImpl();

@@ -1,7 +1,6 @@
 package edu.javacourse.spring.validation;
 
 import edu.javacourse.spring.model.Region;
-import org.springframework.context.annotation.Bean;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
@@ -9,12 +8,12 @@ import org.springframework.validation.Validator;
  * Author: Georgy Gobozov
  * Date: 18.07.13
  */
-public class RegionValidator implements Validator{
+public class RegionValidator implements Validator {
 
 
     @Override
     public boolean supports(Class<?> aClass) {
-       return Region.class.equals(aClass);
+        return Region.class.equals(aClass);
     }
 
     @Override

@@ -1,13 +1,14 @@
 package edu.javacourse.hibernate;
 
-import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+import java.util.List;
+
 /**
  * Простой пример поучения произвольного класса
- * 
+ *
  * @author ASaburov
  */
 public class HibernateSimple {
@@ -17,19 +18,19 @@ public class HibernateSimple {
 
         Session s = hs.getSessionFactory().getCurrentSession();
         s.beginTransaction();
-        
+
         List<Region> regionList = s.createQuery("from Region").list();
-        for(Region r : regionList) {
+        for (Region r : regionList) {
             System.out.println(r);
         }
 
         List<RegionView> regionViewList = s.createQuery("select "
                 + "new edu.javacourse.hibernate.RegionView(r.regionId || ' ' || r.regionName) "
                 + "from Region r").list();
-        for(RegionView r : regionViewList) {
+        for (RegionView r : regionViewList) {
             System.out.println(r);
         }
-        
+
         s.getTransaction().commit();
     }
 

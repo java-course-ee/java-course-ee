@@ -1,18 +1,8 @@
 package edu.javacourse.hibernate;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
 
 @Entity
 @Table(name = "jc_catalog")
@@ -64,6 +54,6 @@ public class Catalog implements Serializable {
 
     @Override
     public String toString() {
-        return "Catalog{" + "catalogId=" + catalogId + ", catalogName=" + catalogName + " parent=" + (parent == null ? "null" : parent.getCatalogId()) +  '}';
+        return "Catalog{" + "catalogId=" + catalogId + ", catalogName=" + catalogName + " parent=" + (parent == null ? "null" : parent.getCatalogId()) + '}';
     }
 }

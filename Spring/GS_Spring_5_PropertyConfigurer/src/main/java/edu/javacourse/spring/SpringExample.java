@@ -11,11 +11,11 @@ public class SpringExample {
         SpringExample se = new SpringExample();
         se.demoSpring();
     }
-    
+
     public void demoSpring() {
         ApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"config.xml"});
 
-        DataSource dataSource = (DataSource)context.getBean("dataSource");
+        DataSource dataSource = (DataSource) context.getBean("dataSource");
         System.out.println("dataSource = " + dataSource);
 
         PropertiesBean propertiesBean = (PropertiesBean) context.getBean("propertyBean");

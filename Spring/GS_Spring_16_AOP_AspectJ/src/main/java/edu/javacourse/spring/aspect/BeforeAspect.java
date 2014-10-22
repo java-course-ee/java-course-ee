@@ -3,9 +3,6 @@ package edu.javacourse.spring.aspect;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
-import org.springframework.aop.MethodBeforeAdvice;
-
-import java.lang.reflect.Method;
 
 /**
  * Author: Georgy Gobozov

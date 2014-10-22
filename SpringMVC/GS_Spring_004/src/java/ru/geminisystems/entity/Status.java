@@ -1,7 +1,5 @@
 package ru.geminisystems.entity;
 
-import javax.persistence.*;
-
 /**
  * Created by IntelliJ IDEA.
  * User: gb
@@ -10,19 +8,19 @@ import javax.persistence.*;
  * To change this template use File | Settings | File Templates.
  */
 @Entity
-@Table (name = "statuses")
+@Table(name = "statuses")
 public class Status {
 
-     @Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "statusId", nullable = false)
     private Long statusId;
 
     @Column(name = "statusName", nullable = false)
-	private String statusName;
+    private String statusName;
 
     @Column(name = "alias", nullable = true)
-	private String alias;
+    private String alias;
 
     public Long getStatusId() {
         return statusId;

@@ -1,9 +1,9 @@
 package edu.javacourse.hibernate;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
-import javax.persistence.*;
 
 @Entity
 @Table(name = "jc_book",
@@ -31,11 +31,11 @@ public class Book implements Serializable {
     private Long bookId;
     @Column(name = "book_name")
     private String bookName;
-    
+
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.LAZY)
     @JoinTable(name = "jc_book_author",
-        joinColumns = @JoinColumn(name = "book_id"),
-        inverseJoinColumns = @JoinColumn(name = "author_id"))
+            joinColumns = @JoinColumn(name = "book_id"),
+            inverseJoinColumns = @JoinColumn(name = "author_id"))
     private Set<Author> authorList;
 
     public Set<Author> getAuthorList() {

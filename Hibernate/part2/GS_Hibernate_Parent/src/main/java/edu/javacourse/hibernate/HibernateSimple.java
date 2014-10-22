@@ -1,13 +1,14 @@
 package edu.javacourse.hibernate;
 
-import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+import java.util.List;
+
 /**
  * Простой пример для демонстрации иерархии
- * 
+ *
  * @author ASaburov
  */
 public class HibernateSimple {
@@ -18,13 +19,13 @@ public class HibernateSimple {
         {   // Рекурсивное удаление
             Session s = hs.getSessionFactory().getCurrentSession();
             s.beginTransaction();
-            
+
             List<Catalog> catalogList = s.createQuery("from Catalog where parent=1").list();
             // Вытащить список каталогов (чтобы SQL не мозолил глаза)
             for (Catalog catalog : catalogList) {
                 hs.fetchCatalog(catalog);
             }
-            
+
             // Просмотреть список каталогов (без SQL симпатичнее)
             System.out.println();
             System.out.println("Catalog List");
@@ -37,27 +38,27 @@ public class HibernateSimple {
                 System.out.println("DELETE 'second' -->");
                 s.delete(catalogList.get(1));
             }
-            
+
             s.getTransaction().commit();
         }
         {   // Убеждаемся, что удален верхний "second"
             Session s = hs.getSessionFactory().getCurrentSession();
             s.beginTransaction();
-            
+
             System.out.println();
             List<Catalog> catalogList = s.createQuery("from Catalog where parent=1").list();
             // Вытащить список каталогов (чтобы SQL не мозолил глаза)
             for (Catalog catalog : catalogList) {
                 hs.fetchCatalog(catalog);
             }
-            
+
             // Просмотреть список каталогов (без SQL симпатичнее)
             System.out.println();
             System.out.println("Catalog List");
             for (Catalog catalog : catalogList) {
                 hs.printCatalog(catalog, 1);
             }
-            
+
             s.getTransaction().commit();
         }
 
@@ -74,11 +75,11 @@ public class HibernateSimple {
             }
         }
     }
-    
+
     private void printCatalog(Catalog catalog, int shift) {
         for (int i = 0; i < shift; i++) {
             System.out.print(" ");
-        }        
+        }
         System.out.println("Catalog:" + catalog);
         if (catalog.getCatalogList().size() > 0) {
             for (Catalog c : catalog.getCatalogList()) {

@@ -33,10 +33,10 @@ public class CategoryDaoImpl implements CategoryDao {
 
     public List<SCategory> getAll() {
         List<SCategory> cats = ht.loadAll(SCategory.class);
-        for (SCategory c: cats){
+        for (SCategory c : cats) {
             Hibernate.initialize(c.getPaths());
         }
-        return cats; 
+        return cats;
     }
 
     public void delete(SCategory category) {
@@ -45,7 +45,7 @@ public class CategoryDaoImpl implements CategoryDao {
 
     public SCategory getById(Integer id) {
         SCategory category = ht.get(SCategory.class, id);
-        if (category != null){
+        if (category != null) {
             Hibernate.initialize(category.getPaths());
         }
         return category;

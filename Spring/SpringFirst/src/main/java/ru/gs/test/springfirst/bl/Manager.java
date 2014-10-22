@@ -5,9 +5,8 @@
 package ru.gs.test.springfirst.bl;
 
 /**
- *
  * @author Intern
  */
 public interface Manager {
-    
+
 }

@@ -1,21 +1,9 @@
 package edu.javacourse.hibernate;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
-import javax.persistence.OrderBy;
-import javax.persistence.Table;
-import javax.persistence.Transient;
 
 @Entity
 @Table(name = "jc_author")
@@ -27,7 +15,7 @@ public class Author implements Serializable {
     private Long authorId;
     @Column(name = "author_name")
     private String authorName;
-    
+
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.LAZY, mappedBy = "authorList")
 //    @JoinTable(name = "jc_book_author",
 //        joinColumns = @JoinColumn(name = "author_id"),

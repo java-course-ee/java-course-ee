@@ -1,17 +1,18 @@
 package edu.javacourse.hibernate;
 
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
 /**
  * Простой пример для конфигурации в виде XML
- * 
+ *
  * @author ASaburov
  */
 public class HibernateSimple {
@@ -66,7 +67,7 @@ public class HibernateSimple {
         if (sessionFactory.getStatistics().getSecondLevelCacheStatistics("CacheForRegion") != null) {
             Map ce = sessionFactory.getStatistics().getSecondLevelCacheStatistics("CacheForRegion").getEntries();
 
-            for (Iterator en = ce.keySet().iterator(); en.hasNext();) {
+            for (Iterator en = ce.keySet().iterator(); en.hasNext(); ) {
                 Object key = en.next();
                 Object value = ce.get(key);
                 System.out.println("Key:" + key);

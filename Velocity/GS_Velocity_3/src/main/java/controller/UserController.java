@@ -1,11 +1,11 @@
 package controller;
 
-import org.springframework.web.servlet.mvc.SimpleFormController;
-import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.view.RedirectView;
-import org.springframework.validation.Errors;
-import org.springframework.validation.BindException;
 import entity.User;
+import org.springframework.validation.BindException;
+import org.springframework.validation.Errors;
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.SimpleFormController;
+import org.springframework.web.servlet.view.RedirectView;
 import service.UserService;
 
 import javax.servlet.http.HttpServletRequest;
@@ -23,14 +23,14 @@ import java.util.Map;
  */
 public class UserController extends SimpleFormController {
 
+    private UserService userService;
+
     public UserController() {
         setCommandClass(User.class);
         setCommandName("newUser");
         setSessionForm(false);
         setBindOnNewForm(false);
     }
-
-    private UserService userService;
 
     public void setUserService(UserService userService) {
         this.userService = userService;
@@ -57,7 +57,7 @@ public class UserController extends SimpleFormController {
             User user = userService.getById(Long.parseLong(userId));
             return user;
         }
-        if (userId != null && request.getParameter("action").equals("delete")){
+        if (userId != null && request.getParameter("action").equals("delete")) {
             userService.delete(userService.getById(Long.parseLong(userId)));
         }
         User user = new User();
@@ -68,7 +68,7 @@ public class UserController extends SimpleFormController {
     @Override
     protected ModelAndView showForm(HttpServletRequest request, HttpServletResponse response, BindException e) throws Exception {
         // redirect if delete action was occured
-        if (request.getParameter("action") != null && request.getParameter("action").equals("delete")){
+        if (request.getParameter("action") != null && request.getParameter("action").equals("delete")) {
             return new ModelAndView(new RedirectView("users.htm"));
         }
         return super.showForm(request, response, e);    //To change body of overridden methods use File | Settings | File Templates.

@@ -1,4 +1,3 @@
-
 <%@ include file="include.jsp" %>
 
 <html>
@@ -19,12 +18,10 @@
     This page represents the home page of any web application.</p>
 
 
-
-    <a href="/basic">Basic auth</a> &nbsp;
-    <a href="/logged">Logged in area</a> &nbsp;
-    <a href="/user">User area</a> &nbsp;
-    <a href="/admin">Admin area</a>
-
+<a href="/basic">Basic auth</a> &nbsp;
+<a href="/logged">Logged in area</a> &nbsp;
+<a href="/user">User area</a> &nbsp;
+<a href="/admin">Admin area</a>
 
 
 <h2>Roles</h2>
@@ -53,8 +50,6 @@
         You are either a admin, user or logged in.
     </shiro:hasAnyRoles>
 </p>
-
-
 
 
 </body>

@@ -24,26 +24,25 @@ public class TestController {
 
     }
 
-    @RequestMapping(value="/loginfailed", method = RequestMethod.GET)
+    @RequestMapping(value = "/loginfailed", method = RequestMethod.GET)
     public String loginerror(Model model) {
         model.addAttribute("error", "true");
         return "login";
 
     }
 
-    @RequestMapping(value="/logout", method = RequestMethod.GET)
+    @RequestMapping(value = "/logout", method = RequestMethod.GET)
     public String logout(Model model) {
         return "login";
 
     }
 
-    @RequestMapping(value="/admin", method = RequestMethod.GET)
+    @RequestMapping(value = "/admin", method = RequestMethod.GET)
     public String admin(Model model) {
         model.addAttribute("message", "Hello Admin!");
         return "admin";
 
     }
-
 
 
     @RequestMapping(method = RequestMethod.GET, value = "/welcome")

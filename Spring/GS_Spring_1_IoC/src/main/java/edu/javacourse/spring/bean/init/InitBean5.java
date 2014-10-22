@@ -4,7 +4,7 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 public class InitBean5 {
-    
+
     @PostConstruct
     public void annotationInit() {
         System.out.println("Annotation Init for Bean 5");
@@ -14,5 +14,5 @@ public class InitBean5 {
     public void annotationDestroy() {
         System.out.println("Annotation Destroy for Bean 5");
     }
-    
+
 }

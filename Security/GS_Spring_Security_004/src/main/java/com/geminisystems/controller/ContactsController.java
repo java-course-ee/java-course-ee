@@ -1,12 +1,10 @@
 package com.geminisystems.controller;
 
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import java.security.Principal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,13 +28,13 @@ public class ContactsController {
     }
 
 
-    @RequestMapping(value = "/contacts" ,method = RequestMethod.GET)
-    public String get(Model model){
+    @RequestMapping(value = "/contacts", method = RequestMethod.GET)
+    public String get(Model model) {
         model.addAttribute("contacts", contacts);
         return "contacts";
     }
 
-    @RequestMapping( method = RequestMethod.POST)
+    @RequestMapping(method = RequestMethod.POST)
     @PreAuthorize("hasRole('ROLE_USER') or hasRole ('ROLE_ADMIN')")
     public String addContact(@RequestParam("contact") String contact) {
         contacts.add(contact);

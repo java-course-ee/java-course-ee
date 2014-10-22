@@ -13,7 +13,7 @@
             <td><c:out value="${t.project.name}"/></td>
             <td>
                 <c:forEach var="u" items="${t.users}">
-                   <c:out value="${u.name}"/>&nbsp; 
+                    <c:out value="${u.name}"/>&nbsp;
                 </c:forEach>
             </td>
             <td><a href="tasks/edit/${t.taskId}">Edit</a>&nbsp;<a href="tasks/delete/${t.taskId}">Delete</a></td>

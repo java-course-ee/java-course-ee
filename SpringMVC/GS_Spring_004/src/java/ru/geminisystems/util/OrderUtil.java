@@ -1,14 +1,12 @@
 package ru.geminisystems.util;
 
 
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.ServletContext;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
-import java.util.ArrayList;
-import java.io.IOException;
-import java.io.FileInputStream;
-import java.io.InputStream;
 
 public class OrderUtil {
 
@@ -58,7 +56,6 @@ public class OrderUtil {
         } while (minValue <= maxValue);
         return list;
     }
-
 
 
 }

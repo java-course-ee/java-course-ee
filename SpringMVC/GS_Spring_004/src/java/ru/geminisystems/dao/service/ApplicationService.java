@@ -1,10 +1,10 @@
 package ru.geminisystems.dao.service;
 
 
-import java.util.List;
-
 import ru.geminisystems.dao.IApplicationDAO;
 import ru.geminisystems.entity.Application;
+
+import java.util.List;
 
 /**
  * Created by IntelliJ IDEA.

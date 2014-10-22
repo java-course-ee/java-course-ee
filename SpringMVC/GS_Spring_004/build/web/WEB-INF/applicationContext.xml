@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean name="applicationDAO" class="ru.geminisystems.dao.impl.ApplicationDAOImpl">
@@ -15,14 +15,14 @@
         <property name="template" ref="hibernateTemplate"/>
     </bean>
 
-    <bean name="applicationService" parent="abstractTransactionProxy" >
+    <bean name="applicationService" parent="abstractTransactionProxy">
         <property name="target">
             <bean name="ApplicationService" class="ru.geminisystems.dao.service.ApplicationService">
                 <property name="applicationDAO" ref="applicationDAO"/>
             </bean>
         </property>
     </bean>
-    <bean name="orderService" parent="abstractTransactionProxy" >
+    <bean name="orderService" parent="abstractTransactionProxy">
         <property name="target">
             <bean name="OrderService" class="ru.geminisystems.dao.service.OrderService">
                 <property name="orderDAO" ref="orderDAO"/>
@@ -30,14 +30,13 @@
         </property>
     </bean>
 
-    <bean name="statusService" parent="abstractTransactionProxy" >
+    <bean name="statusService" parent="abstractTransactionProxy">
         <property name="target">
             <bean name="StatusService" class="ru.geminisystems.dao.service.StatusService">
                 <property name="statusDAO" ref="statusDAO"/>
             </bean>
         </property>
     </bean>
-
 
 
 </beans>

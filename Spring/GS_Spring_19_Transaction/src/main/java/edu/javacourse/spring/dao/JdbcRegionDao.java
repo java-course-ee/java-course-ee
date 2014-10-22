@@ -78,7 +78,7 @@ public class JdbcRegionDao implements RegionDao {
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setString(1, name);
             ResultSet rs = ps.executeQuery();
-            if (rs.next()){
+            if (rs.next()) {
                 region = new Region();
                 region.setId(rs.getInt("region_id"));
                 region.setName(rs.getString("region_name"));

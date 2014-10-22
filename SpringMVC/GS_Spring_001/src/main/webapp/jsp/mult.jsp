@@ -5,7 +5,7 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
 <html>
-    <body>
-            <h1>Multiple =  : (${one * two})</h1>
-    </body>
+<body>
+<h1>Multiple = : (${one * two})</h1>
+</body>
 </html>

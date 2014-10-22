@@ -1,7 +1,6 @@
 package edu.javacourse.spring.aspect;
 
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
 
@@ -14,7 +13,7 @@ public class AfterReturningAspect {
 
     @AfterReturning(
             pointcut = "execution(* edu.javacourse.spring.bean.RegionManager.getNumber(..))",
-            returning= "result")
+            returning = "result")
     public void logAfterReturning(JoinPoint joinPoint, Object result) {
 
         System.out.println("logAfterReturning() is running!");

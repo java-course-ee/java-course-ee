@@ -21,12 +21,12 @@
         </tr>
         <tr>
             <td>Password:</td>
-            <td><input type='password' name='j_password' />
+            <td><input type='password' name='j_password'/>
             </td>
         </tr>
         <tr>
             <td colspan='2'>
-                <input name="submit" type="submit" value="login" />
+                <input name="submit" type="submit" value="login"/>
             </td>
         </tr>
         <tr>

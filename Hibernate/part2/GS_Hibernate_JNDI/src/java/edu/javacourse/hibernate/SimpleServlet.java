@@ -1,13 +1,13 @@
 package edu.javacourse.hibernate;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.List;
 
 @WebServlet(name = "SimpleServlet", urlPatterns = {"/SimpleServlet"})
 public class SimpleServlet extends HttpServlet {
@@ -23,16 +23,16 @@ public class SimpleServlet extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h4>Simple Hibernate call</h4>");
-            
+
             List<Region> result = new HibernateSimple().getRegionList();
             out.println("<table>");
-            for(Region r : result) {
+            for (Region r : result) {
                 out.println("<tr>");
                 out.println("<td>" + r + "</td>");
                 out.println("</tr>");
             }
             out.println("</table>");
-            
+
             out.println("</body>");
             out.println("</html>");
         } finally {

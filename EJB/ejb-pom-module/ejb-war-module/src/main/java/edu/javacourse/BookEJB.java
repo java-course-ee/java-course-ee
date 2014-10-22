@@ -3,8 +3,6 @@ package edu.javacourse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.annotation.PostConstruct;
-import javax.ejb.Init;
 import javax.ejb.Stateless;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,23 +13,21 @@ import java.util.List;
 
 @Stateless
 public class BookEJB
-        implements BookEJBLocal
-{
+        implements BookEJBLocal {
 
-    private static final Logger log = LoggerFactory.getLogger( BookEJB.class );
+    private static final Logger log = LoggerFactory.getLogger(BookEJB.class);
 
     @Override
-    public List< Book > getBooks()
-    {
-        log.trace( "Inside EJB's getBooks" );
-        List< Book > list = new ArrayList< Book >();
-        list.add( new Book( 1L, "Book1" ) );
-        list.add( new Book( 2L, "Book2" ) );
-        list.add( new Book( 3L, "Book3" ) );
+    public List<Book> getBooks() {
+        log.trace("Inside EJB's getBooks");
+        List<Book> list = new ArrayList<Book>();
+        list.add(new Book(1L, "Book1"));
+        list.add(new Book(2L, "Book2"));
+        list.add(new Book(3L, "Book3"));
 
-        log.debug( "Returned books: {}", list );
+        log.debug("Returned books: {}", list);
 
-        log.trace( "getBooks return" );
+        log.trace("getBooks return");
         return list;
     }
 

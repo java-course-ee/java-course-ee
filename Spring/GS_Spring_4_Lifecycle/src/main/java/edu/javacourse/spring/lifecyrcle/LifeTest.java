@@ -5,7 +5,7 @@ import org.springframework.context.Lifecycle;
 public class LifeTest implements Lifecycle {
 
     private boolean started = false;
-    
+
     @Override
     public void start() {
         started = true;

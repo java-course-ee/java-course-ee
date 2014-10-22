@@ -22,7 +22,7 @@ public class BeanAware implements BeanNameAware, InitializingBean, DisposableBea
         System.out.println("setProperty is called:" + property);
     }
 
-    
+
     // Обратить внимание на то, что метод setBeanName вызывается ПЕРЕД
     // afterPropertiesSet
     @Override

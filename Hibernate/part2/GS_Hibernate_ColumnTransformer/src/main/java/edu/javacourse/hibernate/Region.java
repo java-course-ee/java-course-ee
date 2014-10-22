@@ -1,13 +1,9 @@
 package edu.javacourse.hibernate;
 
-import java.io.Serializable;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
 import org.hibernate.annotations.ColumnTransformer;
+
+import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "jc_region")
@@ -18,7 +14,7 @@ public class Region implements Serializable {
     @Column(name = "region_id")
     private Long regionId;
     @Column(name = "region_name", nullable = true)
-    @ColumnTransformer(read="concat('Region=', region_name)", write="")
+    @ColumnTransformer(read = "concat('Region=', region_name)", write = "")
     private String regionName;
 
     public Region() {

@@ -2,9 +2,9 @@ package ru.gs.test.springfirst.dao;
 
 import java.util.UUID;
 
-public class DAOImpl implements DAO{
+public class DAOImpl implements DAO {
     private String name;
-    private String uuid = UUID.randomUUID().toString(); 
+    private String uuid = UUID.randomUUID().toString();
 
     public String getName() {
         return name;
@@ -19,7 +19,6 @@ public class DAOImpl implements DAO{
         return "DAOImpl{" + "name=" + name + ", uuid=" + uuid + '}';
     }
 
-    
 
     public String getUuid() {
         return uuid;
@@ -28,6 +27,6 @@ public class DAOImpl implements DAO{
     public void setUuid(String uuid) {
         this.uuid = uuid;
     }
-    
-    
+
+
 }

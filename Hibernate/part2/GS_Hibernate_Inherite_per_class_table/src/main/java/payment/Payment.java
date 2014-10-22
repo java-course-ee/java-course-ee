@@ -1,7 +1,5 @@
 package payment;
 
-import javax.persistence.*;
-
 @Entity
 @Table(name = "jc_payment_full")
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)

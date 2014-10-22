@@ -15,7 +15,7 @@ public class Main {
         SayHelloService port = service.getSayHelloServicePort();
 
 
-        String response  = port.sayHello("Georgy!");
+        String response = port.sayHello("Georgy!");
         System.out.println("response = " + response);
 
 

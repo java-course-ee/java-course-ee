@@ -1,20 +1,8 @@
 package edu.javacourse.hibernate;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
-import org.hibernate.annotations.Fetch;
-import org.hibernate.annotations.FetchMode;
+import javax.persistence.*;
 
 /**
- *
  * @author Demo
  */
 @Entity
@@ -27,7 +15,7 @@ public class City {
     private Integer cityId;
     @Column(name = "city_name")
     private String cityName;
-    @ManyToOne(cascade={CascadeType.MERGE, CascadeType.REFRESH}, fetch= FetchType.LAZY)
+    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.LAZY)
 //    @Fetch(FetchMode.SUBSELECT)
     @JoinColumn(name = "region_id")
     private Region region;

@@ -7,17 +7,17 @@
 <body>
 
 
-    <h3>Contacts</h3>
+<h3>Contacts</h3>
 
-    <c:forEach items="${contacts}" var="contact">
-        <span>${contact}</span> - <a href="<c:url value="/contacts/remove/${contact}"/>"/> Delete</a><br/>
-    </c:forEach>
+<c:forEach items="${contacts}" var="contact">
+    <span>${contact}</span> - <a href="<c:url value="/contacts/remove/${contact}"/>"/> Delete</a><br/>
+</c:forEach>
 
-    <form action="<c:url value="/contacts"/>" method="POST">
-           Contact <input type="text" name="contact"/>&nbsp;<input type="submit" value="Save">
+<form action="<c:url value="/contacts"/>" method="POST">
+    Contact <input type="text" name="contact"/>&nbsp;<input type="submit" value="Save">
 
 
-    </form>
+</form>
 
 
 </body>

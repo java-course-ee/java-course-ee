@@ -5,7 +5,6 @@ import ru.gs.test.SimpleWebServiceService;
 
 /**
  * Hello world!
- *
  */
 public class App {
 

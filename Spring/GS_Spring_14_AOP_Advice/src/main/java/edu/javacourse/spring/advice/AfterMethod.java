@@ -1,7 +1,6 @@
 package edu.javacourse.spring.advice;
 
 import org.springframework.aop.AfterReturningAdvice;
-import org.springframework.aop.MethodBeforeAdvice;
 
 import java.lang.reflect.Method;
 

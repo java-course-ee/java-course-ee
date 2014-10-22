@@ -1,7 +1,5 @@
 package com.geminisystems.subscription.domain;
 
-import javax.persistence.*;
-
 /**
  * Created by IntelliJ IDEA.
  * User: GGobozov

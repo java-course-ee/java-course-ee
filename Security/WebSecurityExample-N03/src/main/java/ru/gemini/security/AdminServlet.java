@@ -21,21 +21,21 @@ public class AdminServlet extends HttpServlet {
 
         String bookId = request.getParameter("bookId");
 
-        if (bookId != null && request.getUserPrincipal() != null){
+        if (bookId != null && request.getUserPrincipal() != null) {
             request.setAttribute("book", BookStore.getBook(Integer.parseInt(bookId)));
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/private/order.jsp");
             dispatcher.forward(request, response);
             return;
         }
 
-        if (request.getUserPrincipal() != null && request.isUserInRole("administrator")){
+        if (request.getUserPrincipal() != null && request.isUserInRole("administrator")) {
             request.setAttribute("books", BookStore.getBooks());
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/private/admin.jsp");
             dispatcher.forward(request, response);
             return;
         }
 
-       // response.sendRedirect("/auth/404.jsp");
+        // response.sendRedirect("/auth/404.jsp");
         response.setStatus(HttpServletResponse.SC_NOT_FOUND);
 
     }
@@ -49,14 +49,12 @@ public class AdminServlet extends HttpServlet {
 
         try {
             Book b = new Book(title, author, Integer.parseInt(price));
-             BookStore.addBook(b);
-        } catch (Exception e){
+            BookStore.addBook(b);
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
         response.sendRedirect("/admin");
-
-
 
 
     }

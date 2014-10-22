@@ -6,7 +6,7 @@
     <script type="text/javascript">
 
 
-        function getXmlHttp(){
+        function getXmlHttp() {
             var xmlhttp;
             try {
                 xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
@@ -17,7 +17,7 @@
                     xmlhttp = false;
                 }
             }
-            if (!xmlhttp && typeof XMLHttpRequest!='undefined') {
+            if (!xmlhttp && typeof XMLHttpRequest != 'undefined') {
                 xmlhttp = new XMLHttpRequest();
             }
             return xmlhttp;
@@ -27,7 +27,7 @@
             var xmlhttp = getXmlHttp();
             xmlhttp.open('GET', '/helloajax', false);
             xmlhttp.send(null);
-            if(xmlhttp.status == 200) {
+            if (xmlhttp.status == 200) {
                 alert(xmlhttp.responseText);
 
             }
@@ -37,12 +37,12 @@
             var xmlhttp = getXmlHttp();
             var d1value = document.getElementById("d1").value;
             var d2value = document.getElementById("d2").value;
-            xmlhttp.open('GET', '/plus?d1='+ d1value + '&d2=' + d2value, false);
+            xmlhttp.open('GET', '/plus?d1=' + d1value + '&d2=' + d2value, false);
             xmlhttp.send(null);
-            if(xmlhttp.status == 200) {
+            if (xmlhttp.status == 200) {
                 //alert(xmlhttp.responseText);
                 document.getElementById("result").innerHTML = xmlhttp.responseText;
-            }else{
+            } else {
                 alert("Error " + xmlhttp.responseText);
             }
         }

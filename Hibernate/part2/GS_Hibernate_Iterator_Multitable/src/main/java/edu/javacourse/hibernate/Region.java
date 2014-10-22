@@ -1,23 +1,15 @@
 package edu.javacourse.hibernate;
 
+import javax.persistence.*;
 import java.io.Serializable;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.PrimaryKeyJoinColumn;
-import javax.persistence.SecondaryTable;
-import javax.persistence.SecondaryTables;
-import javax.persistence.Table;
 
 @Entity
 @Table(name = "jc_region")
 @SecondaryTables({
-    @SecondaryTable(name = "jc_region_ext",
-    pkJoinColumns = {
-        @PrimaryKeyJoinColumn(name = "region_ext_id", referencedColumnName = "region_id")
-    })
+        @SecondaryTable(name = "jc_region_ext",
+                pkJoinColumns = {
+                        @PrimaryKeyJoinColumn(name = "region_ext_id", referencedColumnName = "region_id")
+                })
 })
 public class Region implements Serializable {
 

@@ -30,7 +30,7 @@ public class MyController {
 
 
     @RequestMapping(value = "/sum/{d1}/{d2}", method = RequestMethod.GET)
-    public String sumRest(@PathVariable("d1") int arg1, @PathVariable("d2") int arg2,  ModelMap map) {
+    public String sumRest(@PathVariable("d1") int arg1, @PathVariable("d2") int arg2, ModelMap map) {
         map.addAttribute("sum", arg1 + arg2);
         return "summa";
     }
@@ -40,10 +40,10 @@ public class MyController {
     public String sum(HttpServletRequest request, ModelMap map) {
         String d1 = request.getParameter("d1");
         String d2 = request.getParameter("d2");
-        try{
+        try {
             int sum = Integer.parseInt(d1) + Integer.parseInt(d2);
             map.addAttribute("sum", sum);
-        }catch (Exception e){
+        } catch (Exception e) {
             map.addAttribute("error", "Arguments must be numbers!");
         }
 
@@ -57,8 +57,6 @@ public class MyController {
         model.addAttribute("two", 20);
         return new ModelAndView("mult", "model", model);
     }
-
-
 
 
 }

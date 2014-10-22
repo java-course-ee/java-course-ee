@@ -1,7 +1,6 @@
 package edu.javacourse.spring;
 
 import edu.javacourse.spring.bean.*;
-import edu.javacourse.spring.bean.init.InitBean1;
 import edu.javacourse.spring.bean.init.InitBean2;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -12,7 +11,7 @@ public class SpringExample {
         SpringExample se = new SpringExample();
         se.demoSpring();
     }
-    
+
     public void demoSpring() {
         // Вариант относительного пути к файлу
         ApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"springExample.xml"});
@@ -22,19 +21,18 @@ public class SpringExample {
 
         // Вариант абсолютного пути к файлу
 //        FileSystemXmlApplicationContext context = new FileSystemXmlApplicationContext(new String[]{"springExample.xml"});
-        
 
 
         // пример, показывающий каким образом можно проинициализировать бины и уничтожить их.
         test0(context);
 
-       // test1(context);
+        // test1(context);
 
-       // test2(context);
+        // test2(context);
 
-       // test3(context);
+        // test3(context);
 
-       // test4(context);
+        // test4(context);
 
 //        test5(context);
 
@@ -48,13 +46,13 @@ public class SpringExample {
         InitBean2 init3 = (InitBean2) context.getBean("init2");
 
         // Надо привести к типу ClassPathXmlApplicationContext для использования destroy
-        ((ClassPathXmlApplicationContext)context).destroy();
+        ((ClassPathXmlApplicationContext) context).destroy();
     }
 
     private void test5(ApplicationContext context) {
         // List example
 
-        SpringList springList = (SpringList)context.getBean("listBean");
+        SpringList springList = (SpringList) context.getBean("listBean");
         for (String s : springList.getStringList()) {
             System.out.println("List item = " + s);
         }

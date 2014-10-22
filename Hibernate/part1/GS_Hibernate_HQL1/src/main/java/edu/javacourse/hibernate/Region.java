@@ -1,21 +1,8 @@
 package edu.javacourse.hibernate;
 
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
-
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.OrderBy;
-import javax.persistence.OrderColumn;
-import javax.persistence.Table;
 
 @Entity
 @Table(name = "jc_region")
@@ -35,7 +22,7 @@ public class Region implements Serializable {
     private String regionName;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "region")
-    @OrderBy(value="cityName")
+    @OrderBy(value = "cityName")
     private List<City> cityList;
 
     public Region() {

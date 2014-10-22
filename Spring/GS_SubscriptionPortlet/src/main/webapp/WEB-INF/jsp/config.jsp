@@ -19,8 +19,8 @@
         <tr>
             <td><c:out value="${c.title}"/></td>
             <td><c:forEach items="${c.paths}" var="p">
-                    <c:out value="${p.pathValue}"/>,
-                </c:forEach>
+                <c:out value="${p.pathValue}"/>,
+            </c:forEach>
             </td>
             <td><c:out value="${c.atName}"/></td>
             <td><a href="<portlet:actionURL><portlet:param name="delete" value="${c.categoryId}"/></portlet:actionURL>">Удалить</a>

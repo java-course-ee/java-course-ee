@@ -1,10 +1,6 @@
 package com.geminisystems.subscription.service;
 
-import org.springframework.beans.BeansException;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationContextAware;
 import org.springframework.web.context.ServletContextAware;
-import org.springframework.web.context.WebApplicationContext;
 
 import javax.servlet.ServletContext;
 
@@ -17,7 +13,7 @@ import javax.servlet.ServletContext;
  */
 public class ServletContextProvider implements ServletContextAware {
 
-    
+
     private ServletContext context;
 
     public void setServletContext(ServletContext servletContext) {

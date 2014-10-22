@@ -1,8 +1,7 @@
 package edu.javacourse.hibernate;
 
-import java.io.Serializable;
-import java.util.List;
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "jc_region")
@@ -18,7 +17,7 @@ public class Region implements Serializable {
     private String regionName;
 
 
-    @JoinColumn(name="region_ext_id")
+    @JoinColumn(name = "region_ext_id")
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "region")
     private Gubernator gubernator;
 

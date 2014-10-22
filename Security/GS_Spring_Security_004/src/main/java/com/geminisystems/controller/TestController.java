@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.security.Principal;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by IntelliJ IDEA.
@@ -28,26 +26,25 @@ public class TestController {
 
     }
 
-    @RequestMapping(value="/loginfailed", method = RequestMethod.GET)
+    @RequestMapping(value = "/loginfailed", method = RequestMethod.GET)
     public String loginerror(Model model) {
         model.addAttribute("error", "true");
         return "login";
 
     }
 
-    @RequestMapping(value="/logout", method = RequestMethod.GET)
+    @RequestMapping(value = "/logout", method = RequestMethod.GET)
     public String logout(Model model) {
         return "login";
 
     }
 
-    @RequestMapping(value="/admin", method = RequestMethod.GET)
+    @RequestMapping(value = "/admin", method = RequestMethod.GET)
     public String admin(Model model) {
         model.addAttribute("message", "Hello Admin!");
         return "admin";
 
     }
-
 
 
     @RequestMapping(method = RequestMethod.GET, value = "/welcome")

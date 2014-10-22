@@ -2,7 +2,6 @@ package edu.javacourse.client;
 
 import edu.javacourse.webservice.Region;
 import edu.javacourse.webservice.RegionService;
-import edu.javacourse.webservice.RegionServiceImpl;
 
 import javax.xml.namespace.QName;
 import javax.xml.ws.Service;

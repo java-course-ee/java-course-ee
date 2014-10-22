@@ -1,13 +1,14 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <jsp:include page="/public/header.jsp"/>
 
 <c:forEach items="${books}" var="book">
-    <li><span style="color: #00008b; font-size: 20px;">${book.author} - ${book.title} - ${book.price}</span> </li>
+    <li><span style="color: #00008b; font-size: 20px;">${book.author} - ${book.title} - ${book.price}</span></li>
 </c:forEach>
-   <br/>
-   <hr/>
-    <br/>
+<br/>
+<hr/>
+<br/>
+
 <form method="post" action="/admin">
 
 

@@ -29,8 +29,7 @@ public class SpringExample {
         //test3(jdbc);
         //test4(jdbc);
         //test5(jdbc);
-       // test6(jdbc);
-
+        // test6(jdbc);
 
 
     }
@@ -60,7 +59,7 @@ public class SpringExample {
 
             @Override
             public int getBatchSize() {
-               return regions.size();
+                return regions.size();
             }
         });
     }
@@ -78,7 +77,7 @@ public class SpringExample {
                         return region;
                     }
                 });
-        for(Region r : list) {
+        for (Region r : list) {
             System.out.println(r.getRegionName());
         }
     }

@@ -1,14 +1,14 @@
 package edu.javacourse.hibernate;
 
-import java.util.ArrayList;
-import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+import java.util.List;
+
 /**
  * Простой пример работы со связанными таблицами
- * 
+ *
  * @author ASaburov
  */
 public class HibernateSimple {
@@ -19,8 +19,8 @@ public class HibernateSimple {
         Session s = hs.getSessionFactory().openSession();
         s.beginTransaction();
         List<Region> regionList = s.createQuery("from Region").list();
-        
-        for(Region r : regionList) {
+
+        for (Region r : regionList) {
             System.out.println("Region name:" + r);
             System.out.println("Gubernator name:" + r.getGubernator().getLeader());
 
@@ -38,7 +38,7 @@ public class HibernateSimple {
 
         regionList = s.createQuery("from Region").list();
 
-        for(Region r : regionList) {
+        for (Region r : regionList) {
             System.out.println("Region name:" + r);
             System.out.println("Gubernator name:" + r.getGubernator().getLeader());
 

@@ -9,7 +9,7 @@
         </id>
 
         <property name="cityName" type="string">
-            <column name="city_name" length="10" not-null="true" unique="true" />
+            <column name="city_name" length="10" not-null="true" unique="true"/>
         </property>
 
         <many-to-one name="region" class="edu.javacourse.hibernate.Region" fetch="select">

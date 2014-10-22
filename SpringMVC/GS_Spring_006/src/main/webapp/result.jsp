@@ -7,7 +7,7 @@
 
 <body>
 
-    <h2>Upload result = ${result}</h2>
+<h2>Upload result = ${result}</h2>
 
 </body>
 </html>

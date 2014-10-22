@@ -29,7 +29,7 @@ public class SimpleExample {
 
     private static void SpELDemo2() throws BeansException {
         ApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"springExample.xml"});
-        
+
         User u = context.getBean("userBean", User.class);
         System.out.println("user full name:" + u.getFirstName() + " " + u.getLastName());
 

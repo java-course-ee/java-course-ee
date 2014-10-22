@@ -13,16 +13,15 @@ public class SpringExample {
 
         //beforeAspect(context);
 
-       // afterAspect(context);
+        // afterAspect(context);
 
 
-       //  afterReturnAspect(context);
+        //  afterReturnAspect(context);
 
         //afterThrowAspect(context);
 
         aroundAspect(context);
     }
-
 
 
     private static void beforeAspect(ApplicationContext context) {

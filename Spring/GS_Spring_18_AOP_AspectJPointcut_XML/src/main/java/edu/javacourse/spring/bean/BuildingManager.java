@@ -7,15 +7,15 @@ package edu.javacourse.spring.bean;
 public class BuildingManager {
 
     private String name;
-    private  int number;
+    private int number;
 
-    public void createBuilding(String name) throws IllegalArgumentException{
+    public void createBuilding(String name) throws IllegalArgumentException {
         if (name == null)
             throw new IllegalArgumentException("Name must be not null");
         System.out.println("Create building...");
     }
 
-    public void deleteBuilding(){
+    public void deleteBuilding() {
         System.out.println("Delete region...");
     }
 

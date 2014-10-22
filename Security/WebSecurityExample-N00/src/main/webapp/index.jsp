@@ -5,8 +5,8 @@
 </head>
 <body>
 
-    <a href="public/index.jsp">Link to public area</a> <br/>
-    <a href="private/index.jsp">Link to private area</a>
+<a href="public/index.jsp">Link to public area</a> <br/>
+<a href="private/index.jsp">Link to private area</a>
 
 </body>
 </html>

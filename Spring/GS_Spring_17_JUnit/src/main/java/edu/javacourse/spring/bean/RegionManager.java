@@ -7,15 +7,15 @@ package edu.javacourse.spring.bean;
 public class RegionManager {
 
     private String name;
-    private  int number;
+    private int number;
 
-    public void createRegion(String name) throws IllegalArgumentException{
+    public void createRegion(String name) throws IllegalArgumentException {
         if (name == null)
             throw new IllegalArgumentException("Name must be not null");
         System.out.println("Create region...");
     }
 
-    public void deleteRegion(){
+    public void deleteRegion() {
         System.out.println("Delete region...");
     }
 

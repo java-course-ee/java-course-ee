@@ -1,10 +1,9 @@
 package dao;
 
 import entity.User;
+import org.springframework.orm.hibernate3.HibernateTemplate;
 
 import java.util.List;
-
-import org.springframework.orm.hibernate3.HibernateTemplate;
 
 /**
  * Created by IntelliJ IDEA.
@@ -13,7 +12,7 @@ import org.springframework.orm.hibernate3.HibernateTemplate;
  * Time: 21:15:34
  * To change this template use File | Settings | File Templates.
  */
-public class UserDAOImpl implements UserDAO{
+public class UserDAOImpl implements UserDAO {
 
     private HibernateTemplate template;
 
@@ -34,16 +33,16 @@ public class UserDAOImpl implements UserDAO{
     }
 
     public List<User> getAll() {
-         //noinspection JpaQlInspection
+        //noinspection JpaQlInspection
         return template.find("FROM User order by login");
     }
 
     public User getByLogin(String login) {
         //noinspection JpaQlInspection
-        return (User)template.find("from User u where u.login = ?", login).get(0);
+        return (User) template.find("from User u where u.login = ?", login).get(0);
     }
 
     public void delete(User user) {
-        template.delete(user);   
+        template.delete(user);
     }
 }

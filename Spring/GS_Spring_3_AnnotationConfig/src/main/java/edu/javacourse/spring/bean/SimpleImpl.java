@@ -8,5 +8,5 @@ public class SimpleImpl implements SimpleInterface {
         System.out.println(HELLO_WORLD);
         return HELLO_WORLD;
     }
-    
+
 }

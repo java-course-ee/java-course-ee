@@ -16,5 +16,5 @@
 </c:if>
 <portlet:renderURL var="url" portletMode="VIEW"/>
 <form:form action="${url}" cssClass="niceform">
-    	<input type="submit" value="Ок"/>
+    <input type="submit" value="Ок"/>
 </form:form>

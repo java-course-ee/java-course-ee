@@ -1,9 +1,5 @@
 package edu.javacourse.hibernate.data;
 
-import org.hibernate.annotations.Tables;
-
-import javax.annotation.Generated;
-import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
@@ -15,23 +11,19 @@ import java.util.List;
 @Table(name = "hbm2_author")
 public class Author implements Serializable {
 
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "authorr")
+    List<Album> albums;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "author_id")
     private Integer authorId;
-
     @Column(name = "name", length = 255, nullable = false)
     private String name;
-
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinTable(name = "hbm2_producer_author",
             joinColumns = @JoinColumn(name = "author_id"),
             inverseJoinColumns = @JoinColumn(name = "producer_id"))
     private List<Producer> producers;
-
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "authorr")
-    List<Album> albums;
-
 
     public Integer getAuthorId() {
         return authorId;

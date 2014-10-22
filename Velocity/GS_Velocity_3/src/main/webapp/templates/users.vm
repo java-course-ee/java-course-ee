@@ -8,21 +8,21 @@
     </tr>
     #set ($rowCount = 1)
     #foreach ($user in $users)
-    #if ($rowCount % 2 == 0)
-    #set ($bgcolor = "#FFFFFF")
-    #else
-    #set ($bgcolor = "#CCCCCC")
-    #end
-    <tr>
-        <td bgcolor="$bgcolor">$user.Login</td>
-        <td bgcolor="$bgcolor">$user.Password</td>
-        <td bgcolor="$bgcolor">$user.Email</td>
-        #set( $editLink = $link.relative('users.htm').param('action','edit').param('userId', $user.UserId))
-        #set( $deleteLink = $link.relative('users.htm').param('action','delete').param('userId', $user.UserId))
+        #if ($rowCount % 2 == 0)
+            #set ($bgcolor = "#FFFFFF")
+        #else
+            #set ($bgcolor = "#CCCCCC")
+        #end
+        <tr>
+            <td bgcolor="$bgcolor">$user.Login</td>
+            <td bgcolor="$bgcolor">$user.Password</td>
+            <td bgcolor="$bgcolor">$user.Email</td>
+            #set( $editLink = $link.relative('users.htm').param('action','edit').param('userId', $user.UserId))
+            #set( $deleteLink = $link.relative('users.htm').param('action','delete').param('userId', $user.UserId))
 
-        <td><a href="$editLink">edit</a>&nbsp;<a href="$deleteLink">delete</a></td>
-    </tr>
-    #set ($rowCount = $rowCount + 1)
+            <td><a href="$editLink">edit</a>&nbsp;<a href="$deleteLink">delete</a></td>
+        </tr>
+        #set ($rowCount = $rowCount + 1)
     #end
 </table>
 

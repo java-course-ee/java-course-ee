@@ -1,10 +1,10 @@
 package ru.geminisystems.dao.impl;
 
-import java.util.List;
-
 import org.springframework.orm.hibernate3.HibernateTemplate;
 import ru.geminisystems.dao.IStatusDAO;
 import ru.geminisystems.entity.Status;
+
+import java.util.List;
 
 public class StatusDAOImpl implements IStatusDAO {
 

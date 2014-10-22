@@ -1,16 +1,15 @@
 package test.velocity;
 
-import org.apache.velocity.app.Velocity;
+import bean.Product;
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
+import org.apache.velocity.app.Velocity;
 import org.apache.velocity.context.Context;
 
-import java.io.Writer;
 import java.io.StringWriter;
+import java.io.Writer;
 import java.util.ArrayList;
 import java.util.Collection;
-
-import bean.Product;
 
 /**
  * Created by IntelliJ IDEA.
@@ -35,10 +34,9 @@ public class Test6 {
 
         context.put("products", products);
 
-      //  Writer writer = new StringWriter();
-      //  template.merge(context, writer);
-      //  System.out.println(writer.toString());
-
+        //  Writer writer = new StringWriter();
+        //  template.merge(context, writer);
+        //  System.out.println(writer.toString());
 
 
         Template template2 = Velocity.getTemplate("Test7.vm");

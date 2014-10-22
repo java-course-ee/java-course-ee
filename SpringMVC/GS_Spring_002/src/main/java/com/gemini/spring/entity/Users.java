@@ -8,7 +8,7 @@ import java.util.List;
  * Date: 11.04.13
  */
 
-@XmlRootElement(name="users")
+@XmlRootElement(name = "users")
 public class Users {
 
     private List<User> users;

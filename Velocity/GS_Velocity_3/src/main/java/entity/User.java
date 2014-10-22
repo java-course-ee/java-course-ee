@@ -1,7 +1,5 @@
 package entity;
 
-import javax.persistence.*;
-
 /**
  * Created by IntelliJ IDEA.
  * User: gb
@@ -25,7 +23,7 @@ public class User {
     private String password;
 
     @Column(name = "email", nullable = false)
-     private String email;
+    private String email;
 
     public Long getUserId() {
         return userId;

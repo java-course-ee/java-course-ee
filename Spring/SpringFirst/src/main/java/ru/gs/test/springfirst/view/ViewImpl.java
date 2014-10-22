@@ -2,7 +2,7 @@ package ru.gs.test.springfirst.view;
 
 import ru.gs.test.springfirst.bl.Manager;
 
-public class ViewImpl implements View{
+public class ViewImpl implements View {
     private Manager manager;
     private String name;
     private Integer count;
@@ -35,7 +35,6 @@ public class ViewImpl implements View{
     public String toString() {
         return "ViewImpl{" + "manager=" + manager + ", name=" + name + ", count=" + count + '}';
     }
-    
-    
-    
+
+
 }

@@ -6,7 +6,6 @@ import edu.javacourse.spring.bean.SimpleInterface;
 import edu.javacourse.spring.config.ApplicationConfig;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import javax.sql.DataSource;
 
@@ -25,11 +24,11 @@ public class SpringExample {
 
         SimpleBean2 sb2 = ctx.getBean(SimpleBean2.class);
         sb2.methodForSecond();
-        
+
         SimpleInterface si1 = ctx.getBean(SimpleInterface.class);
         si1.sayHello();
 
-        DataSource dataSource = (DataSource)ctx.getBean("datasourse");
+        DataSource dataSource = (DataSource) ctx.getBean("datasourse");
         System.out.println("dataSource = " + dataSource);
     }
 }

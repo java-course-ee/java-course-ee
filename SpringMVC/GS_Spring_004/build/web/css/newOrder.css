@@ -89,23 +89,23 @@ input.button {
 }
 
 .submitted {
-    text-align:center;
-    background-color:#D1F1FF ;
+    text-align: center;
+    background-color: #D1F1FF;
 }
 
-.in_progress{
-    text-align:center;
-    background-color:#FEFBC3 ;
+.in_progress {
+    text-align: center;
+    background-color: #FEFBC3;
 }
 
-.approved{
-    text-align:center;
+.approved {
+    text-align: center;
     background-color: #E1FFA7;
 }
 
 .declined {
-    text-align:center;
-    background-color:#FFDDDC ;
+    text-align: center;
+    background-color: #FFDDDC;
 }
 
 

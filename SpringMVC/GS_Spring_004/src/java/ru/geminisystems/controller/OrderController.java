@@ -1,26 +1,25 @@
 package ru.geminisystems.controller;
 
-import org.springframework.web.servlet.mvc.SimpleFormController;
-import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.view.RedirectView;
-import org.springframework.web.bind.ServletRequestDataBinder;
-import org.springframework.validation.BindException;
 import org.springframework.beans.propertyeditors.CustomCollectionEditor;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
+import org.springframework.validation.BindException;
+import org.springframework.web.bind.ServletRequestDataBinder;
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.SimpleFormController;
+import org.springframework.web.servlet.view.RedirectView;
+import ru.geminisystems.dao.service.ApplicationService;
+import ru.geminisystems.dao.service.OrderService;
+import ru.geminisystems.dao.service.StatusService;
+import ru.geminisystems.entity.Application;
+import ru.geminisystems.entity.Order;
+import ru.geminisystems.entity.Status;
+import ru.geminisystems.util.OrderUtil;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.*;
 import java.beans.PropertyEditorSupport;
 import java.text.SimpleDateFormat;
-
-import ru.geminisystems.dao.service.StatusService;
-import ru.geminisystems.dao.service.ApplicationService;
-import ru.geminisystems.dao.service.OrderService;
-import ru.geminisystems.entity.Order;
-import ru.geminisystems.entity.Status;
-import ru.geminisystems.entity.Application;
-import ru.geminisystems.util.OrderUtil;
+import java.util.*;
 
 public class OrderController extends SimpleFormController {
 
@@ -105,7 +104,7 @@ public class OrderController extends SimpleFormController {
     //protected ModelAndView processFormSubmission(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, BindException e) throws Exception {
     //return super.processFormSubmission(httpServletRequest, httpServletResponse, o, e);
     //}
-    
+
     @Override
     protected void onBindAndValidate(HttpServletRequest httpServletRequest, Object o, BindException e) throws Exception {
         // retrieving order if errors occures
@@ -142,6 +141,15 @@ public class OrderController extends SimpleFormController {
 
         binder.registerCustomEditor(Status.class, "status", new PropertyEditorSupport() {
 
+            public String getAsText() {
+                Object value = getValue();
+                if (value != null) {
+                    Status status = (Status) value;
+                    return status.getStatusName();
+                }
+                return null;
+            }
+
             public void setAsText(String text) {
                 if (text instanceof String) {
                     if (text != null && text.trim().length() > 0) {
@@ -150,15 +158,6 @@ public class OrderController extends SimpleFormController {
                         setValue(status);
                     }
                 }
-            }
-
-            public String getAsText() {
-                Object value = getValue();
-                if (value != null) {
-                    Status status = (Status) value;
-                    return status.getStatusName();
-                }
-                return null;
             }
         });
     }

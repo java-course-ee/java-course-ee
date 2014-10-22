@@ -7,15 +7,15 @@ package edu.javacourse.spring.bean;
 public class CityManager {
 
     private String name;
-    private  int number;
+    private int number;
 
-    public void createCity(String name) throws IllegalArgumentException{
+    public void createCity(String name) throws IllegalArgumentException {
         if (name == null)
             throw new IllegalArgumentException("Name must be not null");
         System.out.println("Create city...");
     }
 
-    public void deleteCity(){
+    public void deleteCity() {
         System.out.println("Delete region...");
     }
 

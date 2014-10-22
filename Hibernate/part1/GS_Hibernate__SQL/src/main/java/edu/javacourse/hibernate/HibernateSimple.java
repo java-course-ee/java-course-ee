@@ -1,12 +1,8 @@
 package edu.javacourse.hibernate;
 
-import java.io.Serializable;
-import java.util.Iterator;
-import java.util.List;
-
-import org.hibernate.*;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.type.Type;
+
+import java.util.List;
 
 /**
  * Простой пример для interceptor
@@ -50,8 +46,6 @@ public class HibernateSimple {
             System.out.println("city = " + city);
         }
     }
-
-
 
 
     private SessionFactory getSessionFactory(boolean isAutocommitCfg) {

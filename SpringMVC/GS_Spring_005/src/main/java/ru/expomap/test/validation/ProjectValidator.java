@@ -4,9 +4,6 @@ import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
 import ru.expomap.test.model.Project;
-import ru.expomap.test.model.User;
-
-import java.util.regex.Pattern;
 
 /**
  * Created by IntelliJ IDEA.

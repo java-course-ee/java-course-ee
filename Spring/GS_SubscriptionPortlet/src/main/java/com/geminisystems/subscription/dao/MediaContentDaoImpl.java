@@ -18,9 +18,9 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 @Transactional
-public class MediaContentDaoImpl implements MediaContentDao{
+public class MediaContentDaoImpl implements MediaContentDao {
 
-     @Autowired
+    @Autowired
     protected HibernateTemplate ht;
 
     public List<SMediaContent> getAll() {
@@ -33,7 +33,7 @@ public class MediaContentDaoImpl implements MediaContentDao{
         query.executeUpdate();
     }
 
-     public void deleteAll(Collection entries) {
+    public void deleteAll(Collection entries) {
         ht.deleteAll(entries);
     }
 }

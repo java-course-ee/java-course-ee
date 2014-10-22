@@ -1,9 +1,9 @@
 package validator;
 
-import org.springframework.validation.Validator;
+import entity.User;
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
-import entity.User;
+import org.springframework.validation.Validator;
 
 /**
  * Created by IntelliJ IDEA.

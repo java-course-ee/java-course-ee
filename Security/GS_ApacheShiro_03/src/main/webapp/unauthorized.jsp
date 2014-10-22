@@ -24,6 +24,8 @@
 </head>
 <body>
 <h3>Unauthorized</h3>
-<p>You are not authorized to access the requested page.  Please return to the <a href="<c:url value="/s/home"/>">homepage</a>.</p>
+
+<p>You are not authorized to access the requested page. Please return to the <a
+        href="<c:url value="/s/home"/>">homepage</a>.</p>
 </body>
 </html>

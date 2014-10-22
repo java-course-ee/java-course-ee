@@ -1,15 +1,10 @@
 package edu.javacourse.hibernate;
 
-import java.io.Serializable;
-import java.util.Iterator;
-import java.util.List;
-
-import org.hibernate.EmptyInterceptor;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.type.Type;
+
+import java.io.Serializable;
 
 /**
  * Простой пример для interceptor
@@ -137,7 +132,6 @@ public class HibernateSimple {
         session.close();
 
     }
-
 
 
     private SessionFactory getSessionFactory(boolean isAutocommitCfg) {

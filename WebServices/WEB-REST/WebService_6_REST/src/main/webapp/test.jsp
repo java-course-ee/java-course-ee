@@ -7,12 +7,13 @@
 
 <form action="rest/regions/add" method="post">
     <p>
-        Name : <input type="text" name="name" />
+        Name : <input type="text" name="name"/>
     </p>
+
     <p>
-        Population : <input type="text" name="population" />
+        Population : <input type="text" name="population"/>
     </p>
-    <input type="submit" value="Add Region" />
+    <input type="submit" value="Add Region"/>
 </form>
 
 </body>

@@ -4,16 +4,16 @@
     Author     : APronchakov <artem.pronchakov@gmail.com>
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Операция прошла успешно</title>
-    </head>
-    <body>
-        <p style="color: green; font-weight: bold;">Операция прошла успешно</p>
-		<%@include file="WEB-INF/jspf/links.jspf" %>
-    </body>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Операция прошла успешно</title>
+</head>
+<body>
+<p style="color: green; font-weight: bold;">Операция прошла успешно</p>
+<%@include file="WEB-INF/jspf/links.jspf" %>
+</body>
 </html>

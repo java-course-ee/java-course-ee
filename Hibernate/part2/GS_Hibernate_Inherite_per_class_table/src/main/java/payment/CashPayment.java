@@ -1,15 +1,13 @@
 package payment;
 
-import javax.persistence.*;
-
 @Entity
-@Table(name="jc_cash_payment_full")
+@Table(name = "jc_cash_payment_full")
 @AttributeOverrides({
-        @AttributeOverride(name="amount", column=@Column(name="amount"))
+        @AttributeOverride(name = "amount", column = @Column(name = "amount"))
 })
 public class CashPayment extends Payment {
 
-    @Column(name="CASH_DESK")
+    @Column(name = "CASH_DESK")
     private String cashDesk;
 
     public String getCashDesk() {

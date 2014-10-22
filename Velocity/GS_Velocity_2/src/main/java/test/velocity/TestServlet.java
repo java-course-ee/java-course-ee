@@ -1,23 +1,16 @@
 package test.velocity;
 
-import org.apache.velocity.servlet.VelocityServlet;
 import org.apache.velocity.Template;
-import org.apache.velocity.app.Velocity;
 import org.apache.velocity.context.Context;
+import org.apache.velocity.tools.view.VelocityViewServlet;
+import test.bean.Product;
 
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
-import java.util.Properties;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import org.apache.velocity.tools.view.VelocityViewServlet;
-
-import test.bean.Product;
 
 /**
  * Created by IntelliJ IDEA.
@@ -38,7 +31,7 @@ public class TestServlet extends VelocityViewServlet {
         super.init();
     }
 
-	@Override
+    @Override
     public Template handleRequest(HttpServletRequest request, HttpServletResponse response, Context context) {
 
 

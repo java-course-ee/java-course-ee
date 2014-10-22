@@ -5,9 +5,8 @@
 package ru.gs.test.springfirst.dao;
 
 /**
- *
  * @author Intern
  */
 public interface DAO {
-    
+
 }

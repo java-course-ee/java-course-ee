@@ -123,15 +123,16 @@ public class SubscriptionController {
                 }
                 return null;
             }
+
             @Override
             public String getAsText() {
                 String text = super.getAsText();
                 System.out.println("text = " + text);
-                return text; 
+                return text;
             }
         });
 
-        binder.registerCustomEditor(Enum.class, "type", new PropertyEditorSupport(){
+        binder.registerCustomEditor(Enum.class, "type", new PropertyEditorSupport() {
 
             @Override
             public void setAsText(String text) throws IllegalArgumentException {

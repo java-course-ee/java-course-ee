@@ -6,7 +6,6 @@ import com.geminisystems.subscription.domain.SBean;
 import com.geminisystems.subscription.domain.SCategory;
 import com.geminisystems.subscription.domain.SPath;
 import com.geminisystems.subscription.domain.SType;
-import com.geminisystems.subscription.service.CategoryService;
 import com.geminisystems.subscription.service.MailService;
 import com.geminisystems.subscription.service.ServletContextProvider;
 import com.geminisystems.subscription.service.WcmService;

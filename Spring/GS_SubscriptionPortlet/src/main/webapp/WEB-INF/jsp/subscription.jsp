@@ -23,7 +23,7 @@
             <td></td>
             <td>
                 <form:errors path="email" cssStyle="background-color:orange;font-weight:bold;"/>
-               <form:errors path="categories" cssStyle="background-color:orange;font-weight:bold;"/>
+                <form:errors path="categories" cssStyle="background-color:orange;font-weight:bold;"/>
             </td>
             <td></td>
         </tr>
@@ -55,10 +55,10 @@
         </c:if>
 
         <tr>
-			<td></td>
+            <td></td>
             <td><input style="width:100px;" type="submit" name="subscribe" value="Подписаться"/>&nbsp;
-				<input style="width:100px;" type="submit" name="check" value="Проверить"/>
-			</td>
+                <input style="width:100px;" type="submit" name="check" value="Проверить"/>
+            </td>
             <td></td>
         </tr>
 

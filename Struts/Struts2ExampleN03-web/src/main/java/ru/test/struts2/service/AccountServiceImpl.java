@@ -4,24 +4,23 @@ import ru.test.struts2.dao.DAO;
 import ru.test.struts2.entity.Account;
 
 /**
- *
  * @author APronchakov <artem.pronchakov@gmail.com>
  */
-public class AccountServiceImpl implements AccountService{
-	
-	private DAO dao;
+public class AccountServiceImpl implements AccountService {
 
-	@Override
-	public Account getAccount(Long id, boolean readonly) {
-		return dao.get(Account.class, id, readonly);
-	}
+    private DAO dao;
 
-	public DAO getDao() {
-		return dao;
-	}
+    @Override
+    public Account getAccount(Long id, boolean readonly) {
+        return dao.get(Account.class, id, readonly);
+    }
 
-	public void setDao(DAO dao) {
-		this.dao = dao;
-	}
+    public DAO getDao() {
+        return dao;
+    }
+
+    public void setDao(DAO dao) {
+        this.dao = dao;
+    }
 
 }

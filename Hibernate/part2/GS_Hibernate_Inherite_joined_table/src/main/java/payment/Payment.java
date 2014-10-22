@@ -1,7 +1,5 @@
 package payment;
 
-import javax.persistence.*;
-
 @Entity
 @Table(name = "jc_payment")
 @Inheritance(strategy = InheritanceType.JOINED)
@@ -15,7 +13,7 @@ import javax.persistence.*;
 public class Payment {
 
     @Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "PAYMENT_ID")
     protected Integer paymentId;
 

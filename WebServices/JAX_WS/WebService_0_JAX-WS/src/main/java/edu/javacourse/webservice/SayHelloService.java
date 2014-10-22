@@ -12,8 +12,8 @@ public class SayHelloService {
 
 
     @WebMethod
-    public String sayHello(String name){
-        return "Hello, "  + name;
+    public String sayHello(String name) {
+        return "Hello, " + name;
     }
 
 
