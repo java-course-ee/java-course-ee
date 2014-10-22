@@ -15,9 +15,9 @@
       <module fileurl="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war-module/ejb-war-module.iml" filepath="$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war-module/ejb-war-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/examples.iml" filepath="$PROJECT_DIR$/examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-config-xml-mapping-annotations/hibernate-config-xml-mapping-annotations.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-config-xml-mapping-annotations/hibernate-config-xml-mapping-annotations.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_ManyToMany/hibernate-many-to-many.iml" filepath="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_ManyToMany/hibernate-many-to-many.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_ManyToOne/hibernate-many-to-one.iml" filepath="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_ManyToOne/hibernate-many-to-one.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_OneToOne/hibernate-one-to-one.iml" filepath="$PROJECT_DIR$/Hibernate/part1/GS_Hibernate_OneToOne/hibernate-one-to-one.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-many-to-many/hibernate-many-to-many.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-many-to-many/hibernate-many-to-many.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-many-to-one/hibernate-many-to-one.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-many-to-one/hibernate-many-to-one.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-one-to-one/hibernate-one-to-one.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-one-to-one/hibernate-one-to-one.iml" />
       <module fileurl="file://$PROJECT_DIR$/Logging/log4j/log4j.iml" filepath="$PROJECT_DIR$/Logging/log4j/log4j.iml" />
     </modules>
   </component>
