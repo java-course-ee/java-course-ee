@@ -3,29 +3,28 @@
 
 <log4j:configuration>
 
-    <appender name="fileLog" class="org.apache.log4j.ConsoleAppender">
+    <appender name="consoleLog" class="org.apache.log4j.ConsoleAppender">
         <param name="target" value="System.out" />
         <layout class="org.apache.log4j.PatternLayout">
-            <!-- see API PatternLayout -->
             <param name="ConversionPattern" value="%-5p %d{ISO8601} [%C{1}] - %m%n" />
         </layout>
     </appender>
 
+    <!-- all, trace, debug, info, warn, error, fatal, off -->
+
     <category name="edu.javacourse.hibernate">
         <priority value="trace" />
-        <!-- all, trace, debug, info, warn, error, fatal, off -->
-        <appender-ref ref="fileLog" />
+        <appender-ref ref="consoleLog" />
     </category>
 
-    <category name="org.hibernate">
-        <priority value="info" />
-        <!-- all, trace, debug, info, warn, error, fatal, off -->
-        <appender-ref ref="fileLog" />
+    <category name="org.hibernate.SQL">
+        <priority value="debug" />
+        <appender-ref ref="consoleLog" />
     </category>
-    <category name="org.jboss.logging">
-        <priority value="info" />
-        <!-- all, trace, debug, info, warn, error, fatal, off -->
-        <appender-ref ref="fileLog" />
+
+    <category name="org.hibernate.type">
+        <priority value="trace" />
+        <appender-ref ref="consoleLog" />
     </category>
 
 </log4j:configuration>

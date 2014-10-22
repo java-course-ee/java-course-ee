@@ -1,36 +1,22 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd" >
+<hibernate-configuration>
 
-<hibernate-configuration
-        xmlns="http://www.hibernate.org/xsd/hibernate-configuration"
-        xsi:schemaLocation="http://www.hibernate.org/xsd/hibernate-configuration hibernate-configuration-4.0.xsd"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <session-factory>
-        <!-- Database connection settings -->
         <property name="connection.driver_class">org.postgresql.Driver</property>
-        <property name="connection.url">jdbc:postgresql://127.0.0.1:5432/region_db</property>
+        <property name="connection.url">jdbc:postgresql://127.0.0.1:5432/javacourse</property>
         <property name="connection.username">postgres</property>
         <property name="connection.password">postgres</property>
-
-        <!-- JDBC connection pool (use the built-in) -->
+        <property name="default_schema">region</property>
         <property name="connection.pool_size">1</property>
-
-        <!-- SQL dialect -->
-
-        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
-        <!-- Enable Hibernate's automatic session context management -->
+        <property name="dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
         <property name="current_session_context_class">thread</property>
-
-        <!-- Disable the second-level cache  -->
-        <!--<property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>-->
-
-        <!-- Echo all executed SQL to stdout -->
-        <property name="show_sql">true</property>
-
-        <!-- Drop and re-create the database schema on startup -->
         <property name="hbm2ddl.auto">update</property>
-
 
         <mapping class="edu.javacourse.hibernate.Region"/>
         <mapping class="edu.javacourse.hibernate.City"/>
     </session-factory>
+
 </hibernate-configuration>
