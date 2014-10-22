@@ -1,7 +1,5 @@
 package edu.javacourse.hibernate;
 
-import com.sun.istack.internal.Nullable;
-
 import java.io.Serializable;
 import java.util.List;
 import javax.persistence.*;

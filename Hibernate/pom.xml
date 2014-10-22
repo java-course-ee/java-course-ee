@@ -10,8 +10,10 @@
     <name>Hibernate</name>
 
 	<modules>
-		<module>part1/*</module>
-		<module>part2/*</module>
+		<module>part1/GS_Hibernate_Config_XML_Annotation</module>
+		<module>part1/GS_Hibernate_ManyToMany</module>
+		<module>part1/GS_Hibernate_ManyToOne</module>
+		<module>part1/GS_Hibernate_OneToOne</module>
 	</modules>
 
 </project>

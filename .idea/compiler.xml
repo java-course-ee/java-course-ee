@@ -28,6 +28,11 @@
         <module name="DojoExampleN04" />
         <module name="ejb-ear-module" />
         <module name="ejb-war-module" />
+        <module name="hibernate-config-annotations" />
+        <module name="hibernate-config-xml-mapping-annotations" />
+        <module name="hibernate-many-to-many" />
+        <module name="hibernate-many-to-one" />
+        <module name="hibernate-one-to-one" />
         <module name="log4j" />
       </profile>
     </annotationProcessing>
@@ -39,6 +44,11 @@
       <module name="ejb-ear-module" target="1.7" />
       <module name="ejb-war-module" target="1.7" />
       <module name="examples" target="1.7" />
+      <module name="hibernate-config-annotations" target="1.7" />
+      <module name="hibernate-config-xml-mapping-annotations" target="1.7" />
+      <module name="hibernate-many-to-many" target="1.7" />
+      <module name="hibernate-many-to-one" target="1.7" />
+      <module name="hibernate-one-to-one" target="1.7" />
       <module name="log4j" target="1.7" />
     </bytecodeTargetLevel>
   </component>
