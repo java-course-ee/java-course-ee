@@ -6,6 +6,9 @@
         <element id="directory" name="classes">
           <element id="module-output" name="ejb-war-module" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.7" />
+        </element>
       </element>
       <element id="javaee-facet-resources" facet="ejb-war-module/web/Web" />
     </root>
