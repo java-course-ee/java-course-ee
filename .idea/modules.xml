@@ -10,9 +10,16 @@
       <module fileurl="file://$PROJECT_DIR$/EJB/EJB.iml" filepath="$PROJECT_DIR$/EJB/EJB.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/Hibernate.iml" filepath="$PROJECT_DIR$/Hibernate/Hibernate.iml" />
       <module fileurl="file://$PROJECT_DIR$/Logging/Logging.iml" filepath="$PROJECT_DIR$/Logging/Logging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EJB/jms/ejb-builder.iml" filepath="$PROJECT_DIR$/EJB/jms/ejb-builder.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear-module/ejb-ear-module.iml" filepath="$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear-module/ejb-ear-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear2-module/ejb-ear2-module.iml" filepath="$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear2-module/ejb-ear2-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EJB/jms/ear/ejb-jms-ear.iml" filepath="$PROJECT_DIR$/EJB/jms/ear/ejb-jms-ear.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EJB/jms/ejb/ejb-jms-ejb.iml" filepath="$PROJECT_DIR$/EJB/jms/ejb/ejb-jms-ejb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EJB/jms/servlet/ejb-jms-servlet.iml" filepath="$PROJECT_DIR$/EJB/jms/servlet/ejb-jms-servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-lib-module/ejb-lib-module.iml" filepath="$PROJECT_DIR$/EJB/ejb-pom-module/ejb-lib-module/ejb-lib-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-pom-module.iml" filepath="$PROJECT_DIR$/EJB/ejb-pom-module/ejb-pom-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war-module/ejb-war-module.iml" filepath="$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war-module/ejb-war-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war2-module/ejb-war2-module.iml" filepath="$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war2-module/ejb-war2-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/examples.iml" filepath="$PROJECT_DIR$/examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-config-xml-mapping-annotations/hibernate-config-xml-mapping-annotations.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-config-xml-mapping-annotations/hibernate-config-xml-mapping-annotations.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-many-to-many/hibernate-many-to-many.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-many-to-many/hibernate-many-to-many.iml" />

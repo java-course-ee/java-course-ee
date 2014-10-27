@@ -27,7 +27,13 @@
         <module name="DojoExampleN03" />
         <module name="DojoExampleN04" />
         <module name="ejb-ear-module" />
+        <module name="ejb-ear2-module" />
+        <module name="ejb-jms-ear" />
+        <module name="ejb-jms-ejb" />
+        <module name="ejb-jms-servlet" />
+        <module name="ejb-lib-module" />
         <module name="ejb-war-module" />
+        <module name="ejb-war2-module" />
         <module name="hibernate-config-annotations" />
         <module name="hibernate-config-xml-mapping-annotations" />
         <module name="hibernate-many-to-many" />
@@ -42,7 +48,13 @@
       <module name="DojoExampleN03" target="1.7" />
       <module name="DojoExampleN04" target="1.7" />
       <module name="ejb-ear-module" target="1.7" />
+      <module name="ejb-ear2-module" target="1.7" />
+      <module name="ejb-jms-ear" target="1.7" />
+      <module name="ejb-jms-ejb" target="1.7" />
+      <module name="ejb-jms-servlet" target="1.7" />
+      <module name="ejb-lib-module" target="1.7" />
       <module name="ejb-war-module" target="1.7" />
+      <module name="ejb-war2-module" target="1.7" />
       <module name="examples" target="1.7" />
       <module name="hibernate-config-annotations" target="1.7" />
       <module name="hibernate-config-xml-mapping-annotations" target="1.7" />

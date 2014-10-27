@@ -13,7 +13,7 @@ import java.util.List;
 
 @Stateless
 public class BookEJB
-        implements BookEJBLocal {
+        implements BookEJBLocal, BookEJBRemote {
 
     private static final Logger log = LoggerFactory.getLogger(BookEJB.class);
 

@@ -4,21 +4,28 @@
     <entry_points version="2.0" />
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="ejb" url="file://$PROJECT_DIR$/EJB/jms/ejb" />
     <file type="javaeeApplication" url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear-module" />
+    <file type="javaeeApplication" url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear2-module" />
+    <file type="javaeeApplication" url="file://$PROJECT_DIR$/EJB/jms/ear" />
     <file type="web" url="file://$PROJECT_DIR$/Dojo/DojoExampleN01" />
     <file type="web" url="file://$PROJECT_DIR$/Dojo/DojoExampleN02" />
     <file type="web" url="file://$PROJECT_DIR$/Dojo/DojoExampleN03" />
     <file type="web" url="file://$PROJECT_DIR$/Dojo/DojoExampleN04" />
     <file type="web" url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war-module" />
+    <file type="web" url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war2-module" />
+    <file type="web" url="file://$PROJECT_DIR$/EJB/jms/servlet" />
   </component>
+  <component name="IdProvider" IDEtalkID="E332059EB1A533795641F0A6DDC107FB" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/EJB/ejb-pom-module/ejb-lib-module/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="Oracle 1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

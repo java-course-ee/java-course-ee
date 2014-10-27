@@ -7,7 +7,13 @@
     <file url="file://$PROJECT_DIR$/Dojo/DojoExampleN03" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Dojo/DojoExampleN04" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear-module" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear2-module" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-lib-module" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war-module" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war2-module" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EJB/jms/ear" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EJB/jms/ejb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EJB/jms/servlet" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Hibernate/part1/hibernate-config-xml-mapping-annotations" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Hibernate/part1/hibernate-many-to-many" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Hibernate/part1/hibernate-many-to-one" charset="UTF-8" />

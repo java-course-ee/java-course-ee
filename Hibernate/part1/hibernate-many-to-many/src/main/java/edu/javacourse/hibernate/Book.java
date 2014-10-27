@@ -14,13 +14,6 @@ import java.util.Set;
                                 "book_id",
                                 "author_id"
                         }
-                ),
-                @UniqueConstraint(
-                        name = "my_uc_2",
-                        columnNames = {
-                                "book_id",
-                                "author_id"
-                        }
                 )
         })
 public class Book implements Serializable {

@@ -11,6 +11,7 @@
 
     <modules>
         <module>ejb-pom-module</module>
+        <module>jms</module>
     </modules>
 
 </project>
