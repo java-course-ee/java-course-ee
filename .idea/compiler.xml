@@ -40,6 +40,7 @@
         <module name="hibernate-many-to-one" />
         <module name="hibernate-one-to-one" />
         <module name="log4j" />
+        <module name="simple-mybatis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -62,6 +63,7 @@
       <module name="hibernate-many-to-one" target="1.7" />
       <module name="hibernate-one-to-one" target="1.7" />
       <module name="log4j" target="1.7" />
+      <module name="simple-mybatis" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

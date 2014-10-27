@@ -59,6 +59,8 @@ public class FirstServlet extends HttpServlet {
                 message.setText("This is message " + (i + 1));
                 log.debug("Sending message: " + message.getText() + " " + Calendar.getInstance().getTime().toString());
                 messageProducer.send(message);
+                log.debug("message sent");
+
             }
         } catch (JMSException ex) {
             ex.printStackTrace();

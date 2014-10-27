@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+"http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="ibatis.RegionMapper">
+    <select id="selectRegion" parameterType="Integer" resultType="Region">
+        select region_id as "regionId", region_name as "regionName" from public.jc_region where region_id = #{id}
+    </select>
+
+    <select id="selectAllRegion" parameterType="Integer" resultType="Region">
+        select region_id as "regionId", region_name as "regionName" from public.jc_region
+    </select>
+
+    <insert id="insertRegion" parameterType="Region" useGeneratedKeys="true" keyProperty="regionId">
+        insert into public.jc_region (region_name) values (#{regionName})
+    </insert>
+
+    <update id="updateRegion" parameterType="Region">
+        update public.jc_region set region_name=#{regionName}
+    </update>
+
+    <delete id="deleteRegion" parameterType="Integer">
+        delete from public.jc_region where region_id=#{id}
+    </delete>
+</mapper>
