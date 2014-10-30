@@ -1,9 +1,3 @@
-<%-- 
-    Document   : index
-    Created on : Jan 4, 2012, 10:05:24 PM
-    Author     : APronchakov <artem.pronchakov@gmail.com>
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>

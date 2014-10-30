@@ -3,15 +3,18 @@ package ru.test.struts2.entity;
 import org.hibernate.annotations.LazyCollection;
 import org.hibernate.annotations.LazyCollectionOption;
 
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
 
 /**
  * @author APronchakov <artem.pronchakov@gmail.com>
  */
 @Entity
-@Table(name = "account", catalog = "bank", schema = "")
+@Table(name = "account", catalog = "bank")
 @NamedQueries({
         @NamedQuery(name = "Account.findAll", query = "SELECT a FROM Account a")})
 public class Account implements Serializable, AbstractEntity {

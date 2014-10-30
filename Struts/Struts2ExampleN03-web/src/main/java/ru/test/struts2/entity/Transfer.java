@@ -1,15 +1,21 @@
 package ru.test.struts2.entity;
 
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
+
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.Date;
+import java.util.List;
 
 /**
  * @author APronchakov <artem.pronchakov@gmail.com>
  */
 @Entity
-@Table(name = "transfer", catalog = "bank", schema = "")
+@Table(name = "transfer", catalog = "bank")
 @NamedQueries({
         @NamedQuery(name = "Transfer.findAll", query = "SELECT t FROM Transfer t")})
 public class Transfer implements Serializable, AbstractEntity {

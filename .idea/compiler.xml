@@ -41,6 +41,8 @@
         <module name="hibernate-one-to-one" />
         <module name="log4j" />
         <module name="simple-mybatis" />
+        <module name="Struts2ExampleN01-web" />
+        <module name="Struts2ExampleN03-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -64,6 +66,8 @@
       <module name="hibernate-one-to-one" target="1.7" />
       <module name="log4j" target="1.7" />
       <module name="simple-mybatis" target="1.7" />
+      <module name="Struts2ExampleN01-web" target="1.7" />
+      <module name="Struts2ExampleN03-web" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

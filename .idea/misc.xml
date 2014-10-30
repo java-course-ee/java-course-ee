@@ -15,6 +15,8 @@
     <file type="web" url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war-module" />
     <file type="web" url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war2-module" />
     <file type="web" url="file://$PROJECT_DIR$/EJB/jms/servlet" />
+    <file type="web" url="file://$PROJECT_DIR$/Struts/Struts2ExampleN01-web" />
+    <file type="web" url="file://$PROJECT_DIR$/Struts/Struts2ExampleN03-web" />
   </component>
   <component name="IdProvider" IDEtalkID="E332059EB1A533795641F0A6DDC107FB" />
   <component name="MavenProjectsManager">

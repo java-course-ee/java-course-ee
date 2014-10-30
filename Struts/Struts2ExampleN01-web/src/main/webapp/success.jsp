@@ -1,9 +1,3 @@
-<%-- 
-    Document   : success
-    Created on : Jan 4, 2012, 10:08:54 PM
-    Author     : APronchakov <artem.pronchakov@gmail.com>
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>

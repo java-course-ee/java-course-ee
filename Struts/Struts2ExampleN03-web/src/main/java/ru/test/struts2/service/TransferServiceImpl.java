@@ -1,6 +1,6 @@
 package ru.test.struts2.service;
 
-import org.apache.log4j.Logger;
+//import org.apache.log4j.Logger;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import ru.test.struts2.dao.DAO;
@@ -16,7 +16,7 @@ import java.util.List;
  * @author APronchakov <artem.pronchakov@gmail.com>
  */
 public class TransferServiceImpl implements TransferService {
-    private Logger log = Logger.getLogger(TransferServiceImpl.class);
+//    private Logger log = Logger.getLogger(TransferServiceImpl.class);
 
     private DAO dao;
 

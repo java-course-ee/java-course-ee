@@ -9,16 +9,6 @@ import ru.test.struts2.entity.LoginBean;
 public class LoginAction extends ActionSupport {
 
     private LoginBean loginBean;
-    private String message;
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
 
     @Override
     public String execute() throws Exception {
@@ -28,12 +18,6 @@ public class LoginAction extends ActionSupport {
             return "failure";
         }
     }
-
-    @Override
-    public void validate() {
-
-    }
-
 
     public LoginBean getLoginBean() {
         return loginBean;

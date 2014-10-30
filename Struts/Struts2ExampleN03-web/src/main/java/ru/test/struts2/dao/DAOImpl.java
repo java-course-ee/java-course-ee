@@ -1,7 +1,9 @@
 package ru.test.struts2.dao;
 
-import org.apache.log4j.Logger;
-import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+//import org.apache.log4j.Logger;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import ru.test.struts2.entity.AbstractEntity;
 import ru.test.struts2.entity.Person;
 
@@ -10,8 +12,15 @@ import java.util.List;
 /**
  * @author APronchakov <artem.pronchakov@gmail.com>
  */
-public class DAOImpl extends HibernateDaoSupport implements DAO {
-    private Logger log = Logger.getLogger(DAOImpl.class);
+public class DAOImpl  implements DAO {
+//    private Logger log = Logger.getLogger(DAOImpl.class);
+
+    @Autowired
+    SessionFactory sessionFactory;
+
+    private Session getHibernateTemplate() {
+        return sessionFactory.getCurrentSession();
+    }
 
     @Override
     public <T extends AbstractEntity> T save(T entity, boolean evict) {
@@ -25,7 +34,7 @@ public class DAOImpl extends HibernateDaoSupport implements DAO {
 
     @Override
     public <T extends AbstractEntity> T update(T entity, boolean evict) {
-        entity = getHibernateTemplate().merge(entity);
+        entity = (T) getHibernateTemplate().merge(entity);
         getHibernateTemplate().flush();
         if (evict) {
             getHibernateTemplate().evict(entity);
@@ -49,7 +58,7 @@ public class DAOImpl extends HibernateDaoSupport implements DAO {
 
     @Override
     public List<Person> findAllPersons(boolean readonly) {
-        List<Person> list = getHibernateTemplate().findByNamedQuery("Person.findAll");
+        List<Person> list = getHibernateTemplate().getNamedQuery("Person.findAll").list();
         if (readonly) {
             for (Person p : list) {
                 getHibernateTemplate().evict(p);

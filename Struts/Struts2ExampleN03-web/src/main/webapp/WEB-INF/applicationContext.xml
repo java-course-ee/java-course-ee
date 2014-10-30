@@ -17,13 +17,15 @@
         <property name="password" value="${hibernate.connection.password}"/>
     </bean>
 
-    <bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
+        <property name="packagesToScan" value="ru.test.struts2.entity"/>
         <property name="configLocation" value="/WEB-INF/hibernate.cfg.xml"/>
-        <property name="configurationClass" value="org.hibernate.cfg.AnnotationConfiguration"/>
         <property name="hibernateProperties">
             <props>
                 <prop key="hibernate.dialect">${hibernate.dialect}</prop>
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+                <prop key="hibernate.default_schema">bank</prop>
             </props>
         </property>
     </bean>
@@ -38,9 +40,7 @@
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 
-    <bean id="dAOImpl" class="ru.test.struts2.dao.DAOImpl">
-        <property name="hibernateTemplate" ref="hibernateTemplate"/>
-    </bean>
+    <bean id="dAOImpl" class="ru.test.struts2.dao.DAOImpl"/>
 
     <bean id="transferService" class="ru.test.struts2.service.TransferServiceImpl">
         <property name="dao" ref="dAOImpl"/>
