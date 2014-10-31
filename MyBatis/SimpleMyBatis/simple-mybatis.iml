@@ -11,7 +11,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: org.mybatis:mybatis:3.2.8" level="project" />
-    <orderEntry type="library" name="Maven: org.mybatis:mybatis:3.2.8" level="project" />
     <orderEntry type="library" name="Maven: org.postgresql:postgresql:9.3-1102-jdbc41" level="project" />
   </component>
 </module>

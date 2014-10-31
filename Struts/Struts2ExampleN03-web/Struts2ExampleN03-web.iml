@@ -11,6 +11,14 @@
           <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
         </webroots>
       </configuration>
+      <facet type="Struts2" name="Struts 2">
+        <configuration>
+          <fileset id="s2fileset" name="My Fileset " removed="false">
+            <file>file://$MODULE_DIR$/src/main/resources/struts.xml</file>
+          </fileset>
+          <propertiesKeys disabled="false" />
+        </configuration>
+      </facet>
     </facet>
     <facet type="Spring" name="Spring">
       <configuration>
@@ -21,7 +29,9 @@
     </facet>
     <facet type="hibernate" name="Hibernate">
       <configuration>
-        <datasource-map />
+        <datasource-map>
+          <unit-entry name="sessionFactory" value="dataSource" />
+        </datasource-map>
         <naming-strategy-map>
           <unit-entry name="sessionFactory" />
         </naming-strategy-map>
