@@ -12,31 +12,27 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * @author APronchakov <artem.pronchakov@gmail.com>
+ * @author artem.pronchakov@calisto.email
  */
 @Entity
-@Table(name = "person", catalog = "bank")
+@Table(name = "person")
 @NamedQueries({
         @NamedQuery(name = "Person.findAll", query = "SELECT p FROM Person p")})
 public class Person implements Serializable, AbstractEntity {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Basic(optional = false)
     @NotNull
     @Column(name = "id")
     private Long id;
-    @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 100)
     @Column(name = "first_name")
     private String firstName;
-    @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 100)
     @Column(name = "last_name")
     private String lastName;
-    @Basic(optional = false)
     @NotNull
     @Column(name = "birth_date")
     @Temporal(TemporalType.DATE)

@@ -6,7 +6,7 @@ import ru.test.struts2.entity.Person;
 import java.util.List;
 
 /**
- * @author APronchakov <artem.pronchakov@gmail.com>
+ * @author artem.pronchakov@calisto.email
  */
 public interface DAO {
     public <T extends AbstractEntity> T save(T entity, boolean evict);

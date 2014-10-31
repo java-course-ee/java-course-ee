@@ -5,23 +5,20 @@ import org.hibernate.annotations.LazyCollectionOption;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 import java.io.Serializable;
-import java.util.Date;
 import java.util.List;
 
 /**
- * @author APronchakov <artem.pronchakov@gmail.com>
+ * @author artem.pronchakov@calisto.email
  */
 @Entity
-@Table(name = "account", catalog = "bank")
+@Table(name = "account")
 @NamedQueries({
         @NamedQuery(name = "Account.findAll", query = "SELECT a FROM Account a")})
 public class Account implements Serializable, AbstractEntity {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Basic(optional = false)
     @NotNull
     @Column(name = "id")
     private Long id;

@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/EJB/EJB.iml" filepath="$PROJECT_DIR$/EJB/EJB.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/Hibernate.iml" filepath="$PROJECT_DIR$/Hibernate/Hibernate.iml" />
       <module fileurl="file://$PROJECT_DIR$/Logging/Logging.iml" filepath="$PROJECT_DIR$/Logging/Logging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Struts/Struts.iml" filepath="$PROJECT_DIR$/Struts/Struts.iml" />
       <module fileurl="file://$PROJECT_DIR$/Struts/Struts2ExampleN01-web/Struts2ExampleN01-web.iml" filepath="$PROJECT_DIR$/Struts/Struts2ExampleN01-web/Struts2ExampleN01-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/Struts/Struts2ExampleN03-web/Struts2ExampleN03-web.iml" filepath="$PROJECT_DIR$/Struts/Struts2ExampleN03-web/Struts2ExampleN03-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/jms/ejb-builder.iml" filepath="$PROJECT_DIR$/EJB/jms/ejb-builder.iml" />
@@ -30,7 +31,6 @@
       <module fileurl="file://$PROJECT_DIR$/Logging/log4j/log4j.iml" filepath="$PROJECT_DIR$/Logging/log4j/log4j.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis/mybatis.iml" filepath="$PROJECT_DIR$/MyBatis/mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis/SimpleMyBatis/simple-mybatis.iml" filepath="$PROJECT_DIR$/MyBatis/SimpleMyBatis/simple-mybatis.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Struts/struts.iml" filepath="$PROJECT_DIR$/Struts/struts.iml" />
     </modules>
   </component>
 </project>

@@ -1,8 +1,9 @@
 package ru.test.struts2.dao;
 
-//import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import ru.test.struts2.entity.AbstractEntity;
 import ru.test.struts2.entity.Person;
@@ -10,58 +11,65 @@ import ru.test.struts2.entity.Person;
 import java.util.List;
 
 /**
- * @author APronchakov <artem.pronchakov@gmail.com>
+ * @author artem.pronchakov@calisto.email
  */
-public class DAOImpl  implements DAO {
-//    private Logger log = Logger.getLogger(DAOImpl.class);
-
+public class DAOImpl implements DAO {
     @Autowired
-    SessionFactory sessionFactory;
+    private SessionFactory sessionFactory;
+    private static final Logger log = LoggerFactory.getLogger(DAOImpl.class);
 
-    private Session getHibernateTemplate() {
+    public SessionFactory getSessionFactory() {
+        return sessionFactory;
+    }
+
+    public void setSessionFactory(SessionFactory sessionFactory) {
+        this.sessionFactory = sessionFactory;
+    }
+
+    private Session getCurrentSession() {
         return sessionFactory.getCurrentSession();
     }
 
     @Override
     public <T extends AbstractEntity> T save(T entity, boolean evict) {
-        entity.setId((Long) getHibernateTemplate().save(entity));
-        getHibernateTemplate().flush();
+        entity.setId((Long) getCurrentSession().save(entity));
+        getCurrentSession().flush();
         if (evict) {
-            getHibernateTemplate().evict(entity);
+            getCurrentSession().evict(entity);
         }
         return entity;
     }
 
     @Override
     public <T extends AbstractEntity> T update(T entity, boolean evict) {
-        entity = (T) getHibernateTemplate().merge(entity);
-        getHibernateTemplate().flush();
+        entity = (T) getCurrentSession().merge(entity);
+        getCurrentSession().flush();
         if (evict) {
-            getHibernateTemplate().evict(entity);
+            getCurrentSession().evict(entity);
         }
         return entity;
     }
 
     @Override
     public <T extends AbstractEntity> T get(Class<T> type, Long id, boolean readonly) {
-        T entity = (T) getHibernateTemplate().get(type, id);
+        T entity = (T) getCurrentSession().get(type, id);
         if (readonly) {
-            getHibernateTemplate().evict(entity);
+            getCurrentSession().evict(entity);
         }
         return entity;
     }
 
     @Override
     public <T extends AbstractEntity> void delete(T entity) {
-        getHibernateTemplate().delete(entity);
+        getCurrentSession().delete(entity);
     }
 
     @Override
     public List<Person> findAllPersons(boolean readonly) {
-        List<Person> list = getHibernateTemplate().getNamedQuery("Person.findAll").list();
+        List<Person> list = getCurrentSession().getNamedQuery("Person.findAll").list();
         if (readonly) {
             for (Person p : list) {
-                getHibernateTemplate().evict(p);
+                getCurrentSession().evict(p);
             }
         }
         return list;

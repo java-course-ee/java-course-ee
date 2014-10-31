@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="4286612395">
+  <component name="DataSourceManagerImpl" format="xml" hash="440172301">
     <data-source source="LOCAL" name="PostgreSQL - javacourse@localhost" uuid="e056932d-3f6d-496d-81e9-deffefbb3958">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
@@ -8,8 +8,8 @@
       <jdbc-url>jdbc:postgresql://localhost:5432/javacourse</jdbc-url>
       <user-name>postgres</user-name>
       <user-password>dfdadfc5dfd9dfdedfcddfd8dfcfdfd9</user-password>
-      <schema-pattern>javacourse.region</schema-pattern>
-      <default-schemas>javacourse.pg_catalog javacourse.public</default-schemas>
+      <schema-pattern>javacourse.bank javacourse.region</schema-pattern>
+      <default-schemas>javacourse.bank javacourse.pg_catalog javacourse.public javacourse.region</default-schemas>
       <libraries />
     </data-source>
   </component>

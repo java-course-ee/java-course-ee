@@ -5,7 +5,7 @@ import ru.test.struts2.entity.Person;
 import java.util.List;
 
 /**
- * @author APronchakov <artem.pronchakov@gmail.com>
+ * @author artem.pronchakov@calisto.email
  */
 public interface UserService {
     public Person getPerson(Long id, boolean readonly);

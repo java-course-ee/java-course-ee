@@ -1,6 +1,7 @@
 package ru.test.struts2.service;
 
-//import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import ru.test.struts2.dao.DAO;
@@ -13,14 +14,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author APronchakov <artem.pronchakov@gmail.com>
+ * @author artem.pronchakov@calisto.email
  */
 public class TransferServiceImpl implements TransferService {
-//    private Logger log = Logger.getLogger(TransferServiceImpl.class);
+    private Logger log = LoggerFactory.getLogger(TransferServiceImpl.class);
 
     private DAO dao;
 
     @Override
+    @Transactional(propagation = Propagation.REQUIRED)
     public List<Transfer> getTransfersByPerson(Person person) {
         List<Transfer> tList = new ArrayList<Transfer>();
         for (Account account : person.getAccountList()) {

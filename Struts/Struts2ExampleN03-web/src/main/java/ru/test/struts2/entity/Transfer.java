@@ -1,37 +1,29 @@
 package ru.test.struts2.entity;
 
-import org.hibernate.annotations.LazyCollection;
-import org.hibernate.annotations.LazyCollectionOption;
-
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.util.Date;
-import java.util.List;
 
 /**
- * @author APronchakov <artem.pronchakov@gmail.com>
+ * @author artem.pronchakov@calisto.email
  */
 @Entity
-@Table(name = "transfer", catalog = "bank")
+@Table(name = "transfer")
 @NamedQueries({
         @NamedQuery(name = "Transfer.findAll", query = "SELECT t FROM Transfer t")})
 public class Transfer implements Serializable, AbstractEntity {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Basic(optional = false)
     @NotNull
     @Column(name = "id")
     private Long id;
     // @Max(value=?)  @Min(value=?)//if you know range of your decimal fields consider using these annotations to enforce field validation
-    @Basic(optional = false)
     @NotNull
     @Column(name = "amount")
     private BigDecimal amount;
-    @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 1000)
     @Column(name = "comment")

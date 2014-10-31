@@ -1,7 +1,7 @@
 package ru.test.struts2.entity;
 
 /**
- * @author APronchakov <artem.pronchakov@gmail.com>
+ * @author artem.pronchakov@calisto.email
  */
 public interface AbstractEntity {
     public Long getId();

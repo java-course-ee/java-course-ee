@@ -7,7 +7,7 @@ import ru.test.struts2.entity.Transfer;
 import java.util.List;
 
 /**
- * @author APronchakov <artem.pronchakov@gmail.com>
+ * @author artem.pronchakov@calisto.email
  */
 public interface TransferService {
     public List<Transfer> getTransfersByPerson(Person person);

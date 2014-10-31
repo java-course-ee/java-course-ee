@@ -1,8 +1,9 @@
 package ru.test.struts2.action;
 
 import com.opensymphony.xwork2.ActionSupport;
-//import org.apache.log4j.Logger;
 import org.apache.struts2.interceptor.SessionAware;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import ru.test.struts2.entity.Account;
 import ru.test.struts2.entity.Person;
 import ru.test.struts2.service.AccountService;
@@ -13,10 +14,10 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author APronchakov <artem.pronchakov@gmail.com>
+ * @author artem.pronchakov@calisto.email
  */
 public class TransferAction extends ActionSupport implements SessionAware {
-//    private Logger log = Logger.getLogger(TransferAction.class);
+    private Logger log = LoggerFactory.getLogger(TransferAction.class);
 
     private TransferService transferService;
     private UserService userService;
@@ -63,7 +64,7 @@ public class TransferAction extends ActionSupport implements SessionAware {
 
             return "success";
         } catch (Throwable ex) {
-//            log.error("EXCEPTION: " + ex.getMessage());
+            log.error("EXCEPTION: {}", ex.getMessage());
             getSession().put("fromAccount", fromAccount);
             getSession().put("toPersonAccount", toPersonAccount);
             return "failure";
