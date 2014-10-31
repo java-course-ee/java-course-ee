@@ -11,7 +11,6 @@
       <column name="city_name" sqlType="varchar" precision="255" scale="0" nullable="true" jdbcType="12"/>
       <column name="region_id" sqlType="int8" precision="19" scale="0" nullable="true" jdbcType="-5"/>
       <primary-key name="jc_city_pkey" columns="city_id"/>
-      <foreign-key name="fk_llmvs8rt74d2rmlrjyf6fw3gu" columns="region_id" ref-table="jc_region" ref-schema="region" ref-catalog="" ref-columns="region_id" update-rule="3" delete-rule="3" deferrability="2"/>
     </table>
     <table name="jc_city_city_id_seq" schema="region" catalog="javacourse" type="SEQUENCE">
       <column name="sequence_name" sqlType="name" precision="2147483647" scale="0" nullable="false" jdbcType="12"/>
@@ -25,11 +24,15 @@
       <column name="is_cycled" sqlType="bool" precision="1" scale="0" nullable="false" jdbcType="-7"/>
       <column name="is_called" sqlType="bool" precision="1" scale="0" nullable="false" jdbcType="-7"/>
     </table>
+    <table name="jc_gubernator" schema="region" catalog="javacourse" type="TABLE">
+      <column name="region_id" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="name" sqlType="varchar" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="jc_gubernator_pkey" columns="region_id"/>
+    </table>
     <table name="jc_region" schema="region" catalog="javacourse" type="TABLE">
       <column name="region_id" sqlType="bigserial" precision="19" scale="0" nullable="false" jdbcType="-5" def="bmV4dHZhbCgncmVnaW9uLmpjX3JlZ2lvbl9yZWdpb25faWRfc2VxJzo6cmVnY2xhc3Mp" autoIncrement="true"/>
       <column name="region_name" sqlType="varchar" precision="255" scale="0" nullable="true" jdbcType="12"/>
       <primary-key name="jc_region_pkey" columns="region_id"/>
-      <exported-key name="fk_llmvs8rt74d2rmlrjyf6fw3gu" table="jc_city" schema="region" catalog="javacourse" columns="region_id"/>
     </table>
     <table name="jc_region_region_id_seq" schema="region" catalog="javacourse" type="SEQUENCE">
       <column name="sequence_name" sqlType="name" precision="2147483647" scale="0" nullable="false" jdbcType="12"/>

@@ -2,6 +2,8 @@ package edu.javacourse.hibernate;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 
 import java.util.List;
@@ -14,16 +16,18 @@ import java.util.List;
 public class HibernateSimple {
 
     public static void main(String[] args) {
-        HibernateSimple hs = new HibernateSimple();
+        Configuration configuration = new Configuration();
+        configuration.configure("hibernate.cfg.xml");
+        StandardServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();
+        SessionFactory sessionFactory = configuration.buildSessionFactory(serviceRegistry);
 
-        Session s = hs.getSessionFactory().openSession();
+        Session s = sessionFactory.openSession();
         s.beginTransaction();
         List<Region> regionList = s.createQuery("from Region").list();
 
         for (Region r : regionList) {
             System.out.println("Region name:" + r);
-            System.out.println("Gubernator name:" + r.getGubernator().getLeader());
-
+            System.out.println("Gubernator name:" + r.getGubernator().getName());
         }
 
 
@@ -40,15 +44,11 @@ public class HibernateSimple {
 
         for (Region r : regionList) {
             System.out.println("Region name:" + r);
-            System.out.println("Gubernator name:" + r.getGubernator().getLeader());
+            System.out.println("Gubernator name:" + r.getGubernator().getName());
 
         }
-
 
         s.getTransaction().commit();
     }
 
-    private SessionFactory getSessionFactory() {
-        return new Configuration().configure().buildSessionFactory();
-    }
 }

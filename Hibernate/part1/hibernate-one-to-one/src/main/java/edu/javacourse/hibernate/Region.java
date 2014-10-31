@@ -13,12 +13,10 @@ public class Region implements Serializable {
     private Long regionId;
 
     @Column(name = "region_name", nullable = true)
-    @OrderColumn // JPA 2.0
+    @OrderColumn
     private String regionName;
 
-
-    @JoinColumn(name = "region_ext_id")
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "region")
+    @OneToOne(mappedBy = "region", cascade = CascadeType.ALL)
     private Gubernator gubernator;
 
     public Region() {

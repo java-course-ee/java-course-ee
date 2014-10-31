@@ -11,31 +11,31 @@ import java.io.Serializable;
  * Date: 26.06.13
  */
 @Entity
-@Table(name = "jc_region_ext")
+@Table(name = "jc_gubernator")
 public class Gubernator implements Serializable {
 
     @Id
-    @Column(name = "region_ext_id", unique = true, nullable = false)
-    @GenericGenerator(name = "gen", strategy = "foreign",
-            parameters = @Parameter(name = "property", value = "region"))
+    @Column(name = "region_id", unique = true, nullable = false)
     @GeneratedValue(generator = "gen")
+    @GenericGenerator(
+            name = "gen",
+            strategy = "foreign",
+            parameters = @Parameter(name = "property", value = "region")
+    )
     private Long regionId;
 
+    @Column(name = "name")
+    private String name;
 
-    @Column(name = "region_leader")
-    private String leader;
-
-
-    @OneToOne(fetch = FetchType.LAZY)
+    @OneToOne
     @PrimaryKeyJoinColumn
     private Region region;
-
 
     public Gubernator() {
     }
 
-    public Gubernator(String leader) {
-        this.leader = leader;
+    public Gubernator(String name) {
+        this.name = name;
     }
 
     public Long getRegionId() {
@@ -46,12 +46,12 @@ public class Gubernator implements Serializable {
         this.regionId = regionId;
     }
 
-    public String getLeader() {
-        return leader;
+    public String getName() {
+        return name;
     }
 
-    public void setLeader(String leader) {
-        this.leader = leader;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Region getRegion() {
