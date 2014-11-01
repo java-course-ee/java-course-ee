@@ -1,0 +1,6 @@
+<%@ page pageEncoding="UTF-8" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
+
+<p><s:a action="list-accounts">Просмотреть свои счета и проведенные операции</s:a></p>
+
+<p><s:a action="transfer-one">Выполнить еще один перевод суммы</s:a></p>

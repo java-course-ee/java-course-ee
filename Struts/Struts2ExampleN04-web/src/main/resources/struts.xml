@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <constant name="struts.devMode" value="true"/>
+    <package name="struts2-bank" extends="struts-default">
+        <action name="transfer-one" class="transferAction" method="transferOne">
+            <result name="success">transfer-one.jsp</result>
+        </action>
+        <action name="transfer-two" class="transferAction" method="transferTwo">
+            <result name="input">transfer-two.jsp</result>
+            <result name="success">transfer-two.jsp</result>
+        </action>
+        <action name="do-transfer" class="transferAction" method="doTransfer">
+            <result name="success">success-transfer.jsp</result>
+            <result name="failure">fail-transfer.jsp</result>
+        </action>
+        <action name="list-accounts" class="transferAction" method="listAccounts">
+            <result name="success">list-accounts.jsp</result>
+        </action>
+        <action name="list-transfers" class="transferAction" method="listTransfers">
+            <result name="success">list-transfers.jsp</result>
+        </action>
+    </package>
+</struts>
