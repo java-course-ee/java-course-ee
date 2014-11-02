@@ -1,8 +1,6 @@
 package ru.test.struts2.entity;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
@@ -17,16 +15,11 @@ public class Transfer implements Serializable, AbstractEntity {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @NotNull
     @Column(name = "id")
     private Long id;
-    // @Max(value=?)  @Min(value=?)//if you know range of your decimal fields consider using these annotations to enforce field validation
-    @NotNull
-    @Column(name = "amount")
+    @Column(name = "amount", nullable = false)
     private BigDecimal amount;
-    @NotNull
-    @Size(min = 1, max = 1000)
-    @Column(name = "comment")
+    @Column(name = "comment", nullable = false, length = 1000)
     private String comment;
     @JoinColumn(name = "senders_account", referencedColumnName = "id")
     @ManyToOne(optional = false)

@@ -17,14 +17,11 @@ public class Transfer implements Serializable, AbstractEntity {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @NotNull
     @Column(name = "id")
     private Long id;
-    // @Max(value=?)  @Min(value=?)//if you know range of your decimal fields consider using these annotations to enforce field validation
     @NotNull
     @Column(name = "amount")
     private BigDecimal amount;
-    @NotNull
     @Size(min = 1, max = 1000)
     @Column(name = "comment")
     private String comment;

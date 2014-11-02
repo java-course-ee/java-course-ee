@@ -14,9 +14,10 @@ import java.util.List;
  * @author artem.pronchakov@calisto.email
  */
 public class DAOImpl implements DAO {
+    private static final Logger log = LoggerFactory.getLogger(DAOImpl.class);
+
     @Autowired
     private SessionFactory sessionFactory;
-    private static final Logger log = LoggerFactory.getLogger(DAOImpl.class);
 
     public SessionFactory getSessionFactory() {
         return sessionFactory;

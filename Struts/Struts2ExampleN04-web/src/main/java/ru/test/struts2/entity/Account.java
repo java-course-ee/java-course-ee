@@ -4,7 +4,6 @@ import org.hibernate.annotations.LazyCollection;
 import org.hibernate.annotations.LazyCollectionOption;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.List;
 
@@ -19,7 +18,6 @@ public class Account implements Serializable, AbstractEntity {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @NotNull
     @Column(name = "id")
     private Long id;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "sendersAccount")

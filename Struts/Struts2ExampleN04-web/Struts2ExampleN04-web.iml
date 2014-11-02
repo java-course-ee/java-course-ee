@@ -4,10 +4,10 @@
     <facet type="web" name="Web">
       <configuration>
         <descriptors>
-          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/web/WEB-INF/web.xml" />
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/web.xml" />
         </descriptors>
         <webroots>
-          <root url="file://$MODULE_DIR$/web" relative="/" />
+          <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
         </webroots>
       </configuration>
       <facet type="Struts2" name="Struts 2">
@@ -28,9 +28,7 @@
     </facet>
     <facet type="hibernate" name="Hibernate">
       <configuration>
-        <datasource-map>
-          <unit-entry name="sessionFactory" value="e056932d-3f6d-496d-81e9-deffefbb3958" />
-        </datasource-map>
+        <datasource-map />
         <naming-strategy-map />
       </configuration>
     </facet>

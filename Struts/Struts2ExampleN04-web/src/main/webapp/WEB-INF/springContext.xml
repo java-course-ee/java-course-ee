@@ -19,11 +19,13 @@
         <property name="hibernateProperties">
             <props>
                 <prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQL9Dialect</prop>
-                <prop key="hibernate.transaction.factory_class">org.hibernate.engine.transaction.internal.jta.JtaTransactionFactory</prop>
-                <prop key="hibernate.flushMode">auto</prop>
-                <prop key="jta.TransactionManager">java:jboss/TransactionManager</prop>
-                <prop key="hibernate.transaction.jta.platform">org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform</prop>
-                <prop key="hibernate.current_session_context_class">org.hibernate.context.internal.JTASessionContext</prop>
+                <prop key="hibernate.transaction.factory_class">
+                    org.hibernate.engine.transaction.internal.jta.JtaTransactionFactory
+                </prop>
+                <prop key="hibernate.transaction.jta.platform">
+                    org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform
+                </prop>
+                <prop key="hibernate.current_session_context_class">jta</prop>
                 <prop key="hibernate.hbm2ddl.auto">update</prop>
                 <prop key="hibernate.default_schema">bank</prop>
             </props>
