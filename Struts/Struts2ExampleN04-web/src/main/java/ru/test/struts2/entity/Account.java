@@ -1,8 +1,5 @@
 package ru.test.struts2.entity;
 
-import org.hibernate.annotations.LazyCollection;
-import org.hibernate.annotations.LazyCollectionOption;
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
@@ -20,14 +17,12 @@ public class Account implements Serializable, AbstractEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "sendersAccount")
-    @LazyCollection(LazyCollectionOption.FALSE)
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "sendersAccount", fetch = FetchType.LAZY)
     private List<Transfer> outcommingTransfers;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "recieversAccount")
-    @LazyCollection(LazyCollectionOption.FALSE)
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "recieversAccount", fetch = FetchType.LAZY)
     private List<Transfer> incommingTransfers;
     @JoinColumn(name = "owner", referencedColumnName = "id")
-    @ManyToOne(optional = false)
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Person owner;
 
     public Account() {

@@ -19,17 +19,14 @@ public class Account implements Serializable, AbstractEntity {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @NotNull
     @Column(name = "id")
     private Long id;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "sendersAccount")
-    @LazyCollection(LazyCollectionOption.FALSE)
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "sendersAccount", fetch = FetchType.LAZY)
     private List<Transfer> outcommingTransfers;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "recieversAccount")
-    @LazyCollection(LazyCollectionOption.FALSE)
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "recieversAccount", fetch = FetchType.LAZY)
     private List<Transfer> incommingTransfers;
     @JoinColumn(name = "owner", referencedColumnName = "id")
-    @ManyToOne(optional = false)
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Person owner;
 
     public Account() {

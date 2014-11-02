@@ -19,17 +19,15 @@ public class Transfer implements Serializable, AbstractEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
-    @NotNull
-    @Column(name = "amount")
+    @Column(name = "amount", nullable = false)
     private BigDecimal amount;
-    @Size(min = 1, max = 1000)
-    @Column(name = "comment")
+    @Column(name = "comment", length = 1000)
     private String comment;
     @JoinColumn(name = "senders_account", referencedColumnName = "id")
-    @ManyToOne(optional = false)
+    @ManyToOne(fetch = FetchType.LAZY)
     private Account sendersAccount;
     @JoinColumn(name = "recievers_account", referencedColumnName = "id")
-    @ManyToOne(optional = false)
+    @ManyToOne(fetch = FetchType.LAZY)
     private Account recieversAccount;
 
     public Transfer() {

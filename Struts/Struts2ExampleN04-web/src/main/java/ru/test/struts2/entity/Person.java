@@ -1,9 +1,6 @@
 package ru.test.struts2.entity;
 
 
-import org.hibernate.annotations.LazyCollection;
-import org.hibernate.annotations.LazyCollectionOption;
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
@@ -22,15 +19,14 @@ public class Person implements Serializable, AbstractEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
-    @Column(name = "first_name", nullable = false)
+    @Column(name = "first_name", nullable = false, length = 255)
     private String firstName;
-    @Column(name = "last_name", nullable = false)
+    @Column(name = "last_name", nullable = false, length = 255)
     private String lastName;
-    @Column(name = "birth_date", nullable = false)
+    @Column(name = "birth_date", nullable = false, length = 255)
     @Temporal(TemporalType.DATE)
     private Date birthDate;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
-    @LazyCollection(LazyCollectionOption.FALSE)
     private List<Account> accountList;
 
     public Person() {
