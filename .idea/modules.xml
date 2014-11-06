@@ -14,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/Struts/Struts.iml" filepath="$PROJECT_DIR$/Struts/Struts.iml" />
       <module fileurl="file://$PROJECT_DIR$/Struts/Struts2ExampleN01-web/Struts2ExampleN01-web.iml" filepath="$PROJECT_DIR$/Struts/Struts2ExampleN01-web/Struts2ExampleN01-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/Struts/Struts2ExampleN03-web/Struts2ExampleN03-web.iml" filepath="$PROJECT_DIR$/Struts/Struts2ExampleN03-web/Struts2ExampleN03-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Struts/Struts2ExampleN04-web/Struts2ExampleN04-web.iml" filepath="$PROJECT_DIR$/Struts/Struts2ExampleN04-web/Struts2ExampleN04-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebServices/WebServices.iml" filepath="$PROJECT_DIR$/WebServices/WebServices.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/jms/ejb-builder.iml" filepath="$PROJECT_DIR$/EJB/jms/ejb-builder.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear-module/ejb-ear-module.iml" filepath="$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear-module/ejb-ear-module.iml" />

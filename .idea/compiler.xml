@@ -44,6 +44,7 @@
         <module name="simple-mybatis" />
         <module name="Struts2ExampleN01-web" />
         <module name="Struts2ExampleN03-web" />
+        <module name="Struts2ExampleN04-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -70,6 +71,7 @@
       <module name="simple-mybatis" target="1.7" />
       <module name="Struts2ExampleN01-web" target="1.7" />
       <module name="Struts2ExampleN03-web" target="1.7" />
+      <module name="Struts2ExampleN04-web" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

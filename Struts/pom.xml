@@ -13,6 +13,7 @@
         <module>Struts2ExampleN01-web</module>
         <!--<module>Struts2ExampleN02-web</module>-->
         <module>Struts2ExampleN03-web</module>
+        <module>Struts2ExampleN04-web</module>
     </modules>
 
 </project>

@@ -17,6 +17,7 @@
     <file type="web" url="file://$PROJECT_DIR$/EJB/jms/servlet" />
     <file type="web" url="file://$PROJECT_DIR$/Struts/Struts2ExampleN01-web" />
     <file type="web" url="file://$PROJECT_DIR$/Struts/Struts2ExampleN03-web" />
+    <file type="web" url="file://$PROJECT_DIR$/Struts/Struts2ExampleN04-web" />
     <file type="web" url="file://$PROJECT_DIR$/WebServices/WEB-REST/RESTExample" />
   </component>
   <component name="IdProvider" IDEtalkID="E332059EB1A533795641F0A6DDC107FB" />
@@ -28,7 +29,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="Oracle 1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
