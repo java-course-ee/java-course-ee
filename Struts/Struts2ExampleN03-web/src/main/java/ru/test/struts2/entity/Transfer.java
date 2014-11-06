@@ -24,10 +24,10 @@ public class Transfer implements Serializable, AbstractEntity {
     @Column(name = "comment", length = 1000)
     private String comment;
     @JoinColumn(name = "senders_account", referencedColumnName = "id")
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     private Account sendersAccount;
     @JoinColumn(name = "recievers_account", referencedColumnName = "id")
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     private Account recieversAccount;
 
     public Transfer() {

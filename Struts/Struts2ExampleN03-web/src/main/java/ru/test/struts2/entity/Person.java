@@ -31,7 +31,7 @@ public class Person implements Serializable, AbstractEntity {
     @Column(name = "birth_date", nullable = false, length = 255)
     @Temporal(TemporalType.DATE)
     private Date birthDate;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner", fetch = FetchType.EAGER)
     private List<Account> accountList;
 
     public Person() {

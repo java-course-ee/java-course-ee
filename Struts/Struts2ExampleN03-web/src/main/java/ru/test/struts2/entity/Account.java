@@ -21,12 +21,12 @@ public class Account implements Serializable, AbstractEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "sendersAccount", fetch = FetchType.LAZY)
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "sendersAccount", fetch = FetchType.EAGER)
     private List<Transfer> outcommingTransfers;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "recieversAccount", fetch = FetchType.LAZY)
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "recieversAccount", fetch = FetchType.EAGER)
     private List<Transfer> incommingTransfers;
     @JoinColumn(name = "owner", referencedColumnName = "id")
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Person owner;
 
     public Account() {

@@ -2,6 +2,7 @@
   <artifact type="exploded-war" name="Struts2ExampleN03-web:war exploded">
     <output-path>$PROJECT_DIR$/Struts/Struts2ExampleN03-web/target/Struts2ExampleN03-web</output-path>
     <root id="root">
+      <element id="javaee-facet-resources" facet="Struts2ExampleN03-web/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="Struts2ExampleN03-web" />
@@ -37,7 +38,6 @@
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.7" />
         </element>
       </element>
-      <element id="javaee-facet-resources" facet="Struts2ExampleN03-web/web/Web" />
     </root>
   </artifact>
 </component>
