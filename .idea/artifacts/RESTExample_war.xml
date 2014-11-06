@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="RESTExample:war">
+    <output-path>$PROJECT_DIR$/WebServices/WEB-REST/RESTExample/target</output-path>
+    <root id="archive" name="RESTExample.war">
+      <element id="artifact" artifact-name="RESTExample:war exploded" />
+    </root>
+  </artifact>
+</component>
