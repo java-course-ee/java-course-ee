@@ -16,6 +16,7 @@
         <module>Logging</module>
         <module>MyBatis</module>
         <module>Struts</module>
+        <module>WebServices</module>
     </modules>
 
     <properties>
