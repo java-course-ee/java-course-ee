@@ -1,10 +1,7 @@
 package ru.gs.test.restexample;
 
-import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Date;
 
-
-@XmlRootElement(name = "person")
 public class Person {
     private Long id;
     private String name;
