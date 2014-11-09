@@ -13,7 +13,7 @@
         <property name="connection.pool_size">1</property>
         <property name="dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
         <property name="current_session_context_class">thread</property>
-        <property name="hbm2ddl.auto">update</property>
+        <property name="hbm2ddl.auto">create</property>
 
         <mapping class="edu.javacourse.hibernate.Region"/>
         <mapping class="edu.javacourse.hibernate.City"/>

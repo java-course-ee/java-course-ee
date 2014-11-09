@@ -16,9 +16,9 @@ import java.util.List;
  *
  * @author ASaburov
  */
-public class HibernateSimple {
+public class HibernateManyToOne {
 
-    private static final Logger log = LoggerFactory.getLogger(HibernateSimple.class);
+    private static final Logger log = LoggerFactory.getLogger(HibernateManyToOne.class);
 
     public static void main(String[] args) {
         Configuration configuration = new Configuration();
@@ -67,6 +67,8 @@ public class HibernateSimple {
         s.save(spb);
 
         s.getTransaction().commit();
+
+        log.debug("End of main()");
     }
 
 }

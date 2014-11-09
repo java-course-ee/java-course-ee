@@ -11,6 +11,7 @@ public class Region implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "region_id")
     private Long regionId;
+
     @Column(name = "region_name", nullable = true)
     private String regionName;
 

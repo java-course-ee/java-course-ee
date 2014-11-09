@@ -2,12 +2,12 @@
   <artifact type="exploded-war" name="ejb-jms-servlet:war exploded">
     <output-path>$PROJECT_DIR$/EJB/jms/servlet/target/ejb-jms-servlet</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="ejb-jms-servlet/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="ejb-jms-servlet" />
         </element>
       </element>
+      <element id="javaee-facet-resources" facet="ejb-jms-servlet/web/Web" />
     </root>
   </artifact>
 </component>

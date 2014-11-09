@@ -2,12 +2,12 @@
   <artifact type="exploded-war" name="DojoExampleN04:war exploded">
     <output-path>$PROJECT_DIR$/Dojo/DojoExampleN04/target/DojoExampleN04</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="DojoExampleN04/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="DojoExampleN04" />
         </element>
       </element>
+      <element id="javaee-facet-resources" facet="DojoExampleN04/web/Web" />
     </root>
   </artifact>
 </component>
