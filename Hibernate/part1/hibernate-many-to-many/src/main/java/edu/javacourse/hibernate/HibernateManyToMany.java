@@ -97,8 +97,6 @@ public class HibernateManyToMany {
         s.save(newBook);
 
         s.save(newAuthor);
-
-        log.debug("End of main()");
     }
 
 
