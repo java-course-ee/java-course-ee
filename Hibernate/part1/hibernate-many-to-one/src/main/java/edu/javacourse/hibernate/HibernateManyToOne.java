@@ -16,9 +16,9 @@ import java.util.List;
  *
  * @author ASaburov
  */
-public class HibernateSimple {
+public class HibernateManyToOne {
 
-    private static final Logger log = LoggerFactory.getLogger(HibernateSimple.class);
+    private static final Logger log = LoggerFactory.getLogger(HibernateManyToOne.class);
 
     private static SessionFactory sessionFactory;
     private static ServiceRegistry serviceRegistry;
@@ -78,6 +78,7 @@ public class HibernateSimple {
         s.save(spb);
 
         s.getTransaction().commit();
+        log.debug("Transaction committed");
 
         destroy();
     }

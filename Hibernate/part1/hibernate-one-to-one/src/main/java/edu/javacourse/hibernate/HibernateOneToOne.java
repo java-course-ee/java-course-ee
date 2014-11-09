@@ -5,6 +5,8 @@ import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
@@ -13,7 +15,9 @@ import java.util.List;
  *
  * @author ASaburov
  */
-public class HibernateSimple {
+public class HibernateOneToOne {
+
+    private static final Logger log = LoggerFactory.getLogger(HibernateOneToOne.class);
 
     public static void main(String[] args) {
         Configuration configuration = new Configuration();
@@ -30,7 +34,6 @@ public class HibernateSimple {
             System.out.println("Gubernator name:" + r.getGubernator().getName());
         }
 
-
         Region spb = new Region("SPb");
         Gubernator gubernator = new Gubernator("Poltavchenko");
 
@@ -38,7 +41,6 @@ public class HibernateSimple {
         gubernator.setRegion(spb);
 
         s.save(spb);
-
 
         regionList = s.createQuery("from Region").list();
 
@@ -49,6 +51,8 @@ public class HibernateSimple {
         }
 
         s.getTransaction().commit();
+
+        log.debug("Transaction committed");
     }
 
 }

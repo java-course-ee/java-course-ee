@@ -3,7 +3,10 @@ package edu.javacourse.hibernate;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
@@ -12,10 +15,12 @@ import java.util.List;
  *
  * @author ASaburov
  */
-public class HibernateSimple {
+public class HibernateManyToMany {
+
+    private static final Logger log = LoggerFactory.getLogger(HibernateManyToMany.class);
 
     public static void main(String[] args) {
-        HibernateSimple hs = new HibernateSimple();
+        HibernateManyToMany hs = new HibernateManyToMany();
 
         Session s = hs.getSessionFactory().getCurrentSession();
         s.beginTransaction();
@@ -50,6 +55,8 @@ public class HibernateSimple {
         }
 
         s.getTransaction().commit();
+
+        log.debug("Transaction committed");
     }
 
     private void saveBook(Author oldAuthor, Session s) throws HibernateException {
@@ -94,7 +101,14 @@ public class HibernateSimple {
 
 
     private SessionFactory getSessionFactory() {
-        return new Configuration().configure().buildSessionFactory();
-    }
 
+        Configuration configuration = new Configuration().configure();
+        SessionFactory sessionFactory = configuration.buildSessionFactory(
+                new StandardServiceRegistryBuilder()
+                        .applySettings( configuration.getProperties() )
+                        .build()
+        );
+        return sessionFactory;
+
+    }
 }
