@@ -56,7 +56,7 @@ public class HibernateManyToMany {
 
         s.getTransaction().commit();
 
-        log.debug("End of main()");
+        log.debug("Transaction committed");
     }
 
     private void saveBook(Author oldAuthor, Session s) throws HibernateException {

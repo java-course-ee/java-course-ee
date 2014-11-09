@@ -36,7 +36,7 @@ public class HibernateConfigXMLMappingAnnotations {
 
         s.getTransaction().commit();
 
-        log.debug("End of main()");
+        log.debug("Transaction committed");
     }
 
     private SessionFactory getSessionFactory() {

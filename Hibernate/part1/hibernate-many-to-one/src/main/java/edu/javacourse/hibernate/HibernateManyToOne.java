@@ -68,7 +68,7 @@ public class HibernateManyToOne {
 
         s.getTransaction().commit();
 
-        log.debug("End of main()");
+        log.debug("Transaction committed");
     }
 
 }
