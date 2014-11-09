@@ -3,9 +3,9 @@ package edu.javacourse.hibernate;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,11 +20,22 @@ public class HibernateSimple {
 
     private static final Logger log = LoggerFactory.getLogger(HibernateSimple.class);
 
-    public static void main(String[] args) {
+    private static SessionFactory sessionFactory;
+    private static ServiceRegistry serviceRegistry;
+
+    private static void init() {
         Configuration configuration = new Configuration();
         configuration.configure("hibernate.cfg.xml");
-        StandardServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();
-        SessionFactory sessionFactory = configuration.buildSessionFactory(serviceRegistry);
+        serviceRegistry = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();
+        sessionFactory = configuration.buildSessionFactory(serviceRegistry);
+    }
+
+    private static void destroy() {
+        StandardServiceRegistryBuilder.destroy(serviceRegistry);
+    }
+
+    public static void main(String[] args) {
+        init();
 
         Session s = sessionFactory.getCurrentSession();
         s.beginTransaction();
@@ -67,6 +78,8 @@ public class HibernateSimple {
         s.save(spb);
 
         s.getTransaction().commit();
+
+        destroy();
     }
 
 }
