@@ -15,9 +15,16 @@
     <file type="web" url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war-module" />
     <file type="web" url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war2-module" />
     <file type="web" url="file://$PROJECT_DIR$/EJB/jms/servlet" />
+    <file type="web" url="file://$PROJECT_DIR$/JQuery/JQueryExampleN09" />
+    <file type="web" url="file://$PROJECT_DIR$/JQuery/JQueryExampleN10" />
+    <file type="web" url="file://$PROJECT_DIR$/JQuery/JQueryExampleN11" />
     <file type="web" url="file://$PROJECT_DIR$/Struts/Struts2ExampleN01-web" />
     <file type="web" url="file://$PROJECT_DIR$/Struts/Struts2ExampleN03-web" />
     <file type="web" url="file://$PROJECT_DIR$/Struts/Struts2ExampleN04-web" />
+    <file type="web" url="file://$PROJECT_DIR$/Vaadin/VaadinExampleN01" />
+    <file type="web" url="file://$PROJECT_DIR$/Vaadin/VaadinExampleN02" />
+    <file type="web" url="file://$PROJECT_DIR$/Vaadin/VaadinExampleN03" />
+    <file type="web" url="file://$PROJECT_DIR$/Vaadin/VaadinExampleN04" />
     <file type="web" url="file://$PROJECT_DIR$/WebServices/WEB-REST/RESTExample" />
   </component>
   <component name="IdProvider" IDEtalkID="E332059EB1A533795641F0A6DDC107FB" />
@@ -33,4 +40,3 @@
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
-
