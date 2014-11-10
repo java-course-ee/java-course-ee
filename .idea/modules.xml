@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/Dojo/DojoExampleN04/DojoExampleN04.iml" filepath="$PROJECT_DIR$/Dojo/DojoExampleN04/DojoExampleN04.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/EJB.iml" filepath="$PROJECT_DIR$/EJB/EJB.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/Hibernate.iml" filepath="$PROJECT_DIR$/Hibernate/Hibernate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JQuery/JQuery.iml" filepath="$PROJECT_DIR$/JQuery/JQuery.iml" />
       <module fileurl="file://$PROJECT_DIR$/JQuery/JQueryExampleN09/JQueryExampleN09.iml" filepath="$PROJECT_DIR$/JQuery/JQueryExampleN09/JQueryExampleN09.iml" />
       <module fileurl="file://$PROJECT_DIR$/JQuery/JQueryExampleN10/JQueryExampleN10.iml" filepath="$PROJECT_DIR$/JQuery/JQueryExampleN10/JQueryExampleN10.iml" />
       <module fileurl="file://$PROJECT_DIR$/JQuery/JQueryExampleN11/JQueryExampleN11.iml" filepath="$PROJECT_DIR$/JQuery/JQueryExampleN11/JQueryExampleN11.iml" />
@@ -39,7 +40,6 @@
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-many-to-many/hibernate-many-to-many.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-many-to-many/hibernate-many-to-many.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-many-to-one/hibernate-many-to-one.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-many-to-one/hibernate-many-to-one.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-one-to-one/hibernate-one-to-one.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-one-to-one/hibernate-one-to-one.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JQuery/jquery.iml" filepath="$PROJECT_DIR$/JQuery/jquery.iml" />
       <module fileurl="file://$PROJECT_DIR$/Logging/log4j/log4j.iml" filepath="$PROJECT_DIR$/Logging/log4j/log4j.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis/mybatis.iml" filepath="$PROJECT_DIR$/MyBatis/mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis/SimpleMyBatis/simple-mybatis.iml" filepath="$PROJECT_DIR$/MyBatis/SimpleMyBatis/simple-mybatis.iml" />
