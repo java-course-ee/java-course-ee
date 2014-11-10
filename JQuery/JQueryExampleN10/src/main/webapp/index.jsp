@@ -10,8 +10,8 @@
         $(function () {
             $('#button').click(function () {
                 $.get("MyServlet", {
-                    "MyParam1": $('#field1').val(),
-                    "MyParam2": $('#field2').val()
+                    "summand1": $('#field1').val(),
+                    "summand2": $('#field2').val()
                 }, function (data) {
                     $('#response').text('Returned value from server: ' + data);
                 });

@@ -22,17 +22,14 @@ public class MyServlet extends HttpServlet {
 
         PrintWriter out = response.getWriter();
 
-        String result;
+        int result;
         try {
-            Integer val1 = Integer.parseInt(request.getParameter("MyParam1"));
-            Integer val2 = Integer.parseInt(request.getParameter("MyParam2"));
-            result = String.valueOf(val1 + val2);
-        } catch (NumberFormatException e) {
-            result = "You should input only numbers!";
-        }
-
-        try {
+            int val1 = Integer.parseInt(request.getParameter("summand1"));
+            int val2 = Integer.parseInt(request.getParameter("summand2"));
+            result = val1 + val2;
             out.print(result);
+        } catch (NumberFormatException e) {
+            response.sendError(HttpServletResponse.SC_BAD_REQUEST);
         } finally {
             out.close();
         }
