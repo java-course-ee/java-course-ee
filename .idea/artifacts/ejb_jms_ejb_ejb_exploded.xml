@@ -3,6 +3,9 @@
     <output-path>$PROJECT_DIR$/EJB/jms/ejb/target/ejb-jms-ejb</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="ejb-jms-ejb/ejb/EJB" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/EJB/jms/ejb/target/MANIFEST.MF" />
+      </element>
       <element id="module-output" name="ejb-jms-ejb" />
     </root>
   </artifact>

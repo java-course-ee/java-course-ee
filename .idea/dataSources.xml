@@ -6,12 +6,7 @@
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/javacourse</jdbc-url>
-      <user-name>postgres</user-name>
-      <user-password>dfdadfc5dfd9dfdedfcddfd8dfcfdfd9</user-password>
-      <schema-pattern>javacourse.bank javacourse.region</schema-pattern>
-      <default-schemas>javacourse.bank javacourse.pg_catalog javacourse.public javacourse.region</default-schemas>
       <libraries />
     </data-source>
   </component>
 </project>
-

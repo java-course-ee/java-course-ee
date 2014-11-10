@@ -2,12 +2,15 @@
   <artifact type="exploded-war" name="DojoExampleN02:war exploded">
     <output-path>$PROJECT_DIR$/Dojo/DojoExampleN02/target/DojoExampleN02</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="DojoExampleN02/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="DojoExampleN02" />
         </element>
       </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/Dojo/DojoExampleN02/target/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="DojoExampleN02/web/Web" />
     </root>
   </artifact>
 </component>

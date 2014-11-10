@@ -2,7 +2,6 @@
   <artifact type="exploded-war" name="ejb-war-module:war exploded">
     <output-path>$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war-module/target/ejb-war-module</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="ejb-war-module/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="ejb-war-module" />
@@ -13,6 +12,10 @@
           </element>
         </element>
       </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war-module/target/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="ejb-war-module/web/Web" />
     </root>
   </artifact>
 </component>

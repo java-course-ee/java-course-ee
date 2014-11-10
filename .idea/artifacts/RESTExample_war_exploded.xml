@@ -2,12 +2,15 @@
   <artifact type="exploded-war" name="RESTExample:war exploded">
     <output-path>$PROJECT_DIR$/WebServices/WEB-REST/RESTExample/target/RESTExample</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="RESTExample/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="RESTExample" />
         </element>
       </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/WebServices/WEB-REST/RESTExample/target/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="RESTExample/web/Web" />
     </root>
   </artifact>
 </component>

@@ -3,6 +3,9 @@
     <output-path>$PROJECT_DIR$/EJB/jms/ear/target/ejb-jms-ear</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="ejb-jms-ear/javaeeApplication/JavaEE" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/EJB/jms/ear/target/MANIFEST.MF" />
+      </element>
       <element id="archive" name="ejb-jms-ejb-1.0-SNAPSHOT.jar">
         <element id="artifact" artifact-name="ejb-jms-ejb:ejb exploded" />
       </element>
