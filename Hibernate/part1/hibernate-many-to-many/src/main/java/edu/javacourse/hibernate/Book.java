@@ -6,16 +6,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name = "jc_book",
-        uniqueConstraints = {
-                @UniqueConstraint(
-                        name = "my_uc_1",
-                        columnNames = {
-                                "book_id",
-                                "author_id"
-                        }
-                )
-        })
+@Table(name = "jc_book")
 public class Book implements Serializable {
 
     @Id

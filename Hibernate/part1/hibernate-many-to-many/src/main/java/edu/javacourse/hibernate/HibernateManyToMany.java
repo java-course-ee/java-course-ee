@@ -5,6 +5,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,47 +20,70 @@ public class HibernateManyToMany {
 
     private static final Logger log = LoggerFactory.getLogger(HibernateManyToMany.class);
 
-    public static void main(String[] args) {
-        HibernateManyToMany hs = new HibernateManyToMany();
+    private static SessionFactory sessionFactory;
+    private static ServiceRegistry serviceRegistry;
 
-        Session s = hs.getSessionFactory().getCurrentSession();
+    private static void init() {
+        Configuration configuration = new Configuration();
+        configuration.configure("hibernate.cfg.xml");
+        serviceRegistry = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();
+        sessionFactory = configuration.buildSessionFactory(serviceRegistry);
+    }
+
+    private static void destroy() {
+        StandardServiceRegistryBuilder.destroy(serviceRegistry);
+    }
+
+    public static void main(String[] args) {
+        init();
+
+        Session s = sessionFactory.getCurrentSession();
         s.beginTransaction();
+
+        Author oldAuthor = new Author();
+        oldAuthor.setAuthorName("New Author 0");
+        s.save(oldAuthor);
+
+        saveBook(oldAuthor, s);
 
         List<Book> bookList = s.createCriteria(Book.class).list();
         for (Book book : bookList) {
-            System.out.println();
-            System.out.println(book);
+            log.debug("");
+            log.debug("Book: {}", book);
             for (Author author : book.getAuthorList()) {
-                System.out.println(author);
+                log.debug("Author: {}", author);
             }
         }
 
-        Author oldAuthor = bookList.get(0).getAuthorList().iterator().next();
+        oldAuthor = bookList.get(0).getAuthorList().iterator().next();
         Book oldBook = bookList.get(0);
 
-        hs.saveBook(oldAuthor, s);
-        // hs.saveAuthor(oldBook, s);
+        saveBook(oldAuthor, s);
+        // saveAuthor(oldBook, s);
 
         // Если не закрыть - то вылетает ошибка
         s.getTransaction().commit();
-        s = hs.getSessionFactory().getCurrentSession();
+
+        s = sessionFactory.getCurrentSession();
         s.beginTransaction();
 
         bookList = s.createCriteria(Book.class).list();
         for (Book book : bookList) {
-            System.out.println();
-            System.out.println(book);
+            log.debug("");
+            log.debug("Book: {}", book);
             for (Author author : book.getAuthorList()) {
-                System.out.println(author);
+                log.debug("Author: {}", author);
             }
         }
 
         s.getTransaction().commit();
 
         log.debug("Transaction committed");
+
+        destroy();
     }
 
-    private void saveBook(Author oldAuthor, Session s) throws HibernateException {
+    private static void saveBook(Author oldAuthor, Session s) throws HibernateException {
         Book newBook = new Book();
         newBook.setBookName("New book 1");
 
@@ -105,7 +129,7 @@ public class HibernateManyToMany {
         Configuration configuration = new Configuration().configure();
         SessionFactory sessionFactory = configuration.buildSessionFactory(
                 new StandardServiceRegistryBuilder()
-                        .applySettings( configuration.getProperties() )
+                        .applySettings(configuration.getProperties())
                         .build()
         );
         return sessionFactory;
