@@ -22,10 +22,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="DojoExampleN01" />
-        <module name="DojoExampleN02" />
-        <module name="DojoExampleN03" />
-        <module name="DojoExampleN04" />
         <module name="ejb-ear-module" />
         <module name="ejb-ear2-module" />
         <module name="ejb-jms-ear" />

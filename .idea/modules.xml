@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Dojo/Dojo.iml" filepath="$PROJECT_DIR$/Dojo/Dojo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Dojo/DojoExampleN01/DojoExampleN01.iml" filepath="$PROJECT_DIR$/Dojo/DojoExampleN01/DojoExampleN01.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Dojo/DojoExampleN02/DojoExampleN02.iml" filepath="$PROJECT_DIR$/Dojo/DojoExampleN02/DojoExampleN02.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Dojo/DojoExampleN03/DojoExampleN03.iml" filepath="$PROJECT_DIR$/Dojo/DojoExampleN03/DojoExampleN03.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Dojo/DojoExampleN04/DojoExampleN04.iml" filepath="$PROJECT_DIR$/Dojo/DojoExampleN04/DojoExampleN04.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/EJB.iml" filepath="$PROJECT_DIR$/EJB/EJB.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/Hibernate.iml" filepath="$PROJECT_DIR$/Hibernate/Hibernate.iml" />
       <module fileurl="file://$PROJECT_DIR$/JQuery/JQuery.iml" filepath="$PROJECT_DIR$/JQuery/JQuery.iml" />

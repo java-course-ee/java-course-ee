@@ -10,7 +10,6 @@
     <name>JavaCourse EE Examples</name>
 
     <modules>
-        <module>Dojo</module>
         <module>EJB</module>
         <module>Hibernate</module>
         <module>JQuery</module>
