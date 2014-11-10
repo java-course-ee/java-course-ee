@@ -39,6 +39,9 @@
         <module name="hibernate-many-to-many" />
         <module name="hibernate-many-to-one" />
         <module name="hibernate-one-to-one" />
+        <module name="JQueryExampleN09" />
+        <module name="JQueryExampleN10" />
+        <module name="JQueryExampleN11" />
         <module name="log4j" />
         <module name="RESTExample" />
         <module name="simple-mybatis" />
@@ -70,6 +73,16 @@
       <module name="hibernate-many-to-many" target="1.7" />
       <module name="hibernate-many-to-one" target="1.7" />
       <module name="hibernate-one-to-one" target="1.7" />
+      <module name="JQueryExampleN02" target="1.6" />
+      <module name="JQueryExampleN03" target="1.6" />
+      <module name="JQueryExampleN04" target="1.6" />
+      <module name="JQueryExampleN05" target="1.6" />
+      <module name="JQueryExampleN06" target="1.6" />
+      <module name="JQueryExampleN07" target="1.5" />
+      <module name="JQueryExampleN08" target="1.6" />
+      <module name="JQueryExampleN09" target="1.7" />
+      <module name="JQueryExampleN10" target="1.7" />
+      <module name="JQueryExampleN11" target="1.7" />
       <module name="log4j" target="1.7" />
       <module name="RESTExample" target="1.7" />
       <module name="simple-mybatis" target="1.7" />

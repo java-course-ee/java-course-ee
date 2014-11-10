@@ -13,6 +13,7 @@
         <module>Dojo</module>
         <module>EJB</module>
         <module>Hibernate</module>
+        <module>JQuery</module>
         <module>Logging</module>
         <module>MyBatis</module>
         <module>Struts</module>

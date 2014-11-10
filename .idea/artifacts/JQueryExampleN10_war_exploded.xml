@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="JQueryExampleN10:war exploded">
+    <output-path>$PROJECT_DIR$/JQuery/JQueryExampleN10/target/JQueryExampleN10-1.0</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JQueryExampleN10" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="C:\JavaCourse\ee\examples\JQuery\JQueryExampleN10\target/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="JQueryExampleN10/web/Web" />
+    </root>
+  </artifact>
+</component>
