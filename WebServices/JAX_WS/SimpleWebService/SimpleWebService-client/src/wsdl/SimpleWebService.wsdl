@@ -7,7 +7,7 @@
     <types>
         <xsd:schema>
             <xsd:import namespace="http://test.gs.ru/"
-                        schemaLocation="http://gsru0014:8080/SimpleWebServiceService/SimpleWebService?xsd=1"/>
+                        schemaLocation="SimpleWebService.xsd_1.xsd"/>
         </xsd:schema>
     </types>
     <message name="sayHello">

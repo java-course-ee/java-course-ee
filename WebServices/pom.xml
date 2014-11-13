@@ -10,6 +10,7 @@
     <name>WebServices</name>
 
     <modules>
+        <module>JAX_WS/SimpleWebService</module>
         <module>WEB-REST/RESTExample</module>
     </modules>
 

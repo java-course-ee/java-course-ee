@@ -2,10 +2,6 @@
 <project version="4">
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Dojo/DojoExampleN01" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Dojo/DojoExampleN02" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Dojo/DojoExampleN03" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Dojo/DojoExampleN04" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear-module" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear2-module" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-lib-module" charset="UTF-8" />
@@ -22,9 +18,6 @@
     <file url="file://$PROJECT_DIR$/JQuery/JQueryExampleN03" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/JQuery/JQueryExampleN04" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/JQuery/JQueryExampleN05" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/JQuery/JQueryExampleN06" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/JQuery/JQueryExampleN07" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/JQuery/JQueryExampleN08" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/JQuery/JQueryExampleN09" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/JQuery/JQueryExampleN10" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/JQuery/JQueryExampleN11" charset="UTF-8" />
@@ -37,6 +30,10 @@
     <file url="file://$PROJECT_DIR$/Vaadin/VaadinExampleN02" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Vaadin/VaadinExampleN03" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Vaadin/VaadinExampleN04" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ear" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ejb" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebServices/WEB-REST/RESTExample" charset="UTF-8" />
   </component>
 </project>
