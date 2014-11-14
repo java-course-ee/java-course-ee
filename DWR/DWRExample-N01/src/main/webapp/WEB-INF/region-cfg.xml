@@ -4,11 +4,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
 
 
-    <bean name="regionDAO" class="test.RegionDAO">
-        <property name="factory" ref="sessionFactory" />
+    <bean name="regionDAO" class="edu.javacourse.dwr.dao.RegionDAO">
+        <property name="sessionFactory" ref="sessionFactory" />
     </bean>
     
-    <bean name="regionFacade" class="test.RegionFacade">
+    <bean name="regionFacade" class="edu.javacourse.dwr.facade.RegionFacade">
         <property name="regionDAO" ref="regionDAO" />
     </bean>
     

@@ -4,7 +4,7 @@
     "http://getahead.org/dwr/dwr20.dtd">
 <dwr>
     <allow>
-        <convert converter="bean" match="test.*" />
+        <convert converter="bean" match="edu.javacourse.dwr.view.RegionView" />
         
         <create creator="new" javascript="JDate">
             <param name="class" value="java.util.Date"/>
@@ -14,7 +14,7 @@
         </create>
 
         <!-- Exceptions -->
-        <convert converter="exception" match="test.exception.*"/>
+        <convert converter="exception" match="edu.javacourse.dwr.exception.RegionException"/>
         <convert converter="exception" match="java.lang.Exception">
             <param name='include' value='message,lineNumber,stackTrace,detailMessage,cause'/>
         </convert>

@@ -10,6 +10,7 @@
     <file type="javaeeApplication" url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear2-module" />
     <file type="javaeeApplication" url="file://$PROJECT_DIR$/EJB/jms/ear" />
     <file type="javaeeApplication" url="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ear" />
+    <file type="web" url="file://$PROJECT_DIR$/DWR/DWRExample-N01" />
     <file type="web" url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war-module" />
     <file type="web" url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war2-module" />
     <file type="web" url="file://$PROJECT_DIR$/EJB/jms/servlet" />

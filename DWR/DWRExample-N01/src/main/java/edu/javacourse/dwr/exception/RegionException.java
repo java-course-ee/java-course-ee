@@ -1,4 +1,4 @@
-package test.exception;
+package edu.javacourse.dwr.exception;
 
 public class RegionException extends Exception {
 
