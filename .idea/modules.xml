@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/DWR/DWR.iml" filepath="$PROJECT_DIR$/DWR/DWR.iml" />
       <module fileurl="file://$PROJECT_DIR$/DWR/DWRExample-N01/DWRExample-N01.iml" filepath="$PROJECT_DIR$/DWR/DWRExample-N01/DWRExample-N01.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/EJB.iml" filepath="$PROJECT_DIR$/EJB/EJB.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/Hibernate.iml" filepath="$PROJECT_DIR$/Hibernate/Hibernate.iml" />
@@ -25,7 +26,6 @@
       <module fileurl="file://$PROJECT_DIR$/Vaadin/VaadinExampleN03/VaadinExampleN03.iml" filepath="$PROJECT_DIR$/Vaadin/VaadinExampleN03/VaadinExampleN03.iml" />
       <module fileurl="file://$PROJECT_DIR$/Vaadin/VaadinExampleN04/VaadinExampleN04.iml" filepath="$PROJECT_DIR$/Vaadin/VaadinExampleN04/VaadinExampleN04.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebServices/WebServices.iml" filepath="$PROJECT_DIR$/WebServices/WebServices.iml" />
-      <module fileurl="file://$PROJECT_DIR$/DWR/dwr.iml" filepath="$PROJECT_DIR$/DWR/dwr.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/jms/ejb-builder.iml" filepath="$PROJECT_DIR$/EJB/jms/ejb-builder.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear-module/ejb-ear-module.iml" filepath="$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear-module/ejb-ear-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear2-module/ejb-ear2-module.iml" filepath="$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear2-module/ejb-ear2-module.iml" />

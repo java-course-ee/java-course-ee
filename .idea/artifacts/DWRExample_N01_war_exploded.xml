@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="DWRExample-N01:war exploded">
-    <output-path>$PROJECT_DIR$/DWR/DWRExample-N01/target/DWRExample-N01</output-path>
+    <output-path>$PROJECT_DIR$/DWR/DWRExample-N01/target/DWRExample-N01.war</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
