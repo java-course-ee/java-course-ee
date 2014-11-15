@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "jc_region")
+@Table(name = "jc_region_standalone")
 public class Region implements Serializable {
 
     @Id

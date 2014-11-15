@@ -21,7 +21,9 @@
     </facet>
     <facet type="hibernate" name="Hibernate">
       <configuration>
-        <datasource-map />
+        <datasource-map>
+          <unit-entry name="noname-springDatabase.xml@912" value="e056932d-3f6d-496d-81e9-deffefbb3958" />
+        </datasource-map>
         <naming-strategy-map />
       </configuration>
     </facet>

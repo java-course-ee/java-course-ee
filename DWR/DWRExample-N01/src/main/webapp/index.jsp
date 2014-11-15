@@ -21,15 +21,18 @@
     <script type='text/javascript' src='dwr/engine.js'></script>
     <script type="text/javascript">
         function appendRegion(region) {
-            var row = $('<tr>' +
+            var row = $('<tr id="row-' + region.regionId + '">' +
             '<td><span id="regionId">' + region.regionId + '</span></td>' +
             '<td><span id="regionName">' + region.regionName + '</span></td>' +
-            '<td><span id="regionDelete">' +
-            '<a id="regionDeleteLink" href="#">delete</a>' +
-            '</span>' +
-            '</td>' +
-            '</tr>');
+            '<td><span id="regionDelete"><a id="regionDeleteLink" href="#">delete</a></span></td>' +
+            '</tr>').hide();
+
+            $(row).find('#regionDeleteLink').click(function () {
+                del(region.regionId);
+            });
+
             $('#regionbody').append(row);
+            $(row).fadeIn(200);
         }
 
         function add() {
@@ -37,7 +40,6 @@
                 regionId: null,
                 regionName: $('#newRegionName').val()
             };
-
             RegionFacade.addRegion(newRegionData, {
                         callback: appendRegion
                     }
@@ -49,8 +51,7 @@
                 callback: function (list) {
                     $('#regionbody tr').remove();
                     for (var i = 0; i < list.length; i++) {
-                        var region = list[i];
-                        appendRegion(region)
+                        appendRegion(list[i])
                     }
                 }
             });
@@ -59,7 +60,9 @@
         function del(id) {
             RegionFacade.deleteRegion(id, {
                 callback: function () {
-                    $(id).remove();
+                    $('#row-' + id).fadeOut(200, function () {
+                        $(this).remove();
+                    });
                 },
                 errorHandler: function (errorString, exception) {
                     var message;
