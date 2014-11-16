@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.vaadin:vaadin-sass-compiler:0.9.10">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin-sass-compiler/0.9.10/vaadin-sass-compiler-0.9.10.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin-sass-compiler/0.9.10/vaadin-sass-compiler-0.9.10-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin-sass-compiler/0.9.10/vaadin-sass-compiler-0.9.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
