@@ -13,11 +13,10 @@ public class MyWindow extends UI {
     private HorizontalLayout hLayout = new HorizontalLayout();
     private TextField textField = new TextField("Имя");
     private Button button = new Button("OK");
+    private Window window = new Window("Test Vaadin window");
 
     @Override
     protected void init(VaadinRequest vaadinRequest) {
-        button.addClickListener(new MyButtonListener());
-
         hLayout.setWidth(400, Sizeable.Unit.PIXELS);
         hLayout.setSpacing(true);
 
@@ -27,14 +26,28 @@ public class MyWindow extends UI {
 
         hLayout.addComponent(button);
 
-        setContent(hLayout);
+        hLayout.setComponentAlignment(textField, Alignment.BOTTOM_LEFT);
+        hLayout.setComponentAlignment(button, Alignment.BOTTOM_RIGHT);
+
+        hLayout.setMargin(true);
+
+        window.setWidth(420, Unit.PIXELS);
+        window.setHeight(200, Unit.PIXELS);
+        window.setContent(hLayout);
+
+        window.setPositionX(500);
+        window.setPositionY(500);
+
+        window.center();
+
+        addWindow(window);
     }
 
     class MyButtonListener implements Button.ClickListener {
 
         @Override
         public void buttonClick(Button.ClickEvent event) {
-            Notification.show(textField.getValue().toString());
+            Notification.show("Hello " + textField.getValue().toString(), Notification.Type.TRAY_NOTIFICATION);
         }
 
     }
