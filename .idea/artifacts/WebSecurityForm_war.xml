@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="WebSecurityForm:war">
-    <output-path>$PROJECT_DIR$/Security/WebSecurityForm/target</output-path>
-    <root id="archive" name="WebSecurityForm.war">
-      <element id="artifact" artifact-name="WebSecurityForm:war exploded" />
-    </root>
-  </artifact>
-</component>

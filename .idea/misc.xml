@@ -37,6 +37,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/Security/pom.xml" />
         <option value="$PROJECT_DIR$/Vaadin/pom.xml" />
       </set>
     </option>

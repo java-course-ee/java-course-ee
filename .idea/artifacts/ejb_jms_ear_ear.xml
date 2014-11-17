@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="ear" name="ejb-jms-ear:ear">
-    <output-path>$PROJECT_DIR$/EJB/jms/ear/target</output-path>
-    <root id="archive" name="ejb-jms-ear.ear">
-      <element id="artifact" artifact-name="ejb-jms-ear:ear exploded" />
-    </root>
-  </artifact>
-</component>

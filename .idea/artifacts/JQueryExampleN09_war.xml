@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="JQueryExampleN09:war">
-    <output-path>$PROJECT_DIR$/JQuery/JQueryExampleN09/target</output-path>
-    <root id="archive" name="JQueryExampleN09.war">
-      <element id="artifact" artifact-name="JQueryExampleN09:war exploded" />
-    </root>
-  </artifact>
-</component>

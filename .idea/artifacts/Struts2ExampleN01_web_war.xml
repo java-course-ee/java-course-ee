@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="Struts2ExampleN01-web:war">
-    <output-path>$PROJECT_DIR$/Struts/Struts2ExampleN01-web/target</output-path>
-    <root id="archive" name="Struts2ExampleN01-web.war">
-      <element id="artifact" artifact-name="Struts2ExampleN01-web:war exploded" />
-    </root>
-  </artifact>
-</component>

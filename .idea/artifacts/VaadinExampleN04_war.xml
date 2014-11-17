@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="VaadinExampleN04:war">
-    <output-path>$PROJECT_DIR$/Vaadin/VaadinExampleN04/target</output-path>
-    <root id="archive" name="VaadinExampleN04.war">
-      <element id="artifact" artifact-name="VaadinExampleN04:war exploded" />
-    </root>
-  </artifact>
-</component>

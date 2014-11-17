@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="WebSecurity:war">
-    <output-path>$PROJECT_DIR$/Security/WebSecurity/target</output-path>
-    <root id="archive" name="WebSecurity.war">
-      <element id="artifact" artifact-name="WebSecurity:war exploded" />
-    </root>
-  </artifact>
-</component>

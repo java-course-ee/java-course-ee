@@ -1,0 +1,30 @@
+0. hosts file:
+127.0.0.1   wildfly.local
+
+1. /standalone/configuration/standalone.xml:
+<security-realm name="SSLCertRealm">
+    <server-identities>
+        <ssl protocol="TLSv1">
+            <keystore path="SSLCertStore.jks" relative-to="jboss.server.config.dir" keystore-password="secret" alias="wildfly.local" key-password="secret"/>
+        </ssl>
+    </server-identities>
+</security-realm>
+
+2. /standalone/configuration:
+keytool -genkey -alias wildfly.local -keyalg RSA -keystore SSLCertStore.jks -keysize 2048
+secret
+secret
+wildfly.local
+<enter> 5 times
+CN=wildfly.local, OU=Unknown, O=Unknown, L=Unknown, ST=Unknown, C=Unknown
+yes
+<enter>
+
+3. Web admin:
+Configuration -> Web -> HTTP -> HTTPS:
+Add
+Name: default-https
+Socket binding: https
+Security realm: SSLCertRealm
+
+4. Enjoy HTTPS on 8443 port

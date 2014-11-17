@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="ejb-war2-module:war">
-    <output-path>$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war2-module/target</output-path>
-    <root id="archive" name="ejb-war2-module.war">
-      <element id="artifact" artifact-name="ejb-war2-module:war exploded" />
-    </root>
-  </artifact>
-</component>

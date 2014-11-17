@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="ejb-jar" name="SimpleWebService-ejb:ejb">
-    <output-path>$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ejb/target</output-path>
-    <root id="archive" name="SimpleWebService-ejb.jar">
-      <element id="artifact" artifact-name="SimpleWebService-ejb:ejb exploded" />
-    </root>
-  </artifact>
-</component>
