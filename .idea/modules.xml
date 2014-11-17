@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/JQuery/JQueryExampleN11/JQueryExampleN11.iml" filepath="$PROJECT_DIR$/JQuery/JQueryExampleN11/JQueryExampleN11.iml" />
       <module fileurl="file://$PROJECT_DIR$/Logging/Logging.iml" filepath="$PROJECT_DIR$/Logging/Logging.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebServices/WEB-REST/RESTExample/RESTExample.iml" filepath="$PROJECT_DIR$/WebServices/WEB-REST/RESTExample/RESTExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Security/Security.iml" filepath="$PROJECT_DIR$/Security/Security.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService.iml" filepath="$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-client/SimpleWebService-client.iml" filepath="$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-client/SimpleWebService-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ear/SimpleWebService-ear.iml" filepath="$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ear/SimpleWebService-ear.iml" />
@@ -25,6 +26,8 @@
       <module fileurl="file://$PROJECT_DIR$/Vaadin/VaadinExampleN02/VaadinExampleN02.iml" filepath="$PROJECT_DIR$/Vaadin/VaadinExampleN02/VaadinExampleN02.iml" />
       <module fileurl="file://$PROJECT_DIR$/Vaadin/VaadinExampleN03/VaadinExampleN03.iml" filepath="$PROJECT_DIR$/Vaadin/VaadinExampleN03/VaadinExampleN03.iml" />
       <module fileurl="file://$PROJECT_DIR$/Vaadin/VaadinExampleN04/VaadinExampleN04.iml" filepath="$PROJECT_DIR$/Vaadin/VaadinExampleN04/VaadinExampleN04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Security/WebSecurity/WebSecurity.iml" filepath="$PROJECT_DIR$/Security/WebSecurity/WebSecurity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Security/WebSecurityForm/WebSecurityForm.iml" filepath="$PROJECT_DIR$/Security/WebSecurityForm/WebSecurityForm.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebServices/WebServices.iml" filepath="$PROJECT_DIR$/WebServices/WebServices.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/jms/ejb-builder.iml" filepath="$PROJECT_DIR$/EJB/jms/ejb-builder.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear-module/ejb-ear-module.iml" filepath="$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear-module/ejb-ear-module.iml" />

@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="WebSecurityForm:war exploded">
+    <output-path>$PROJECT_DIR$/Security/WebSecurityForm/target/WebSecurityForm.war</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="WebSecurityForm" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/Security/WebSecurityForm/target/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="WebSecurityForm/web/Web" />
+    </root>
+  </artifact>
+</component>
