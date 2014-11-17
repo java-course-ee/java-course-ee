@@ -3,9 +3,9 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Boss</title>
+    <title>Forbidden!</title>
 </head>
 <body>
-<h1>Hello <%=request.getUserPrincipal() != null ? request.getUserPrincipal().getName() : "Guest" %></h1>
+<h1>Forbidden!</h1>
 </body>
 </html>

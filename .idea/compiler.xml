@@ -54,6 +54,7 @@
         <module name="VaadinExampleN04" />
         <module name="VelocityExample-N01" />
         <module name="WebSecurity" />
+        <module name="WebSecurityForm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -102,6 +103,7 @@
       <module name="VaadinExampleN04" target="1.7" />
       <module name="VelocityExample-N01" target="1.7" />
       <module name="WebSecurity" target="1.7" />
+      <module name="WebSecurityForm" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

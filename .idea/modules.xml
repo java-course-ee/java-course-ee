@@ -29,6 +29,7 @@
       <module fileurl="file://$PROJECT_DIR$/Velocity/GS_Velocity_1/VelocityExample-N01.iml" filepath="$PROJECT_DIR$/Velocity/GS_Velocity_1/VelocityExample-N01.iml" />
       <module fileurl="file://$PROJECT_DIR$/Security/WebSecurity/WebSecurity.iml" filepath="$PROJECT_DIR$/Security/WebSecurity/WebSecurity.iml" />
       <module fileurl="file://$PROJECT_DIR$/Security/WebSecurity/WebSecurity.iml" filepath="$PROJECT_DIR$/Security/WebSecurity/WebSecurity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Security/WebSecurityForm/WebSecurityForm.iml" filepath="$PROJECT_DIR$/Security/WebSecurityForm/WebSecurityForm.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebServices/WebServices.iml" filepath="$PROJECT_DIR$/WebServices/WebServices.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/jms/ejb-builder.iml" filepath="$PROJECT_DIR$/EJB/jms/ejb-builder.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear-module/ejb-ear-module.iml" filepath="$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear-module/ejb-ear-module.iml" />
