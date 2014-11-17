@@ -19,6 +19,7 @@
         <module>Security</module>
         <module>Struts</module>
         <module>Vaadin</module>
+        <module>Velocity</module>
         <module>WebServices</module>
     </modules>
 

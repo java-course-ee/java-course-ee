@@ -19,7 +19,7 @@ public class Test2 {
 
     public Test2() throws Exception {
         //init
-        Velocity.init("src/main/java/velocity.properties");
+        Velocity.init("Velocity/GS_Velocity_1/src/main/java/velocity.properties");
         // get Template
         Template template = Velocity.getTemplate("Test2.vm");
         // getContext

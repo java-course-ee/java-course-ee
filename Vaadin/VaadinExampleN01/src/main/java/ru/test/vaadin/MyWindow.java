@@ -35,9 +35,6 @@ public class MyWindow extends UI {
         window.setHeight(200, Unit.PIXELS);
         window.setContent(hLayout);
 
-        window.setPositionX(500);
-        window.setPositionY(500);
-
         window.center();
 
         addWindow(window);

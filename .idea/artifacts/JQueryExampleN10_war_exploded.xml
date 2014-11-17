@@ -8,7 +8,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/JQuery/JQueryExampleN10/target/MANIFEST.MF" />
+        <element id="file-copy" path="C:\JavaCourse\ee\examples\JQuery\JQueryExampleN10\target/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="JQueryExampleN10/web/Web" />
     </root>

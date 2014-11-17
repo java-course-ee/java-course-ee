@@ -35,7 +35,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/DWR/DWRExample-N01/target/MANIFEST.MF" />
+        <element id="file-copy" path="C:\JavaCourse\ee\examples\DWR\DWRExample-N01\target/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="DWRExample-N01/web/Web" />
     </root>

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
     <login-config>
         <auth-method>BASIC</auth-method>
         <realm-name>ApplicationRealm</realm-name>
     </login-config>
+
     <security-role>
         <role-name>admin</role-name>
     </security-role>
@@ -14,6 +16,7 @@
     <security-role>
         <role-name>manager</role-name>
     </security-role>
+
     <security-constraint>
         <web-resource-collection>
             <web-resource-name>admin</web-resource-name>
@@ -44,13 +47,16 @@
             <role-name>manager</role-name>
         </auth-constraint>
     </security-constraint>
+
     <error-page>
         <error-code>403</error-code>
         <location>/public/forbidden.jsp</location>
     </error-page>
+
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
+
 </web-app>

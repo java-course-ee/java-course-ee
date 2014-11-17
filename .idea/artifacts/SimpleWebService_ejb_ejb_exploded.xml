@@ -4,7 +4,7 @@
     <root id="root">
       <element id="javaee-facet-resources" facet="SimpleWebService-ejb/ejb/EJB" />
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ejb/target/MANIFEST.MF" />
+        <element id="file-copy" path="C:\JavaCourse\ee\examples\WebServices\JAX_WS\SimpleWebService\SimpleWebService-ejb\target/MANIFEST.MF" />
       </element>
       <element id="module-output" name="SimpleWebService-ejb" />
     </root>

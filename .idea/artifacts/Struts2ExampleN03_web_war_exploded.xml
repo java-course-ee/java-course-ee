@@ -38,7 +38,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/Struts/Struts2ExampleN03-web/target/MANIFEST.MF" />
+        <element id="file-copy" path="C:\JavaCourse\ee\examples\Struts\Struts2ExampleN03-web\target/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="Struts2ExampleN03-web/web/Web" />
     </root>

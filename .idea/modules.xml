@@ -26,6 +26,8 @@
       <module fileurl="file://$PROJECT_DIR$/Vaadin/VaadinExampleN02/VaadinExampleN02.iml" filepath="$PROJECT_DIR$/Vaadin/VaadinExampleN02/VaadinExampleN02.iml" />
       <module fileurl="file://$PROJECT_DIR$/Vaadin/VaadinExampleN03/VaadinExampleN03.iml" filepath="$PROJECT_DIR$/Vaadin/VaadinExampleN03/VaadinExampleN03.iml" />
       <module fileurl="file://$PROJECT_DIR$/Vaadin/VaadinExampleN04/VaadinExampleN04.iml" filepath="$PROJECT_DIR$/Vaadin/VaadinExampleN04/VaadinExampleN04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Velocity/GS_Velocity_1/VelocityExample-N01.iml" filepath="$PROJECT_DIR$/Velocity/GS_Velocity_1/VelocityExample-N01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Security/WebSecurity/WebSecurity.iml" filepath="$PROJECT_DIR$/Security/WebSecurity/WebSecurity.iml" />
       <module fileurl="file://$PROJECT_DIR$/Security/WebSecurity/WebSecurity.iml" filepath="$PROJECT_DIR$/Security/WebSecurity/WebSecurity.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebServices/WebServices.iml" filepath="$PROJECT_DIR$/WebServices/WebServices.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/jms/ejb-builder.iml" filepath="$PROJECT_DIR$/EJB/jms/ejb-builder.iml" />
@@ -45,7 +47,9 @@
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-one-to-one/hibernate-one-to-one.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-one-to-one/hibernate-one-to-one.iml" />
       <module fileurl="file://$PROJECT_DIR$/Logging/log4j/log4j.iml" filepath="$PROJECT_DIR$/Logging/log4j/log4j.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis/mybatis.iml" filepath="$PROJECT_DIR$/MyBatis/mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Security/security.iml" filepath="$PROJECT_DIR$/Security/security.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis/SimpleMyBatis/simple-mybatis.iml" filepath="$PROJECT_DIR$/MyBatis/SimpleMyBatis/simple-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Velocity/velocity.iml" filepath="$PROJECT_DIR$/Velocity/velocity.iml" />
     </modules>
   </component>
 </project>

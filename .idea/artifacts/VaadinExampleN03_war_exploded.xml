@@ -11,7 +11,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/Vaadin/VaadinExampleN03/target/MANIFEST.MF" />
+        <element id="file-copy" path="C:\JavaCourse\ee\examples\Vaadin\VaadinExampleN03\target/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="VaadinExampleN03/web/Web" />
     </root>
