@@ -52,6 +52,7 @@
         <module name="VaadinExampleN02" />
         <module name="VaadinExampleN03" />
         <module name="VaadinExampleN04" />
+        <module name="WebSecurity" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -98,6 +99,7 @@
       <module name="VaadinExampleN02" target="1.7" />
       <module name="VaadinExampleN03" target="1.7" />
       <module name="VaadinExampleN04" target="1.7" />
+      <module name="WebSecurity" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
