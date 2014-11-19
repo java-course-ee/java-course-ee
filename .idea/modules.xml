@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Security/ClientAuthentication/ClientAuthentication.iml" filepath="$PROJECT_DIR$/Security/ClientAuthentication/ClientAuthentication.iml" />
       <module fileurl="file://$PROJECT_DIR$/DWR/DWR.iml" filepath="$PROJECT_DIR$/DWR/DWR.iml" />
       <module fileurl="file://$PROJECT_DIR$/DWR/DWRExample-N01/DWRExample-N01.iml" filepath="$PROJECT_DIR$/DWR/DWRExample-N01/DWRExample-N01.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/EJB.iml" filepath="$PROJECT_DIR$/EJB/EJB.iml" />
@@ -13,7 +14,6 @@
       <module fileurl="file://$PROJECT_DIR$/Logging/Logging.iml" filepath="$PROJECT_DIR$/Logging/Logging.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis/MyBatis.iml" filepath="$PROJECT_DIR$/MyBatis/MyBatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebServices/WEB-REST/RESTExample/RESTExample.iml" filepath="$PROJECT_DIR$/WebServices/WEB-REST/RESTExample/RESTExample.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Security/Security.iml" filepath="$PROJECT_DIR$/Security/Security.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService.iml" filepath="$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-client/SimpleWebService-client.iml" filepath="$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-client/SimpleWebService-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ear/SimpleWebService-ear.iml" filepath="$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ear/SimpleWebService-ear.iml" />

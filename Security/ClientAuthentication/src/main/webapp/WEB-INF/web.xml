@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+    <security-constraint>
+        <display-name>RestrictedArea</display-name>
+        <web-resource-collection>
+            <web-resource-name>AdminZone</web-resource-name>
+            <url-pattern>/admin/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>admin-role</role-name>
+        </auth-constraint>
+        <user-data-constraint>
+            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
+
+    <login-config>
+        <auth-method>CLIENT-CERT</auth-method>
+        <realm-name>client_cert_domain</realm-name>
+    </login-config>
+
+    <security-role>
+        <description/>
+        <role-name>admin-role</role-name>
+    </security-role>
+
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
-    <security-constraint>
-        <display-name>RestrictedArea</display-name>
-        <web-resource-collection>
-            <web-resource-name>AdminZone</web-resource-name>
-            <description/>
-            <url-pattern>/admin/*</url-pattern>
-        </web-resource-collection>
-        <auth-constraint>
-            <description/>
-            <role-name>admin-role</role-name>
-        </auth-constraint>
-        <user-data-constraint>
-            <description/>
-            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
-        </user-data-constraint>
-    </security-constraint>
-    <login-config>
-        <auth-method>CLIENT-CERT</auth-method>
-        <realm-name>certificate</realm-name>
-    </login-config>
-    <security-role>
-        <description/>
-        <role-name>admin-role</role-name>
-    </security-role>
+
 </web-app>

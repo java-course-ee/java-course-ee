@@ -6,11 +6,7 @@
 echo "01" > serial
 touch index.txt
 
-
-
 cd ca
-
-
 
 # CA
 
@@ -27,11 +23,7 @@ openssl pkcs12 -in ca_keystore.p12 -nocerts -nodes > ca_pk.pem
 # Export CA Cert
 openssl pkcs12 -in ca_keystore.p12 -nokeys -nodes > ca.pem
 
-
-
 cd ../client
-
-
 
 # Client
 
@@ -42,9 +34,13 @@ CN=Bob, OU=GS Clients, O=GS, ST=SPB, C=RU
 # Create Certificate Sign Request
 keytool -certreq -alias bob -file bob_csr.pem -keypass Passw0rd -keystore client_keystore.jks -storepass Passw0rd
 
+cd ..
+
 # Sign Bob's Cert with CA's Cert
 # openssl config is from openssl.cnf file
 openssl ca -config ./openssl.cnf -in ./client/bob_csr.pem -out ./client/bob_signed.pem
+
+cd client
 
 # Cleanup signed Cert
 openssl x509 -in bob_signed.pem -out bob_signed_x509.pem -outform PEM
@@ -55,8 +51,10 @@ keytool -import -trustcacerts -alias myca -file ../ca/ca.pem -keystore client_ke
 # Import Signed Bob's cert into Client keystore
 keytool -import -alias bob -file bob_signed_x509.pem -keystore client_keystore.jks -storetype JKS -storepass Passw0rd
 
+cd ../ca
+
 # Add CA Cert to Server's cacerts
-keytool -import -v -trustcacerts -alias myca -file ca.pem -keystore /opt/glassfish4/glassfish/domains/domain1/config/cacerts.jks -storepass changeit
+keytool -import -v -trustcacerts -alias myca -file ca.pem -keystore /opt/java/wildfly-8.1.0.Final/standalone/configuration/SSLCertStore.jks -storepass secret
 
 # Create PKCS12 keystore and import Client keystore into it
 keytool -importkeystore -srckeystore client_keystore.jks -destkeystore client_keystore.p12 -srcstoretype JKS -deststoretype PKCS12 -srcstorepass Passw0rd -deststorepass Passw0rd

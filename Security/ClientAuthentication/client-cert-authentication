@@ -1,0 +1,32 @@
+standalone.xml:
+
+<security-realm name="SSLCertRealm">
+    <server-identities>
+        <ssl protocol="TLSv1">
+            <keystore path="SSLCertStore.jks" relative-to="jboss.server.config.dir" keystore-password="secret" alias="wildfly.local" key-password="secret"/>
+        </ssl>
+    </server-identities>
+    <authentication>
+        <truststore path="SSLCertStore.jks" relative-to="jboss.server.config.dir" keystore-password="secret"/>
+        <local default-user="$local"/>
+        <properties path="application-users.properties" relative-to="jboss.server.config.dir"/>
+    </authentication>
+</security-realm>
+
+ <security-domain name="client_cert_domain" cache-type="default">
+    <authentication>
+        <login-module code="CertificateRoles" flag="required">
+            <module-option name="verifier" value="org.jboss.security.auth.certs.AnyCertVerifier"/>
+            <module-option name="securityDomain" value="client_cert_domain"/>
+            <module-option name="rolesProperties" value="file:${jboss.server.config.dir}/application-roles.properties"/>
+        </login-module>
+    </authentication>
+    <jsse keystore-password="secret" keystore-url="file:${jboss.server.config.dir}/SSLCertStore.jks" truststore-password="secret" truststore-url="file:${jboss.server.config.dir}/SSLCertStore.jks" client-auth="true"/>
+</security-domain>
+
+<https-listener name="default-https" socket-binding="https" security-realm="SSLCertRealm" verify-client="REQUESTED"/>
+
+
+application-roles.properties:
+
+CN\=Bob,\ OU\=GS\ Clients,\ O\=GS,\ ST\=SPB,\ C\=RU=admin-role

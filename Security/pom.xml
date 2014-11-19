@@ -10,6 +10,7 @@
     <name>Security</name>
 
     <modules>
+        <module>ClientAuthentication</module>
         <module>WebSecurity</module>
         <module>WebSecurityForm</module>
     </modules>

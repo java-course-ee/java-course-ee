@@ -22,6 +22,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="ClientAuthentication" />
         <module name="DWRExample-N01" />
         <module name="ejb-ear-module" />
         <module name="ejb-ear2-module" />
@@ -58,6 +59,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ClientAuthentication" target="1.7" />
       <module name="DojoExampleN01" target="1.7" />
       <module name="DojoExampleN02" target="1.7" />
       <module name="DojoExampleN03" target="1.7" />
