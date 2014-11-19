@@ -43,6 +43,7 @@
         <module name="log4j" />
         <module name="RESTExample" />
         <module name="simple-mybatis" />
+        <module name="SimplePortlet" />
         <module name="SimpleWebService-client" />
         <module name="SimpleWebService-ear" />
         <module name="SimpleWebService-ejb" />
@@ -92,6 +93,7 @@
       <module name="log4j" target="1.7" />
       <module name="RESTExample" target="1.7" />
       <module name="simple-mybatis" target="1.7" />
+      <module name="SimplePortlet" target="1.7" />
       <module name="SimpleWebService" target="1.7" />
       <module name="SimpleWebService-client" target="1.7" />
       <module name="SimpleWebService-ear" target="1.7" />
