@@ -2,6 +2,12 @@
 # Use Win analogs if you use MS Windows
 
 ./
+# Cleanup
+rm -f index.txt.attr index.txt.old serial.old index.txt
+rm -f ./ca/*
+rm -f ./client/*
+rm -f ./client/new/*
+
 # Create some files for openssl
 echo "01" > serial
 touch index.txt
@@ -11,7 +17,7 @@ cd ca
 # CA
 
 # Generate CA Cert
-keytool -genkey -alias myca -keyalg RSA -keypass Passw0rd -storepass Passw0rd -keystore ca_keystore.jks
+keytool -genkey -alias myca -keyalg RSA -keypass Passw0rd -storepass Passw0rd -keystore ca_keystore.jks -validity 10950
 CN=GS Authority, OU=GS Tech, O=GS, L=SPB, ST=SPB, C=RU
 
 # Create PKCS12 keystore and import CA there 
@@ -28,8 +34,8 @@ cd ../client
 # Client
 
 # Generate Client Cert
-keytool -genkey -alias bob -keyalg RSA -keypass Passw0rd -storepass Passw0rd -keystore client_keystore.jks
-CN=Bob, OU=GS Clients, O=GS, ST=SPB, C=RU
+keytool -genkey -alias bob -keyalg RSA -keypass Passw0rd -storepass Passw0rd -keystore client_keystore.jks -validity 10949
+CN=Bob, OU=GS Clients, O=GS, L=SPB, ST=SPB, C=RU
 
 # Create Certificate Sign Request
 keytool -certreq -alias bob -file bob_csr.pem -keypass Passw0rd -keystore client_keystore.jks -storepass Passw0rd
@@ -55,6 +61,8 @@ cd ../ca
 
 # Add CA Cert to Server's cacerts
 keytool -import -v -trustcacerts -alias myca -file ca.pem -keystore /opt/java/wildfly-8.1.0.Final/standalone/configuration/SSLCertStore.jks -storepass secret
+
+cd ../client
 
 # Create PKCS12 keystore and import Client keystore into it
 keytool -importkeystore -srckeystore client_keystore.jks -destkeystore client_keystore.p12 -srcstoretype JKS -deststoretype PKCS12 -srcstorepass Passw0rd -deststorepass Passw0rd
