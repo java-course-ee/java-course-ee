@@ -32,6 +32,7 @@
         <module name="ejb-lib-module" />
         <module name="ejb-war-module" />
         <module name="ejb-war2-module" />
+        <module name="GS_JSF_2" />
         <module name="hibernate-config-annotations" />
         <module name="hibernate-config-xml-mapping-annotations" />
         <module name="hibernate-many-to-many" />
@@ -40,6 +41,17 @@
         <module name="JQueryExampleN09" />
         <module name="JQueryExampleN10" />
         <module name="JQueryExampleN11" />
+        <module name="JSF1" />
+        <module name="JSF10" />
+        <module name="JSF2" />
+        <module name="JSF3" />
+        <module name="JSF4" />
+        <module name="JSF5" />
+        <module name="JSF6" />
+        <module name="JSF7" />
+        <module name="JSF8" />
+        <module name="JSF9" />
+        <module name="JSF_1" />
         <module name="log4j" />
         <module name="RESTExample" />
         <module name="simple-mybatis" />
@@ -75,6 +87,7 @@
       <module name="ejb-war-module" target="1.7" />
       <module name="ejb-war2-module" target="1.7" />
       <module name="examples" target="1.7" />
+      <module name="GS_JSF_2" target="1.7" />
       <module name="hibernate-config-annotations" target="1.7" />
       <module name="hibernate-config-xml-mapping-annotations" target="1.7" />
       <module name="hibernate-many-to-many" target="1.7" />
@@ -90,6 +103,16 @@
       <module name="JQueryExampleN09" target="1.7" />
       <module name="JQueryExampleN10" target="1.7" />
       <module name="JQueryExampleN11" target="1.7" />
+      <module name="JSF1" target="1.7" />
+      <module name="JSF10" target="1.7" />
+      <module name="JSF2" target="1.7" />
+      <module name="JSF3" target="1.7" />
+      <module name="JSF4" target="1.7" />
+      <module name="JSF5" target="1.7" />
+      <module name="JSF6" target="1.7" />
+      <module name="JSF8" target="1.7" />
+      <module name="JSF9" target="1.7" />
+      <module name="JSF_1" target="1.7" />
       <module name="log4j" target="1.7" />
       <module name="RESTExample" target="1.7" />
       <module name="simple-mybatis" target="1.7" />
