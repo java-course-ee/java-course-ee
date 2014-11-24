@@ -110,6 +110,7 @@
       <module name="JSF4" target="1.7" />
       <module name="JSF5" target="1.7" />
       <module name="JSF6" target="1.7" />
+      <module name="JSF7" target="1.7" />
       <module name="JSF8" target="1.7" />
       <module name="JSF9" target="1.7" />
       <module name="JSF_1" target="1.7" />
