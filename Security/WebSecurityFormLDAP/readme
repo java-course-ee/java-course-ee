@@ -1,0 +1,20 @@
+standalone.xml:
+
+<security-domain name="LDAPAuth">
+    <authentication>
+        <login-module code="LdapExtended" flag="required">
+            <module-option name="java.naming.factory.initial" value="com.sun.jndi.ldap.LdapCtxFactory"/>
+            <module-option name="java.naming.provider.url" value="ldap://localhost:10389"/>
+            <module-option name="java.naming.security.authentication" value="simple"/>
+            <module-option name="bindDN" value="uid=admin,ou=system"/>
+            <module-option name="bindCredential" value="secret"/>
+            <module-option name="baseCtxDN" value="dc=users,dc=example,dc=com"/>
+            <module-option name="baseFilter" value="(cn={0})"/>
+            <module-option name="rolesCtxDN" value="dc=groups,dc=example,dc=com"/>
+            <module-option name="roleFilter" value="(member={1})"/>
+            <module-option name="roleAttributeID" value="cn"/>
+            <module-option name="searchScope" value="ONELEVEL_SCOPE"/>
+            <module-option name="allowEmptyPasswords" value="false"/>
+        </login-module>
+    </authentication>
+</security-domain>

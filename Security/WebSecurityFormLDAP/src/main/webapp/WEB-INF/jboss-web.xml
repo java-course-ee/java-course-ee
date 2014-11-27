@@ -1,0 +1,3 @@
+<jboss-web>
+    <security-domain>LDAPAuth</security-domain>
+</jboss-web>

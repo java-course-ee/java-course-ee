@@ -13,6 +13,7 @@
         <module>ClientAuthentication</module>
         <module>WebSecurity</module>
         <module>WebSecurityForm</module>
+        <module>WebSecurityFormLDAP</module>
     </modules>
 
 </project>
