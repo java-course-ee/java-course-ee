@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans
+        xmlns="http://www.springframework.org/schema/integration"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:beans="http://www.springframework.org/schema/beans"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                            http://www.springframework.org/schema/integration http://www.springframework.org/schema/integration/spring-integration.xsd">
+
+    <channel id="splitChannel"/>
+    <channel id="oneStringChannel"/>
+    <channel id="aggregatorChannel"/>
+    <channel id="outputChannel"/>
+
+    <splitter input-channel="splitChannel" output-channel="oneStringChannel" expression="payload"/>
+
+    <service-activator input-channel="oneStringChannel" output-channel="aggregatorChannel" ref="logger" method="log"/>
+
+    <aggregator input-channel="aggregatorChannel" output-channel="outputChannel"/>
+
+    <service-activator input-channel="outputChannel" ref="logger" method="logs"/>
+
+    <beans:bean id="logger" class="edu.javacourse.spring.integration.Logger"/>
+
+</beans:beans>

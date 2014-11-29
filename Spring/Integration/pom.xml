@@ -15,6 +15,7 @@
         <module>spring-integration-02</module>
         <module>spring-integration-03</module>
         <module>spring-integration-04</module>
+        <module>spring-integration-05</module>
     </modules>
 
 </project>
