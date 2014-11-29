@@ -73,6 +73,7 @@
       <module fileurl="file://$PROJECT_DIR$/Spring/Integration/spring-integration-05/spring-integration-05.iml" filepath="$PROJECT_DIR$/Spring/Integration/spring-integration-05/spring-integration-05.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring/Integration/spring-integration-06/spring-integration-06.iml" filepath="$PROJECT_DIR$/Spring/Integration/spring-integration-06/spring-integration-06.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring/Integration/spring-integration-07/spring-integration-07.iml" filepath="$PROJECT_DIR$/Spring/Integration/spring-integration-07/spring-integration-07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/Integration/spring-integration-08/spring-integration-08.iml" filepath="$PROJECT_DIR$/Spring/Integration/spring-integration-08/spring-integration-08.iml" />
       <module fileurl="file://$PROJECT_DIR$/Velocity/velocity.iml" filepath="$PROJECT_DIR$/Velocity/velocity.iml" />
     </modules>
   </component>
