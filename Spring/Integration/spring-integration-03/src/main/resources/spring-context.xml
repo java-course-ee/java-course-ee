@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans
+        xmlns="http://www.springframework.org/schema/integration"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:beans="http://www.springframework.org/schema/beans"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                            http://www.springframework.org/schema/integration http://www.springframework.org/schema/integration/spring-integration.xsd">
+
+    <channel id="routeChannel"/>
+    <channel id="outputChannelSmall"/>
+    <channel id="outputChannelBig"/>
+
+    <router input-channel="routeChannel" expression="payload.length() > 5">
+        <mapping value="false" channel="outputChannelSmall"/>
+        <mapping value="true" channel="outputChannelBig"/>
+    </router>
+
+    <service-activator input-channel="outputChannelSmall" ref="smallLogger" method="log"/>
+    <service-activator input-channel="outputChannelBig" ref="bigLogger" method="log"/>
+
+    <beans:bean id="smallLogger" class="edu.javacourse.spring.integration.SmallLogger"/>
+    <beans:bean id="bigLogger" class="edu.javacourse.spring.integration.BigLogger"/>
+
+</beans:beans>
