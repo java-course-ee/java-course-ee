@@ -19,6 +19,7 @@
         <module>MyBatis</module>
         <module>Portlet</module>
         <module>Security</module>
+        <module>Spring</module>
         <module>Struts</module>
         <module>Vaadin</module>
         <module>Velocity</module>
@@ -190,6 +191,11 @@
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-aop</artifactId>
                 <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.integration</groupId>
+                <artifactId>spring-integration-core</artifactId>
+                <version>4.1.0.RELEASE</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
