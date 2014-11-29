@@ -12,6 +12,7 @@
     <modules>
         <module></module>
         <module>spring-integration-01</module>
+        <module>spring-integration-02</module>
     </modules>
 
 </project>
