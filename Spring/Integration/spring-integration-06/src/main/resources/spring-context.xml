@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans
+        xmlns="http://www.springframework.org/schema/integration"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:beans="http://www.springframework.org/schema/beans"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                            http://www.springframework.org/schema/integration http://www.springframework.org/schema/integration/spring-integration.xsd">
+
+    <!--<channel id="publishChannel"/>-->
+    <publish-subscribe-channel id="publishChannel"/>
+
+    <service-activator input-channel="publishChannel" ref="loggerA" method="log"/>
+    <service-activator input-channel="publishChannel" ref="loggerB" method="log"/>
+
+    <beans:bean id="loggerA" class="edu.javacourse.spring.integration.LoggerA"/>
+    <beans:bean id="loggerB" class="edu.javacourse.spring.integration.LoggerB"/>
+
+</beans:beans>

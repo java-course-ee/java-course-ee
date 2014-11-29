@@ -64,6 +64,7 @@
         <module name="spring-integration-03" />
         <module name="spring-integration-04" />
         <module name="spring-integration-05" />
+        <module name="spring-integration-06" />
         <module name="Struts2ExampleN01-web" />
         <module name="Struts2ExampleN03-web" />
         <module name="Struts2ExampleN04-web" />
@@ -133,6 +134,7 @@
       <module name="spring-integration-03" target="1.7" />
       <module name="spring-integration-04" target="1.7" />
       <module name="spring-integration-05" target="1.7" />
+      <module name="spring-integration-06" target="1.7" />
       <module name="Struts2ExampleN01-web" target="1.7" />
       <module name="Struts2ExampleN03-web" target="1.7" />
       <module name="Struts2ExampleN04-web" target="1.7" />
