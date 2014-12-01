@@ -4,7 +4,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.annotation.Resource;
-import javax.ejb.EJB;
 import javax.jms.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -24,10 +23,10 @@ public class FirstServlet extends HttpServlet {
 
     private Logger log = LoggerFactory.getLogger(FirstServlet.class);
 
-    @Resource(mappedName = "jms/GeminiTestQueueFactory")
+    @Resource(mappedName = "java:/ConnectionFactory")
     private ConnectionFactory connectionQueueFactory;
 
-    @Resource(mappedName = "jms/GeminiTestQueue")
+    @Resource(mappedName = "java:/queue/test")
     private Queue queue;
 
 //    @Resource(mappedName = "jms/GeminiTestTopicFactory")

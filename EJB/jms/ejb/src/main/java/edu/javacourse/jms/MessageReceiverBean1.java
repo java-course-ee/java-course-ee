@@ -15,9 +15,10 @@ import javax.jms.Message;
 import javax.jms.MessageListener;
 import javax.jms.TextMessage;
 
-@MessageDriven(mappedName = "jms/GeminiTestQueue", activationConfig = {
+@MessageDriven(name = "TestMDB", activationConfig = {
     @ActivationConfigProperty(propertyName = "acknowledgeMode", propertyValue = "Auto-acknowledge"),
-    @ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Queue")
+    @ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Queue"),
+    @ActivationConfigProperty(propertyName = "destination", propertyValue = "queue/test")
 })
 public class MessageReceiverBean1 implements MessageListener {
     
