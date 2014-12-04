@@ -8,6 +8,8 @@
       <module fileurl="file://$PROJECT_DIR$/EJB/EJB.iml" filepath="$PROJECT_DIR$/EJB/EJB.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/Hibernate.iml" filepath="$PROJECT_DIR$/Hibernate/Hibernate.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring/Integration/Integration.iml" filepath="$PROJECT_DIR$/Spring/Integration/Integration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/IoC/IoC.iml" filepath="$PROJECT_DIR$/Spring/IoC/IoC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/IoC/IoC-01-Simple-Bean/IoC-01-Simple-Bean.iml" filepath="$PROJECT_DIR$/Spring/IoC/IoC-01-Simple-Bean/IoC-01-Simple-Bean.iml" />
       <module fileurl="file://$PROJECT_DIR$/JQuery/JQuery.iml" filepath="$PROJECT_DIR$/JQuery/JQuery.iml" />
       <module fileurl="file://$PROJECT_DIR$/JQuery/JQueryExampleN09/JQueryExampleN09.iml" filepath="$PROJECT_DIR$/JQuery/JQueryExampleN09/JQueryExampleN09.iml" />
       <module fileurl="file://$PROJECT_DIR$/JQuery/JQueryExampleN10/JQueryExampleN10.iml" filepath="$PROJECT_DIR$/JQuery/JQueryExampleN10/JQueryExampleN10.iml" />
