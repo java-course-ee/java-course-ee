@@ -38,6 +38,9 @@
         <module name="hibernate-many-to-many" />
         <module name="hibernate-many-to-one" />
         <module name="hibernate-one-to-one" />
+        <module name="ioc-01" />
+        <module name="IoC-01" />
+        <module name="IoC-01-Simple-Bean" />
         <module name="JQueryExampleN09" />
         <module name="JQueryExampleN10" />
         <module name="JQueryExampleN11" />
@@ -102,6 +105,9 @@
       <module name="hibernate-many-to-many" target="1.7" />
       <module name="hibernate-many-to-one" target="1.7" />
       <module name="hibernate-one-to-one" target="1.7" />
+      <module name="ioc-01" target="1.7" />
+      <module name="IoC-01" target="1.7" />
+      <module name="IoC-01-Simple-Bean" target="1.7" />
       <module name="JQueryExampleN02" target="1.6" />
       <module name="JQueryExampleN03" target="1.6" />
       <module name="JQueryExampleN04" target="1.6" />

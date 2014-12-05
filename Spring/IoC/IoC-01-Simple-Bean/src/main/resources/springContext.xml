@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd">
+
+    <bean id="currentDate" class="java.util.Date"/>
+
+    <bean id="person" class="edu.javacourse.spring.ioc.beans.Person">
+        <property name="id" value="1"/>
+        <property name="name" value="Vasiliy"/>
+        <property name="birth" ref="currentDate"/>
+    </bean>
+
+    <bean id="car" class="edu.javacourse.spring.ioc.beans.Car">
+        <property name="id" value="1"/>
+        <property name="model" value="Kalina"/>
+        <property name="year" value="2010"/>
+        <property name="lastService" ref="currentDate"/>
+        <property name="owner" ref="person"/>
+    </bean>
+
+</beans>
