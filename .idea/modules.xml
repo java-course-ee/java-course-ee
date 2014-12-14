@@ -70,6 +70,7 @@
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-many-to-many/hibernate-many-to-many.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-many-to-many/hibernate-many-to-many.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-many-to-one/hibernate-many-to-one.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-many-to-one/hibernate-many-to-one.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-one-to-one/hibernate-one-to-one.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-one-to-one/hibernate-one-to-one.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/hibernate-second-level-cache/hibernate-second-level-cache.iml" filepath="$PROJECT_DIR$/Hibernate/part2/hibernate-second-level-cache/hibernate-second-level-cache.iml" />
       <module fileurl="file://$PROJECT_DIR$/Logging/log4j/log4j.iml" filepath="$PROJECT_DIR$/Logging/log4j/log4j.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis/SimpleMyBatis/simple-mybatis.iml" filepath="$PROJECT_DIR$/MyBatis/SimpleMyBatis/simple-mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/Logging/slf4j/slf4j.iml" filepath="$PROJECT_DIR$/Logging/slf4j/slf4j.iml" />

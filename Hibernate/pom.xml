@@ -17,6 +17,7 @@
         <module>part1/hibernate-criteria</module>
         <module>part1/hibernate-crud</module>
         <module>part2/hibernate-column-transformer</module>
+        <module>part2/hibernate-second-level-cache</module>
     </modules>
 
 </project>
