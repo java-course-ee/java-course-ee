@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd">
+
+    <bean id="currentDate" class="java.util.Date"/>
+
+    <bean id="person" abstract="true" class="edu.javacourse.spring.ioc.beans.Person">
+        <property name="id" value="1"/>
+        <property name="name" value="Vasiliy"/>
+        <property name="birth" ref="currentDate"/>
+    </bean>
+
+    <bean id="adult" class="edu.javacourse.spring.ioc.beans.Adult" parent="person">
+        <property name="paspSer" value="0000"/>
+        <property name="paspNum" value="123456"/>
+        <property name="snils" value="1234567890"/>
+    </bean>
+
+    <bean id="child" class="edu.javacourse.spring.ioc.beans.Child" parent="person">
+        <property name="responsible" ref="adult"/>
+    </bean>
+
+</beans>
