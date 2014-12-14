@@ -63,6 +63,7 @@
       <module fileurl="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war-module/ejb-war-module.iml" filepath="$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war-module/ejb-war-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war2-module/ejb-war2-module.iml" filepath="$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war2-module/ejb-war2-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/examples.iml" filepath="$PROJECT_DIR$/examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/hibernate-column-transformer/hibernate-column-transformer.iml" filepath="$PROJECT_DIR$/Hibernate/part2/hibernate-column-transformer/hibernate-column-transformer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-config-xml-mapping-annotations/hibernate-config-xml-mapping-annotations.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-config-xml-mapping-annotations/hibernate-config-xml-mapping-annotations.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-criteria/hibernate-criteria.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-criteria/hibernate-criteria.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-crud/hibernate-crud.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-crud/hibernate-crud.iml" />

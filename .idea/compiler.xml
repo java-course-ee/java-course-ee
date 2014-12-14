@@ -33,6 +33,7 @@
         <module name="ejb-war-module" />
         <module name="ejb-war2-module" />
         <module name="GS_JSF_2" />
+        <module name="hibernate-column-transformer" />
         <module name="hibernate-config-annotations" />
         <module name="hibernate-config-xml-mapping-annotations" />
         <module name="hibernate-criteria" />
@@ -106,6 +107,7 @@
       <module name="ejb-war2-module" target="1.7" />
       <module name="examples" target="1.7" />
       <module name="GS_JSF_2" target="1.7" />
+      <module name="hibernate-column-transformer" target="1.7" />
       <module name="hibernate-config-annotations" target="1.7" />
       <module name="hibernate-config-xml-mapping-annotations" target="1.7" />
       <module name="hibernate-criteria" target="1.7" />
