@@ -35,6 +35,7 @@
         <module name="GS_JSF_2" />
         <module name="hibernate-config-annotations" />
         <module name="hibernate-config-xml-mapping-annotations" />
+        <module name="hibernate-criteria" />
         <module name="hibernate-many-to-many" />
         <module name="hibernate-many-to-one" />
         <module name="hibernate-one-to-one" />
@@ -42,6 +43,7 @@
         <module name="ioc-01" />
         <module name="IoC-01-Simple-Bean" />
         <module name="ioc-02-inheritance" />
+        <module name="IoC-02-Inheritance" />
         <module name="JQueryExampleN09" />
         <module name="JQueryExampleN10" />
         <module name="JQueryExampleN11" />
@@ -105,6 +107,7 @@
       <module name="GS_JSF_2" target="1.7" />
       <module name="hibernate-config-annotations" target="1.7" />
       <module name="hibernate-config-xml-mapping-annotations" target="1.7" />
+      <module name="hibernate-criteria" target="1.7" />
       <module name="hibernate-many-to-many" target="1.7" />
       <module name="hibernate-many-to-one" target="1.7" />
       <module name="hibernate-one-to-one" target="1.7" />
@@ -112,6 +115,7 @@
       <module name="IoC-01" target="1.7" />
       <module name="IoC-01-Simple-Bean" target="1.7" />
       <module name="ioc-02-inheritance" target="1.7" />
+      <module name="IoC-02-Inheritance" target="1.7" />
       <module name="JQueryExampleN02" target="1.6" />
       <module name="JQueryExampleN03" target="1.6" />
       <module name="JQueryExampleN04" target="1.6" />

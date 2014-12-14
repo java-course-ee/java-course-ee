@@ -14,6 +14,7 @@
         <module>part1/hibernate-many-to-many</module>
         <module>part1/hibernate-many-to-one</module>
         <module>part1/hibernate-one-to-one</module>
+        <module>part1/hibernate-criteria</module>
     </modules>
 
 </project>

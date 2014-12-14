@@ -3,18 +3,38 @@ package edu.javacourse.hibernate;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
+import org.hibernate.service.ServiceRegistry;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
-public class HibernateSimple {
+public class HibernateCriteria {
+
+    private static final Logger log = LoggerFactory.getLogger(HibernateCriteria.class);
+
+    private static SessionFactory sessionFactory;
+    private static ServiceRegistry serviceRegistry;
+
+    private static void init() {
+        Configuration configuration = new Configuration();
+        configuration.configure("hibernate.cfg.xml");
+        serviceRegistry = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();
+        sessionFactory = configuration.buildSessionFactory(serviceRegistry);
+    }
+
+    private static void destroy() {
+        StandardServiceRegistryBuilder.destroy(serviceRegistry);
+    }
 
     public static void main(String[] args) {
-        HibernateSimple hs = new HibernateSimple();
+        init();
 
-        Session s = hs.getSessionFactory().getCurrentSession();
+        Session s = sessionFactory.getCurrentSession();
         s.beginTransaction();
 
         Criteria criteria1 = s.createCriteria(Region.class)
@@ -30,10 +50,10 @@ public class HibernateSimple {
         List<Region> regions = criteria1.list();
 
         for (Region r : regions) {
-            System.out.println(r);
+            log.info("region: {}", r);
         }
 
-        System.out.println("===============================================================");
+        log.info("===============================================================");
 
         Criteria criteria2 = s.createCriteria(Catalog.class);
 
@@ -48,10 +68,10 @@ public class HibernateSimple {
 
         List<Catalog> catalogs2 = criteria2.list();
         for (Catalog catalog : catalogs2) {
-            System.out.println(catalog);
+            log.info("catalog: {}", catalog);
         }
 
-        System.out.println("===============================================================");
+        log.info("===============================================================");
 
         Criteria criteria3 = s.createCriteria(Catalog.class);
         criteria3.add(Restrictions.eq("parent.catalogId", new Long(5)));
@@ -60,14 +80,13 @@ public class HibernateSimple {
 
         List<Catalog> catalogs3 = criteria3.list();
         for (Catalog catalog : catalogs3) {
-            System.out.println(catalog);
+            log.info("catalog: {}", catalog);
         }
 
 
         s.getTransaction().commit();
+
+        destroy();
     }
 
-    private SessionFactory getSessionFactory() {
-        return new Configuration().configure().buildSessionFactory();
-    }
 }
