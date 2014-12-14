@@ -38,8 +38,8 @@
         <module name="hibernate-many-to-many" />
         <module name="hibernate-many-to-one" />
         <module name="hibernate-one-to-one" />
-        <module name="ioc-01" />
         <module name="IoC-01" />
+        <module name="ioc-01" />
         <module name="IoC-01-Simple-Bean" />
         <module name="JQueryExampleN09" />
         <module name="JQueryExampleN10" />
@@ -62,6 +62,8 @@
         <module name="SimpleWebService-client" />
         <module name="SimpleWebService-ear" />
         <module name="SimpleWebService-ejb" />
+        <module name="slf4j-source" />
+        <module name="slf4j-target" />
         <module name="spring-integration-01" />
         <module name="spring-integration-02" />
         <module name="spring-integration-03" />
@@ -137,6 +139,8 @@
       <module name="SimpleWebService-client" target="1.7" />
       <module name="SimpleWebService-ear" target="1.7" />
       <module name="SimpleWebService-ejb" target="1.7" />
+      <module name="slf4j-source" target="1.7" />
+      <module name="slf4j-target" target="1.7" />
       <module name="spring-integration-01" target="1.7" />
       <module name="spring-integration-02" target="1.7" />
       <module name="spring-integration-03" target="1.7" />

@@ -45,6 +45,7 @@
       <module fileurl="file://$PROJECT_DIR$/Vaadin/VaadinExampleN02/VaadinExampleN02.iml" filepath="$PROJECT_DIR$/Vaadin/VaadinExampleN02/VaadinExampleN02.iml" />
       <module fileurl="file://$PROJECT_DIR$/Vaadin/VaadinExampleN03/VaadinExampleN03.iml" filepath="$PROJECT_DIR$/Vaadin/VaadinExampleN03/VaadinExampleN03.iml" />
       <module fileurl="file://$PROJECT_DIR$/Vaadin/VaadinExampleN04/VaadinExampleN04.iml" filepath="$PROJECT_DIR$/Vaadin/VaadinExampleN04/VaadinExampleN04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Velocity/Velocity.iml" filepath="$PROJECT_DIR$/Velocity/Velocity.iml" />
       <module fileurl="file://$PROJECT_DIR$/Velocity/GS_Velocity_1/VelocityExample-N01.iml" filepath="$PROJECT_DIR$/Velocity/GS_Velocity_1/VelocityExample-N01.iml" />
       <module fileurl="file://$PROJECT_DIR$/Security/WebSecurity/WebSecurity.iml" filepath="$PROJECT_DIR$/Security/WebSecurity/WebSecurity.iml" />
       <module fileurl="file://$PROJECT_DIR$/Security/WebSecurityForm/WebSecurityForm.iml" filepath="$PROJECT_DIR$/Security/WebSecurityForm/WebSecurityForm.iml" />
@@ -67,6 +68,9 @@
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-one-to-one/hibernate-one-to-one.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-one-to-one/hibernate-one-to-one.iml" />
       <module fileurl="file://$PROJECT_DIR$/Logging/log4j/log4j.iml" filepath="$PROJECT_DIR$/Logging/log4j/log4j.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis/SimpleMyBatis/simple-mybatis.iml" filepath="$PROJECT_DIR$/MyBatis/SimpleMyBatis/simple-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Logging/slf4j/slf4j.iml" filepath="$PROJECT_DIR$/Logging/slf4j/slf4j.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Logging/slf4j/slf4j-source/slf4j-source.iml" filepath="$PROJECT_DIR$/Logging/slf4j/slf4j-source/slf4j-source.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Logging/slf4j/slf4j-target/slf4j-target.iml" filepath="$PROJECT_DIR$/Logging/slf4j/slf4j-target/slf4j-target.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring/Integration/spring-integration-01/spring-integration-01.iml" filepath="$PROJECT_DIR$/Spring/Integration/spring-integration-01/spring-integration-01.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring/Integration/spring-integration-02/spring-integration-02.iml" filepath="$PROJECT_DIR$/Spring/Integration/spring-integration-02/spring-integration-02.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring/Integration/spring-integration-03/spring-integration-03.iml" filepath="$PROJECT_DIR$/Spring/Integration/spring-integration-03/spring-integration-03.iml" />
@@ -75,7 +79,6 @@
       <module fileurl="file://$PROJECT_DIR$/Spring/Integration/spring-integration-06/spring-integration-06.iml" filepath="$PROJECT_DIR$/Spring/Integration/spring-integration-06/spring-integration-06.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring/Integration/spring-integration-07/spring-integration-07.iml" filepath="$PROJECT_DIR$/Spring/Integration/spring-integration-07/spring-integration-07.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring/Integration/spring-integration-08/spring-integration-08.iml" filepath="$PROJECT_DIR$/Spring/Integration/spring-integration-08/spring-integration-08.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Velocity/velocity.iml" filepath="$PROJECT_DIR$/Velocity/velocity.iml" />
     </modules>
   </component>
 </project>

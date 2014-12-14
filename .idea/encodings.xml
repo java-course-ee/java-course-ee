@@ -33,6 +33,8 @@
     <file url="file://$PROJECT_DIR$/JSF/JSF8" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/JSF/JSF9" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Logging/log4j" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Logging/slf4j/slf4j-source" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Logging/slf4j/slf4j-target" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MyBatis/SimpleMyBatis" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Portlet/SimplePortlet" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Security/ClientAuthentication" charset="UTF-8" />
