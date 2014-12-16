@@ -1,4 +1,4 @@
-package payment;
+package edu.javacourse.hibernate;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -19,5 +19,12 @@ public class CreditCardPayment extends Payment {
 
     public void setCardNumber(String cardNumber) {
         this.cardNumber = cardNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "CreditCardPayment{" +
+                "cardNumber='" + cardNumber + '\'' +
+                "} " + super.toString();
     }
 }

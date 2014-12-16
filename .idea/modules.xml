@@ -67,6 +67,7 @@
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-config-xml-mapping-annotations/hibernate-config-xml-mapping-annotations.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-config-xml-mapping-annotations/hibernate-config-xml-mapping-annotations.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-criteria/hibernate-criteria.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-criteria/hibernate-criteria.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-crud/hibernate-crud.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-crud/hibernate-crud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/hibernate-inheritance-joined/hibernate-inheritance-joined.iml" filepath="$PROJECT_DIR$/Hibernate/part2/hibernate-inheritance-joined/hibernate-inheritance-joined.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-many-to-many/hibernate-many-to-many.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-many-to-many/hibernate-many-to-many.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-many-to-one/hibernate-many-to-one.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-many-to-one/hibernate-many-to-one.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-one-to-one/hibernate-one-to-one.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-one-to-one/hibernate-one-to-one.iml" />

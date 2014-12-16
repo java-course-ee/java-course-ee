@@ -30,9 +30,9 @@
 
 
         <!-- Mapping files -->
-        <mapping class="payment.CreditCardPayment"/>
-        <mapping class="payment.CashPayment"/>
-        <mapping class="payment.ChequePayment"/>
+        <mapping class="CreditCardPayment"/>
+        <mapping class="CashPayment"/>
+        <mapping class="ChequePayment"/>
 
     </session-factory>
 

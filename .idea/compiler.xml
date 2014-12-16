@@ -38,6 +38,7 @@
         <module name="hibernate-config-xml-mapping-annotations" />
         <module name="hibernate-criteria" />
         <module name="hibernate-crud" />
+        <module name="hibernate-inheritance-joined" />
         <module name="hibernate-many-to-many" />
         <module name="hibernate-many-to-one" />
         <module name="hibernate-one-to-one" />
@@ -113,6 +114,7 @@
       <module name="hibernate-config-xml-mapping-annotations" target="1.7" />
       <module name="hibernate-criteria" target="1.7" />
       <module name="hibernate-crud" target="1.7" />
+      <module name="hibernate-inheritance-joined" target="1.7" />
       <module name="hibernate-many-to-many" target="1.7" />
       <module name="hibernate-many-to-one" target="1.7" />
       <module name="hibernate-one-to-one" target="1.7" />
