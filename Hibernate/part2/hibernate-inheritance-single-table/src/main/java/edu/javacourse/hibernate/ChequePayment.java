@@ -1,8 +1,6 @@
-package payment;
+package edu.javacourse.hibernate;
 
-import javax.persistence.Column;
-import javax.persistence.DiscriminatorValue;
-import javax.persistence.Entity;
+import javax.persistence.*;
 
 @Entity
 @DiscriminatorValue("3")
@@ -17,5 +15,12 @@ public class ChequePayment extends Payment {
 
     public void setBankId(String bankId) {
         this.bankId = bankId;
+    }
+
+    @Override
+    public String toString() {
+        return "ChequePayment{" +
+                "bankId='" + bankId + '\'' +
+                "} " + super.toString();
     }
 }

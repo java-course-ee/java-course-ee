@@ -1,16 +1,12 @@
-package payment;
+package edu.javacourse.hibernate;
+
+import javax.persistence.*;
 
 @Entity
 @Table(name = "jc_payment")
 @DiscriminatorValue("0")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "PAYMENT_TYPE", discriminatorType = DiscriminatorType.INTEGER)
-//@NamedQueries({
-//    @NamedQuery(name = "Payment.findByAmount",
-//            query = "from Payment p where p.amount>:amount"),
-//    @NamedQuery(name = "Payment.findAmountOnly",
-//            query = "select p.amount from Payment p")
-//})
 public class Payment {
 
     @Id
@@ -35,5 +31,13 @@ public class Payment {
 
     public void setPaymentId(Integer paymentId) {
         this.paymentId = paymentId;
+    }
+
+    @Override
+    public String toString() {
+        return "Payment{" +
+                "paymentId=" + paymentId +
+                ", amount=" + amount +
+                '}';
     }
 }

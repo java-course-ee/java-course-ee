@@ -20,6 +20,7 @@
         <module>part2/hibernate-second-level-cache</module>
         <module>part2/hibernate-inheritance-joined</module>
         <module>part2/hibernate-inheritance-table-per-class</module>
+        <module>part2/hibernate-inheritance-single-table</module>
     </modules>
 
 </project>

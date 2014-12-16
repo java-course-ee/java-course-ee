@@ -1,8 +1,6 @@
-package payment;
+package edu.javacourse.hibernate;
 
-import javax.persistence.Column;
-import javax.persistence.DiscriminatorValue;
-import javax.persistence.Entity;
+import javax.persistence.*;
 
 @Entity
 @DiscriminatorValue("2")
@@ -17,5 +15,12 @@ public class CashPayment extends Payment {
 
     public void setCashDesk(String cashDesk) {
         this.cashDesk = cashDesk;
+    }
+
+    @Override
+    public String toString() {
+        return "CashPayment{" +
+                "cashDesk='" + cashDesk + '\'' +
+                "} " + super.toString();
     }
 }

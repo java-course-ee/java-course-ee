@@ -1,8 +1,6 @@
-package payment;
+package edu.javacourse.hibernate;
 
-import javax.persistence.Column;
-import javax.persistence.DiscriminatorValue;
-import javax.persistence.Entity;
+import javax.persistence.*;
 
 @Entity
 @DiscriminatorValue("1")
@@ -17,5 +15,12 @@ public class CreditCardPayment extends Payment {
 
     public void setCardNumber(String cardNumber) {
         this.cardNumber = cardNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "CreditCardPayment{" +
+                "cardNumber='" + cardNumber + '\'' +
+                "} " + super.toString();
     }
 }
