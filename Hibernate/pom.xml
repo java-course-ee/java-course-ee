@@ -19,6 +19,7 @@
         <module>part2/hibernate-column-transformer</module>
         <module>part2/hibernate-second-level-cache</module>
         <module>part2/hibernate-inheritance-joined</module>
+        <module>part2/hibernate-inheritance-table-per-class</module>
     </modules>
 
 </project>

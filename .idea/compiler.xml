@@ -39,6 +39,7 @@
         <module name="hibernate-criteria" />
         <module name="hibernate-crud" />
         <module name="hibernate-inheritance-joined" />
+        <module name="hibernate-inheritance-table-per-class" />
         <module name="hibernate-many-to-many" />
         <module name="hibernate-many-to-one" />
         <module name="hibernate-one-to-one" />
@@ -115,6 +116,7 @@
       <module name="hibernate-criteria" target="1.7" />
       <module name="hibernate-crud" target="1.7" />
       <module name="hibernate-inheritance-joined" target="1.7" />
+      <module name="hibernate-inheritance-table-per-class" target="1.7" />
       <module name="hibernate-many-to-many" target="1.7" />
       <module name="hibernate-many-to-one" target="1.7" />
       <module name="hibernate-one-to-one" target="1.7" />

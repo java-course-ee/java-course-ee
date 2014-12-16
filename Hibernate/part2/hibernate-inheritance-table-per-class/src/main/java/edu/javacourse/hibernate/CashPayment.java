@@ -1,4 +1,6 @@
-package payment;
+package edu.javacourse.hibernate;
+
+import javax.persistence.*;
 
 @Entity
 @Table(name = "jc_cash_payment_full")
@@ -16,5 +18,12 @@ public class CashPayment extends Payment {
 
     public void setCashDesk(String cashDesk) {
         this.cashDesk = cashDesk;
+    }
+
+    @Override
+    public String toString() {
+        return "CashPayment{" +
+                "cashDesk='" + cashDesk + '\'' +
+                "} " + super.toString();
     }
 }
