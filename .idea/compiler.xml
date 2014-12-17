@@ -49,6 +49,7 @@
         <module name="hibernate-many-to-many" />
         <module name="hibernate-many-to-one" />
         <module name="hibernate-one-to-one" />
+        <module name="hibernate-recursive-parent-entity" />
         <module name="hibernate-second-level-cache" />
         <module name="interceptors-ejb-war" />
         <module name="IoC-01" />
@@ -155,6 +156,7 @@
       <module name="hibernate-many-to-many" target="1.7" />
       <module name="hibernate-many-to-one" target="1.7" />
       <module name="hibernate-one-to-one" target="1.7" />
+      <module name="hibernate-recursive-parent-entity" target="1.7" />
       <module name="hibernate-second-level-cache" target="1.7" />
       <module name="interceptors-ejb-war" target="1.7" />
       <module name="ioc-01" target="1.7" />

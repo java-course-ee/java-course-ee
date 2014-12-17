@@ -54,6 +54,11 @@ public class Catalog implements Serializable {
 
     @Override
     public String toString() {
-        return "Catalog{" + "catalogId=" + catalogId + ", catalogName=" + catalogName + '}';
+        return "Catalog{" +
+                "catalogId=" + catalogId +
+                ", catalogName='" + catalogName + '\'' +
+                ", catalogList=" + catalogList +
+                ", parent=" + parent +
+                '}';
     }
 }

@@ -21,6 +21,7 @@
         <module>part2/hibernate-inheritance-joined</module>
         <module>part2/hibernate-inheritance-table-per-class</module>
         <module>part2/hibernate-inheritance-single-table</module>
+        <module>part2/hibernate-recursive-parent-entity</module>
     </modules>
 
 </project>
