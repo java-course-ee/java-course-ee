@@ -83,6 +83,9 @@
       <module fileurl="file://$PROJECT_DIR$/Spring/Integration/spring-integration-06/spring-integration-06.iml" filepath="$PROJECT_DIR$/Spring/Integration/spring-integration-06/spring-integration-06.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring/Integration/spring-integration-07/spring-integration-07.iml" filepath="$PROJECT_DIR$/Spring/Integration/spring-integration-07/spring-integration-07.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring/Integration/spring-integration-08/spring-integration-08.iml" filepath="$PROJECT_DIR$/Spring/Integration/spring-integration-08/spring-integration-08.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EJB/stateful-ejb/stateful-ejb.iml" filepath="$PROJECT_DIR$/EJB/stateful-ejb/stateful-ejb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EJB/stateful-ejb/stateful-lib/stateful-lib.iml" filepath="$PROJECT_DIR$/EJB/stateful-ejb/stateful-lib/stateful-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EJB/stateful-ejb/stateful-war-ejb/stateful-war-ejb.iml" filepath="$PROJECT_DIR$/EJB/stateful-ejb/stateful-war-ejb/stateful-war-ejb.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/stateless-ejb-local-remote.iml" filepath="$PROJECT_DIR$/EJB/stateless-ejb-local-remote/stateless-ejb-local-remote.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/jms/war/war.iml" filepath="$PROJECT_DIR$/EJB/jms/war/war.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/war-client/war-client.iml" filepath="$PROJECT_DIR$/EJB/stateless-ejb-local-remote/war-client/war-client.iml" />

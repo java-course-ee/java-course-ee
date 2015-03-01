@@ -2,17 +2,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>edu.javacourse</groupId>
-    <artifactId>ejb</artifactId>
+    <groupId>edu.javacourse.ejb</groupId>
+    <artifactId>stateful-ejb</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>EJB</name>
+    <name>EJB Stateful</name>
 
     <modules>
-        <module>stateless-ejb-local-remote</module>
-        <module>stateful-ejb</module>
-        <module>jms</module>
+        <module>stateful-lib</module>
+        <module>stateful-war-ejb</module>
     </modules>
 
 </project>

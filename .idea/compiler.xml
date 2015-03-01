@@ -69,6 +69,7 @@
         <module name="JSF9" />
         <module name="JSF_1" />
         <module name="lib" />
+        <module name="lib (1) (edu.javacourse.ejb.stateful-ejb)" />
         <module name="log4j" />
         <module name="RESTExample" />
         <module name="simple-mybatis" />
@@ -86,6 +87,8 @@
         <module name="spring-integration-06" />
         <module name="spring-integration-07" />
         <module name="spring-integration-08" />
+        <module name="stateful-lib" />
+        <module name="stateful-war-ejb" />
         <module name="Struts2ExampleN01-web" />
         <module name="Struts2ExampleN03-web" />
         <module name="Struts2ExampleN04-web" />
@@ -97,6 +100,7 @@
         <module name="war" />
         <module name="war-client" />
         <module name="war-ejb" />
+        <module name="war-ejb (1) (edu.javacourse.ejb.stateful-ejb)" />
         <module name="WebSecurity" />
         <module name="WebSecurityForm" />
         <module name="WebSecurityFormLDAP" />
@@ -170,6 +174,7 @@
       <module name="JSF9" target="1.7" />
       <module name="JSF_1" target="1.7" />
       <module name="lib" target="1.7" />
+      <module name="lib (1) (edu.javacourse.ejb.stateful-ejb)" target="1.7" />
       <module name="log4j" target="1.7" />
       <module name="RESTExample" target="1.7" />
       <module name="simple-mybatis" target="1.7" />
@@ -188,6 +193,8 @@
       <module name="spring-integration-06" target="1.7" />
       <module name="spring-integration-07" target="1.7" />
       <module name="spring-integration-08" target="1.7" />
+      <module name="stateful-lib" target="1.7" />
+      <module name="stateful-war-ejb" target="1.7" />
       <module name="Struts2ExampleN01-web" target="1.7" />
       <module name="Struts2ExampleN03-web" target="1.7" />
       <module name="Struts2ExampleN04-web" target="1.7" />
@@ -199,6 +206,7 @@
       <module name="war" target="1.7" />
       <module name="war-client" target="1.7" />
       <module name="war-ejb" target="1.7" />
+      <module name="war-ejb (1) (edu.javacourse.ejb.stateful-ejb)" target="1.7" />
       <module name="WebSecurity" target="1.7" />
       <module name="WebSecurityForm" target="1.7" />
       <module name="WebSecurityFormLDAP" target="1.7" />
