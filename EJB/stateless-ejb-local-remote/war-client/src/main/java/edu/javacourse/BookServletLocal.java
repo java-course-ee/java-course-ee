@@ -22,7 +22,7 @@ public class BookServletLocal extends HttpServlet {
 
     private static final Logger log = LoggerFactory.getLogger(BookServletLocal.class);
 
-    @EJB
+    @EJB(lookup = "java:global/ear-ejb/war-ejb-1.0-SNAPSHOT/BookEJB!edu.javacourse.BookEJBLocal")
     private BookEJBLocal bookEJBLocal;
 
     @Override
@@ -35,6 +35,9 @@ public class BookServletLocal extends HttpServlet {
 
         log.debug("Books returned by EJB: {}", books);
 
+        request.setAttribute("bookClass", books.get(0).getClass().getCanonicalName());
+        request.setAttribute("beanClass", bookEJBLocal.getClass().getCanonicalName());
+        request.setAttribute("interface", "local");
         request.setAttribute("books", books);
 
         getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);

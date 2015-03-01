@@ -33,7 +33,7 @@ public class BookServletRemote extends HttpServlet {
 
         try {
             Context context = new InitialContext();
-            bookEJBRemote = (BookEJBRemote) context.lookup("java:global/ejb-ear-module/ejb-war-module-1.0-SNAPSHOT/BookEJB!edu.javacourse.BookEJBRemote");
+            bookEJBRemote = (BookEJBRemote) context.lookup("java:global/ear-ejb/war-ejb-1.0-SNAPSHOT/BookEJB!edu.javacourse.BookEJBRemote");
         } catch (NamingException e) {
             log.error("Error while creating JNDI context: {}", e.getMessage());
             throw new ServletException("Error while creating JNDI context");
@@ -45,6 +45,9 @@ public class BookServletRemote extends HttpServlet {
 
         log.debug("Books returned by EJB: {}", books);
 
+        request.setAttribute("bookClass", books.get(0).getClass().getCanonicalName());
+        request.setAttribute("beanClass", bookEJBRemote.getClass().getCanonicalName());
+        request.setAttribute("interface", "remote");
         request.setAttribute("books", books);
 
         getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);

@@ -6,6 +6,8 @@
 </head>
 <body>
 
+<h3>Book Class:${bookClass}</h3>
+<h3>Bean Class:${beanClass}</h3>
 <h3>Books list:</h3>
 <ul>
     <c:forEach items="${books}" var="book">

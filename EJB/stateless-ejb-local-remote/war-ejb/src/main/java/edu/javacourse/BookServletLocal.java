@@ -35,6 +35,8 @@ public class BookServletLocal extends HttpServlet {
 
         log.debug("Books returned by EJB: {}", books);
 
+        request.setAttribute("bookClass", books.get(0).getClass().getCanonicalName());
+        request.setAttribute("beanClass", bookEJBLocal.getClass().getCanonicalName());
         request.setAttribute("books", books);
 
         getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
