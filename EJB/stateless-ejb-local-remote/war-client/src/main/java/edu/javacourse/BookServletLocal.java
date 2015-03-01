@@ -17,10 +17,10 @@ import java.util.List;
  * @author Artem Pronchakov | email/xmpp: artem.pronchakov@calisto.email
  */
 
-@WebServlet(name = "BookServlet", urlPatterns = {"/bookServlet"})
-public class BookServlet extends HttpServlet {
+@WebServlet(name = "BookServletLocal", urlPatterns = {"/bookServletLocal"})
+public class BookServletLocal extends HttpServlet {
 
-    private static final Logger log = LoggerFactory.getLogger(BookServlet.class);
+    private static final Logger log = LoggerFactory.getLogger(BookServletLocal.class);
 
     @EJB
     private BookEJBLocal bookEJBLocal;

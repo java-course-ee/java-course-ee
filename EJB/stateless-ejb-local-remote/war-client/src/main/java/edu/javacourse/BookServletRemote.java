@@ -4,7 +4,6 @@ package edu.javacourse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.ejb.EJB;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
@@ -20,10 +19,10 @@ import java.util.List;
  * @author Artem Pronchakov | email/xmpp: artem.pronchakov@calisto.email
  */
 
-@WebServlet(name = "BookServlet2", urlPatterns = {"/bookServlet2"})
-public class BookServlet extends HttpServlet {
+@WebServlet(name = "BookServletRemote", urlPatterns = {"/bookServletRemote"})
+public class BookServletRemote extends HttpServlet {
 
-    private static final Logger log = LoggerFactory.getLogger(BookServlet.class);
+    private static final Logger log = LoggerFactory.getLogger(BookServletRemote.class);
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)

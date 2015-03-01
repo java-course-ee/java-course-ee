@@ -3,18 +3,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>edu.javacourse.ejb</groupId>
-    <artifactId>ejb-pom-module</artifactId>
+    <artifactId>stateless-ejb-local-remote</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>EJB ejb-pom-module</name>
+    <name>EJB Stateless Local and Remote</name>
 
     <modules>
-        <module>ejb-ear-module</module>
-        <module>ejb-ear2-module</module>
-        <module>ejb-war-module</module>
-        <module>ejb-war2-module</module>
-        <module>ejb-lib-module</module>
+        <module>ear-ejb</module>
+        <module>ear-client</module>
+        <module>war-ejb</module>
+        <module>war-client</module>
+        <module>lib</module>
     </modules>
 
 </project>

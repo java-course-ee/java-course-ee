@@ -4,16 +4,17 @@
     <entry_points version="2.0" />
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="ejb" url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-jar-module" />
     <file type="ejb" url="file://$PROJECT_DIR$/EJB/jms/ejb" />
     <file type="ejb" url="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ejb" />
-    <file type="javaeeApplication" url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear-module" />
-    <file type="javaeeApplication" url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-ear2-module" />
     <file type="javaeeApplication" url="file://$PROJECT_DIR$/EJB/jms/ear" />
+    <file type="javaeeApplication" url="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-client" />
+    <file type="javaeeApplication" url="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-ejb" />
     <file type="javaeeApplication" url="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ear" />
     <file type="web" url="file://$PROJECT_DIR$/DWR/DWRExample-N01" />
-    <file type="web" url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war-module" />
-    <file type="web" url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-war2-module" />
     <file type="web" url="file://$PROJECT_DIR$/EJB/jms/servlet" />
+    <file type="web" url="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/war-client" />
+    <file type="web" url="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/war-ejb" />
     <file type="web" url="file://$PROJECT_DIR$/JQuery/JQueryExampleN09" />
     <file type="web" url="file://$PROJECT_DIR$/JQuery/JQueryExampleN10" />
     <file type="web" url="file://$PROJECT_DIR$/JQuery/JQueryExampleN11" />
@@ -47,6 +48,11 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/EJB/ejb-pom-module/ejb-jar-module/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">

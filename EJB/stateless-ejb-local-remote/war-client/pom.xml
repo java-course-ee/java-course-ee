@@ -9,12 +9,12 @@
         <relativePath>../../../</relativePath>
     </parent>
 
-    <groupId>edu.javacourse.ejb</groupId>
-    <artifactId>ejb-war2-module</artifactId>
+    <groupId>edu.javacourse.ejb.stateless-ejb-local-remote</groupId>
+    <artifactId>war-client</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>EJB ejb-war2-module</name>
+    <name>EJB Stateless Local and Remote WAR Client</name>
 
     <dependencies>
         <dependency>

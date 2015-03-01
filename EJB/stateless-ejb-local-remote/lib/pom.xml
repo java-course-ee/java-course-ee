@@ -9,21 +9,18 @@
         <relativePath>../../../</relativePath>
     </parent>
 
-    <groupId>edu.javacourse.ejb</groupId>
-    <artifactId>ejb-ear2-module</artifactId>
+    <groupId>edu.javacourse.ejb.stateless-ejb-local-remote</groupId>
+    <artifactId>lib</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>ear</packaging>
+    <packaging>jar</packaging>
 
-    <name>EJB ejb-ear2-module</name>
+    <name>EJB Stateless Local and Remote Lib</name>
 
     <dependencies>
         <dependency>
-            <groupId>edu.javacourse.ejb</groupId>
-            <artifactId>ejb-war2-module</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <type>war</type>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
         </dependency>
     </dependencies>
-
 
 </project>

@@ -10,7 +10,7 @@
     <name>EJB</name>
 
     <modules>
-        <module>ejb-pom-module</module>
+        <module>stateless-ejb-local-remote</module>
         <module>jms</module>
     </modules>
 

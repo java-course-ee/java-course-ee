@@ -24,8 +24,10 @@
         <processorPath useClasspath="true" />
         <module name="ClientAuthentication" />
         <module name="DWRExample-N01" />
-        <module name="ejb-ear-module" />
+        <module name="ear-client" />
+        <module name="ear-ejb" />
         <module name="ejb-ear2-module" />
+        <module name="ejb-jar-module" />
         <module name="ejb-jms-ear" />
         <module name="ejb-jms-ejb" />
         <module name="ejb-jms-servlet" />
@@ -64,6 +66,7 @@
         <module name="JSF8" />
         <module name="JSF9" />
         <module name="JSF_1" />
+        <module name="lib" />
         <module name="log4j" />
         <module name="RESTExample" />
         <module name="simple-mybatis" />
@@ -89,9 +92,18 @@
         <module name="VaadinExampleN03" />
         <module name="VaadinExampleN04" />
         <module name="VelocityExample-N01" />
+        <module name="war-client" />
+        <module name="war-ejb" />
         <module name="WebSecurity" />
         <module name="WebSecurityForm" />
         <module name="WebSecurityFormLDAP" />
+      </profile>
+      <profile default="false" name="Annotation profile for ejb-ear-module" enabled="true">
+        <sourceOutputDir name="../../ejb-pom-module/ejb-ear-module/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../ejb-pom-module/ejb-ear-module/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="ejb-ear-module" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -101,8 +113,11 @@
       <module name="DojoExampleN03" target="1.7" />
       <module name="DojoExampleN04" target="1.7" />
       <module name="DWRExample-N01" target="1.7" />
+      <module name="ear-client" target="1.7" />
+      <module name="ear-ejb" target="1.7" />
       <module name="ejb-ear-module" target="1.7" />
       <module name="ejb-ear2-module" target="1.7" />
+      <module name="ejb-jar-module" target="1.7" />
       <module name="ejb-jms-ear" target="1.7" />
       <module name="ejb-jms-ejb" target="1.7" />
       <module name="ejb-jms-servlet" target="1.7" />
@@ -149,6 +164,7 @@
       <module name="JSF8" target="1.7" />
       <module name="JSF9" target="1.7" />
       <module name="JSF_1" target="1.7" />
+      <module name="lib" target="1.7" />
       <module name="log4j" target="1.7" />
       <module name="RESTExample" target="1.7" />
       <module name="simple-mybatis" target="1.7" />
@@ -175,6 +191,8 @@
       <module name="VaadinExampleN03" target="1.7" />
       <module name="VaadinExampleN04" target="1.7" />
       <module name="VelocityExample-N01" target="1.7" />
+      <module name="war-client" target="1.7" />
+      <module name="war-ejb" target="1.7" />
       <module name="WebSecurity" target="1.7" />
       <module name="WebSecurityForm" target="1.7" />
       <module name="WebSecurityFormLDAP" target="1.7" />

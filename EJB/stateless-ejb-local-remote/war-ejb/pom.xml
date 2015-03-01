@@ -9,12 +9,12 @@
         <relativePath>../../../</relativePath>
     </parent>
 
-    <groupId>edu.javacourse.ejb</groupId>
-    <artifactId>ejb-war-module</artifactId>
+    <groupId>edu.javacourse.ejb.stateless-ejb-local-remote</groupId>
+    <artifactId>war-ejb</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>EJB ejb-war-module</name>
+    <name>EJB Stateless Local and Remote WAR EJB</name>
 
     <dependencies>
         <dependency>
@@ -31,8 +31,8 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>edu.javacourse.ejb</groupId>
-            <artifactId>ejb-lib-module</artifactId>
+            <groupId>edu.javacourse.ejb.stateless-ejb-local-remote</groupId>
+            <artifactId>lib</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
