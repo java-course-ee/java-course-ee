@@ -12,11 +12,12 @@
         <relativePath>../../../</relativePath>
     </parent>
 
-    <groupId>edu.javacourse.ejb</groupId>
-	<artifactId>ejb-jms-ejb</artifactId>
+    <groupId>edu.javacourse.ejb.jms</groupId>
+    <artifactId>ejb</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>ejb</packaging>
 
+    <name>EJB JMS EJB</name>
 
     <dependencies>
         <dependency>

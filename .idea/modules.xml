@@ -52,12 +52,10 @@
       <module fileurl="file://$PROJECT_DIR$/Security/WebSecurityForm/WebSecurityForm.iml" filepath="$PROJECT_DIR$/Security/WebSecurityForm/WebSecurityForm.iml" />
       <module fileurl="file://$PROJECT_DIR$/Security/WebSecurityFormLDAP/WebSecurityFormLDAP.iml" filepath="$PROJECT_DIR$/Security/WebSecurityFormLDAP/WebSecurityFormLDAP.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebServices/WebServices.iml" filepath="$PROJECT_DIR$/WebServices/WebServices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EJB/jms/ear/ear.iml" filepath="$PROJECT_DIR$/EJB/jms/ear/ear.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-client/ear-client.iml" filepath="$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-client/ear-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-ejb/ear-ejb.iml" filepath="$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-ejb/ear-ejb.iml" />
-      <module fileurl="file://$PROJECT_DIR$/EJB/jms/ejb-builder.iml" filepath="$PROJECT_DIR$/EJB/jms/ejb-builder.iml" />
-      <module fileurl="file://$PROJECT_DIR$/EJB/jms/ear/ejb-jms-ear.iml" filepath="$PROJECT_DIR$/EJB/jms/ear/ejb-jms-ear.iml" />
-      <module fileurl="file://$PROJECT_DIR$/EJB/jms/ejb/ejb-jms-ejb.iml" filepath="$PROJECT_DIR$/EJB/jms/ejb/ejb-jms-ejb.iml" />
-      <module fileurl="file://$PROJECT_DIR$/EJB/jms/servlet/ejb-jms-servlet.iml" filepath="$PROJECT_DIR$/EJB/jms/servlet/ejb-jms-servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EJB/jms/ejb/ejb.iml" filepath="$PROJECT_DIR$/EJB/jms/ejb/ejb.iml" />
       <module fileurl="file://$PROJECT_DIR$/examples.iml" filepath="$PROJECT_DIR$/examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/hibernate-column-transformer/hibernate-column-transformer.iml" filepath="$PROJECT_DIR$/Hibernate/part2/hibernate-column-transformer/hibernate-column-transformer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-config-xml-mapping-annotations/hibernate-config-xml-mapping-annotations.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-config-xml-mapping-annotations/hibernate-config-xml-mapping-annotations.iml" />
@@ -70,6 +68,7 @@
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-many-to-one/hibernate-many-to-one.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-many-to-one/hibernate-many-to-one.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-one-to-one/hibernate-one-to-one.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-one-to-one/hibernate-one-to-one.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/hibernate-second-level-cache/hibernate-second-level-cache.iml" filepath="$PROJECT_DIR$/Hibernate/part2/hibernate-second-level-cache/hibernate-second-level-cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EJB/jms/jms.iml" filepath="$PROJECT_DIR$/EJB/jms/jms.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/lib/lib.iml" filepath="$PROJECT_DIR$/EJB/stateless-ejb-local-remote/lib/lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/Logging/log4j/log4j.iml" filepath="$PROJECT_DIR$/Logging/log4j/log4j.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis/SimpleMyBatis/simple-mybatis.iml" filepath="$PROJECT_DIR$/MyBatis/SimpleMyBatis/simple-mybatis.iml" />
@@ -85,6 +84,7 @@
       <module fileurl="file://$PROJECT_DIR$/Spring/Integration/spring-integration-07/spring-integration-07.iml" filepath="$PROJECT_DIR$/Spring/Integration/spring-integration-07/spring-integration-07.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring/Integration/spring-integration-08/spring-integration-08.iml" filepath="$PROJECT_DIR$/Spring/Integration/spring-integration-08/spring-integration-08.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/stateless-ejb-local-remote.iml" filepath="$PROJECT_DIR$/EJB/stateless-ejb-local-remote/stateless-ejb-local-remote.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EJB/jms/war/war.iml" filepath="$PROJECT_DIR$/EJB/jms/war/war.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/war-client/war-client.iml" filepath="$PROJECT_DIR$/EJB/stateless-ejb-local-remote/war-client/war-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/war-ejb/war-ejb.iml" filepath="$PROJECT_DIR$/EJB/stateless-ejb-local-remote/war-ejb/war-ejb.iml" />
     </modules>

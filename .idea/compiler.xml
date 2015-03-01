@@ -24,8 +24,10 @@
         <processorPath useClasspath="true" />
         <module name="ClientAuthentication" />
         <module name="DWRExample-N01" />
+        <module name="ear" />
         <module name="ear-client" />
         <module name="ear-ejb" />
+        <module name="ejb" />
         <module name="ejb-ear2-module" />
         <module name="ejb-jar-module" />
         <module name="ejb-jms-ear" />
@@ -92,6 +94,7 @@
         <module name="VaadinExampleN03" />
         <module name="VaadinExampleN04" />
         <module name="VelocityExample-N01" />
+        <module name="war" />
         <module name="war-client" />
         <module name="war-ejb" />
         <module name="WebSecurity" />
@@ -113,8 +116,10 @@
       <module name="DojoExampleN03" target="1.7" />
       <module name="DojoExampleN04" target="1.7" />
       <module name="DWRExample-N01" target="1.7" />
+      <module name="ear" target="1.7" />
       <module name="ear-client" target="1.7" />
       <module name="ear-ejb" target="1.7" />
+      <module name="ejb" target="1.7" />
       <module name="ejb-ear-module" target="1.7" />
       <module name="ejb-ear2-module" target="1.7" />
       <module name="ejb-jar-module" target="1.7" />
@@ -191,6 +196,7 @@
       <module name="VaadinExampleN03" target="1.7" />
       <module name="VaadinExampleN04" target="1.7" />
       <module name="VelocityExample-N01" target="1.7" />
+      <module name="war" target="1.7" />
       <module name="war-client" target="1.7" />
       <module name="war-ejb" target="1.7" />
       <module name="WebSecurity" target="1.7" />
