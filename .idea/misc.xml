@@ -15,6 +15,7 @@
     <file type="web" url="file://$PROJECT_DIR$/EJB/async-ejb-war" />
     <file type="web" url="file://$PROJECT_DIR$/EJB/interceptors-ejb-war" />
     <file type="web" url="file://$PROJECT_DIR$/EJB/jms/jms-war" />
+    <file type="web" url="file://$PROJECT_DIR$/EJB/security-ejb-war" />
     <file type="web" url="file://$PROJECT_DIR$/EJB/stateful-ejb/stateful-war-ejb" />
     <file type="web" url="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/war-client" />
     <file type="web" url="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/war-ejb" />

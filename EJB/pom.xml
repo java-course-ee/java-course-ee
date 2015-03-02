@@ -15,6 +15,7 @@
         <module>jms</module>
         <module>async-ejb-war</module>
         <module>interceptors-ejb-war</module>
+        <module>security-ejb-war</module>
     </modules>
 
 </project>

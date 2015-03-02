@@ -8,6 +8,7 @@
     <file url="file://$PROJECT_DIR$/EJB/jms/jms-ear" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/EJB/jms/jms-ejb" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/EJB/jms/jms-war" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EJB/security-ejb-war" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/EJB/stateful-ejb/stateful-lib" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/EJB/stateful-ejb/stateful-war-ejb" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-client" charset="UTF-8" />
