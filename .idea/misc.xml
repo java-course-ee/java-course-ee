@@ -5,14 +5,14 @@
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="ejb" url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-jar-module" />
-    <file type="ejb" url="file://$PROJECT_DIR$/EJB/jms/ejb" />
+    <file type="ejb" url="file://$PROJECT_DIR$/EJB/jms/jms-ejb" />
     <file type="ejb" url="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ejb" />
-    <file type="javaeeApplication" url="file://$PROJECT_DIR$/EJB/jms/ear" />
+    <file type="javaeeApplication" url="file://$PROJECT_DIR$/EJB/jms/jms-ear" />
     <file type="javaeeApplication" url="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-client" />
     <file type="javaeeApplication" url="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-ejb" />
     <file type="javaeeApplication" url="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ear" />
     <file type="web" url="file://$PROJECT_DIR$/DWR/DWRExample-N01" />
-    <file type="web" url="file://$PROJECT_DIR$/EJB/jms/war" />
+    <file type="web" url="file://$PROJECT_DIR$/EJB/jms/jms-war" />
     <file type="web" url="file://$PROJECT_DIR$/EJB/stateful-ejb/stateful-war-ejb" />
     <file type="web" url="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/war-client" />
     <file type="web" url="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/war-ejb" />

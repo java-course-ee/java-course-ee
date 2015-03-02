@@ -3,36 +3,35 @@ package edu.javacourse.jms;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.Calendar;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.ejb.ActivationConfigProperty;
 import javax.ejb.MessageDriven;
-import javax.interceptor.AroundInvoke;
-import javax.interceptor.InvocationContext;
 import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.MessageListener;
 import javax.jms.TextMessage;
+import java.util.Calendar;
 
-@MessageDriven(name = "TestMDB", activationConfig = {
-    @ActivationConfigProperty(propertyName = "acknowledgeMode", propertyValue = "Auto-acknowledge"),
+@MessageDriven(name = "TestMDB2", activationConfig = {
     @ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Queue"),
     @ActivationConfigProperty(propertyName = "destination", propertyValue = "queue/test")
 })
-public class MessageReceiverBean1 implements MessageListener {
+public class MessageReceiverBean2 implements MessageListener {
     
-    private static final Logger log = LoggerFactory.getLogger(MessageReceiverBean1.class);
+    private static final Logger log = LoggerFactory.getLogger(MessageReceiverBean2.class);
 
     @PostConstruct
     public void before() {
-        log.debug("PostConstruct");
+        log.debug("Bean 2 PostConstruct");
     }
 
     @PreDestroy
     public void after() {
-        log.debug("PreDestroy");
+        log.debug("Bean 2 PreDestroy");
     }
+
+    private static boolean gotThree = false;
 
     @Override
     public void onMessage(Message message) {
@@ -40,7 +39,15 @@ public class MessageReceiverBean1 implements MessageListener {
             try {
                 Thread.sleep(2000);
                 TextMessage textMessage = (TextMessage) message;
-                log.debug("Bean 1: {}, {}", textMessage.getText(), Calendar.getInstance().getTime().toString());
+
+                final String text = textMessage.getText();
+                if (!MessageReceiverBean2.gotThree & text.contains("This is message 3")) {
+                    MessageReceiverBean2.gotThree = true;
+                    log.debug("Bean 2 Throw message 3 away");
+                    throw new RuntimeException("Ups");
+                }
+
+                log.debug("Bean 2 from queue: {}", text);
             } catch (InterruptedException ex) {
                 ex.printStackTrace();
             } catch (JMSException ex) {

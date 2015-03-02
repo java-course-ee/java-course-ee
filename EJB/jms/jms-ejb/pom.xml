@@ -13,7 +13,7 @@
     </parent>
 
     <groupId>edu.javacourse.ejb.jms</groupId>
-    <artifactId>ejb</artifactId>
+    <artifactId>jms-ejb</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>ejb</packaging>
 

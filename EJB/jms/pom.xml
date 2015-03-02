@@ -10,9 +10,9 @@
     <name>EJB JMS</name>
     
     <modules>
-        <module>ejb</module>
-        <module>war</module>
-        <module>ear</module>
+        <module>jms-ejb</module>
+        <module>jms-war</module>
+        <module>jms-ear</module>
     </modules>
 
 </project>

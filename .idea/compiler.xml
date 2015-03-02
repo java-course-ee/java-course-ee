@@ -54,6 +54,9 @@
         <module name="IoC-01-Simple-Bean" />
         <module name="ioc-02-inheritance" />
         <module name="IoC-02-Inheritance" />
+        <module name="jms-ear" />
+        <module name="jms-ejb" />
+        <module name="jms-war" />
         <module name="JQueryExampleN09" />
         <module name="JQueryExampleN10" />
         <module name="JQueryExampleN11" />
@@ -152,6 +155,9 @@
       <module name="IoC-01-Simple-Bean" target="1.7" />
       <module name="ioc-02-inheritance" target="1.7" />
       <module name="IoC-02-Inheritance" target="1.7" />
+      <module name="jms-ear" target="1.7" />
+      <module name="jms-ejb" target="1.7" />
+      <module name="jms-war" target="1.7" />
       <module name="JQueryExampleN02" target="1.6" />
       <module name="JQueryExampleN03" target="1.6" />
       <module name="JQueryExampleN04" target="1.6" />

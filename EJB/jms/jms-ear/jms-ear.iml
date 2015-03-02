@@ -17,7 +17,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="ejb" />
-    <orderEntry type="module" module-name="war" />
+    <orderEntry type="module" module-name="jms-ejb" />
+    <orderEntry type="module" module-name="jms-war" />
   </component>
 </module>
