@@ -14,6 +14,7 @@
         <module>stateful-ejb</module>
         <module>jms</module>
         <module>async-ejb-war</module>
+        <module>interceptors-ejb-war</module>
     </modules>
 
 </project>
