@@ -3,6 +3,7 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/DWR/DWRExample-N01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EJB/async-ejb-war" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/EJB/jms/jms-ear" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/EJB/jms/jms-ejb" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/EJB/jms/jms-war" charset="UTF-8" />

@@ -13,6 +13,7 @@
         <module>stateless-ejb-local-remote</module>
         <module>stateful-ejb</module>
         <module>jms</module>
+        <module>async-ejb-war</module>
     </modules>
 
 </project>

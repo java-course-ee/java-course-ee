@@ -22,6 +22,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="async-ejb-war" />
         <module name="ClientAuthentication" />
         <module name="DWRExample-N01" />
         <module name="ear" />
@@ -92,6 +93,7 @@
         <module name="spring-integration-08" />
         <module name="stateful-lib" />
         <module name="stateful-war-ejb" />
+        <module name="stateful-war-ejb (1)" />
         <module name="Struts2ExampleN01-web" />
         <module name="Struts2ExampleN03-web" />
         <module name="Struts2ExampleN04-web" />
@@ -117,6 +119,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="async-ejb-war" target="1.7" />
       <module name="ClientAuthentication" target="1.7" />
       <module name="DojoExampleN01" target="1.7" />
       <module name="DojoExampleN02" target="1.7" />
@@ -201,6 +204,7 @@
       <module name="spring-integration-08" target="1.7" />
       <module name="stateful-lib" target="1.7" />
       <module name="stateful-war-ejb" target="1.7" />
+      <module name="stateful-war-ejb (1)" target="1.7" />
       <module name="Struts2ExampleN01-web" target="1.7" />
       <module name="Struts2ExampleN03-web" target="1.7" />
       <module name="Struts2ExampleN04-web" target="1.7" />
