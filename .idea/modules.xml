@@ -91,6 +91,7 @@
       <module fileurl="file://$PROJECT_DIR$/EJB/stateful-ejb/stateful-lib/stateful-lib.iml" filepath="$PROJECT_DIR$/EJB/stateful-ejb/stateful-lib/stateful-lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateful-ejb/stateful-war-ejb/stateful-war-ejb.iml" filepath="$PROJECT_DIR$/EJB/stateful-ejb/stateful-war-ejb/stateful-war-ejb.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/stateless-ejb-local-remote.iml" filepath="$PROJECT_DIR$/EJB/stateless-ejb-local-remote/stateless-ejb-local-remote.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EJB/timer-service-ejb-war/timer-service-ejb-war.iml" filepath="$PROJECT_DIR$/EJB/timer-service-ejb-war/timer-service-ejb-war.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/war-client/war-client.iml" filepath="$PROJECT_DIR$/EJB/stateless-ejb-local-remote/war-client/war-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/war-ejb/war-ejb.iml" filepath="$PROJECT_DIR$/EJB/stateless-ejb-local-remote/war-ejb/war-ejb.iml" />
     </modules>

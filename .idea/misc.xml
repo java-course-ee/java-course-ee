@@ -19,6 +19,7 @@
     <file type="web" url="file://$PROJECT_DIR$/EJB/stateful-ejb/stateful-war-ejb" />
     <file type="web" url="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/war-client" />
     <file type="web" url="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/war-ejb" />
+    <file type="web" url="file://$PROJECT_DIR$/EJB/timer-service-ejb-war" />
     <file type="web" url="file://$PROJECT_DIR$/JQuery/JQueryExampleN09" />
     <file type="web" url="file://$PROJECT_DIR$/JQuery/JQueryExampleN10" />
     <file type="web" url="file://$PROJECT_DIR$/JQuery/JQueryExampleN11" />

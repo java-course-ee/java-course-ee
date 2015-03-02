@@ -16,6 +16,7 @@
     <file url="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/lib" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/war-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/war-ejb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EJB/timer-service-ejb-war" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Hibernate/part1/hibernate-config-xml-mapping-annotations" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Hibernate/part1/hibernate-criteria" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Hibernate/part1/hibernate-crud" charset="UTF-8" />

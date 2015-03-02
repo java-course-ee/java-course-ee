@@ -16,6 +16,7 @@
         <module>async-ejb-war</module>
         <module>interceptors-ejb-war</module>
         <module>security-ejb-war</module>
+        <module>timer-service-ejb-war</module>
     </modules>
 
 </project>
