@@ -23,7 +23,9 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="async-ejb-war" />
+        <module name="bean-transactions-ejb-war" />
         <module name="ClientAuthentication" />
+        <module name="container-transactions-ejb-war" />
         <module name="DWRExample-N01" />
         <module name="ear" />
         <module name="ear-client" />
@@ -124,7 +126,9 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="async-ejb-war" target="1.7" />
+      <module name="bean-transactions-ejb-war" target="1.7" />
       <module name="ClientAuthentication" target="1.7" />
+      <module name="container-transactions-ejb-war" target="1.7" />
       <module name="DojoExampleN01" target="1.7" />
       <module name="DojoExampleN02" target="1.7" />
       <module name="DojoExampleN03" target="1.7" />

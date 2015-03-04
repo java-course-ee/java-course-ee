@@ -17,6 +17,8 @@
         <module>interceptors-ejb-war</module>
         <module>security-ejb-war</module>
         <module>timer-service-ejb-war</module>
+        <module>transactions/bean-transactions-ejb-war</module>
+        <module>transactions/container-transactions-ejb-war</module>
     </modules>
 
 </project>
