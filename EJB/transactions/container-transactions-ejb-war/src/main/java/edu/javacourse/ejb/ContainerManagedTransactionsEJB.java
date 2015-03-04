@@ -28,8 +28,7 @@ public class ContainerManagedTransactionsEJB {
     @Resource(mappedName = "java:/jdbc/JavaCourse", type = DataSource.class)
     private DataSource dataSource;
 
-    @Resource
-    private EJBContext ejbContext;
+    /* !!! WARNING !!! for all methods. Don't close connections and other resources like that. Use finally block. */
 
     @TransactionAttribute(TransactionAttributeType.REQUIRED)
     public List<Region> getAllRegions() throws BusinessException {
