@@ -22,13 +22,10 @@ public class JMSClient extends HttpServlet {
     private Logger log = LoggerFactory.getLogger(JMSClient.class);
 
     @Resource(mappedName = "java:/ConnectionFactory")
-    private ConnectionFactory connectionQueueFactory;
+    private ConnectionFactory connectionFactory;
 
     @Resource(mappedName = "java:/queue/test")
     private Queue queue;
-
-    @Resource(mappedName = "java:/ConnectionFactory")
-    private ConnectionFactory connectionTopicFactory;
 
     @Resource(mappedName = "java:/topic/test")
     private Topic topic;
@@ -51,7 +48,7 @@ public class JMSClient extends HttpServlet {
 
     public void sendMessageToQueue() {
         try {
-            Connection connection = connectionQueueFactory.createConnection();
+            Connection connection = connectionFactory.createConnection();
             Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
             MessageProducer messageProducer = session.createProducer(queue);
             TextMessage message = session.createTextMessage();
@@ -72,7 +69,7 @@ public class JMSClient extends HttpServlet {
 
     public void sendMessageToTopic() {
         try {
-            Connection connection = connectionTopicFactory.createConnection();
+            Connection connection = connectionFactory.createConnection();
             Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
             MessageProducer messageProducer = session.createProducer(topic);
             TextMessage message = session.createTextMessage();

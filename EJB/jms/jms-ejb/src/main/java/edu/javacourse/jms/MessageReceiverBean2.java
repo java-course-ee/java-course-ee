@@ -5,8 +5,10 @@ import org.slf4j.LoggerFactory;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
+import javax.annotation.Resource;
 import javax.ejb.ActivationConfigProperty;
 import javax.ejb.MessageDriven;
+import javax.ejb.MessageDrivenContext;
 import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.MessageListener;
@@ -31,7 +33,8 @@ public class MessageReceiverBean2 implements MessageListener {
         log.debug("Bean 2 PreDestroy");
     }
 
-    private static boolean gotThree = false;
+    @Resource
+    private MessageDrivenContext context;
 
     @Override
     public void onMessage(Message message) {
@@ -41,12 +44,6 @@ public class MessageReceiverBean2 implements MessageListener {
                 TextMessage textMessage = (TextMessage) message;
 
                 final String text = textMessage.getText();
-                if (!MessageReceiverBean2.gotThree & text.contains("This is message 3")) {
-                    MessageReceiverBean2.gotThree = true;
-                    log.debug("Bean 2 Throw message 3 away");
-                    throw new RuntimeException("Ups");
-                }
-
                 log.debug("Bean 2 from queue: {}", text);
             } catch (InterruptedException ex) {
                 ex.printStackTrace();

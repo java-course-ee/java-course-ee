@@ -6,8 +6,10 @@ import org.slf4j.LoggerFactory;
 import java.util.Calendar;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
+import javax.annotation.Resource;
 import javax.ejb.ActivationConfigProperty;
 import javax.ejb.MessageDriven;
+import javax.ejb.MessageDrivenContext;
 import javax.interceptor.AroundInvoke;
 import javax.interceptor.InvocationContext;
 import javax.jms.JMSException;
@@ -33,7 +35,8 @@ public class MessageReceiverBean1 implements MessageListener {
         log.debug("Bean 1 PreDestroy");
     }
 
-    private static boolean gotThree = false;
+    @Resource
+    public MessageDrivenContext context;
 
     @Override
     public void onMessage(Message message) {
@@ -43,10 +46,10 @@ public class MessageReceiverBean1 implements MessageListener {
                 TextMessage textMessage = (TextMessage) message;
 
                 final String text = textMessage.getText();
-                if (!MessageReceiverBean1.gotThree & text.contains("This is message 3")) {
-                    MessageReceiverBean1.gotThree = true;
-                    log.debug("Bean 1 Throw message 3 away");
-                    throw new RuntimeException("Ups");
+                if (text.contains("This is message 3") || text.contains("This is message 5") || text.contains("This is message 7")) {
+                    log.debug("*** Bean 1 Throw message with text'"  + text + "' away...");
+                    context.setRollbackOnly();
+                    return;
                 }
 
                 log.debug("Bean 1 from queue: {}", text);
