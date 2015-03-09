@@ -11,7 +11,11 @@
 
     <modules>
         <module>JAX_WS/SimpleWebService</module>
-        <module>WEB-REST/RESTExample</module>
+        <module>WEB-REST/rest-exceptions</module>
+        <module>WEB-REST/rest-params-response</module>
+        <module>WEB-REST/rest-download-files</module>
+        <module>WEB-REST/rest-produces-xml</module>
+        <module>WEB-REST/rest-produces-json</module>
     </modules>
 
 </project>
