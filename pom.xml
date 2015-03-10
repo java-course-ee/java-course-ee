@@ -13,6 +13,7 @@
         <module>DWR</module>
         <module>EJB</module>
         <module>Hibernate</module>
+        <module>JavaMail</module>
         <module>JQuery</module>
         <module>JSF</module>
         <module>Logging</module>

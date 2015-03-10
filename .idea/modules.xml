@@ -26,6 +26,7 @@
       <module fileurl="file://$PROJECT_DIR$/JSF/JSF7/JSF7.iml" filepath="$PROJECT_DIR$/JSF/JSF7/JSF7.iml" />
       <module fileurl="file://$PROJECT_DIR$/JSF/JSF8/JSF8.iml" filepath="$PROJECT_DIR$/JSF/JSF8/JSF8.iml" />
       <module fileurl="file://$PROJECT_DIR$/JSF/JSF9/JSF9.iml" filepath="$PROJECT_DIR$/JSF/JSF9/JSF9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaMail/JavaMail.iml" filepath="$PROJECT_DIR$/JavaMail/JavaMail.iml" />
       <module fileurl="file://$PROJECT_DIR$/Logging/Logging.iml" filepath="$PROJECT_DIR$/Logging/Logging.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis/MyBatis.iml" filepath="$PROJECT_DIR$/MyBatis/MyBatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/Portlet/Portlet.iml" filepath="$PROJECT_DIR$/Portlet/Portlet.iml" />
@@ -53,6 +54,7 @@
       <module fileurl="file://$PROJECT_DIR$/WebServices/WebServices.iml" filepath="$PROJECT_DIR$/WebServices/WebServices.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/async-ejb-war/async-ejb-war.iml" filepath="$PROJECT_DIR$/EJB/async-ejb-war/async-ejb-war.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/transactions/bean-transactions-ejb-war/bean-transactions-ejb-war.iml" filepath="$PROJECT_DIR$/EJB/transactions/bean-transactions-ejb-war/bean-transactions-ejb-war.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaMail/compose-simple-message/compose-simple-message.iml" filepath="$PROJECT_DIR$/JavaMail/compose-simple-message/compose-simple-message.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/transactions/container-transactions-ejb-war/container-transactions-ejb-war.iml" filepath="$PROJECT_DIR$/EJB/transactions/container-transactions-ejb-war/container-transactions-ejb-war.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-client/ear-client.iml" filepath="$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-client/ear-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-ejb/ear-ejb.iml" filepath="$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-ejb/ear-ejb.iml" />

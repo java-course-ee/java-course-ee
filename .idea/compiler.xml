@@ -25,6 +25,7 @@
         <module name="async-ejb-war" />
         <module name="bean-transactions-ejb-war" />
         <module name="ClientAuthentication" />
+        <module name="compose-simple-message" />
         <module name="container-transactions-ejb-war" />
         <module name="DWRExample-N01" />
         <module name="ear" />
@@ -80,6 +81,7 @@
         <module name="lib (1) (edu.javacourse.ejb.stateful-ejb)" />
         <module name="log4j" />
         <module name="rest-download-files" />
+        <module name="rest-exceptions" />
         <module name="rest-params-response" />
         <module name="rest-produces-json" />
         <module name="rest-produces-xml" />
@@ -127,18 +129,12 @@
         <processorPath useClasspath="true" />
         <module name="ejb-ear-module" />
       </profile>
-      <profile default="false" name="Annotation profile for rest-exceptions" enabled="true">
-        <sourceOutputDir name="../RESTExample/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../RESTExample/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="rest-exceptions" />
-      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="async-ejb-war" target="1.7" />
       <module name="bean-transactions-ejb-war" target="1.7" />
       <module name="ClientAuthentication" target="1.7" />
+      <module name="compose-simple-message" target="1.7" />
       <module name="container-transactions-ejb-war" target="1.7" />
       <module name="DojoExampleN01" target="1.7" />
       <module name="DojoExampleN02" target="1.7" />
