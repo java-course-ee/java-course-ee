@@ -4,6 +4,7 @@ import model.Region;
 
 import javax.annotation.PostConstruct;
 import javax.ws.rs.*;
+import javax.ws.rs.core.Application;
 import javax.ws.rs.core.MediaType;
 import java.net.URISyntaxException;
 import java.util.*;
@@ -13,9 +14,9 @@ import java.util.*;
  * Date: 14.07.13
  */
 
-@ApplicationPath("rest")
+@ApplicationPath("/rest")
 @Path("/regions")
-public class RegionService {
+public class RegionService extends Application {
 
 
     Map<String, Region> regions = new HashMap<String, Region>();

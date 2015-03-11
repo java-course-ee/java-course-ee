@@ -16,6 +16,8 @@
         <module>WEB-REST/rest-download-files</module>
         <module>WEB-REST/rest-produces-xml</module>
         <module>WEB-REST/rest-produces-json</module>
+        <module>WEB-REST/rest-context</module>
+        <module>WEB-REST/rest-scope</module>
     </modules>
 
 </project>

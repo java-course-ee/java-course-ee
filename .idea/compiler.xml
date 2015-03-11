@@ -80,11 +80,14 @@
         <module name="lib" />
         <module name="lib (1) (edu.javacourse.ejb.stateful-ejb)" />
         <module name="log4j" />
+        <module name="rest-context" />
+        <module name="rest-context (1)" />
         <module name="rest-download-files" />
         <module name="rest-exceptions" />
         <module name="rest-params-response" />
         <module name="rest-produces-json" />
         <module name="rest-produces-xml" />
+        <module name="rest-scope" />
         <module name="RESTExample" />
         <module name="security-ejb-war" />
         <module name="simple-mybatis" />
@@ -202,11 +205,14 @@
       <module name="lib" target="1.7" />
       <module name="lib (1) (edu.javacourse.ejb.stateful-ejb)" target="1.7" />
       <module name="log4j" target="1.7" />
+      <module name="rest-context" target="1.7" />
+      <module name="rest-context (1)" target="1.7" />
       <module name="rest-download-files" target="1.7" />
       <module name="rest-exceptions" target="1.7" />
       <module name="rest-params-response" target="1.7" />
       <module name="rest-produces-json" target="1.7" />
       <module name="rest-produces-xml" target="1.7" />
+      <module name="rest-scope" target="1.7" />
       <module name="RESTExample" target="1.7" />
       <module name="security-ejb-war" target="1.7" />
       <module name="simple-mybatis" target="1.7" />

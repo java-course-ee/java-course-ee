@@ -4,6 +4,7 @@ import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import javax.ws.rs.core.Application;
 import javax.ws.rs.core.Response;
 import java.io.File;
 import java.net.URISyntaxException;
@@ -13,9 +14,9 @@ import java.net.URISyntaxException;
  * Date: 14.07.13
  */
 
-@ApplicationPath("rest")
+@ApplicationPath("/rest")
 @Path("/get")
-public class RestService {
+public class RestService extends Application {
 
 
     @GET
