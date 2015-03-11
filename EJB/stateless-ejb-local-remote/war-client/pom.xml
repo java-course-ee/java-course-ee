@@ -31,8 +31,8 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>edu.javacourse.ejb</groupId>
-            <artifactId>ejb-lib-module</artifactId>
+            <groupId>edu.javacourse.ejb.stateless-ejb-local-remote</groupId>
+            <artifactId>lib</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>

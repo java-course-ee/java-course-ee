@@ -24,6 +24,6 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.activation:activation:1.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: jstl:jstl:1.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.slf4j:slf4j-api:1.7.7" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: edu.javacourse.ejb:ejb-lib-module:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="module" module-name="lib" scope="PROVIDED" />
   </component>
 </module>
