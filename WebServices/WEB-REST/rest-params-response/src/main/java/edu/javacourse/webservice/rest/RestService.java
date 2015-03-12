@@ -34,7 +34,7 @@ public class RestService extends Application {
         return Response.status(200).entity("from = " + from + "      to = " + to).build();
     }
 
-    @GET
+    @POST
     @Path("/addForm")
     public Response queryformParam(@Form Book book) {
         return Response.status(200).entity("id = " + book.getId() + "      name = " + book.getName()).build();

@@ -16,5 +16,17 @@
     <input type="submit" value="Add User"/>
 </form>
 
+
+<form action="rest/hello/addForm" method="POST">
+    <p>
+        id : <input type="text" name="id"/>
+    </p>
+
+    <p>
+        name : <input type="text" name="name"/>
+    </p>
+    <input type="submit" value="add book"/>
+</form>
+
 </body>
 </html>
