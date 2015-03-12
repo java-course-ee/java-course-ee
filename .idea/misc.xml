@@ -6,11 +6,11 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="ejb" url="file://$PROJECT_DIR$/EJB/ejb-pom-module/ejb-jar-module" />
     <file type="ejb" url="file://$PROJECT_DIR$/EJB/jms/jms-ejb" />
-    <file type="ejb" url="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ejb" />
+    <file type="ejb" url="file://$PROJECT_DIR$/WebServices/JAX-WS/SimpleWebService/SimpleWebService-ejb" />
     <file type="javaeeApplication" url="file://$PROJECT_DIR$/EJB/jms/jms-ear" />
     <file type="javaeeApplication" url="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-client" />
     <file type="javaeeApplication" url="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-ejb" />
-    <file type="javaeeApplication" url="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ear" />
+    <file type="javaeeApplication" url="file://$PROJECT_DIR$/WebServices/JAX-WS/SimpleWebService/SimpleWebService-ear" />
     <file type="web" url="file://$PROJECT_DIR$/DWR/DWRExample-N01" />
     <file type="web" url="file://$PROJECT_DIR$/EJB/async-ejb-war" />
     <file type="web" url="file://$PROJECT_DIR$/EJB/interceptors-ejb-war" />

@@ -10,7 +10,7 @@
     <name>WebServices</name>
 
     <modules>
-        <module>JAX_WS/SimpleWebService</module>
+        <module>JAX-WS/SimpleWebService</module>
         <module>JAX-RS/rest-exceptions</module>
         <module>JAX-RS/rest-params-response</module>
         <module>JAX-RS/rest-download-files</module>

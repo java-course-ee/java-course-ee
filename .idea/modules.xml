@@ -32,10 +32,10 @@
       <module fileurl="file://$PROJECT_DIR$/Portlet/Portlet.iml" filepath="$PROJECT_DIR$/Portlet/Portlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/Security/Security.iml" filepath="$PROJECT_DIR$/Security/Security.iml" />
       <module fileurl="file://$PROJECT_DIR$/Portlet/SimplePortlet/SimplePortlet.iml" filepath="$PROJECT_DIR$/Portlet/SimplePortlet/SimplePortlet.iml" />
-      <module fileurl="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService.iml" filepath="$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService.iml" />
-      <module fileurl="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-client/SimpleWebService-client.iml" filepath="$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-client/SimpleWebService-client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ear/SimpleWebService-ear.iml" filepath="$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ear/SimpleWebService-ear.iml" />
-      <module fileurl="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ejb/SimpleWebService-ejb.iml" filepath="$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ejb/SimpleWebService-ejb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebServices/JAX-WS/SimpleWebService/SimpleWebService.iml" filepath="$PROJECT_DIR$/WebServices/JAX-WS/SimpleWebService/SimpleWebService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebServices/JAX-WS/SimpleWebService/SimpleWebService-client/SimpleWebService-client.iml" filepath="$PROJECT_DIR$/WebServices/JAX-WS/SimpleWebService/SimpleWebService-client/SimpleWebService-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebServices/JAX-WS/SimpleWebService/SimpleWebService-ear/SimpleWebService-ear.iml" filepath="$PROJECT_DIR$/WebServices/JAX-WS/SimpleWebService/SimpleWebService-ear/SimpleWebService-ear.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebServices/JAX-WS/SimpleWebService/SimpleWebService-ejb/SimpleWebService-ejb.iml" filepath="$PROJECT_DIR$/WebServices/JAX-WS/SimpleWebService/SimpleWebService-ejb/SimpleWebService-ejb.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring/Spring.iml" filepath="$PROJECT_DIR$/Spring/Spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/Struts/Struts.iml" filepath="$PROJECT_DIR$/Struts/Struts.iml" />
       <module fileurl="file://$PROJECT_DIR$/Struts/Struts2ExampleN01-web/Struts2ExampleN01-web.iml" filepath="$PROJECT_DIR$/Struts/Struts2ExampleN01-web/Struts2ExampleN01-web.iml" />
