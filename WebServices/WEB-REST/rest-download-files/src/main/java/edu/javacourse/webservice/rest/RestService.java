@@ -23,7 +23,7 @@ public class RestService extends Application {
     @Path("/file")
     @Produces("text/plain")
     public Response getFile() throws URISyntaxException {
-        File file = new File(getClass().getResource("textFile.txt").toURI());
+        File file = new File("{path to text file}");
         Response.ResponseBuilder response = Response.ok((Object) file);
         response.header("Content-Disposition", "attachment; filename='" + file.getName() + "'");
         return response.build();
@@ -33,7 +33,7 @@ public class RestService extends Application {
     @Path("/image")
     @Produces("image/png")
     public Response getImage() throws URISyntaxException {
-        File file = new File(getClass().getResource("logo.png").toURI());
+        File file = new File("{path to image}");
         Response.ResponseBuilder response = Response.ok(file);
         response.header("Content-Disposition", "attachment; filename='" + file.getName() + "'");
         return response.build();
