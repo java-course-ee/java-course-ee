@@ -47,13 +47,13 @@
     <file type="web" url="file://$PROJECT_DIR$/Vaadin/VaadinExampleN02" />
     <file type="web" url="file://$PROJECT_DIR$/Vaadin/VaadinExampleN03" />
     <file type="web" url="file://$PROJECT_DIR$/Vaadin/VaadinExampleN04" />
-    <file type="web" url="file://$PROJECT_DIR$/WebServices/WEB-REST/rest-context" />
-    <file type="web" url="file://$PROJECT_DIR$/WebServices/WEB-REST/rest-download-files" />
-    <file type="web" url="file://$PROJECT_DIR$/WebServices/WEB-REST/rest-exceptions" />
-    <file type="web" url="file://$PROJECT_DIR$/WebServices/WEB-REST/rest-params-response" />
-    <file type="web" url="file://$PROJECT_DIR$/WebServices/WEB-REST/rest-produces-json" />
-    <file type="web" url="file://$PROJECT_DIR$/WebServices/WEB-REST/rest-produces-xml" />
-    <file type="web" url="file://$PROJECT_DIR$/WebServices/WEB-REST/rest-scope" />
+    <file type="web" url="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-context" />
+    <file type="web" url="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-download-files" />
+    <file type="web" url="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-exceptions" />
+    <file type="web" url="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-params-response" />
+    <file type="web" url="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-produces-json" />
+    <file type="web" url="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-produces-xml" />
+    <file type="web" url="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-scope" />
   </component>
   <component name="IdProvider" IDEtalkID="E332059EB1A533795641F0A6DDC107FB" />
   <component name="MavenProjectsManager">

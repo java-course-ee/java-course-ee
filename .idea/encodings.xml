@@ -76,16 +76,16 @@
     <file url="file://$PROJECT_DIR$/Vaadin/VaadinExampleN03" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Vaadin/VaadinExampleN04" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Velocity/GS_Velocity_1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-context" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-download-files" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-exceptions" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-params-response" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-produces-json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-produces-xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-scope" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ear" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebServices/JAX_WS/SimpleWebService/SimpleWebService-ejb" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/WebServices/WEB-REST/rest-context" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/WebServices/WEB-REST/rest-download-files" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/WebServices/WEB-REST/rest-exceptions" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/WebServices/WEB-REST/rest-params-response" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/WebServices/WEB-REST/rest-produces-json" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/WebServices/WEB-REST/rest-produces-xml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/WebServices/WEB-REST/rest-scope" charset="UTF-8" />
   </component>
 </project>

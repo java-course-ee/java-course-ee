@@ -78,13 +78,13 @@
       <module fileurl="file://$PROJECT_DIR$/EJB/jms/jms-war/jms-war.iml" filepath="$PROJECT_DIR$/EJB/jms/jms-war/jms-war.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/lib/lib.iml" filepath="$PROJECT_DIR$/EJB/stateless-ejb-local-remote/lib/lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/Logging/log4j/log4j.iml" filepath="$PROJECT_DIR$/Logging/log4j/log4j.iml" />
-      <module fileurl="file://$PROJECT_DIR$/WebServices/WEB-REST/rest-context/rest-context.iml" filepath="$PROJECT_DIR$/WebServices/WEB-REST/rest-context/rest-context.iml" />
-      <module fileurl="file://$PROJECT_DIR$/WebServices/WEB-REST/rest-download-files/rest-download-files.iml" filepath="$PROJECT_DIR$/WebServices/WEB-REST/rest-download-files/rest-download-files.iml" />
-      <module fileurl="file://$PROJECT_DIR$/WebServices/WEB-REST/rest-exceptions/rest-exceptions.iml" filepath="$PROJECT_DIR$/WebServices/WEB-REST/rest-exceptions/rest-exceptions.iml" />
-      <module fileurl="file://$PROJECT_DIR$/WebServices/WEB-REST/rest-params-response/rest-params-response.iml" filepath="$PROJECT_DIR$/WebServices/WEB-REST/rest-params-response/rest-params-response.iml" />
-      <module fileurl="file://$PROJECT_DIR$/WebServices/WEB-REST/rest-produces-json/rest-produces-json.iml" filepath="$PROJECT_DIR$/WebServices/WEB-REST/rest-produces-json/rest-produces-json.iml" />
-      <module fileurl="file://$PROJECT_DIR$/WebServices/WEB-REST/rest-produces-xml/rest-produces-xml.iml" filepath="$PROJECT_DIR$/WebServices/WEB-REST/rest-produces-xml/rest-produces-xml.iml" />
-      <module fileurl="file://$PROJECT_DIR$/WebServices/WEB-REST/rest-scope/rest-scope.iml" filepath="$PROJECT_DIR$/WebServices/WEB-REST/rest-scope/rest-scope.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-context/rest-context.iml" filepath="$PROJECT_DIR$/WebServices/JAX-RS/rest-context/rest-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-download-files/rest-download-files.iml" filepath="$PROJECT_DIR$/WebServices/JAX-RS/rest-download-files/rest-download-files.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-exceptions/rest-exceptions.iml" filepath="$PROJECT_DIR$/WebServices/JAX-RS/rest-exceptions/rest-exceptions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-params-response/rest-params-response.iml" filepath="$PROJECT_DIR$/WebServices/JAX-RS/rest-params-response/rest-params-response.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-produces-json/rest-produces-json.iml" filepath="$PROJECT_DIR$/WebServices/JAX-RS/rest-produces-json/rest-produces-json.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-produces-xml/rest-produces-xml.iml" filepath="$PROJECT_DIR$/WebServices/JAX-RS/rest-produces-xml/rest-produces-xml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-scope/rest-scope.iml" filepath="$PROJECT_DIR$/WebServices/JAX-RS/rest-scope/rest-scope.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/security-ejb-war/security-ejb-war.iml" filepath="$PROJECT_DIR$/EJB/security-ejb-war/security-ejb-war.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis/SimpleMyBatis/simple-mybatis.iml" filepath="$PROJECT_DIR$/MyBatis/SimpleMyBatis/simple-mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/Logging/slf4j/slf4j.iml" filepath="$PROJECT_DIR$/Logging/slf4j/slf4j.iml" />
