@@ -5,9 +5,9 @@
 </head>
 <body>
 
-<a href="/rest/get/file">Download File</a>
+<a href="rest/get/file">Download File</a>
 <br/>
-<a href="/rest/get/image">Download Image</a>
+<a href="rest/get/image">Download Image</a>
 
 </body>
 </html>
