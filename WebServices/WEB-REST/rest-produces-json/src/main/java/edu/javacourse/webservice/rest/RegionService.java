@@ -19,15 +19,13 @@ import java.util.*;
 public class RegionService extends Application {
 
 
-    Map<String, Region> regions = new HashMap<String, Region>();
+    static Map<String, Region> regions = new HashMap<String, Region>();
 
-    @PostConstruct
-    public void init() {
+    static {
         regions.put("1", new Region(1, "Moscow", 10000000));
         regions.put("2", new Region(2, "SPB", 7000000));
         regions.put("3", new Region(3, "Ekaterinburg", 2000000));
     }
-
 
     @GET
     @Path("/id/{id}")
