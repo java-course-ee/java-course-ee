@@ -48,6 +48,7 @@
       <module fileurl="file://$PROJECT_DIR$/Vaadin/VaadinExampleN04/VaadinExampleN04.iml" filepath="$PROJECT_DIR$/Vaadin/VaadinExampleN04/VaadinExampleN04.iml" />
       <module fileurl="file://$PROJECT_DIR$/Velocity/Velocity.iml" filepath="$PROJECT_DIR$/Velocity/Velocity.iml" />
       <module fileurl="file://$PROJECT_DIR$/Velocity/GS_Velocity_1/VelocityExample-N01.iml" filepath="$PROJECT_DIR$/Velocity/GS_Velocity_1/VelocityExample-N01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Web/Web.iml" filepath="$PROJECT_DIR$/Web/Web.iml" />
       <module fileurl="file://$PROJECT_DIR$/Security/WebSecurity/WebSecurity.iml" filepath="$PROJECT_DIR$/Security/WebSecurity/WebSecurity.iml" />
       <module fileurl="file://$PROJECT_DIR$/Security/WebSecurityForm/WebSecurityForm.iml" filepath="$PROJECT_DIR$/Security/WebSecurityForm/WebSecurityForm.iml" />
       <module fileurl="file://$PROJECT_DIR$/Security/WebSecurityFormLDAP/WebSecurityFormLDAP.iml" filepath="$PROJECT_DIR$/Security/WebSecurityFormLDAP/WebSecurityFormLDAP.iml" />
@@ -86,6 +87,8 @@
       <module fileurl="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-produces-xml/rest-produces-xml.iml" filepath="$PROJECT_DIR$/WebServices/JAX-RS/rest-produces-xml/rest-produces-xml.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-scope/rest-scope.iml" filepath="$PROJECT_DIR$/WebServices/JAX-RS/rest-scope/rest-scope.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/security-ejb-war/security-ejb-war.iml" filepath="$PROJECT_DIR$/EJB/security-ejb-war/security-ejb-war.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Web/servlet-app/servlet-app.iml" filepath="$PROJECT_DIR$/Web/servlet-app/servlet-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Web/servlet-jsp-app/servlet-jsp-app.iml" filepath="$PROJECT_DIR$/Web/servlet-jsp-app/servlet-jsp-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis/SimpleMyBatis/simple-mybatis.iml" filepath="$PROJECT_DIR$/MyBatis/SimpleMyBatis/simple-mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/Logging/slf4j/slf4j.iml" filepath="$PROJECT_DIR$/Logging/slf4j/slf4j.iml" />
       <module fileurl="file://$PROJECT_DIR$/Logging/slf4j/slf4j-source/slf4j-source.iml" filepath="$PROJECT_DIR$/Logging/slf4j/slf4j-source/slf4j-source.iml" />

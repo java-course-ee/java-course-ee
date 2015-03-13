@@ -24,6 +24,7 @@
         <module>Struts</module>
         <module>Vaadin</module>
         <module>Velocity</module>
+        <module>Web</module>
         <module>WebServices</module>
     </modules>
 
@@ -251,8 +252,9 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-ejb-plugin</artifactId>
+                <version>2.4</version>
                 <configuration>
-                    <ejbVersion>3.0</ejbVersion>
+                    <ejbVersion>3.1</ejbVersion>
                 </configuration>
             </plugin>
             <plugin>

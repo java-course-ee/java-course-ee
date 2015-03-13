@@ -1,4 +1,4 @@
-package ru.gs.test.myfirstservlet;
+package edu.javacourse.web;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -12,14 +12,14 @@ import java.util.List;
 /**
  * @author Intern
  */
-public class MyFirstServlet extends HttpServlet {
+public class BookServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         String name = req.getParameter("name");
 
-        req.setAttribute("my name", name);
+        req.setAttribute("myname", name);
 
         List<Book> books = new ArrayList<Book>();
 
@@ -29,6 +29,6 @@ public class MyFirstServlet extends HttpServlet {
 
         req.setAttribute("books", books);
 
-        getServletContext().getRequestDispatcher("/MyFirstJSP.jsp").forward(req, resp);
+        getServletContext().getRequestDispatcher("/books.jsp").forward(req, resp);
     }
 }

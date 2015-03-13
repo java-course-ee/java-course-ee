@@ -1,4 +1,4 @@
-package ru.gs.test.myfirstservlet;
+package edu.javacourse.web;
 
 import java.util.Date;
 

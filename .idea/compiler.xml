@@ -90,6 +90,8 @@
         <module name="rest-scope" />
         <module name="RESTExample" />
         <module name="security-ejb-war" />
+        <module name="servlet-app" />
+        <module name="servlet-jsp-app" />
         <module name="simple-mybatis" />
         <module name="SimplePortlet" />
         <module name="SimpleWebService-client" />
@@ -215,6 +217,8 @@
       <module name="rest-scope" target="1.7" />
       <module name="RESTExample" target="1.7" />
       <module name="security-ejb-war" target="1.7" />
+      <module name="servlet-app" target="1.7" />
+      <module name="servlet-jsp-app" target="1.7" />
       <module name="simple-mybatis" target="1.7" />
       <module name="SimplePortlet" target="1.7" />
       <module name="SimpleWebService" target="1.7" />

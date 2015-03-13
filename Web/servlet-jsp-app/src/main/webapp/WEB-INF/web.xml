@@ -3,12 +3,12 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
 
     <servlet>
-        <servlet-name>MyFirstServlet</servlet-name>
-        <servlet-class>ru.gs.test.myfirstservlet.MyFirstServlet</servlet-class>
+        <servlet-name>BookServlet</servlet-name>
+        <servlet-class>edu.javacourse.web.BookServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>MyFirstServlet</servlet-name>
-        <url-pattern>/my-first-servlet</url-pattern>
+        <servlet-name>BookServlet</servlet-name>
+        <url-pattern>/bookServlet</url-pattern>
     </servlet-mapping>
 
     <session-config>

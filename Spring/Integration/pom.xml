@@ -10,7 +10,6 @@
     <name>Spring Integration</name>
 
     <modules>
-        <module></module>
         <module>spring-integration-01</module>
         <module>spring-integration-02</module>
         <module>spring-integration-03</module>
