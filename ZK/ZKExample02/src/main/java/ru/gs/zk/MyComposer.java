@@ -11,7 +11,7 @@ import org.zkoss.zul.Label;
 
 /**
  *
- * @author APronchakov <artem.pronchakov@gmail.com>
+ * @author Artem Pronchakov | email/xmpp: artem.pronchakov@calisto.email
  */
 public class MyComposer extends GenericForwardComposer {
     public static final String DATE_FORMAT = "dd.MM.yyyy HH:mm:ss";

@@ -3,7 +3,7 @@ package ru.test.struts2.entity;
 import java.io.Serializable;
 
 /**
- * @author APronchakov <artem.pronchakov@gmail.com>
+ * @author Artem Pronchakov | email/xmpp: artem.pronchakov@calisto.email
  */
 public class LoginBean implements Serializable {
     private String username;

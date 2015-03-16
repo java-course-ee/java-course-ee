@@ -11,7 +11,7 @@ import org.apache.struts2.convention.annotation.ResultPath;
 import ru.test.struts2.entity.LoginBean;
 
 /**
- * @author APronchakov <artem.pronchakov@gmail.com>
+ * @author Artem Pronchakov | email/xmpp: artem.pronchakov@calisto.email
  */
 @Namespace("/")
 @ResultPath("/")

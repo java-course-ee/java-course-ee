@@ -6,7 +6,7 @@ import org.zkoss.zul.Datebox;
 
 /**
  *
- * @author APronchakov <artem.pronchakov@gmail.com>
+ * @author Artem Pronchakov | email/xmpp: artem.pronchakov@calisto.email
  */
 public class MyComposer extends GenericForwardComposer{
 	private Datebox dateBox;

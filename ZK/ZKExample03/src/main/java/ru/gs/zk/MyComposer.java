@@ -9,7 +9,7 @@ import org.zkoss.zul.Messagebox;
 import org.zkoss.zul.Textbox;
 
 /**
- * @author APronchakov <artem.pronchakov@gmail.com>
+ * @author Artem Pronchakov | email/xmpp: artem.pronchakov@calisto.email
  */
 public class MyComposer extends GenericForwardComposer {
     private Textbox name;

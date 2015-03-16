@@ -6,7 +6,7 @@ import com.vaadin.server.VaadinServlet;
 import javax.servlet.annotation.WebServlet;
 
 /**
- * @author APronchakov <artem.pronchakov@gmail.com>
+ * @author Artem Pronchakov | email/xmpp: artem.pronchakov@calisto.email
  */
 @WebServlet(value = "/*", asyncSupported = true)
 @VaadinServletConfiguration(productionMode = false, ui = MyWindow.class)

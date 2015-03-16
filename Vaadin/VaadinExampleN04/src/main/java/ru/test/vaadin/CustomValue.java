@@ -1,7 +1,7 @@
 package ru.test.vaadin;
 
 /**
- * @author APronchakov <artem.pronchakov@gmail.com>
+ * @author Artem Pronchakov | email/xmpp: artem.pronchakov@calisto.email
  */
 public class CustomValue {
     private Long id;

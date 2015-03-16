@@ -4,7 +4,7 @@ import com.opensymphony.xwork2.ActionSupport;
 import ru.test.struts2.entity.LoginBean;
 
 /**
- * @author APronchakov <artem.pronchakov@gmail.com>
+ * @author Artem Pronchakov | email/xmpp: artem.pronchakov@calisto.email
  */
 public class LoginAction extends ActionSupport {
 
