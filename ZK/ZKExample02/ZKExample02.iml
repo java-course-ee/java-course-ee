@@ -31,6 +31,7 @@
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.slf4j:slf4j-jdk14:1.7.5" level="project" />
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.8" level="project" />
     <orderEntry type="library" name="Maven: org.zkoss.zk:zul:7.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.zkoss.zk:zhtml:7.0.3" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax:javaee-web-api:7.0" level="project" />
   </component>
 </module>

@@ -4,14 +4,17 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.zkoss.org/2005/zul http://www.zkoss.org/2005/zul/zul.xsd">
 
-    <window title="ZK Window" border="normal" apply="ru.gs.zk.MyComposer" >
+    <window title="ZK Window" border="normal" closable="true" maximizable="true" width="600px" height="200px" position="center" mode="overlapped" apply="ru.gs.zk.MyComposer">
         <hlayout>
             <label>Запросить отчет с </label>
-            <datebox id="firstDate" format="dd.MM.yyyy HH:mm:ss" />
+            <datebox id="firstDate" format="dd.MM.yyyy HH:mm:ss" width="150px" />
             <label> по </label>
-            <datebox id="secondDate" />
+            <datebox id="secondDate" width="150px" />
             <button id="request">Запросить</button>
         </hlayout>
+        <h:br/>
+        <h:br/>
+        <h:br/>
         <hlayout>
             <label>Данные с </label>
             <label id="fromDate" />

@@ -185,6 +185,7 @@
       <module name="IoC-01-Simple-Bean" target="1.7" />
       <module name="ioc-02-inheritance" target="1.7" />
       <module name="IoC-02-Inheritance" target="1.7" />
+      <module name="java-ee-examples" target="1.7" />
       <module name="jms-ear" target="1.7" />
       <module name="jms-ejb" target="1.7" />
       <module name="jms-war" target="1.7" />
