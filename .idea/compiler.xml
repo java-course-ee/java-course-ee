@@ -126,6 +126,11 @@
         <module name="WebSecurity" />
         <module name="WebSecurityForm" />
         <module name="WebSecurityFormLDAP" />
+        <module name="ZKExample01" />
+        <module name="ZKExample02" />
+        <module name="ZKExample03" />
+        <module name="ZKExample04" />
+        <module name="ZKExample05" />
       </profile>
       <profile default="false" name="Annotation profile for ejb-ear-module" enabled="true">
         <sourceOutputDir name="../../ejb-pom-module/ejb-ear-module/target/generated-sources/annotations" />
@@ -254,6 +259,11 @@
       <module name="WebSecurity" target="1.7" />
       <module name="WebSecurityForm" target="1.7" />
       <module name="WebSecurityFormLDAP" target="1.7" />
+      <module name="ZKExample01" target="1.7" />
+      <module name="ZKExample02" target="1.7" />
+      <module name="ZKExample03" target="1.7" />
+      <module name="ZKExample04" target="1.7" />
+      <module name="ZKExample05" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -56,6 +56,11 @@
     <file type="web" url="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-produces-json" />
     <file type="web" url="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-produces-xml" />
     <file type="web" url="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-scope" />
+    <file type="web" url="file://$PROJECT_DIR$/ZK/ZKExample01" />
+    <file type="web" url="file://$PROJECT_DIR$/ZK/ZKExample02" />
+    <file type="web" url="file://$PROJECT_DIR$/ZK/ZKExample03" />
+    <file type="web" url="file://$PROJECT_DIR$/ZK/ZKExample04" />
+    <file type="web" url="file://$PROJECT_DIR$/ZK/ZKExample05" />
   </component>
   <component name="IdProvider" IDEtalkID="E332059EB1A533795641F0A6DDC107FB" />
   <component name="MavenProjectsManager">

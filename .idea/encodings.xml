@@ -89,5 +89,10 @@
     <file url="file://$PROJECT_DIR$/WebServices/JAX-WS/SimpleWebService/SimpleWebService-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebServices/JAX-WS/SimpleWebService/SimpleWebService-ear" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebServices/JAX-WS/SimpleWebService/SimpleWebService-ejb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ZK/ZKExample01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ZK/ZKExample02" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ZK/ZKExample03" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ZK/ZKExample04" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ZK/ZKExample05" charset="UTF-8" />
   </component>
 </project>

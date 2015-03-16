@@ -26,6 +26,7 @@
         <module>Velocity</module>
         <module>Web</module>
         <module>WebServices</module>
+        <module>ZK</module>
     </modules>
 
     <properties>
@@ -36,6 +37,7 @@
         <slf4j.version>1.7.7</slf4j.version>
         <spring.version>4.1.1.RELEASE</spring.version>
         <hibernate.version>4.3.7.Final</hibernate.version>
+        <zk.version>7.0.3</zk.version>
     </properties>
 
     <dependencyManagement>
@@ -154,6 +156,21 @@
                 <version>7.3.4</version>
             </dependency>
             <dependency>
+                <groupId>org.zkoss.zk</groupId>
+                <artifactId>zk</artifactId>
+                <version>${zk.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.zkoss.zk</groupId>
+                <artifactId>zul</artifactId>
+                <version>${zk.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.zkoss.zk</groupId>
+                <artifactId>zkplus</artifactId>
+                <version>${zk.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.jboss.resteasy</groupId>
                 <artifactId>resteasy-jaxrs</artifactId>
                 <version>3.0.10.Final</version>
@@ -218,6 +235,13 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <repositories>
+        <repository>
+            <id>zk repository</id>
+            <url>http://mavensync.zkoss.org/maven2</url>
+        </repository>
+    </repositories>
 
     <build>
         <finalName>${project.artifactId}</finalName>
