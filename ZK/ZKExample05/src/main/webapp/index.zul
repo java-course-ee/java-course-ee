@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul"
+    xmlns:h="http://www.w3.org/1999/xhtml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.zkoss.org/2005/zul http://www.zkoss.org/2005/zul/zul.xsd">
 
-<zk xmlns="http://www.zkoss.org/2005/zul">
 	<window title="ZK Window" border="normal" apply="ru.gs.zk.MyComposer">
 		<datebox id="dateBox" format="mm:ss.SSS"/>
 		<button id="start" label="Start" onClick="ru.gs.zk.PushToServer.start(dateBox)" />
 		<button id="stop" label="Stop" onClick="ru.gs.zk.PushToServer.stop()" />
 	</window>
+
 </zk>

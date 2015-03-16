@@ -75,6 +75,9 @@
       </set>
     </option>
   </component>
+  <component name="ProjectResources">
+    <resource url="http://www.zkoss.org/2005/zul" location="$MAVEN_REPOSITORY$/org/zkoss/zk/zul/7.0.3/zul-7.0.3.jar!/metainfo/xml/zul.xsd" />
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>

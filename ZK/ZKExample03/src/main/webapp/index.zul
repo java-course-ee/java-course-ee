@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul"
+    xmlns:h="http://www.w3.org/1999/xhtml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.zkoss.org/2005/zul http://www.zkoss.org/2005/zul/zul.xsd">
 
-<zk xmlns="http://www.zkoss.org/2005/zul">
 	<style>
 		.textbox {
 			display:block;
@@ -34,4 +37,5 @@
 			<button id="ok">ОК</button>
 		</vlayout>
 	</window>
+
 </zk>

@@ -65,7 +65,6 @@
       <module fileurl="file://$PROJECT_DIR$/EJB/transactions/container-transactions-ejb-war/container-transactions-ejb-war.iml" filepath="$PROJECT_DIR$/EJB/transactions/container-transactions-ejb-war/container-transactions-ejb-war.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-client/ear-client.iml" filepath="$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-client/ear-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-ejb/ear-ejb.iml" filepath="$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-ejb/ear-ejb.iml" />
-      <module fileurl="file://$PROJECT_DIR$/examples.iml" filepath="$PROJECT_DIR$/examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/hibernate-column-transformer/hibernate-column-transformer.iml" filepath="$PROJECT_DIR$/Hibernate/part2/hibernate-column-transformer/hibernate-column-transformer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-config-xml-mapping-annotations/hibernate-config-xml-mapping-annotations.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-config-xml-mapping-annotations/hibernate-config-xml-mapping-annotations.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-criteria/hibernate-criteria.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-criteria/hibernate-criteria.iml" />
@@ -79,6 +78,7 @@
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/hibernate-recursive-parent-entity/hibernate-recursive-parent-entity.iml" filepath="$PROJECT_DIR$/Hibernate/part2/hibernate-recursive-parent-entity/hibernate-recursive-parent-entity.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/hibernate-second-level-cache/hibernate-second-level-cache.iml" filepath="$PROJECT_DIR$/Hibernate/part2/hibernate-second-level-cache/hibernate-second-level-cache.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/interceptors-ejb-war/interceptors-ejb-war.iml" filepath="$PROJECT_DIR$/EJB/interceptors-ejb-war/interceptors-ejb-war.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-ee-examples.iml" filepath="$PROJECT_DIR$/java-ee-examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/jms/jms.iml" filepath="$PROJECT_DIR$/EJB/jms/jms.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/jms/jms-ear/jms-ear.iml" filepath="$PROJECT_DIR$/EJB/jms/jms-ear/jms-ear.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/jms/jms-ejb/jms-ejb.iml" filepath="$PROJECT_DIR$/EJB/jms/jms-ejb/jms-ejb.iml" />
