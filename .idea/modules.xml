@@ -62,6 +62,7 @@
       <module fileurl="file://$PROJECT_DIR$/EJB/async-ejb-war/async-ejb-war.iml" filepath="$PROJECT_DIR$/EJB/async-ejb-war/async-ejb-war.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/transactions/bean-transactions-ejb-war/bean-transactions-ejb-war.iml" filepath="$PROJECT_DIR$/EJB/transactions/bean-transactions-ejb-war/bean-transactions-ejb-war.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaMail/compose-simple-message/compose-simple-message.iml" filepath="$PROJECT_DIR$/JavaMail/compose-simple-message/compose-simple-message.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EJB/transactions/container-transactions-ejb-jpa-war/container-transactions-ejb-jpa-war.iml" filepath="$PROJECT_DIR$/EJB/transactions/container-transactions-ejb-jpa-war/container-transactions-ejb-jpa-war.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/transactions/container-transactions-ejb-war/container-transactions-ejb-war.iml" filepath="$PROJECT_DIR$/EJB/transactions/container-transactions-ejb-war/container-transactions-ejb-war.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-client/ear-client.iml" filepath="$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-client/ear-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-ejb/ear-ejb.iml" filepath="$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-ejb/ear-ejb.iml" />

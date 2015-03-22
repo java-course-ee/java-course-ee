@@ -19,6 +19,7 @@
         <module>timer-service-ejb-war</module>
         <module>transactions/bean-transactions-ejb-war</module>
         <module>transactions/container-transactions-ejb-war</module>
+        <module>transactions/container-transactions-ejb-jpa-war</module>
     </modules>
 
 </project>

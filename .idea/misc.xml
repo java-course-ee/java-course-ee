@@ -21,6 +21,7 @@
     <file type="web" url="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/war-ejb" />
     <file type="web" url="file://$PROJECT_DIR$/EJB/timer-service-ejb-war" />
     <file type="web" url="file://$PROJECT_DIR$/EJB/transactions/bean-transactions-ejb-war" />
+    <file type="web" url="file://$PROJECT_DIR$/EJB/transactions/container-transactions-ejb-jpa-war" />
     <file type="web" url="file://$PROJECT_DIR$/EJB/transactions/container-transactions-ejb-war" />
     <file type="web" url="file://$PROJECT_DIR$/JQuery/JQueryExampleN09" />
     <file type="web" url="file://$PROJECT_DIR$/JQuery/JQueryExampleN10" />
