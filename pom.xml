@@ -10,6 +10,7 @@
     <name>JavaCourse EE Examples</name>
 
     <modules>
+        <module>Concurrency</module>
         <module>DWR</module>
         <module>EJB</module>
         <module>Hibernate</module>

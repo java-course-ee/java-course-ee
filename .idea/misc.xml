@@ -11,6 +11,10 @@
     <file type="javaeeApplication" url="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-client" />
     <file type="javaeeApplication" url="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-ejb" />
     <file type="javaeeApplication" url="file://$PROJECT_DIR$/WebServices/JAX-WS/SimpleWebService/SimpleWebService-ear" />
+    <file type="web" url="file://$PROJECT_DIR$/Concurrency/context-service" />
+    <file type="web" url="file://$PROJECT_DIR$/Concurrency/managed-executor-service" />
+    <file type="web" url="file://$PROJECT_DIR$/Concurrency/managed-scheduled-executor-service" />
+    <file type="web" url="file://$PROJECT_DIR$/Concurrency/managed-thread-factory" />
     <file type="web" url="file://$PROJECT_DIR$/DWR/DWRExample-N01" />
     <file type="web" url="file://$PROJECT_DIR$/EJB/async-ejb-war" />
     <file type="web" url="file://$PROJECT_DIR$/EJB/interceptors-ejb-war" />
@@ -79,7 +83,7 @@
   <component name="ProjectResources">
     <resource url="http://www.zkoss.org/2005/zul" location="$MAVEN_REPOSITORY$/org/zkoss/zk/zul/7.0.3/zul-7.0.3.jar!/metainfo/xml/zul.xsd" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

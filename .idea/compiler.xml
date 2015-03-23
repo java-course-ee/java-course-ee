@@ -28,6 +28,7 @@
         <module name="compose-simple-message" />
         <module name="container-transactions-ejb-jpa-war" />
         <module name="container-transactions-ejb-war" />
+        <module name="context-service" />
         <module name="DWRExample-N01" />
         <module name="ear" />
         <module name="ear-client" />
@@ -81,6 +82,9 @@
         <module name="lib" />
         <module name="lib (1) (edu.javacourse.ejb.stateful-ejb)" />
         <module name="log4j" />
+        <module name="managed-executor-service" />
+        <module name="managed-scheduled-executor-service" />
+        <module name="managed-thread-factory" />
         <module name="rest-context" />
         <module name="rest-context (1)" />
         <module name="rest-download-files" />
@@ -148,6 +152,7 @@
       <module name="compose-simple-message" target="1.7" />
       <module name="container-transactions-ejb-jpa-war" target="1.7" />
       <module name="container-transactions-ejb-war" target="1.7" />
+      <module name="context-service" target="1.7" />
       <module name="DojoExampleN01" target="1.7" />
       <module name="DojoExampleN02" target="1.7" />
       <module name="DojoExampleN03" target="1.7" />
@@ -215,6 +220,9 @@
       <module name="lib" target="1.7" />
       <module name="lib (1) (edu.javacourse.ejb.stateful-ejb)" target="1.7" />
       <module name="log4j" target="1.7" />
+      <module name="managed-executor-service" target="1.7" />
+      <module name="managed-scheduled-executor-service" target="1.7" />
+      <module name="managed-thread-factory" target="1.7" />
       <module name="rest-context" target="1.7" />
       <module name="rest-context (1)" target="1.7" />
       <module name="rest-download-files" target="1.7" />

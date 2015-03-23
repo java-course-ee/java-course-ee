@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Security/ClientAuthentication/ClientAuthentication.iml" filepath="$PROJECT_DIR$/Security/ClientAuthentication/ClientAuthentication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Concurrency/Concurrency.iml" filepath="$PROJECT_DIR$/Concurrency/Concurrency.iml" />
       <module fileurl="file://$PROJECT_DIR$/DWR/DWR.iml" filepath="$PROJECT_DIR$/DWR/DWR.iml" />
       <module fileurl="file://$PROJECT_DIR$/DWR/DWRExample-N01/DWRExample-N01.iml" filepath="$PROJECT_DIR$/DWR/DWRExample-N01/DWRExample-N01.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/EJB.iml" filepath="$PROJECT_DIR$/EJB/EJB.iml" />
@@ -64,6 +65,7 @@
       <module fileurl="file://$PROJECT_DIR$/JavaMail/compose-simple-message/compose-simple-message.iml" filepath="$PROJECT_DIR$/JavaMail/compose-simple-message/compose-simple-message.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/transactions/container-transactions-ejb-jpa-war/container-transactions-ejb-jpa-war.iml" filepath="$PROJECT_DIR$/EJB/transactions/container-transactions-ejb-jpa-war/container-transactions-ejb-jpa-war.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/transactions/container-transactions-ejb-war/container-transactions-ejb-war.iml" filepath="$PROJECT_DIR$/EJB/transactions/container-transactions-ejb-war/container-transactions-ejb-war.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Concurrency/context-service/context-service.iml" filepath="$PROJECT_DIR$/Concurrency/context-service/context-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-client/ear-client.iml" filepath="$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-client/ear-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-ejb/ear-ejb.iml" filepath="$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-ejb/ear-ejb.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/hibernate-column-transformer/hibernate-column-transformer.iml" filepath="$PROJECT_DIR$/Hibernate/part2/hibernate-column-transformer/hibernate-column-transformer.iml" />
@@ -86,6 +88,9 @@
       <module fileurl="file://$PROJECT_DIR$/EJB/jms/jms-war/jms-war.iml" filepath="$PROJECT_DIR$/EJB/jms/jms-war/jms-war.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/lib/lib.iml" filepath="$PROJECT_DIR$/EJB/stateless-ejb-local-remote/lib/lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/Logging/log4j/log4j.iml" filepath="$PROJECT_DIR$/Logging/log4j/log4j.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Concurrency/managed-executor-service/managed-executor-service.iml" filepath="$PROJECT_DIR$/Concurrency/managed-executor-service/managed-executor-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Concurrency/managed-scheduled-executor-service/managed-scheduled-executor-service.iml" filepath="$PROJECT_DIR$/Concurrency/managed-scheduled-executor-service/managed-scheduled-executor-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Concurrency/managed-thread-factory/managed-thread-factory.iml" filepath="$PROJECT_DIR$/Concurrency/managed-thread-factory/managed-thread-factory.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-context/rest-context.iml" filepath="$PROJECT_DIR$/WebServices/JAX-RS/rest-context/rest-context.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-download-files/rest-download-files.iml" filepath="$PROJECT_DIR$/WebServices/JAX-RS/rest-download-files/rest-download-files.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebServices/JAX-RS/rest-exceptions/rest-exceptions.iml" filepath="$PROJECT_DIR$/WebServices/JAX-RS/rest-exceptions/rest-exceptions.iml" />
