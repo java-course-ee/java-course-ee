@@ -23,6 +23,11 @@ public class SimpleEJB {
 
     public void testMethod() {
 
+        SimpleInterface simpleInterface = new SimpleInterfaceImpl();
+        final SimpleInterface contextualProxy = contextService.createContextualProxy(simpleInterface, SimpleInterface.class);
+
+        log.debug("contextualProxy class: {}", contextualProxy.getClass().getCanonicalName());
+
     }
 
 }
