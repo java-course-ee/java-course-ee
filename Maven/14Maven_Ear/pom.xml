@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+
+   <groupId>edu.javacourse</groupId>
+	<artifactId>simple-ear</artifactId>
+	<version>1</version>
+    <packaging>ear</packaging>
+
+    
+    <dependencies>
+
+        <dependency>
+			<groupId>edu.javacourse</groupId>
+			<artifactId>simple-war1</artifactId>
+            <version>1</version>
+            <type>war</type>
+        </dependency>
+
+        <dependency>
+			<groupId>edu.javacourse</groupId>
+			<artifactId>simple-war2</artifactId>
+            <version>1</version>
+            <type>war</type>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <finalName>simple-ear</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-ear-plugin</artifactId>
+                <configuration>
+                    <version>5</version>
+                    <applicationName>simple-ear</applicationName>
+                    <displayName>simple-ear</displayName>
+                    <modules>
+                        <webModule>
+                            <groupId>edu.javacourse</groupId>
+							<artifactId>simple-war1</artifactId>
+                            <bundleFileName>simple-war1.war</bundleFileName>
+                            <contextRoot>war1</contextRoot>
+                        </webModule>
+                        <webModule>
+                            <groupId>edu.javacourse</groupId>
+							<artifactId>simple-war2</artifactId>
+                            <bundleFileName>simple-war2.war</bundleFileName>
+                            <contextRoot>war2</contextRoot>
+                        </webModule>
+                    </modules>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

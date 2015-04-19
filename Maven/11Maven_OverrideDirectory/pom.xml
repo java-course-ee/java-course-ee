@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>edu.javacourse</groupId>
+	<artifactId>simple-override</artifactId>
+	<packaging>jar</packaging>
+	<version>1</version>
+	
+	  <dependencies>
+       <dependency>
+			<groupId>net.sf.spring-json</groupId>
+			<artifactId>spring-json</artifactId>
+			<version>1.2</version>
+				
+			<exclusions>
+					<exclusion>
+						<groupId>cglib</groupId>
+						<artifactId>cglib-full</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring</artifactId>
+					</exclusion>
+			</exclusions>
+
+			
+		</dependency>
+    </dependencies>
+	
+	
+	<build>
+	
+		 <sourceDirectory>src/java</sourceDirectory>
+		 <outputDirectory>classes</outputDirectory>
+		 
+		<resources>
+		  <resource>
+			<directory>src/resources</directory>
+		  </resource>
+		</resources>
+		
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+		</plugins>
+		
+	</build>
+	
+</project>

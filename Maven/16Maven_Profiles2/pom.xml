@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+
+   <groupId>edu.javacourse</groupId>
+	<artifactId>simple-profile</artifactId>
+	<version>1</version>
+    <packaging>war</packaging>
+
+    
+	
+	<profiles>
+	  <profile>
+		<id>development</id>
+		 <activation>
+			<activeByDefault>true</activeByDefault>
+		 </activation>	
+		 
+		 <dependencies>
+			
+			 <dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit-dep</artifactId>
+				<version>4.8.2</version>
+				<scope>test</scope>
+			</dependency>
+			
+		</dependencies>
+		
+		<build>
+		
+			<resources>
+			  <resource>
+				<directory>src/main/resources</directory>	
+				<excludes>
+                    <exclude>prod/**</exclude>
+                </excludes>				
+			  </resource>
+			  
+			</resources>
+		
+		</build>
+		
+		
+		
+	  </profile>
+	  
+	  
+	  <profile>
+		<id>production</id>
+		
+		<build>
+		
+			<resources>
+			  <resource>
+				<directory>src/main/resources</directory>
+				 <excludes>
+                    <exclude>dev/**</exclude>
+                </excludes>
+			  </resource>
+			</resources>
+			
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<configuration>
+						<!-- http://maven.apache.org/surefire/maven-surefire-plugin/examples/inclusion-exclusion.html -->
+						<skip>true</skip>
+					</configuration>
+				</plugin>
+			
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<configuration>
+						<source>1.5</source>
+						<target>1.5</target>
+					</configuration>
+				</plugin>
+				
+			</plugins>
+		
+		</build>
+		
+	  </profile>
+	</profiles>
+	
+	
+    <dependencies>
+	
+		<dependency>
+		   <groupId>javax</groupId>
+		   <artifactId>javaee-api</artifactId>
+		   <version>6.0</version>
+		</dependency>
+
+    </dependencies>
+
+    <build>
+        <finalName>simple-profile</finalName>
+    </build>
+
+</project>
