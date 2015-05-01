@@ -1,5 +1,6 @@
 package edu.javacourse.spring;
 
+import edu.javacourse.spring.model.City;
 import edu.javacourse.spring.model.Region;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -35,6 +36,8 @@ public class SpringJDBCTemplateExample {
         queryForListComplexObjects(jdbc);
         batchUpdate(jdbc);
         insertConstructor(jdbc);
+        manyToOne(jdbc);
+        oneToManyMultipleQueries(jdbc);
     }
 
     private static void separator(String title) {
@@ -124,6 +127,47 @@ public class SpringJDBCTemplateExample {
         parameters.put("region_name", "new region name");
         Number number = insertActor.executeAndReturnKey(parameters);
         log.debug("Inserted region id: {}", number.longValue());
+    }
+
+    private static void manyToOne(JdbcTemplate jdbc) {
+        separator("manyToOne");
+
+        List<City> cityList = jdbc.query("select c.city_id as c_id, c.city_name as c_name, c.region_id as r_id, r.region_name as r_name from region.jc_city c inner join region.jc_region r on c.region_id=r.region_id", new RowMapper<City>() {
+            @Override
+            public City mapRow(ResultSet rs, int i) throws SQLException {
+                Region region = new Region(rs.getInt("r_id"), rs.getString("r_name"));
+                City city = new City(rs.getInt("c_id"), rs.getString("c_name"), region);
+                return city;
+            }
+        });
+
+        for (City city : cityList) {
+            log.debug("City: {}, region: {}", city, city.getRegion());
+        }
+    }
+
+    private static void oneToManyMultipleQueries(JdbcTemplate jdbc) {
+        separator("oneToManyMultipleQueries");
+
+        List<Region> regionList = jdbc.query("select r.region_id, r.region_name from region.jc_region r ", new RowMapper<Region>() {
+            @Override
+            public Region mapRow(ResultSet rs, int i) throws SQLException {
+                return new Region(rs.getInt("region_id"), rs.getString("region_name"));
+            }
+        });
+        for (final Region region : regionList) {
+            List<City> cities = jdbc.query("select c.city_id, c.city_name from region.jc_city c where c.region_id = ?", new Integer[]{region.getRegionId()}, new RowMapper<City>() {
+                @Override
+                public City mapRow(ResultSet rs, int i) throws SQLException {
+                    return new City(rs.getInt("city_id"), rs.getString("city_name"), region);
+                }
+            });
+            region.setCities(cities);
+        }
+
+        for (Region region : regionList) {
+            log.debug("Region: {}", region);
+        }
     }
 
 }

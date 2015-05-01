@@ -5,22 +5,24 @@ package edu.javacourse.spring.model;
  */
 public class City {
 
-    private Long cityId;
+    private Integer cityId;
     private String cityName;
+    private Region region;
 
-    public City(Long cityId, String cityName) {
+    public City(Integer cityId, String cityName, Region region) {
         this.cityId = cityId;
         this.cityName = cityName;
+        this.region = region;
     }
 
     public City() {
     }
 
-    public Long getCityId() {
+    public Integer getCityId() {
         return cityId;
     }
 
-    public void setCityId(Long cityId) {
+    public void setCityId(Integer cityId) {
         this.cityId = cityId;
     }
 
@@ -30,6 +32,14 @@ public class City {
 
     public void setCityName(String cityName) {
         this.cityName = cityName;
+    }
+
+    public Region getRegion() {
+        return region;
+    }
+
+    public void setRegion(Region region) {
+        this.region = region;
     }
 
     @Override

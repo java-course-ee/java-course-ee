@@ -1,5 +1,7 @@
 package edu.javacourse.spring.model;
 
+import java.util.List;
+
 /**
  * Author: Georgy Gobozov
  * Date: 21.07.13
@@ -8,6 +10,7 @@ public class Region {
 
     private Integer regionId;
     private String regionName;
+    private List<City> cities;
 
     public Region() {
     }
@@ -37,11 +40,20 @@ public class Region {
         this.regionName = regionName;
     }
 
+    public List<City> getCities() {
+        return cities;
+    }
+
+    public void setCities(List<City> cities) {
+        this.cities = cities;
+    }
+
     @Override
     public String toString() {
         return "Region{" +
                 "regionId=" + regionId +
                 ", regionName='" + regionName + '\'' +
+                ", cities=" + cities +
                 '}';
     }
 }
