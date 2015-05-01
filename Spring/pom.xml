@@ -12,6 +12,7 @@
     <modules>
         <module>Integration</module>
         <module>IoC</module>
+        <module>JDBC</module>
     </modules>
 
 </project>
