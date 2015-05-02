@@ -62,8 +62,8 @@
         <module name="IoC-01-Simple-Bean" />
         <module name="ioc-02-inheritance" />
         <module name="IoC-02-Inheritance" />
-        <module name="JDBC" />
         <module name="jdbc" />
+        <module name="JDBC" />
         <module name="jms-ear" />
         <module name="jms-ejb" />
         <module name="jms-war" />
