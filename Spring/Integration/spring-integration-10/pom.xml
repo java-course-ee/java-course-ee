@@ -45,7 +45,6 @@
                 </executions>
                 <configuration>
                     <packageName>globalweather</packageName>
-                    <sourceType>wsdl</sourceType>
                     <wsdl>true</wsdl>
                     <xmlschema>false</xmlschema>
                     <schemaDirectory>src/wsdl</schemaDirectory>
