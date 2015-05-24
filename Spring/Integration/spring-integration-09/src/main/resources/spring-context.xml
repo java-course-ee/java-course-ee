@@ -19,7 +19,7 @@
         <mail:subject value="test mail"/>
     </mail:header-enricher>
 
-    <mail:outbound-channel-adapter host="smtp.gmail.com" java-mail-properties="mailProperties" username="{username}" password="{password}" channel="mailChannel"/>
+    <mail:outbound-channel-adapter host="{smtp server address}" java-mail-properties="mailProperties" username="{username}" password="{password}" channel="mailChannel"/>
 
     <util:properties id="mailProperties">
         <beans:prop key="mail.smtp.starttls.enable">true</beans:prop>
