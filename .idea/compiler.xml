@@ -114,6 +114,10 @@
         <module name="spring-integration-06" />
         <module name="spring-integration-07" />
         <module name="spring-integration-08" />
+        <module name="spring-integration-08 (1)" />
+        <module name="spring-integration-09" />
+        <module name="spring-integration-10" />
+        <module name="spring-integration-11" />
         <module name="stateful-lib" />
         <module name="stateful-war-ejb" />
         <module name="stateful-war-ejb (1)" />
@@ -255,6 +259,10 @@
       <module name="spring-integration-06" target="1.7" />
       <module name="spring-integration-07" target="1.7" />
       <module name="spring-integration-08" target="1.7" />
+      <module name="spring-integration-08 (1)" target="1.7" />
+      <module name="spring-integration-09" target="1.7" />
+      <module name="spring-integration-10" target="1.7" />
+      <module name="spring-integration-11" target="1.7" />
       <module name="stateful-lib" target="1.7" />
       <module name="stateful-war-ejb" target="1.7" />
       <module name="stateful-war-ejb (1)" target="1.7" />
