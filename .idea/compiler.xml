@@ -67,6 +67,8 @@
         <module name="IoC-04-Scope" />
         <module name="ioc-04-scope" />
         <module name="ioc-05-lazy-init" />
+        <module name="IoC-05-Lazy-Init" />
+        <module name="ioc-06-init-destroy" />
         <module name="jdbc" />
         <module name="JDBC" />
         <module name="jms-ear" />
@@ -208,6 +210,8 @@
       <module name="IoC-04-Scope" target="1.7" />
       <module name="ioc-04-scope" target="1.7" />
       <module name="ioc-05-lazy-init" target="1.7" />
+      <module name="IoC-05-Lazy-Init" target="1.7" />
+      <module name="ioc-06-init-destroy" target="1.7" />
       <module name="java-ee-examples" target="1.7" />
       <module name="jdbc" target="1.7" />
       <module name="JDBC" target="1.7" />

@@ -15,6 +15,7 @@
         <module>IoC-03-Instantiation</module>
         <module>IoC-04-Scope</module>
         <module>IoC-05-Lazy-Init</module>
+        <module>IoC-06-Init-Destroy</module>
     </modules>
 
 </project>
