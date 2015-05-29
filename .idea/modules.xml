@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/Spring/IoC/IoC-01-Simple-Bean/IoC-01-Simple-Bean.iml" filepath="$PROJECT_DIR$/Spring/IoC/IoC-01-Simple-Bean/IoC-01-Simple-Bean.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring/IoC/IoC-02-Inheritance/IoC-02-Inheritance.iml" filepath="$PROJECT_DIR$/Spring/IoC/IoC-02-Inheritance/IoC-02-Inheritance.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring/IoC/IoC-03-Instantiation/IoC-03-Instantiation.iml" filepath="$PROJECT_DIR$/Spring/IoC/IoC-03-Instantiation/IoC-03-Instantiation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/IoC/IoC-04-Scope/IoC-04-Scope.iml" filepath="$PROJECT_DIR$/Spring/IoC/IoC-04-Scope/IoC-04-Scope.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring/JDBC/JDBC.iml" filepath="$PROJECT_DIR$/Spring/JDBC/JDBC.iml" />
       <module fileurl="file://$PROJECT_DIR$/JQuery/JQuery.iml" filepath="$PROJECT_DIR$/JQuery/JQuery.iml" />
       <module fileurl="file://$PROJECT_DIR$/JQuery/JQueryExampleN09/JQueryExampleN09.iml" filepath="$PROJECT_DIR$/JQuery/JQueryExampleN09/JQueryExampleN09.iml" />

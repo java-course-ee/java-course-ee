@@ -64,6 +64,8 @@
         <module name="IoC-02-Inheritance" />
         <module name="IoC-03-Instantiation" />
         <module name="ioc-03-instantiation" />
+        <module name="IoC-04-Scope" />
+        <module name="ioc-04-scope" />
         <module name="jdbc" />
         <module name="JDBC" />
         <module name="jms-ear" />
@@ -202,6 +204,8 @@
       <module name="IoC-02-Inheritance" target="1.7" />
       <module name="IoC-03-Instantiation" target="1.7" />
       <module name="ioc-03-instantiation" target="1.7" />
+      <module name="IoC-04-Scope" target="1.7" />
+      <module name="ioc-04-scope" target="1.7" />
       <module name="java-ee-examples" target="1.7" />
       <module name="jdbc" target="1.7" />
       <module name="JDBC" target="1.7" />
