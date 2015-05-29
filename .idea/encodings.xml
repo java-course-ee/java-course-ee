@@ -76,6 +76,7 @@
     <file url="file://$PROJECT_DIR$/Spring/Integration/spring-integration-11" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Spring/IoC/IoC-01-Simple-Bean" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Spring/IoC/IoC-02-Inheritance" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/IoC/IoC-03-Instantiation" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Spring/JDBC" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Struts/Struts2ExampleN01-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Struts/Struts2ExampleN03-web" charset="UTF-8" />

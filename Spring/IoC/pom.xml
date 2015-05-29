@@ -12,6 +12,7 @@
     <modules>
         <module>IoC-01-Simple-Bean</module>
         <module>IoC-02-Inheritance</module>
+        <module>IoC-03-Instantiation</module>
     </modules>
 
 </project>

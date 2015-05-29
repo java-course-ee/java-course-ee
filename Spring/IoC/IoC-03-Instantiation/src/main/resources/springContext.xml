@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd">
+
+    <bean id="currentDate" class="java.util.Date"/>
+
+    <!--Create bean through default constructor-->
+    <bean id="person-default-constructor" class="edu.javacourse.spring.ioc.beans.Person">
+        <property name="id" value="1"/>
+        <property name="name" value="Vasiliy"/>
+
+        <!--We can use ref to specify reference bean-->
+        <property name="birth" ref="currentDate"/>
+        <!-- or we can create bean right here -->
+        <!--<property name="birth">
+            <bean class="java.util.Date"/>
+        </property>-->
+    </bean>
+
+    <!--Create bean through constructor with arguments-->
+    <bean id="person-specific-constructor" class="edu.javacourse.spring.ioc.beans.Person">
+        <constructor-arg name="id" value="2"/>
+        <constructor-arg name="name" value="Ivan"/>
+        <constructor-arg name="birth" ref="currentDate"/>
+    </bean>
+
+    <!--Create bean through static method inside class-->
+    <bean id="person-factory-method" class="edu.javacourse.spring.ioc.beans.Person" factory-method="createInstance"/>
+
+    <!--Create bean through static method inside class with arguments-->
+    <bean id="person-factory-method-with-arguments" class="edu.javacourse.spring.ioc.beans.Person" factory-method="createInstance">
+        <constructor-arg name="id" value="3"/>
+        <constructor-arg name="name" value="Petr"/>
+        <constructor-arg name="birth" ref="currentDate"/>
+    </bean>
+
+</beans>
