@@ -66,8 +66,9 @@
         <module name="ioc-03-instantiation" />
         <module name="IoC-04-Scope" />
         <module name="ioc-04-scope" />
-        <module name="ioc-05-lazy-init" />
         <module name="IoC-05-Lazy-Init" />
+        <module name="ioc-05-lazy-init" />
+        <module name="IoC-06-Init-Destroy" />
         <module name="ioc-06-init-destroy" />
         <module name="jdbc" />
         <module name="JDBC" />
