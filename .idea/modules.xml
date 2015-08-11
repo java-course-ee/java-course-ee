@@ -32,6 +32,8 @@
       <module fileurl="file://$PROJECT_DIR$/JSF/JSF7/JSF7.iml" filepath="$PROJECT_DIR$/JSF/JSF7/JSF7.iml" />
       <module fileurl="file://$PROJECT_DIR$/JSF/JSF8/JSF8.iml" filepath="$PROJECT_DIR$/JSF/JSF8/JSF8.iml" />
       <module fileurl="file://$PROJECT_DIR$/JSF/JSF9/JSF9.iml" filepath="$PROJECT_DIR$/JSF/JSF9/JSF9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JUnit/JUnit.iml" filepath="$PROJECT_DIR$/JUnit/JUnit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JUnit/JUnit-01/JUnit-01.iml" filepath="$PROJECT_DIR$/JUnit/JUnit-01/JUnit-01.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaMail/JavaMail.iml" filepath="$PROJECT_DIR$/JavaMail/JavaMail.iml" />
       <module fileurl="file://$PROJECT_DIR$/Logging/Logging.iml" filepath="$PROJECT_DIR$/Logging/Logging.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis/MyBatis.iml" filepath="$PROJECT_DIR$/MyBatis/MyBatis.iml" />
