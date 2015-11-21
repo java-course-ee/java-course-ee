@@ -10,6 +10,7 @@
     <name>JavaCourse EE Examples</name>
 
     <modules>
+        <module>ActiveMQ</module>
         <module>Concurrency</module>
         <module>DWR</module>
         <module>EJB</module>
