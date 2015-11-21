@@ -46,6 +46,6 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.javassist:javassist:3.18.1-GA" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.postgresql:postgresql:9.3-1102-jdbc41" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: jstl:jstl:1.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.slf4j:slf4j-api:1.7.7" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.slf4j:slf4j-api:1.7.13" level="project" />
   </component>
 </module>
