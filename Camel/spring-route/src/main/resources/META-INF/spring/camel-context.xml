@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
+
+    <bean id="inputGenerator" class="edu.javacourse.camel.simpleroute.InputGenerator"/>
+
+    <camelContext xmlns="http://camel.apache.org/schema/spring">
+        <route id="test-route">
+            <from uri="timer:1s?fixedRate=true&amp;period=1000"/>
+            <process ref="inputGenerator"/>
+            <to uri="log:edu.javacourse.camel?level=INFO"/>
+            <transform>
+                <simple>${body.toUpperCase()}</simple>
+            </transform>
+            <to uri="log:edu.javacourse.camel?level=INFO"/>
+        </route>
+    </camelContext>
+
+</beans>

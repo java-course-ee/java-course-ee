@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Camel/Camel.iml" filepath="$PROJECT_DIR$/Camel/Camel.iml" />
       <module fileurl="file://$PROJECT_DIR$/Security/ClientAuthentication/ClientAuthentication.iml" filepath="$PROJECT_DIR$/Security/ClientAuthentication/ClientAuthentication.iml" />
       <module fileurl="file://$PROJECT_DIR$/Concurrency/Concurrency.iml" filepath="$PROJECT_DIR$/Concurrency/Concurrency.iml" />
       <module fileurl="file://$PROJECT_DIR$/DWR/DWR.iml" filepath="$PROJECT_DIR$/DWR/DWR.iml" />
@@ -121,6 +122,7 @@
       <module fileurl="file://$PROJECT_DIR$/Spring/Integration/spring-integration-09/spring-integration-09.iml" filepath="$PROJECT_DIR$/Spring/Integration/spring-integration-09/spring-integration-09.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring/Integration/spring-integration-10/spring-integration-10.iml" filepath="$PROJECT_DIR$/Spring/Integration/spring-integration-10/spring-integration-10.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring/Integration/spring-integration-11/spring-integration-11.iml" filepath="$PROJECT_DIR$/Spring/Integration/spring-integration-11/spring-integration-11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Camel/spring-route/spring-route.iml" filepath="$PROJECT_DIR$/Camel/spring-route/spring-route.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateful-ejb/stateful-ejb.iml" filepath="$PROJECT_DIR$/EJB/stateful-ejb/stateful-ejb.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateful-ejb/stateful-lib/stateful-lib.iml" filepath="$PROJECT_DIR$/EJB/stateful-ejb/stateful-lib/stateful-lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateful-ejb/stateful-war-ejb/stateful-war-ejb.iml" filepath="$PROJECT_DIR$/EJB/stateful-ejb/stateful-war-ejb/stateful-war-ejb.iml" />

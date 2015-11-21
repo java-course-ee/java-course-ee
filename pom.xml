@@ -10,6 +10,7 @@
     <name>JavaCourse EE Examples</name>
 
     <modules>
+        <module>Camel</module>
         <module>Concurrency</module>
         <module>DWR</module>
         <module>EJB</module>
@@ -35,7 +36,7 @@
         <source-code.version>1.7</source-code.version>
         <source-code.encoding>UTF-8</source-code.encoding>
         <ee.version>7.0</ee.version>
-        <slf4j.version>1.7.7</slf4j.version>
+        <slf4j.version>1.7.13</slf4j.version>
         <spring.version>4.1.1.RELEASE</spring.version>
         <hibernate.version>4.3.7.Final</hibernate.version>
         <zk.version>7.0.3</zk.version>

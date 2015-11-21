@@ -108,6 +108,7 @@
         <module name="servlet-app" />
         <module name="servlet-jsp-app" />
         <module name="simple-mybatis" />
+        <module name="simple-route" />
         <module name="SimplePortlet" />
         <module name="SimpleWebService-client" />
         <module name="SimpleWebService-ear" />
@@ -126,6 +127,7 @@
         <module name="spring-integration-09" />
         <module name="spring-integration-10" />
         <module name="spring-integration-11" />
+        <module name="spring-route" />
         <module name="stateful-lib" />
         <module name="stateful-war-ejb" />
         <module name="stateful-war-ejb (1)" />
@@ -260,6 +262,7 @@
       <module name="servlet-app" target="1.7" />
       <module name="servlet-jsp-app" target="1.7" />
       <module name="simple-mybatis" target="1.7" />
+      <module name="simple-route" target="1.7" />
       <module name="SimplePortlet" target="1.7" />
       <module name="SimpleWebService" target="1.7" />
       <module name="SimpleWebService-client" target="1.7" />
@@ -279,6 +282,7 @@
       <module name="spring-integration-09" target="1.7" />
       <module name="spring-integration-10" target="1.7" />
       <module name="spring-integration-11" target="1.7" />
+      <module name="spring-route" target="1.7" />
       <module name="stateful-lib" target="1.7" />
       <module name="stateful-war-ejb" target="1.7" />
       <module name="stateful-war-ejb (1)" target="1.7" />
