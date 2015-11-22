@@ -4,9 +4,6 @@
     <facet type="Spring" name="Spring">
       <configuration>
         <fileset id="fileset" name="Spring Application Context" removed="false">
-          <file>file://$MODULE_DIR$/../simple-route/src/main/resources/META-INF/spring/camel-context.xml</file>
-        </fileset>
-        <fileset id="fileset2" name="Spring Application Context (2)" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/META-INF/spring/camel-context.xml</file>
         </fileset>
       </configuration>
@@ -34,6 +31,21 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.1.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:4.1.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.activemq:activemq-camel:5.11.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-jms:2.14.1" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jms:3.2.11.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.activemq:activemq-spring:5.11.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.xbean:xbean-spring:3.18" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.activemq:activemq-broker:5.11.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.activemq:activemq-openwire-legacy:5.11.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.geronimo.specs:geronimo-jta_1.0.1B_spec:1.0.1" level="project" />
+    <orderEntry type="library" name="Maven: commons-pool:commons-pool:1.6" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.activemq:activemq-pool:5.11.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.activemq:activemq-jms-pool:5.11.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.geronimo.specs:geronimo-jms_1.1_spec:1.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.activemq:activemq-client:5.11.1" level="project" />
+    <orderEntry type="library" name="Maven: org.fusesource.hawtbuf:hawtbuf:1.11" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.geronimo.specs:geronimo-j2ee-management_1.1_spec:1.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.13" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-simple:1.7.13" level="project" />
   </component>

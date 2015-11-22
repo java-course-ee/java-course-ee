@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
+
+    <bean id="activemq" class="org.apache.activemq.camel.component.ActiveMQComponent">
+        <property name="brokerURL" value="tcp://localhost:61616"/>
+        <property name="userName" value="admin"/>
+        <property name="password" value="admin"/>
+    </bean>
+
+    <camelContext xmlns="http://camel.apache.org/schema/spring">
+        <route id="test-send-route">
+            <from uri="timer:1s?fixedRate=true&amp;period=1000"/>
+            <transform>
+                <simple>This is a test message with time: ${date:now:HH:mm:ss.SSS}</simple>
+            </transform>
+            <to uri="activemq:queue:test-queue"/>
+        </route>
+
+        <route id="test-receive-route">
+            <from uri="activemq:queue:test-queue"/>
+            <to uri="log:edu.javacourse.camel?level=INFO"/>
+        </route>
+    </camelContext>
+
+</beans>

@@ -68,10 +68,12 @@
       <module fileurl="file://$PROJECT_DIR$/ZK/ZKExample05/ZKExample05.iml" filepath="$PROJECT_DIR$/ZK/ZKExample05/ZKExample05.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/async-ejb-war/async-ejb-war.iml" filepath="$PROJECT_DIR$/EJB/async-ejb-war/async-ejb-war.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/transactions/bean-transactions-ejb-war/bean-transactions-ejb-war.iml" filepath="$PROJECT_DIR$/EJB/transactions/bean-transactions-ejb-war/bean-transactions-ejb-war.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Camel/camel-activemq/camel-activemq.iml" filepath="$PROJECT_DIR$/Camel/camel-activemq/camel-activemq.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaMail/compose-simple-message/compose-simple-message.iml" filepath="$PROJECT_DIR$/JavaMail/compose-simple-message/compose-simple-message.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/transactions/container-transactions-ejb-jpa-war/container-transactions-ejb-jpa-war.iml" filepath="$PROJECT_DIR$/EJB/transactions/container-transactions-ejb-jpa-war/container-transactions-ejb-jpa-war.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/transactions/container-transactions-ejb-war/container-transactions-ejb-war.iml" filepath="$PROJECT_DIR$/EJB/transactions/container-transactions-ejb-war/container-transactions-ejb-war.iml" />
       <module fileurl="file://$PROJECT_DIR$/Concurrency/context-service/context-service.iml" filepath="$PROJECT_DIR$/Concurrency/context-service/context-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Camel/dsl-route/dsl-route.iml" filepath="$PROJECT_DIR$/Camel/dsl-route/dsl-route.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-client/ear-client.iml" filepath="$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-client/ear-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-ejb/ear-ejb.iml" filepath="$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-ejb/ear-ejb.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/hibernate-column-transformer/hibernate-column-transformer.iml" filepath="$PROJECT_DIR$/Hibernate/part2/hibernate-column-transformer/hibernate-column-transformer.iml" />

@@ -10,7 +10,9 @@
     <name>Camel</name>
 
     <modules>
-        <module>simple-route</module>
+        <module>spring-route</module>
+        <module>dsl-route</module>
+        <module>camel-activemq</module>
     </modules>
 
 </project>

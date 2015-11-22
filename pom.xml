@@ -266,6 +266,30 @@
                 <artifactId>spring-integration-xml</artifactId>
                 <version>${spring-integration.version}</version>
             </dependency>
+
+            <!-- Camel -->
+            <dependency>
+                <groupId>org.apache.camel</groupId>
+                <artifactId>camel-core</artifactId>
+                <version>2.16.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.camel</groupId>
+                <artifactId>camel-spring</artifactId>
+                <version>2.16.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.camel</groupId>
+                <artifactId>camel-activemq</artifactId>
+                <version>1.1.0</version>
+            </dependency>
+
+            <!-- ActiveMQ -->
+            <dependency>
+                <groupId>org.apache.activemq</groupId>
+                <artifactId>activemq-camel</artifactId>
+                <version>5.11.1</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
