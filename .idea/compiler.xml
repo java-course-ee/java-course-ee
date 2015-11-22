@@ -24,11 +24,13 @@
         <processorPath useClasspath="true" />
         <module name="async-ejb-war" />
         <module name="bean-transactions-ejb-war" />
+        <module name="camel-activemq" />
         <module name="ClientAuthentication" />
         <module name="compose-simple-message" />
         <module name="container-transactions-ejb-jpa-war" />
         <module name="container-transactions-ejb-war" />
         <module name="context-service" />
+        <module name="dsl-route" />
         <module name="DWRExample-N01" />
         <module name="ear" />
         <module name="ear-client" />
@@ -60,12 +62,12 @@
         <module name="IoC-01" />
         <module name="ioc-01" />
         <module name="IoC-01-Simple-Bean" />
-        <module name="ioc-02-inheritance" />
         <module name="IoC-02-Inheritance" />
-        <module name="IoC-03-Instantiation" />
+        <module name="ioc-02-inheritance" />
         <module name="ioc-03-instantiation" />
-        <module name="IoC-04-Scope" />
+        <module name="IoC-03-Instantiation" />
         <module name="ioc-04-scope" />
+        <module name="IoC-04-Scope" />
         <module name="IoC-05-Lazy-Init" />
         <module name="ioc-05-lazy-init" />
         <module name="IoC-06-Init-Destroy" />
@@ -109,6 +111,7 @@
         <module name="servlet-app" />
         <module name="servlet-jsp-app" />
         <module name="simple-mybatis" />
+        <module name="simple-route" />
         <module name="SimplePortlet" />
         <module name="SimpleWebService-client" />
         <module name="SimpleWebService-ear" />
@@ -127,6 +130,7 @@
         <module name="spring-integration-09" />
         <module name="spring-integration-10" />
         <module name="spring-integration-11" />
+        <module name="spring-route" />
         <module name="stateful-lib" />
         <module name="stateful-war-ejb" />
         <module name="stateful-war-ejb (1)" />
@@ -164,6 +168,7 @@
     <bytecodeTargetLevel>
       <module name="async-ejb-war" target="1.7" />
       <module name="bean-transactions-ejb-war" target="1.7" />
+      <module name="camel-activemq" target="1.7" />
       <module name="ClientAuthentication" target="1.7" />
       <module name="compose-simple-message" target="1.7" />
       <module name="container-transactions-ejb-jpa-war" target="1.7" />
@@ -173,6 +178,7 @@
       <module name="DojoExampleN02" target="1.7" />
       <module name="DojoExampleN03" target="1.7" />
       <module name="DojoExampleN04" target="1.7" />
+      <module name="dsl-route" target="1.7" />
       <module name="DWRExample-N01" target="1.7" />
       <module name="ear" target="1.7" />
       <module name="ear-client" target="1.7" />
@@ -263,6 +269,7 @@
       <module name="servlet-app" target="1.7" />
       <module name="servlet-jsp-app" target="1.7" />
       <module name="simple-mybatis" target="1.7" />
+      <module name="simple-route" target="1.7" />
       <module name="SimplePortlet" target="1.7" />
       <module name="SimpleWebService" target="1.7" />
       <module name="SimpleWebService-client" target="1.7" />
@@ -282,6 +289,7 @@
       <module name="spring-integration-09" target="1.7" />
       <module name="spring-integration-10" target="1.7" />
       <module name="spring-integration-11" target="1.7" />
+      <module name="spring-route" target="1.7" />
       <module name="stateful-lib" target="1.7" />
       <module name="stateful-war-ejb" target="1.7" />
       <module name="stateful-war-ejb (1)" target="1.7" />

@@ -11,6 +11,7 @@
 
     <modules>
         <module>ActiveMQ</module>
+        <module>Camel</module>
         <module>Concurrency</module>
         <module>DWR</module>
         <module>EJB</module>
@@ -36,7 +37,7 @@
         <source-code.version>1.7</source-code.version>
         <source-code.encoding>UTF-8</source-code.encoding>
         <ee.version>7.0</ee.version>
-        <slf4j.version>1.7.7</slf4j.version>
+        <slf4j.version>1.7.13</slf4j.version>
         <spring.version>4.1.1.RELEASE</spring.version>
         <hibernate.version>4.3.7.Final</hibernate.version>
         <zk.version>7.0.3</zk.version>
@@ -265,6 +266,30 @@
                 <groupId>org.springframework.integration</groupId>
                 <artifactId>spring-integration-xml</artifactId>
                 <version>${spring-integration.version}</version>
+            </dependency>
+
+            <!-- Camel -->
+            <dependency>
+                <groupId>org.apache.camel</groupId>
+                <artifactId>camel-core</artifactId>
+                <version>2.16.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.camel</groupId>
+                <artifactId>camel-spring</artifactId>
+                <version>2.16.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.camel</groupId>
+                <artifactId>camel-activemq</artifactId>
+                <version>1.1.0</version>
+            </dependency>
+
+            <!-- ActiveMQ -->
+            <dependency>
+                <groupId>org.apache.activemq</groupId>
+                <artifactId>activemq-camel</artifactId>
+                <version>5.11.1</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

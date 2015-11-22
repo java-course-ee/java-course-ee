@@ -4,6 +4,9 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ActiveMQ/read-from-queue" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ActiveMQ/write-to-queue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Camel/camel-activemq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Camel/dsl-route" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Camel/spring-route" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Concurrency/context-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Concurrency/managed-executor-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Concurrency/managed-scheduled-executor-service" charset="UTF-8" />
