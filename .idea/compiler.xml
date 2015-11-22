@@ -95,6 +95,7 @@
         <module name="managed-executor-service" />
         <module name="managed-scheduled-executor-service" />
         <module name="managed-thread-factory" />
+        <module name="read-from-queue" />
         <module name="rest-context" />
         <module name="rest-context (1)" />
         <module name="rest-download-files" />
@@ -145,6 +146,7 @@
         <module name="WebSecurity" />
         <module name="WebSecurityForm" />
         <module name="WebSecurityFormLDAP" />
+        <module name="write-to-queue" />
         <module name="ZKExample01" />
         <module name="ZKExample02" />
         <module name="ZKExample03" />
@@ -247,6 +249,7 @@
       <module name="managed-executor-service" target="1.7" />
       <module name="managed-scheduled-executor-service" target="1.7" />
       <module name="managed-thread-factory" target="1.7" />
+      <module name="read-from-queue" target="1.7" />
       <module name="rest-context" target="1.7" />
       <module name="rest-context (1)" target="1.7" />
       <module name="rest-download-files" target="1.7" />
@@ -298,6 +301,7 @@
       <module name="WebSecurity" target="1.7" />
       <module name="WebSecurityForm" target="1.7" />
       <module name="WebSecurityFormLDAP" target="1.7" />
+      <module name="write-to-queue" target="1.7" />
       <module name="ZKExample01" target="1.7" />
       <module name="ZKExample02" target="1.7" />
       <module name="ZKExample03" target="1.7" />
