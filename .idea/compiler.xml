@@ -62,16 +62,10 @@
         <module name="IoC-01" />
         <module name="ioc-01" />
         <module name="IoC-01-Simple-Bean" />
-        <module name="IoC-02-Inheritance" />
-        <module name="ioc-02-inheritance" />
-        <module name="ioc-03-instantiation" />
+        <module name="ioc-02-Inheritance" />
         <module name="IoC-03-Instantiation" />
-        <module name="ioc-04-scope" />
         <module name="IoC-04-Scope" />
         <module name="IoC-05-Lazy-Init" />
-        <module name="ioc-05-lazy-init" />
-        <module name="IoC-06-Init-Destroy" />
-        <module name="ioc-06-init-destroy" />
         <module name="jdbc" />
         <module name="JDBC" />
         <module name="jms-ear" />
@@ -111,7 +105,6 @@
         <module name="servlet-app" />
         <module name="servlet-jsp-app" />
         <module name="simple-mybatis" />
-        <module name="simple-route" />
         <module name="SimplePortlet" />
         <module name="SimpleWebService-client" />
         <module name="SimpleWebService-ear" />
@@ -220,10 +213,8 @@
       <module name="ioc-04-scope" target="1.7" />
       <module name="ioc-05-lazy-init" target="1.7" />
       <module name="IoC-05-Lazy-Init" target="1.7" />
-      <module name="IoC-06-Init-Destroy" target="1.7" />
       <module name="ioc-06-init-destroy" target="1.7" />
       <module name="java-ee-examples" target="1.7" />
-      <module name="jdbc" target="1.7" />
       <module name="JDBC" target="1.7" />
       <module name="jms-ear" target="1.7" />
       <module name="jms-ejb" target="1.7" />

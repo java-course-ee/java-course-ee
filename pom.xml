@@ -19,6 +19,7 @@
         <module>JavaMail</module>
         <module>JQuery</module>
         <module>JSF</module>
+        <module>JUnit</module>
         <module>Logging</module>
         <module>MyBatis</module>
         <module>Portlet</module>
