@@ -36,6 +36,7 @@
       <module fileurl="file://$PROJECT_DIR$/JUnit/JUnit.iml" filepath="$PROJECT_DIR$/JUnit/JUnit.iml" />
       <module fileurl="file://$PROJECT_DIR$/JUnit/JUnit-01/JUnit-01.iml" filepath="$PROJECT_DIR$/JUnit/JUnit-01/JUnit-01.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaMail/JavaMail.iml" filepath="$PROJECT_DIR$/JavaMail/JavaMail.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JbossFuse/JbossFuse.iml" filepath="$PROJECT_DIR$/JbossFuse/JbossFuse.iml" />
       <module fileurl="file://$PROJECT_DIR$/Logging/Logging.iml" filepath="$PROJECT_DIR$/Logging/Logging.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis/MyBatis.iml" filepath="$PROJECT_DIR$/MyBatis/MyBatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/Portlet/Portlet.iml" filepath="$PROJECT_DIR$/Portlet/Portlet.iml" />
@@ -79,6 +80,7 @@
       <module fileurl="file://$PROJECT_DIR$/Camel/dsl-route/dsl-route.iml" filepath="$PROJECT_DIR$/Camel/dsl-route/dsl-route.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-client/ear-client.iml" filepath="$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-client/ear-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-ejb/ear-ejb.iml" filepath="$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-ejb/ear-ejb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JbossFuse/fabric-master/fabric-master.iml" filepath="$PROJECT_DIR$/JbossFuse/fabric-master/fabric-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part2/hibernate-column-transformer/hibernate-column-transformer.iml" filepath="$PROJECT_DIR$/Hibernate/part2/hibernate-column-transformer/hibernate-column-transformer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-config-xml-mapping-annotations/hibernate-config-xml-mapping-annotations.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-config-xml-mapping-annotations/hibernate-config-xml-mapping-annotations.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate/part1/hibernate-criteria/hibernate-criteria.iml" filepath="$PROJECT_DIR$/Hibernate/part1/hibernate-criteria/hibernate-criteria.iml" />

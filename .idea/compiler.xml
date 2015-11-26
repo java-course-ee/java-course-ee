@@ -44,6 +44,7 @@
         <module name="ejb-lib-module" />
         <module name="ejb-war-module" />
         <module name="ejb-war2-module" />
+        <module name="fabric-master" />
         <module name="GS_JSF_2" />
         <module name="hibernate-column-transformer" />
         <module name="hibernate-config-annotations" />
@@ -62,10 +63,12 @@
         <module name="IoC-01" />
         <module name="ioc-01" />
         <module name="IoC-01-Simple-Bean" />
+        <module name="IoC-02-Inheritance" />
         <module name="ioc-02-Inheritance" />
         <module name="IoC-03-Instantiation" />
         <module name="IoC-04-Scope" />
         <module name="IoC-05-Lazy-Init" />
+        <module name="IoC-06-Init-Destroy" />
         <module name="jdbc" />
         <module name="JDBC" />
         <module name="jms-ear" />
@@ -85,6 +88,7 @@
         <module name="JSF8" />
         <module name="JSF9" />
         <module name="JSF_1" />
+        <module name="JUnit-01" />
         <module name="lib" />
         <module name="lib (1) (edu.javacourse.ejb.stateful-ejb)" />
         <module name="log4j" />
@@ -187,6 +191,7 @@
       <module name="ejb-war-module" target="1.7" />
       <module name="ejb-war2-module" target="1.7" />
       <module name="examples" target="1.7" />
+      <module name="fabric-master" target="1.7" />
       <module name="GS_JSF_2" target="1.7" />
       <module name="hibernate-column-transformer" target="1.7" />
       <module name="hibernate-config-annotations" target="1.7" />
@@ -213,6 +218,7 @@
       <module name="ioc-04-scope" target="1.7" />
       <module name="ioc-05-lazy-init" target="1.7" />
       <module name="IoC-05-Lazy-Init" target="1.7" />
+      <module name="IoC-06-Init-Destroy" target="1.7" />
       <module name="ioc-06-init-destroy" target="1.7" />
       <module name="java-ee-examples" target="1.7" />
       <module name="JDBC" target="1.7" />
@@ -240,6 +246,8 @@
       <module name="JSF8" target="1.7" />
       <module name="JSF9" target="1.7" />
       <module name="JSF_1" target="1.7" />
+      <module name="JUnit" target="1.7" />
+      <module name="JUnit-01" target="1.7" />
       <module name="lib" target="1.7" />
       <module name="lib (1) (edu.javacourse.ejb.stateful-ejb)" target="1.7" />
       <module name="log4j" target="1.7" />

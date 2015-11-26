@@ -11,6 +11,7 @@
     <file type="javaeeApplication" url="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-client" />
     <file type="javaeeApplication" url="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-ejb" />
     <file type="javaeeApplication" url="file://$PROJECT_DIR$/WebServices/JAX-WS/SimpleWebService/SimpleWebService-ear" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/JbossFuse/fabric-master" />
     <file type="web" url="file://$PROJECT_DIR$/Concurrency/context-service" />
     <file type="web" url="file://$PROJECT_DIR$/Concurrency/managed-executor-service" />
     <file type="web" url="file://$PROJECT_DIR$/Concurrency/managed-scheduled-executor-service" />
