@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/JbossFuse/CXF/CXF.iml" filepath="$PROJECT_DIR$/JbossFuse/CXF/CXF.iml" />
       <module fileurl="file://$PROJECT_DIR$/Camel/Camel.iml" filepath="$PROJECT_DIR$/Camel/Camel.iml" />
       <module fileurl="file://$PROJECT_DIR$/Security/ClientAuthentication/ClientAuthentication.iml" filepath="$PROJECT_DIR$/Security/ClientAuthentication/ClientAuthentication.iml" />
       <module fileurl="file://$PROJECT_DIR$/Concurrency/Concurrency.iml" filepath="$PROJECT_DIR$/Concurrency/Concurrency.iml" />
@@ -77,6 +78,8 @@
       <module fileurl="file://$PROJECT_DIR$/EJB/transactions/container-transactions-ejb-jpa-war/container-transactions-ejb-jpa-war.iml" filepath="$PROJECT_DIR$/EJB/transactions/container-transactions-ejb-jpa-war/container-transactions-ejb-jpa-war.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/transactions/container-transactions-ejb-war/container-transactions-ejb-war.iml" filepath="$PROJECT_DIR$/EJB/transactions/container-transactions-ejb-war/container-transactions-ejb-war.iml" />
       <module fileurl="file://$PROJECT_DIR$/Concurrency/context-service/context-service.iml" filepath="$PROJECT_DIR$/Concurrency/context-service/context-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JbossFuse/CXF/cxf-consumer/cxf-consumer.iml" filepath="$PROJECT_DIR$/JbossFuse/CXF/cxf-consumer/cxf-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JbossFuse/CXF/cxf-producer/cxf-producer.iml" filepath="$PROJECT_DIR$/JbossFuse/CXF/cxf-producer/cxf-producer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Camel/dsl-route/dsl-route.iml" filepath="$PROJECT_DIR$/Camel/dsl-route/dsl-route.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-client/ear-client.iml" filepath="$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-client/ear-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-ejb/ear-ejb.iml" filepath="$PROJECT_DIR$/EJB/stateless-ejb-local-remote/ear-ejb/ear-ejb.iml" />
