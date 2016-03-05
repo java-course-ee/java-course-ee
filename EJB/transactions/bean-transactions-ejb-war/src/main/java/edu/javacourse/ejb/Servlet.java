@@ -40,11 +40,11 @@ public class Servlet extends HttpServlet {
             }
             printAllRegions(response);
         } else if ("no".equals(transaction)) {
-            response.getWriter().write("=================================== updateRegionWithNoTransactionCommit:\n\n");
+            response.getWriter().write("=================================== updateRegionWithTransactionCommit:\n\n");
             try {
-                ejb.updateRegionWithNoTransactionCommit(new Region(1L, name));
+                ejb.updateRegionWithTransactionCommit(new Region(1L, name));
             } catch (BusinessException ex) {
-                response.getWriter().write("Error updateRegionWithNoTransactionCommit: " + ex.getMessage() + "\n\n");
+                response.getWriter().write("Error updateRegionWithTransactionCommit: " + ex.getMessage() + "\n\n");
             }
             printAllRegions(response);
         }
