@@ -19,4 +19,8 @@
 
     <bean class="edu.javacourse.spring.jms.MessageListener"/>
 
+    <bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+        <property name="connectionFactory" ref="connectionFactory"/>
+    </bean>
+
 </beans>

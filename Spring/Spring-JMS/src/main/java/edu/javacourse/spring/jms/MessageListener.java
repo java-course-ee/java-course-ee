@@ -15,7 +15,7 @@ public class MessageListener {
 
     @JmsListener(destination = "test-queue")
     public void processJMSMessage(Message message) {
-        log.debug("Message received: {}", message);
+        log.info("Message received: {}", message);
     }
 
 }
