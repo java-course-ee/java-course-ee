@@ -14,7 +14,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Spring WS Service</name>
+    <name>Spring WS Client</name>
 
     <dependencies>
         <dependency>
