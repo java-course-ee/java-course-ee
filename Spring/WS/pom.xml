@@ -12,6 +12,7 @@
     <modules>
         <module>Spring-WS-Service</module>
 	    <module>Spring-WS-Client</module>
+        <module>Spring-WS-Lib</module>
     </modules>
 
 </project>

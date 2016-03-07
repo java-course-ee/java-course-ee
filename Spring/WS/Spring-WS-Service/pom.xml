@@ -10,13 +10,18 @@
     </parent>
 
     <groupId>edu.javacourse.spring.ws</groupId>
-    <artifactId>service</artifactId>
+    <artifactId>spring-ws-service</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
     <name>Spring WS Service</name>
 
     <dependencies>
+        <dependency>
+            <groupId>edu.javacourse.spring.ws</groupId>
+            <artifactId>spring-ws-lib</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
@@ -39,39 +44,5 @@
             <artifactId>slf4j-log4j12</artifactId>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>jaxb2-maven-plugin</artifactId>
-                <version>1.6</version>
-                <executions>
-                    <execution>
-                        <id>xjc</id>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>xjc</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <arguments>-Xannotate</arguments>
-                    <bindingDirectory>src/main/bindings</bindingDirectory>
-                    <bindingFiles>binding.xml</bindingFiles>
-                    <schemaDirectory>src/main/webapp/WEB-INF</schemaDirectory>
-                    <schemaFiles>serviceSchema.xsd</schemaFiles>
-                    <extension>true</extension>
-                </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.jvnet.jaxb2_commons</groupId>
-                        <artifactId>jaxb2-basics-annotate</artifactId>
-                        <version>0.6.4</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

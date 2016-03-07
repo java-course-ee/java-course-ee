@@ -11,7 +11,7 @@
     <sws:annotation-driven/>
 
     <sws:dynamic-wsdl id="SimpleWebServiceWSDL" targetNamespace="http://test.gs.ru/" portTypeName="SimpleWebServicePortType" locationUri="/SimpleWebServiceLocation">
-        <sws:xsd location="/WEB-INF/serviceSchema.xsd"/>
+        <sws:xsd location="classpath:serviceSchema.xsd"/>
     </sws:dynamic-wsdl>
 
 </beans>

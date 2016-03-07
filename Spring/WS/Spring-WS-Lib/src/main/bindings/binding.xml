@@ -4,7 +4,7 @@
                jaxb:extensionBindingPrefixes="annox"
                >
 
-    <jaxb:bindings schemaLocation="../webapp/WEB-INF/serviceSchema.xsd" node="xs:complexType" multiple="true">
+    <jaxb:bindings schemaLocation="../resources/serviceSchema.xsd" node="xs:complexType" multiple="true">
         <annox:annotate>
             <annox:annotate annox:class="javax.xml.bind.annotation.XmlRootElement" />
         </annox:annotate>
