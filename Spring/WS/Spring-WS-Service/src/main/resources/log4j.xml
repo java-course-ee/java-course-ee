@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'
+                     debug="true">
+
+    <appender name="fileAppender" class="org.apache.log4j.RollingFileAppender">
+        <param name="maxFileSize" value="10MB"/>
+        <param name="maxBackupIndex" value="10"/>
+        <param name="file" value="spring-ws.log"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                   value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1} - %m%n"/>
+        </layout>
+    </appender>
+
+    <category name="org.springframework">
+        <!--all, trace, debug, info, warn, error, fatal-->
+        <priority value="debug"/>
+        <appender-ref ref="fileAppender"/>
+    </category>
+
+</log4j:configuration>
