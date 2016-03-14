@@ -91,7 +91,7 @@ public class BeanManagedTransactionsEJB {
         }
     }
 
-    public void updateRegionWithNoTransactionCommit(Region region) throws BusinessException {
+    public void updateRegionWithTransactionCommit(Region region) throws BusinessException {
         try {
 
             Connection connection = dataSource.getConnection();

@@ -35,6 +35,9 @@
                     <sourceDestDir>${project.build.directory}/generated-sources/jaxws-wsimport</sourceDestDir>
                     <xnocompile>true</xnocompile>
                     <verbose>true</verbose>
+                    <vmArgs>
+                        <vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
+                    </vmArgs>
                     <extension>true</extension>
                     <wsdlFiles>
                         <wsdlFile>SimpleWebService.wsdl</wsdlFile>

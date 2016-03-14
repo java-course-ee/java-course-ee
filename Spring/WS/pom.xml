@@ -2,19 +2,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>edu.javacourse</groupId>
-    <artifactId>spring</artifactId>
+    <groupId>edu.javacourse.spring</groupId>
+    <artifactId>ws</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>Spring</name>
+    <name>Spring WS</name>
 
     <modules>
-        <module>Integration</module>
-        <module>IoC</module>
-        <module>JDBC</module>
-        <module>Spring-JMS</module>
-        <module>WS</module>
+        <module>Spring-WS-Service</module>
+	    <module>Spring-WS-Client</module>
+        <module>Spring-WS-Lib</module>
     </modules>
 
 </project>
