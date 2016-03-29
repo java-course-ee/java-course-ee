@@ -30,6 +30,7 @@
         <module>Velocity</module>
         <module>Web</module>
         <module>WebServices</module>
+        <module>WebSocket</module>
         <module>ZK</module>
     </modules>
 
