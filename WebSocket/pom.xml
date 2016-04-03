@@ -13,6 +13,7 @@
         <module>init-client</module>
         <module>init-server</module>
         <module>client-endpoint</module>
+        <module>secure-endpoint</module>
     </modules>
 
 </project>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello page</title>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script language="JavaScript" type="text/javascript">
+        $(function() {
+            var websocket = new WebSocket("wss://wildfly.local:8443/secure-endpoint/helloEndpoint");
+            websocket.onopen = function() {
+                $("#log").append($("<p>WebSocket connection has been established</p>"));
+            };
+            websocket.onclose = function() {
+                $("#log").append($("<p>WebSocket connection has been closed</p>"));
+            };
+            websocket.onmessage = function(event) {
+                var serverMessage = $("<p>" + event.data + "</p>");
+                $("#container").html(serverMessage);
+            };
+            sendMessage = function(name) {
+                websocket.send(name);
+            };
+        });
+    </script>
+</head>
+<body>
+
+<div id="log"></div>
+
+<hr/>
+
+Name - <input id="name" type="text"/>
+<button onclick="sendMessage($('#name').val())">Say hello</button>
+
+<hr/>
+
+<div id="container"></div>
+
+</body>
+</html>
