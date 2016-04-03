@@ -12,6 +12,7 @@
     <modules>
         <module>init-client</module>
         <module>init-server</module>
+        <module>client-endpoint</module>
     </modules>
 
 </project>
