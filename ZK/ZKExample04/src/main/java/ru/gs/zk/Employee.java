@@ -6,14 +6,14 @@ import java.util.Date;
  *
  * @author Artem Pronchakov | email/xmpp: artem.pronchakov@calisto.email
  */
-public class MyEntity {
+public class Employee {
 	private long id;
 	private String name;
 	private String surname;
 	private Date birthDate;
 	private double salary;
 
-	public MyEntity(long id, String name, String surname, Date birthDate, double salary) {
+	public Employee(long id, String name, String surname, Date birthDate, double salary) {
 		this.id = id;
 		this.name = name;
 		this.surname = surname;

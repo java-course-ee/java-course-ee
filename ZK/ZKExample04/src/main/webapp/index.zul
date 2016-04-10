@@ -5,7 +5,7 @@
     xsi:schemaLocation="http://www.zkoss.org/2005/zul http://www.zkoss.org/2005/zul/zul.xsd">
 
 	<window title="ZK Window" border="normal" apply="ru.gs.zk.MyComposer" >
-<!--		<grid id="grid" model="@{lml}">
+<!--		<grid id="grid">
 			<columns>
 				<column label="ID"></column>
 				<column label="Имя"></column>
@@ -14,17 +14,17 @@
 				<column label="Зарплата"></column>
 			</columns>
 			<rows>
-				<row self="@{each=lml}" value="@{lml}">
-					<label value="@{lml.id}" />
-					<textbox value="@{lml.name}" />
-					<label value="@{lml.surname}" />
-					<datebox value="@{lml.birthDate}" />
-					<label value="@{lml.salary}" />
+				<row self="@{each=modelItem}" value="@{modelItem}">
+					<label value="@{modelItem.id}" />
+					<textbox value="@{modelItem.name}" />
+					<label value="@{modelItem.surname}" />
+					<datebox value="@{modelItem.birthDate}" />
+					<label value="@{modelItem.salary}" />
 				</row>
 			</rows>
 		</grid>-->
 		
-		<listbox id="grid" model="@{lml}">
+		<listbox id="grid">
 			<listhead>
 				<listheader label="ID"></listheader>
 				<listheader label="Имя"></listheader>
@@ -32,13 +32,15 @@
 				<listheader label="Дата рождения"></listheader>
 				<listheader label="Зарплата"></listheader>
 			</listhead>
-			<listitem self="@{each=lml}" value="@{lml}">
-				<listcell label="@{lml.id}" />
-				<listcell label="@{lml.name}" />
-				<listcell label="@{lml.surname}" />
-				<listcell label="@{lml.birthDate}" />
-				<listcell label="@{lml.salary}" />
-			</listitem>
+			<template name="model">
+				<listitem value="@{each}">
+					<listcell label="@{each.id}" />
+					<listcell label="@{each.name}" />
+					<listcell label="@{each.surname}" />
+					<listcell label="@{each.birthDate}" />
+					<listcell label="@{each.salary}" />
+				</listitem>
+			</template>
 		</listbox>
 	</window>
 
