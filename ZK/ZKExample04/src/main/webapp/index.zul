@@ -5,26 +5,28 @@
     xsi:schemaLocation="http://www.zkoss.org/2005/zul http://www.zkoss.org/2005/zul/zul.xsd">
 
 	<window title="ZK Window" border="normal" apply="ru.gs.zk.MyComposer" >
-<!--		<grid id="grid">
-			<columns>
-				<column label="ID"></column>
-				<column label="Имя"></column>
-				<column label="Фамилия"></column>
-				<column label="Дата рождения"></column>
-				<column label="Зарплата"></column>
-			</columns>
-			<rows>
-				<row self="@{each=modelItem}" value="@{modelItem}">
-					<label value="@{modelItem.id}" />
-					<textbox value="@{modelItem.name}" />
-					<label value="@{modelItem.surname}" />
-					<datebox value="@{modelItem.birthDate}" />
-					<label value="@{modelItem.salary}" />
-				</row>
-			</rows>
-		</grid>-->
+		<!--<grid id="grid" emptyMessage="Grid id empty">-->
+			<!--<columns>-->
+				<!--<column label="ID"></column>-->
+				<!--<column label="Имя"></column>-->
+				<!--<column label="Фамилия"></column>-->
+				<!--<column label="Дата рождения"></column>-->
+				<!--<column label="Зарплата"></column>-->
+			<!--</columns>-->
+			<!--<rows>-->
+				<!--<template name="model">-->
+					<!--<row value="${each}">-->
+						<!--<label value="${each.id}" />-->
+						<!--<textbox value="${each.name}" />-->
+						<!--<label value="${each.surname}" />-->
+						<!--<datebox value="${each.birthDate}" />-->
+						<!--<label value="${each.salary}" />-->
+					<!--</row>-->
+				<!--</template>-->
+			<!--</rows>-->
+		<!--</grid>-->
 		
-		<listbox id="grid">
+		<listbox id="grid" emptyMessage="List is empty">
 			<listhead>
 				<listheader label="ID"></listheader>
 				<listheader label="Имя"></listheader>
@@ -33,15 +35,16 @@
 				<listheader label="Зарплата"></listheader>
 			</listhead>
 			<template name="model">
-				<listitem value="@{each}">
-					<listcell label="@{each.id}" />
-					<listcell label="@{each.name}" />
-					<listcell label="@{each.surname}" />
-					<listcell label="@{each.birthDate}" />
-					<listcell label="@{each.salary}" />
+				<listitem value="${each}">
+					<listcell label="${each.id}" />
+					<listcell label="${each.name}" />
+					<listcell label="${each.surname}" />
+					<listcell label="${each.birthDate}" />
+					<listcell label="${each.salary}" />
 				</listitem>
 			</template>
 		</listbox>
+		<button id="ok" type="submit">ОК</button>
 	</window>
 
 </zk>

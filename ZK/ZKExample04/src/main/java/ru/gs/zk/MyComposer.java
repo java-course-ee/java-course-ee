@@ -1,39 +1,30 @@
 package ru.gs.zk;
 
+import org.zkoss.zk.ui.select.SelectorComposer;
+import org.zkoss.zk.ui.select.annotation.Listen;
+import org.zkoss.zk.ui.select.annotation.Wire;
+import org.zkoss.zul.*;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-import org.zkoss.zk.ui.Component;
-import org.zkoss.zk.ui.select.SelectorComposer;
-import org.zkoss.zk.ui.select.annotation.Wire;
-import org.zkoss.zk.ui.util.GenericForwardComposer;
-import org.zkoss.zkplus.databind.AnnotateDataBinder;
-import org.zkoss.zul.*;
 
 /**
  *
  * @author Artem Pronchakov | email/xmpp: artem.pronchakov@calisto.email
  */
 public class MyComposer extends SelectorComposer<Window> {
+//	@Wire
 //	private Grid grid;
 	@Wire
 	private Listbox grid;
-	private ListModelList lml;
+	private ListModelList<Employee> lml;
 
-	public Listbox getGrid() {
-		return grid;
-	}
-
-	public void setGrid(Listbox grid) {
-		this.grid = grid;
-	}
-
-	public ListModelList getLml() {
+	public ListModelList<Employee> getLml() {
 		return lml;
 	}
 
-	public void setLml(ListModelList lml) {
+	public void setLml(ListModelList<Employee> lml) {
 		this.lml = lml;
 	}
 
@@ -41,8 +32,6 @@ public class MyComposer extends SelectorComposer<Window> {
     public void doAfterCompose(Window comp) throws Exception {
         super.doAfterCompose(comp);
 
-		System.out.println("1");
-		
 		List<Employee> list = new ArrayList<Employee>();
 		list.add(new Employee(1, "Ivan", "Ivanov", new Date(), 456.54));
 		list.add(new Employee(2, "Ivan2", "Ivanov2", new Date(), 556.54));
@@ -53,14 +42,15 @@ public class MyComposer extends SelectorComposer<Window> {
 		
 		lml = new ListModelList(list);
 
-		System.out.println("2");
-
 		grid.setModel(lml);
-
-		System.out.println("3");
 
 		System.out.println("Grid: " + grid + ", size: " + list.size());
 		
     }
+
+	@Listen("onClick = #ok")
+	public void okClickHandler() {
+		Messagebox.show("Selected Employee with id: " + ((Employee)grid.getSelectedItem().getValue()).getId(), "Message", Messagebox.OK, null);
+	}
     
 }
