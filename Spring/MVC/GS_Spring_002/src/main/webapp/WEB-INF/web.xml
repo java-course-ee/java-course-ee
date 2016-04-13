@@ -5,7 +5,6 @@
 
     <display-name>Archetype Created Web Application</display-name>
 
-    <!--/WEB-INF/database-config.xml-->
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>

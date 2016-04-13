@@ -8,63 +8,33 @@
     <mvc:annotation-driven/>
     <context:component-scan base-package="com.gemini.spring.rest"/>
 
-    <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"/>
-
-    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
-        <property name="messageConverters">
-            <list>
-                <ref bean="xmlMessageConverter"/>
-                <ref bean="jsonHttpMessageConverter"/>
-            </list>
-        </property>
-    </bean>
-
-    <bean id="viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
-        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
-        <property name="prefix" value="/jsp/"/>
-        <property name="suffix" value=".jsp"/>
-    </bean>
-
-    <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
-        <property name="order" value="1"/>
+    <bean id="contentNegotiationManager" class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean">
         <property name="mediaTypes">
             <map>
                 <entry key="json" value="application/json"/>
                 <entry key="xml" value="application/xml"/>
-                <entry key="html" value="text/html"/>
             </map>
         </property>
-        <property name="defaultViews">
-            <list>
-                <!-- JSON VIEW -->
-                <bean class="org.springframework.web.servlet.view.json.MappingJackson2JsonView"/>
+    </bean>
 
-                <!-- XMl VIEW -->
-                <bean class="org.springframework.web.servlet.view.xml.MarshallingView">
-                    <constructor-arg>
-                        <bean class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
-                            <property name="classesToBeBound">
-                                <list>
-                                    <value>com.gemini.spring.entity.User</value>
-                                    <value>com.gemini.spring.entity.Users</value>
-                                </list>
-                            </property>
-                        </bean>
-                    </constructor-arg>
+    <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+        <property name="contentNegotiationManager" ref="contentNegotiationManager"/>
+        <property name="order" value="1"/>
+        <property name="viewResolvers">
+            <list>
+                <bean id="viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+                    <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+                    <property name="prefix" value="/jsp/"/>
+                    <property name="suffix" value=".jsp"/>
                 </bean>
             </list>
         </property>
-    </bean>
-
-
-    <bean id="jsonHttpMessageConverter"
-          class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
-        <property name="prefixJson" value="false"/>
-        <property name="supportedMediaTypes" value="application/json"/>
-    </bean>
-
-    <bean id="xmlMessageConverter" class="org.springframework.http.converter.xml.MarshallingHttpMessageConverter">
-        <property name="supportedMediaTypes" value="application/xml"/>
+        <property name="defaultViews">
+            <list>
+                <bean class="org.springframework.web.servlet.view.json.MappingJackson2JsonView"/>
+                <bean class="org.springframework.web.servlet.view.xml.MappingJackson2XmlView"/>
+            </list>
+        </property>
     </bean>
 
 </beans>
