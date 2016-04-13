@@ -43,6 +43,7 @@
         <spring.version>4.1.1.RELEASE</spring.version>
         <hibernate.version>4.3.7.Final</hibernate.version>
         <zk.version>8.0.1.1</zk.version>
+        <vaadin.version>7.6.4</vaadin.version>
         <spring-integration.version>4.1.0.RELEASE</spring-integration.version>
     </properties>
 
