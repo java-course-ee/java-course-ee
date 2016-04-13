@@ -2,60 +2,44 @@
 <html>
 <head>
 
-
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.js"></script>
     <script type="text/javascript">
+        $(function () {
 
+            $("#helloLink").click(function() {
+                $.ajax({
+                    "url": "helloajax",
+                    "timeout": 2000,
+                    "success": function (data, textStatus, jqXHR) {
+                        $("#result").text(data);
+                    }
+                });
+            });
 
-        function getXmlHttp() {
-            var xmlhttp;
-            try {
-                xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
-            } catch (e) {
-                try {
-                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-                } catch (E) {
-                    xmlhttp = false;
-                }
-            }
-            if (!xmlhttp && typeof XMLHttpRequest != 'undefined') {
-                xmlhttp = new XMLHttpRequest();
-            }
-            return xmlhttp;
-        }
+            $("#sumButton").click(function() {
+                var d1 = $("#d1").val();
+                var d2 = $("#d2").val();
+                $.ajax({
+                    "url": "plus?d1=" + d1 + "&d2=" + d2,
+                    "timeout": 2000,
+                    "success": function (data, textStatus, jqXHR) {
+                        $("#result").text(data);
+                    }
+                });
+            });
 
-        function sayHello() {
-            var xmlhttp = getXmlHttp();
-            xmlhttp.open('GET', '/helloajax', false);
-            xmlhttp.send(null);
-            if (xmlhttp.status == 200) {
-                alert(xmlhttp.responseText);
-
-            }
-        }
-
-        function plus() {
-            var xmlhttp = getXmlHttp();
-            var d1value = document.getElementById("d1").value;
-            var d2value = document.getElementById("d2").value;
-            xmlhttp.open('GET', '/plus?d1=' + d1value + '&d2=' + d2value, false);
-            xmlhttp.send(null);
-            if (xmlhttp.status == 200) {
-                //alert(xmlhttp.responseText);
-                document.getElementById("result").innerHTML = xmlhttp.responseText;
-            } else {
-                alert("Error " + xmlhttp.responseText);
-            }
-        }
-
-
+        });
     </script>
 
     <title>Hello Ajax</title>
 </head>
 <body>
-<a href="javascript:void(0);" onclick="sayHello();">Say hello ajax!</a><br/>
+<a id="helloLink" href="#">Say hello ajax!</a><br/>
 
-<input type="text" id="d1"> + <input type="text" id="d2"> = <input onclick="plus();" type="button" value="Get result">
+<input type="text" id="d1"> + <input type="text" id="d2"> = <a id="sumButton" href="#">Get result</a>
+
+<br/><br/>
+
 <span id="result"></span>
 
 

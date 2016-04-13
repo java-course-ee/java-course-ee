@@ -8,7 +8,7 @@
 <body>
 
 <c:forEach items="${users}" var="u">
-    ${u.login} - ${u.email} &nbsp;&nbsp; <a href="/users/${u.userId}.html">View</a> <br/>
+    ${u.login} - ${u.email} &nbsp;&nbsp; <a href="users/${u.userId}.html">View</a> <br/>
 </c:forEach>
 </body>
 </html>

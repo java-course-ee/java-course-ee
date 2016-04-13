@@ -7,7 +7,7 @@
 <html>
 <body>
 
-<form method="DELETE" action="/users/delete">
+<form method="post" action="/GS_Spring_002/users/delete">
     <input type="hidden" name="userId" value="${user.userId}">
 
     <table>

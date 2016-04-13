@@ -1,5 +1,6 @@
 package com.gemini.spring.entity;
 
+import javax.persistence.*;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
@@ -24,6 +25,22 @@ public class User {
 
     @Column(name = "email", nullable = false)
     private String email;
+
+    public User() {
+    }
+
+    public User(Long userId, String login, String password, String email) {
+        this.userId = userId;
+        this.login = login;
+        this.password = password;
+        this.email = email;
+    }
+
+    public User(String login, String password, String email) {
+        this.login = login;
+        this.password = password;
+        this.email = email;
+    }
 
     public Long getUserId() {
         return userId;

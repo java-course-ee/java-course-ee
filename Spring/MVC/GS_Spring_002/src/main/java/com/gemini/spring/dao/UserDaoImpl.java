@@ -12,13 +12,10 @@ import java.util.List;
  * Author: Georgy Gobozov
  * Date: 11.04.13
  */
-@Repository
 public class UserDaoImpl implements UserDao {
-
 
     @Autowired
     private SessionFactory sessionFactory;
-
 
     public void create(User user) {
         sessionFactory.getCurrentSession().save(user);
@@ -33,12 +30,10 @@ public class UserDaoImpl implements UserDao {
     }
 
     public List<User> getAll() {
-        //noinspection JpaQlInspection
         return sessionFactory.getCurrentSession().createQuery("FROM User order by login").list();
     }
 
     public User getByLogin(String login) {
-        //noinspection JpaQlInspection
         Query query = sessionFactory.getCurrentSession().createQuery("from User u where u.login = ?");
         query.setString(0, login);
         return (User) query.list().get(0);

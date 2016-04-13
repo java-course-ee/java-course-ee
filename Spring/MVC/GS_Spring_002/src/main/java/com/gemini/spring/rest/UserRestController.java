@@ -17,8 +17,6 @@ import java.util.List;
 @Controller
 public class UserRestController {
 
-    // private static final String VIEW_NAME = "users" ;
-
     @Autowired
     UserService userService;
 
@@ -42,9 +40,8 @@ public class UserRestController {
         return "ok";
     }
 
-    @RequestMapping(method = RequestMethod.DELETE, value = "/users/{id}")
-    @ResponseBody
-    public String deleteUser(@PathVariable("id") String userId) {
+    @RequestMapping(method = RequestMethod.POST, value = "/users/delete")
+    public @ResponseBody String deleteUser(@RequestParam("userId") String userId) {
         User user = userService.getById(Long.parseLong(userId));
         userService.delete(user);
         return "ok";
@@ -52,8 +49,7 @@ public class UserRestController {
 
 
     @RequestMapping(method = RequestMethod.PUT, value = "/users/{id}")
-    @ResponseBody
-    public String updateUser(@PathVariable("id") String userId, @RequestBody User user) {
+    public @ResponseBody String updateUser(@PathVariable("id") String userId, @RequestBody User user) {
         user.setUserId(Long.parseLong(userId));
         userService.update(user);
         return "ok";
