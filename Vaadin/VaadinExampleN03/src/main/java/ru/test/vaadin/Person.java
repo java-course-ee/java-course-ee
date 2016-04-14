@@ -1,15 +1,22 @@
 package ru.test.vaadin;
 
+import java.util.Date;
+
 /**
- * @author Artem Pronchakov | email/xmpp: artem.pronchakov@calisto.email
+ * @author Artem Pronchakov artem.pronchakov@trs-it.ru
  */
-public class CustomValue {
+public class Person {
     private Long id;
     private String name;
+    private Date birth;
 
-    public CustomValue(Long id, String name) {
+    public Person(Long id, String name, Date birth) {
         this.id = id;
         this.name = name;
+        this.birth = birth;
+    }
+
+    public Person() {
     }
 
     public Long getId() {
@@ -28,4 +35,11 @@ public class CustomValue {
         this.name = name;
     }
 
+    public Date getBirth() {
+        return birth;
+    }
+
+    public void setBirth(Date birth) {
+        this.birth = birth;
+    }
 }
