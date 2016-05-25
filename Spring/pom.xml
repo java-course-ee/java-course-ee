@@ -13,6 +13,9 @@
         <module>Integration</module>
         <module>IoC</module>
         <module>JDBC</module>
+        <module>MVC</module>
+        <module>Spring-JMS</module>
+        <module>WS</module>
     </modules>
 
 </project>

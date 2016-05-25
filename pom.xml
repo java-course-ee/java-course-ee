@@ -30,6 +30,7 @@
         <module>Velocity</module>
         <module>Web</module>
         <module>WebServices</module>
+        <module>WebSocket</module>
         <module>ZK</module>
     </modules>
 
@@ -41,7 +42,8 @@
         <slf4j.version>1.7.13</slf4j.version>
         <spring.version>4.1.1.RELEASE</spring.version>
         <hibernate.version>4.3.7.Final</hibernate.version>
-        <zk.version>7.0.3</zk.version>
+        <zk.version>8.0.1.1</zk.version>
+        <vaadin.version>7.6.4</vaadin.version>
         <spring-integration.version>4.1.0.RELEASE</spring-integration.version>
     </properties>
 
@@ -267,6 +269,11 @@
                 <groupId>org.springframework.integration</groupId>
                 <artifactId>spring-integration-xml</artifactId>
                 <version>${spring-integration.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.ws</groupId>
+                <artifactId>spring-ws-core</artifactId>
+                <version>2.2.4.RELEASE</version>
             </dependency>
 
             <!-- Camel -->

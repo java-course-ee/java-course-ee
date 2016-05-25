@@ -6,24 +6,32 @@ import javax.xml.bind.annotation.XmlRootElement;
  * Author: Georgy Gobozov
  * Date: 11.04.13
  */
-@Entity
-@Table(name = "users")
 @XmlRootElement(name = "user")
 public class User {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "userId", nullable = false)
     private Long userId;
 
-    @Column(name = "login", nullable = false)
     private String login;
 
-    @Column(name = "password", nullable = false)
     private String password;
 
-    @Column(name = "email", nullable = false)
     private String email;
+
+    public User() {
+    }
+
+    public User(Long userId, String login, String password, String email) {
+        this.userId = userId;
+        this.login = login;
+        this.password = password;
+        this.email = email;
+    }
+
+    public User(String login, String password, String email) {
+        this.login = login;
+        this.password = password;
+        this.email = email;
+    }
 
     public Long getUserId() {
         return userId;
