@@ -18,8 +18,7 @@
     <name>WebServices AsyncWebService</name>
 
     <modules>
-        <module>AsyncWebService-ear</module>
-        <module>AsyncWebService-ejb</module>
+        <module>AsyncWebService-war</module>
         <module>AsyncWebService-client</module>
     </modules>
 

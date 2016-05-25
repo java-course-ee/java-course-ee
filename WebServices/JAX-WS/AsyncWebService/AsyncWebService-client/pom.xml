@@ -16,23 +16,33 @@
 
     <name>WebServices AsyncWebService-client</name>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>
                 <groupId>org.jvnet.jax-ws-commons</groupId>
                 <artifactId>jaxws-maven-plugin</artifactId>
                 <version>2.3</version>
-                <!--<executions>-->
-                    <!--<execution>-->
-                        <!--<goals>-->
-                            <!--<goal>wsimport</goal>-->
-                        <!--</goals>-->
-                        <!--<id>wsimport-generate-SimpleWebService</id>-->
-                        <!--<phase>generate-sources</phase>-->
-                    <!--</execution>-->
-                <!--</executions>-->
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>wsimport</goal>
+                        </goals>
+                        <id>wsimport-generate</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                </executions>
                 <configuration>
-                    <sourceDestDir>${project.build.directory}/generated-sources/jaxws-wsimport</sourceDestDir>
                     <xnocompile>true</xnocompile>
                     <verbose>true</verbose>
                     <vmArgs>
@@ -40,9 +50,9 @@
                     </vmArgs>
                     <extension>true</extension>
                     <wsdlFiles>
-                        <wsdlFile>SimpleWebService.wsdl</wsdlFile>
+                        <wsdlFile>AsyncWebServiceService.wsdl</wsdlFile>
                     </wsdlFiles>
-                    <wsdlLocation>http://localhost:8080/SimpleWebService-ejb-1.0-SNAPSHOT/SimpleWebService?wsdl</wsdlLocation>
+                    <wsdlLocation>http://localhost:8080/AsyncWebService-war/AsyncWebService?wsdl</wsdlLocation>
                 </configuration>
             </plugin>
         </plugins>
