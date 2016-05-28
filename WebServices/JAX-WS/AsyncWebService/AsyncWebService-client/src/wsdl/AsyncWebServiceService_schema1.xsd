@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://test.gs.ru/" xmlns:tns="http://test.gs.ru/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="sayHelloSloooooowly" type="tns:sayHelloSloooooowly"/>
+
+  <xs:element name="sayHelloSloooooowlyResponse" type="tns:sayHelloSloooooowlyResponse"/>
+
+  <xs:complexType name="sayHelloSloooooowly">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="sayHelloSloooooowlyResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

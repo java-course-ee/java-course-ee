@@ -8,7 +8,7 @@ import com.vaadin.ui.*;
 /**
  * Created by apronchakov on 16.11.14.
  */
-@Theme("reindeer")
+@Theme("valo")
 public class MyWindow extends UI {
     private HorizontalLayout hLayout = new HorizontalLayout();
     private TextField textField = new TextField("Имя");

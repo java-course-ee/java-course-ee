@@ -19,23 +19,17 @@ public class AjaxController {
 
 
     @RequestMapping(value = "/helloajax", method = RequestMethod.GET)
-    public
-    @ResponseBody
-    String sayHello() {
+    public @ResponseBody String sayHello() {
         return "Hello Ajax!";
     }
 
     @RequestMapping(value = "/plus", method = RequestMethod.GET)
-    public
-    @ResponseBody
-    String plus(@RequestParam String d1, @RequestParam String d2, HttpServletResponse response) {
-
+    public @ResponseBody String plus(@RequestParam String d1, @RequestParam String d2, HttpServletResponse response) {
         try {
             return String.valueOf(Integer.parseInt(d1) + Integer.parseInt(d2));
         } catch (Exception e) {
             return "Error. Arguments must be a digits!";
         }
-
     }
 
 
