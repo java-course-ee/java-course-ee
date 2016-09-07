@@ -11,6 +11,8 @@
 
     <modules>
         <module>fabric-master</module>
+        <module>FabricKarafCamelCXFActiveMQ</module>
+        <module>processor-bundle</module>
     </modules>
 
 </project>

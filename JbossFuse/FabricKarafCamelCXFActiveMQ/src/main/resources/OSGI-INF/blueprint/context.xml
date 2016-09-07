@@ -1,0 +1,43 @@
+<blueprint xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+           xmlns:cm="http://aries.apache.org/blueprint/xmlns/blueprint-cm/v1.0.0"
+           xsi:schemaLocation="
+       http://www.osgi.org/xmlns/blueprint/v1.0.0 http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd
+       http://camel.apache.org/schema/blueprint http://camel.apache.org/schema/blueprint/camel-blueprint.xsd">
+
+    <bean id="activemq" class="org.apache.activemq.camel.component.ActiveMQComponent">
+        <property name="brokerURL" value="tcp://localhost:61616"/>
+        <property name="userName" value="admin"/>
+        <property name="password" value="admin"/>
+    </bean>
+
+    <camelContext id="activemq-reader-context" xmlns="http://camel.apache.org/schema/blueprint">
+
+        <route id="timer-route">
+            <from uri="timer://foo?period=20000&amp;fixedRate=true"/>
+            <log message="Timer event occurred in ${date:now:HH:mm:ss:SSS}"/>
+        </route>
+
+        <route id="activemq-text-consumer">
+            <from uri="activemq:queue:text-consumer"/>
+            <log message="Message from activemq: ${body}"/>
+        </route>
+
+        <route id="activemq-move-to-queue-route">
+            <from uri="activemq:queue:from-queue"/>
+            <log message="Message from 'from-queue' will be moved to 'to-queue'"/>
+            <to uri="activemq:queue:to-queue"/>
+        </route>
+
+        <route id="uppercase-body-route">
+            <from uri="activemq:queue:uppercase-body"/>
+            <process ref="uppercase"/>
+            <to uri="activemq:queue:uppercase-body-result"/>
+        </route>
+
+    </camelContext>
+
+    <bean id="uppercase" class="edu.javacourse.fuse.BodyToUppercaseProcessor"/>
+
+
+</blueprint>
