@@ -287,6 +287,13 @@
                 <version>2.15.1</version>
             </dependency>
 
+            <!-- Apache -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-dbcp2</artifactId>
+                <version>2.1.1</version>
+            </dependency>
+
             <!-- ActiveMQ -->
             <dependency>
                 <groupId>org.apache.activemq</groupId>

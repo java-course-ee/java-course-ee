@@ -42,16 +42,35 @@
             <process ref="helloProcessor"/>
         </route>
 
+        <route id="save-data-to-db">
+            <from uri="timer://foo?period=10000&amp;fixedRate=true"/>
+            <log message="Writing to db"/>
+            <process ref="prepareData"/>
+            <to uri="sql:INSERT INTO fuse.SomeTable (name) VALUES (#)"/>
+        </route>
+
     </camelContext>
 
     <bean id="uppercase" class="edu.javacourse.fuse.BodyToUppercaseProcessor"/>
     <bean id="helloProcessor" class="edu.javacourse.fuse.HelloProcessor"/>
+    <bean id="prepareData" class="edu.javacourse.fuse.PrepareDataForSQL"/>
 
     <camel-cxf:cxfEndpoint id="cxf-hello-service"
                            address="http://localhost:9000/SimpleWebService"
                            serviceName="SimpleWebService"
                            serviceClass="ru.gs.test.SimpleWebService">
     </camel-cxf:cxfEndpoint>
+
+    <bean id="sql" class="org.apache.camel.component.sql.SqlComponent">
+        <property name="dataSource" ref="ds"/>
+    </bean>
+
+    <bean id="ds" class="org.apache.commons.dbcp2.BasicDataSource">
+        <property name="driverClassName" value="org.postgresql.Driver"/>
+        <property name="url" value="jdbc:postgresql://localhost:5432/JavaCourse"/>
+        <property name="username" value="postgres"/>
+        <property name="password" value="postgres"/>
+    </bean>
 
 
 </blueprint>
