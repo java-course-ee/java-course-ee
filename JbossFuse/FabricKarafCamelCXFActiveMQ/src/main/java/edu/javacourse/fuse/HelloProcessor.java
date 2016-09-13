@@ -12,6 +12,6 @@ public class HelloProcessor implements Processor {
     public void process(Exchange exchange) throws Exception {
         MessageContentsList body = exchange.getIn().getBody(MessageContentsList.class);
         String o = (String) body.get(0);
-        body.set(0, "Hello " + 0);
+        body.set(0, "Hello " + o);
     }
 }
