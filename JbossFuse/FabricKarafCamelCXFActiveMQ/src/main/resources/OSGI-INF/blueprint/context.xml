@@ -1,6 +1,6 @@
 <blueprint xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
-           xmlns:cm="http://aries.apache.org/blueprint/xmlns/blueprint-cm/v1.0.0"
+           xmlns:camel-cxf="http://camel.apache.org/schema/blueprint/cxf"
            xsi:schemaLocation="
        http://www.osgi.org/xmlns/blueprint/v1.0.0 http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd
        http://camel.apache.org/schema/blueprint http://camel.apache.org/schema/blueprint/camel-blueprint.xsd">
@@ -35,9 +35,23 @@
             <to uri="activemq:queue:uppercase-body-result"/>
         </route>
 
+        <route id="cxf-consumer">
+            <from uri="cxf-hello-service"/>
+            <log message="Message body class: ${body.getClass().getCanonicalName()}"/>
+            <log message="Message body value: ${body}"/>
+            <process ref="helloProcessor"/>
+        </route>
+
     </camelContext>
 
     <bean id="uppercase" class="edu.javacourse.fuse.BodyToUppercaseProcessor"/>
+    <bean id="helloProcessor" class="edu.javacourse.fuse.HelloProcessor"/>
+
+    <camel-cxf:cxfEndpoint id="cxf-hello-service"
+                           address="http://localhost:9000/SimpleWebService"
+                           serviceName="SimpleWebService"
+                           serviceClass="ru.gs.test.SimpleWebService">
+    </camel-cxf:cxfEndpoint>
 
 
 </blueprint>
