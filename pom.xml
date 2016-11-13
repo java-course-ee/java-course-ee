@@ -17,6 +17,7 @@
         <module>EJB</module>
         <module>Hibernate</module>
         <module>JavaMail</module>
+        <module>JGroups</module>
         <module>JQuery</module>
         <module>JSF</module>
         <module>JUnit</module>
@@ -298,6 +299,13 @@
                 <groupId>org.apache.activemq</groupId>
                 <artifactId>activemq-camel</artifactId>
                 <version>5.11.1</version>
+            </dependency>
+
+            <!-- Other -->
+            <dependency>
+                <groupId>org.jgroups</groupId>
+                <artifactId>jgroups</artifactId>
+                <version>3.6.10.Final</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
