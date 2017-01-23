@@ -15,6 +15,7 @@
         <module>JDBC</module>
         <module>MVC</module>
         <module>Spring-JMS</module>
+        <module>Spring-REST</module>
         <module>WS</module>
     </modules>
 
