@@ -1,4 +1,4 @@
-package edu.javacourse.fuse.fabric.master;
+package edu.javacourse.fuse2.fabric.master;
 
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;

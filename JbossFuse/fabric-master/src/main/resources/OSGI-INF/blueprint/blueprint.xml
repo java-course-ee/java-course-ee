@@ -11,7 +11,7 @@
         <property name="password" value="admin"/>
     </bean>
 
-    <bean id="sleeper" class="edu.javacourse.fuse.fabric.master.Sleeper"/>
+    <bean id="sleeper" class="edu.javacourse.fuse2.fabric.master.Sleeper"/>
 
     <reference id="curator" interface="org.apache.curator.framework.CuratorFramework"/>
 

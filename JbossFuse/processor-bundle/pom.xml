@@ -37,15 +37,10 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Export-Package>edu.javacourse.fuse</Export-Package>
+                        <Export-Package>edu.javacourse.fuse2</Export-Package>
                         <Import-Package>*</Import-Package>
                     </instructions>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>io.fabric8</groupId>
-                <artifactId>fabric8-maven-plugin</artifactId>
-                <version>1.1.0.CR5</version>
             </plugin>
         </plugins>
     </build>

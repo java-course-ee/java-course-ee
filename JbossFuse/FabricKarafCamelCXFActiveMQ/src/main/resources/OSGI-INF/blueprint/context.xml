@@ -51,7 +51,7 @@
 
     </camelContext>
 
-    <bean id="uppercase" class="edu.javacourse.fuse.BodyToUppercaseProcessor"/>
+    <bean id="uppercase" class="edu.javacourse.fuse2.BodyToUppercaseProcessor"/>
     <bean id="helloProcessor" class="edu.javacourse.fuse.HelloProcessor"/>
     <bean id="prepareData" class="edu.javacourse.fuse.PrepareDataForSQL"/>
 

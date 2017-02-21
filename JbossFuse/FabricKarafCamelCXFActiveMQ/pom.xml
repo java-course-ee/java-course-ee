@@ -113,7 +113,7 @@
                 <configuration>
                     <instructions>
                         <Export-Package></Export-Package>
-                        <Import-Package>*</Import-Package>
+                        <Import-Package>org.postgresql,*</Import-Package>
                         <DynamicImport-Package>*</DynamicImport-Package>
                     </instructions>
                 </configuration>
