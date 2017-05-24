@@ -18,6 +18,7 @@
 
     <modules>
         <module>mockito-01</module>
+        <module>mockito-02</module>
     </modules>
 
 </project>
