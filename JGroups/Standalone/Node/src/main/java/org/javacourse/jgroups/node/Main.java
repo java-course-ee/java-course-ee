@@ -45,7 +45,7 @@ public class Main {
                 dest = receiver.getAddresses().get(who);
             }
 
-            String message = command.substring(separator + 1, command.length() - 1);
+            String message = command.substring(separator + 1, command.length());
 
             channel.send(new Message(dest, address, message));
         }
