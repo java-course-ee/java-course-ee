@@ -18,6 +18,7 @@
         <module>Hibernate</module>
         <module>JavaMail</module>
         <module>JMX</module>
+        <module>JGroups</module>
         <module>JQuery</module>
         <module>JSF</module>
         <module>JUnit</module>
@@ -314,6 +315,13 @@
                 <artifactId>mockito-core</artifactId>
                 <version>2.8.9</version>
                 <scope>test</scope>
+            </dependency>
+
+            <!-- Other -->
+            <dependency>
+                <groupId>org.jgroups</groupId>
+                <artifactId>jgroups</artifactId>
+                <version>3.6.10.Final</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
