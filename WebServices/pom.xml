@@ -11,6 +11,7 @@
 
     <modules>
         <module>JAX-WS/SimpleWebService</module>
+        <module>JAX-WS/AsyncWebService</module>
         <module>JAX-RS/rest-exceptions</module>
         <module>JAX-RS/rest-params-response</module>
         <module>JAX-RS/rest-download-files</module>
