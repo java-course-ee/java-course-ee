@@ -1,0 +1,76 @@
+<blueprint xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+           xmlns:camel-cxf="http://camel.apache.org/schema/blueprint/cxf"
+           xsi:schemaLocation="
+       http://www.osgi.org/xmlns/blueprint/v1.0.0 http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd
+       http://camel.apache.org/schema/blueprint http://camel.apache.org/schema/blueprint/camel-blueprint.xsd">
+
+    <bean id="activemq" class="org.apache.activemq.camel.component.ActiveMQComponent">
+        <property name="brokerURL" value="tcp://localhost:61616"/>
+        <property name="userName" value="admin"/>
+        <property name="password" value="admin"/>
+    </bean>
+
+    <camelContext id="activemq-reader-context" xmlns="http://camel.apache.org/schema/blueprint">
+
+        <route id="timer-route">
+            <from uri="timer://foo?period=20000&amp;fixedRate=true"/>
+            <log message="Timer event occurred in ${date:now:HH:mm:ss:SSS}"/>
+        </route>
+
+        <route id="activemq-text-consumer">
+            <from uri="activemq:queue:text-consumer"/>
+            <log message="Message from activemq: ${body}"/>
+        </route>
+
+        <route id="activemq-move-to-queue-route">
+            <from uri="activemq:queue:from-queue"/>
+            <log message="Message from 'from-queue' will be moved to 'to-queue'"/>
+            <to uri="activemq:queue:to-queue"/>
+        </route>
+
+        <route id="uppercase-body-route">
+            <from uri="activemq:queue:uppercase-body"/>
+            <process ref="uppercase"/>
+            <to uri="activemq:queue:uppercase-body-result"/>
+        </route>
+
+        <route id="cxf-consumer">
+            <from uri="cxf-hello-service"/>
+            <log message="Message body class: ${body.getClass().getCanonicalName()}"/>
+            <log message="Message body value: ${body}"/>
+            <process ref="helloProcessor"/>
+        </route>
+
+        <route id="save-data-to-db">
+            <from uri="timer://foo?period=10000&amp;fixedRate=true"/>
+            <log message="Writing to db"/>
+            <process ref="prepareData"/>
+            <to uri="sql:INSERT INTO fuse.SomeTable (name) VALUES (#)"/>
+        </route>
+
+    </camelContext>
+
+    <bean id="uppercase" class="edu.javacourse.fuse2.BodyToUppercaseProcessor"/>
+    <bean id="helloProcessor" class="edu.javacourse.fuse.HelloProcessor"/>
+    <bean id="prepareData" class="edu.javacourse.fuse.PrepareDataForSQL"/>
+
+    <camel-cxf:cxfEndpoint id="cxf-hello-service"
+                           address="http://localhost:9000/SimpleWebService"
+                           serviceName="SimpleWebService"
+                           serviceClass="ru.gs.test.SimpleWebService">
+    </camel-cxf:cxfEndpoint>
+
+    <bean id="sql" class="org.apache.camel.component.sql.SqlComponent">
+        <property name="dataSource" ref="ds"/>
+    </bean>
+
+    <bean id="ds" class="org.apache.commons.dbcp2.BasicDataSource">
+        <property name="driverClassName" value="org.postgresql.Driver"/>
+        <property name="url" value="jdbc:postgresql://localhost:5432/JavaCourse"/>
+        <property name="username" value="postgres"/>
+        <property name="password" value="postgres"/>
+    </bean>
+
+
+</blueprint>

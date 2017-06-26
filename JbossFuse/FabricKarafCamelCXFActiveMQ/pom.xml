@@ -1,0 +1,129 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>edu.javacourse</groupId>
+        <artifactId>examples</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../../</relativePath>
+    </parent>
+
+    <groupId>edu.javacourse.fuse</groupId>
+    <artifactId>full-example</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>bundle</packaging>
+
+    <name>Jboss Fuse Full Example</name>
+
+    <properties>
+        <fabric8.jolokiaUrl>http://localhost:8181/jolokia</fabric8.jolokiaUrl>
+        <fabric8.upload>false</fabric8.upload>
+        <fabric8.profile>edu-javacourse-fuse-full.example</fabric8.profile>
+        <fabric8.parentProfiles>
+            default
+            feature-camel
+            mq-client-default
+        </fabric8.parentProfiles>
+        <fabric8.bundles>
+            mvn:edu.javacourse.fuse/processor/1.0-SNAPSHOT
+            wrap:mvn:org.postgresql/postgresql/9.3-1102-jdbc41
+            mvn:org.apache.commons/commons-dbcp2/2.1.1
+            mvn:org.apache.commons/commons-pool2/2.4.2
+        </fabric8.bundles>
+        <fabric8.features>
+            activemq-camel
+            camel-cxf
+            camel-sql
+        </fabric8.features>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>edu.javacourse.fuse</groupId>
+            <artifactId>processor</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-cxf</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-dbcp2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+            <version>2.4.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.jvnet.jax-ws-commons</groupId>
+                <artifactId>jaxws-maven-plugin</artifactId>
+                <version>2.3</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>wsimport</goal>
+                        </goals>
+                        <id>wsimport-generate-SimpleWebService</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                </executions>
+                <configuration>
+                    <sourceDestDir>${project.build.directory}/generated-sources/jaxws-wsimport</sourceDestDir>
+                    <xnocompile>true</xnocompile>
+                    <verbose>true</verbose>
+                    <vmArgs>
+                        <vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
+                    </vmArgs>
+                    <extension>true</extension>
+                    <wsdlFiles>
+                        <wsdlFile>SimpleWebService.wsdl</wsdlFile>
+                    </wsdlFiles>
+                    <!--<wsdlLocation>http://localhost:8080/SimpleWebService-ejb-1.0-SNAPSHOT/SimpleWebService?wsdl</wsdlLocation>-->
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>2.5.3</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Export-Package></Export-Package>
+                        <Import-Package>org.postgresql,*</Import-Package>
+                        <DynamicImport-Package>*</DynamicImport-Package>
+                    </instructions>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>io.fabric8</groupId>
+                <artifactId>fabric8-maven-plugin</artifactId>
+                <version>1.1.0.CR5</version>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

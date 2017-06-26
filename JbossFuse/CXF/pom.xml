@@ -2,17 +2,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>edu.javacourse</groupId>
-    <artifactId>Web</artifactId>
+    <groupId>edu.javacourse.fuse</groupId>
+    <artifactId>cxf</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>Web</name>
+    <name>Jboss Fuse CXF</name>
 
     <modules>
-        <module>listener</module>
-        <module>servlet-app</module>
-        <module>servlet-jsp-app</module>
+        <module>cxf-consumer</module>
+        <module>cxf-producer</module>
     </modules>
 
 </project>

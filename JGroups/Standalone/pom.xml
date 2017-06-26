@@ -2,17 +2,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>edu.javacourse</groupId>
-    <artifactId>Web</artifactId>
+    <groupId>edu.javacourse.jgroups</groupId>
+    <artifactId>standalone</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>Web</name>
+    <name>JGroups Standalone</name>
 
     <modules>
-        <module>listener</module>
-        <module>servlet-app</module>
-        <module>servlet-jsp-app</module>
+        <module>Node</module>
     </modules>
 
 </project>

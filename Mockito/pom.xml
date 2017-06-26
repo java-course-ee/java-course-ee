@@ -2,17 +2,23 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>edu.javacourse</groupId>
+        <artifactId>examples</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../</relativePath>
+    </parent>
+
     <groupId>edu.javacourse</groupId>
-    <artifactId>Web</artifactId>
+    <artifactId>mockito</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>Web</name>
+    <name>Mockito</name>
 
     <modules>
-        <module>listener</module>
-        <module>servlet-app</module>
-        <module>servlet-jsp-app</module>
+        <module>mockito-01</module>
+        <module>mockito-02</module>
     </modules>
 
 </project>

@@ -3,16 +3,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>edu.javacourse</groupId>
-    <artifactId>Web</artifactId>
+    <artifactId>jgroups</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>Web</name>
+    <name>JGroups</name>
 
     <modules>
-        <module>listener</module>
-        <module>servlet-app</module>
-        <module>servlet-jsp-app</module>
+        <module>Standalone</module>
     </modules>
 
 </project>
