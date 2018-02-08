@@ -1,0 +1,6 @@
+Build project:
+mvn clean package
+
+Run:
+cd target
+java -jar jar-manifest-1.0-SNAPSHOT.jar

@@ -1,0 +1,6 @@
+Build project:
+mvn clean package
+
+Run:
+cd target
+java -cp jar-simple-1.0-SNAPSHOT.jar edu.javacourse.Main

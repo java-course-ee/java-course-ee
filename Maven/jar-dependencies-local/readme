@@ -1,0 +1,6 @@
+Build project:
+mvn clean package
+
+Run:
+cd target
+java -classpath lib/log4j-1.2.17.jar:jar-dependencies-local-1.0-SNAPSHOT.jar edu.javacourse.Main

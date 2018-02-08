@@ -24,6 +24,7 @@
         <module>JSF</module>
         <module>JUnit</module>
         <module>Logging</module>
+        <module>Maven</module>
         <module>Mockito</module>
         <module>MyBatis</module>
         <module>Portlet</module>
