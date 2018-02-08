@@ -11,6 +11,7 @@
 
     <modules>
         <module>simple-jmx-example</module>
+        <module>simple-jmx-example-remote-reader</module>
     </modules>
 
 </project>
