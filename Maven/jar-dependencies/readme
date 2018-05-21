@@ -3,4 +3,4 @@ mvn clean package
 
 Run:
 cd target
-java -classpath ~/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:jar-dependencies-1.0-SNAPSHOT.jar edu.javacourse.Main
+java -classpath ~/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:jar-dependencies-1.0-SNAPSHOT.jar edu.javacourse.HawtioSample

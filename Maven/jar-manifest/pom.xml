@@ -44,7 +44,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>edu.javacourse.Main</mainClass>
+                            <mainClass>edu.javacourse.HawtioSample</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
