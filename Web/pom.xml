@@ -10,6 +10,7 @@
     <name>Web</name>
 
     <modules>
+        <module>async/async-servlet</module>
         <module>listener</module>
         <module>servlet-app</module>
         <module>servlet-jsp-app</module>
