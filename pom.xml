@@ -15,6 +15,7 @@
         <module>Concurrency</module>
         <module>DWR</module>
         <module>EJB</module>
+        <module>Hawtio</module>
         <module>Hibernate</module>
         <module>JavaMail</module>
         <module>JMX</module>
