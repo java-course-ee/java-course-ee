@@ -1,10 +1,7 @@
 package edu.javacourse.junit;
 
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.Arguments;
-import org.junit.jupiter.params.provider.CsvFileSource;
-import org.junit.jupiter.params.provider.MethodSource;
-import org.junit.jupiter.params.provider.ValueSource;
+import org.junit.jupiter.params.provider.*;
 
 import java.util.stream.Stream;
 
@@ -20,6 +17,12 @@ public class ParametrizrdTest {
     @ValueSource(ints = {-1, 0, 1})
     public void parametrizrdValueSourceTest(int a) {
         assertTrue(SimpleMath.absolute(a) >= 0);
+    }
+
+    @ParameterizedTest
+    @CsvSource({"-1, 1, -1", "0, 1, 0", "2, 1, 2"})
+    public void parametrizrdCsvSourceTest(double a, double b, double result) {
+        assertEquals(result, SimpleMath.div(a, b));
     }
 
     @ParameterizedTest
