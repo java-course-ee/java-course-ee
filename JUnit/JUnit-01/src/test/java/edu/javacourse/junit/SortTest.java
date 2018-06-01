@@ -1,13 +1,11 @@
 package edu.javacourse.junit;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
-
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 /**
- * @author Artem Pronchakov pronchakov.artem@ocrv.ru
+ * @author Artem Pronchakov pronchakov.artem@calisto.email
  */
 public class SortTest {
 
@@ -16,8 +14,8 @@ public class SortTest {
         Comparable[] input = new String[]{"fff", "ddd", "ccc", "bbb", "eee", "aaa", "ggg"};
         Comparable[] expected = new String[]{"aaa", "bbb", "ccc", "ddd", "eee", "fff", "ggg"};
 
-        Comparable[] actual = BadSort.sortStringArray(input);
-//        Comparable[] actual = GoodSort.sortStringArray(input);
+//        Comparable[] actual = BadSort.sortStringArray(input);
+        Comparable[] actual = GoodSort.sortStringArray(input);
 
         assertArrayEquals(expected, actual);
     }
@@ -27,8 +25,8 @@ public class SortTest {
         Comparable[] input = new String[]{"fff", "ddd", "ccc", "ccc", "fff", "aaa", "ggg"};
         Comparable[] expected = new String[]{"aaa", "ccc", "ccc", "ddd", "fff", "fff", "ggg"};
 
-        Comparable[] actual = BadSort.sortStringArray(input);
-//        Comparable[] actual = GoodSort.sortStringArray(input);
+//        Comparable[] actual = BadSort.sortStringArray(input);
+        Comparable[] actual = GoodSort.sortStringArray(input);
 
         assertArrayEquals(expected, actual);
     }
@@ -38,8 +36,8 @@ public class SortTest {
         Comparable[] input = new String[]{"7", "3", "1", "6", "4", "5", "2"};
         Comparable[] expected = new String[]{"1", "2", "3", "4", "5", "6", "7"};
 
-        Comparable[] actual = BadSort.sortStringArray(input);
-//        Comparable[] actual = GoodSort.sortStringArray(input);
+//        Comparable[] actual = BadSort.sortStringArray(input);
+        Comparable[] actual = GoodSort.sortStringArray(input);
 
         assertArrayEquals(expected, actual);
     }
@@ -49,8 +47,8 @@ public class SortTest {
         Comparable[] input = new String[]{"7", "3", "1", "-1", "6", "-3", "-2", "4", "5", "2"};
         Comparable[] expected = new String[]{"-1", "-2", "-3", "1", "2", "3", "4", "5", "6", "7"};
 
-        Comparable[] actual = BadSort.sortStringArray(input);
-//        Comparable[] actual = GoodSort.sortStringArray(input);
+//        Comparable[] actual = BadSort.sortStringArray(input);
+        Comparable[] actual = GoodSort.sortStringArray(input);
 
         assertArrayEquals(expected, actual);
     }

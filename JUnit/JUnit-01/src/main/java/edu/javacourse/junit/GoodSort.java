@@ -1,7 +1,7 @@
 package edu.javacourse.junit;
 
 /**
- * @author Artem Pronchakov pronchakov.artem@ocrv.ru
+ * @author Artem Pronchakov pronchakov.artem@calisto.email
  */
 public class GoodSort {
 
