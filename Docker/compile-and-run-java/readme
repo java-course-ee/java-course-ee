@@ -1,0 +1,4 @@
+docker build --tag compile-and-run-java .
+docker run --rm compile-and-run-java:latest java Greeting Artem
+...
+docker image rm compile-and-run-java
