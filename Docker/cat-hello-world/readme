@@ -1,0 +1,4 @@
+docker build --tag cat-hello-world .
+docker run --rm cat-hello-world:latest cat textfile
+...
+docker image rm cat-hello-world
