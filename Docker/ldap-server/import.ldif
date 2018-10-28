@@ -1,0 +1,76 @@
+version: 1
+
+dn: cn=bosses,dc=groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: bosses
+member: cn=eve,dc=users,dc=example,dc=com
+
+dn: dc=example,dc=com
+objectclass: top
+objectclass: domain
+dc: example
+
+dn: cn=alice,dc=users,dc=example,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: alice
+sn: alice
+
+dn: dc=users,dc=example,dc=com
+objectClass: domain
+objectClass: top
+dc: users
+
+dn: cn=eve,dc=users,dc=example,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: eve
+sn: eve
+
+dn: cn=admins,dc=groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: admins
+member: cn=olivia,dc=users,dc=example,dc=com
+
+dn: cn=managers,dc=groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: managers
+member: cn=bob,dc=users,dc=example,dc=com
+
+dn: cn=bob,dc=users,dc=example,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: bob
+sn: bob
+
+dn: dc=groups,dc=example,dc=com
+objectClass: domain
+objectClass: top
+dc: groups
+
+dn: cn=users,dc=groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: users
+member: cn=alice,dc=users,dc=example,dc=com
+member: cn=bob,dc=users,dc=example,dc=com
+member: cn=eve,dc=users,dc=example,dc=com
+member: cn=olivia,dc=users,dc=example,dc=com
+
+dn: cn=olivia,dc=users,dc=example,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: olivia
+sn: olivia
+
