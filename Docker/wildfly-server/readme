@@ -1,0 +1,4 @@
+docker build --tag wildfly-local .
+docker run --name wildfly-local -p 8080:8080 -p 9990:9990 -it wildfly-local:latest /opt/jboss/wildfly/bin/standalone.sh -bmanagement 0.0.0.0
+docker container rm wildfly-local
+docker image rm wildfly-local
