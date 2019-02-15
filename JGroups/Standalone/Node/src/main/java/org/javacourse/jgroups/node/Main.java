@@ -28,7 +28,7 @@ public class Main {
         NodeReceiverAdapter receiver = new NodeReceiverAdapter();
         channel.setReceiver(receiver);
 
-        System.out.println("who: all for all members in cluster");
+        System.out.println("use 'all' for 'who' to send message to all current cluster members");
 
         while (true) {
             System.out.print("(who:message) >> ");
