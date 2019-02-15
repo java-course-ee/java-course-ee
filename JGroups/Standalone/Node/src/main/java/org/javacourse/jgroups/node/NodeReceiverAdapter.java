@@ -25,19 +25,9 @@ public class NodeReceiverAdapter extends ReceiverAdapter {
         mapper.enable(SerializationConfig.Feature.INDENT_OUTPUT);
     }
 
-    private Map<String, Address> addresses = new HashMap<>();
-
-    public Map<String, Address> getAddresses() {
-        Map<String, Address> result = new HashMap<>();
-        synchronized (addresses) {
-            result.putAll(addresses);
-        }
-        return result;
-    }
-
     @Override
     public void receive(Message msg) {
-        log.info("Message received: {}", msg.getObject());
+        log.info("Message received: {}", (Object) msg.getObject());
         try {
             log.trace("Message received: {}", mapper.writeValueAsString(msg));
         } catch (IOException e) {
@@ -47,19 +37,7 @@ public class NodeReceiverAdapter extends ReceiverAdapter {
 
     @Override
     public void viewAccepted(View view) {
-        log.info("Members changed: {}", view.getMembers());
-        synchronized (addresses) {
-            addresses.clear();
-            for (Address address: view.getMembers()) {
-                System.out.println(address.getClass().getCanonicalName());
-                addresses.put(address.toString(), address);
-            }
-        }
-        try {
-            log.trace("ViewId: {}", mapper.writeValueAsString(view));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        log.info("Members has been changed: " + view.getMembers());
     }
 
 
