@@ -12,6 +12,7 @@
     <modules>
         <module>log4j</module>
         <module>log4j2</module>
+        <module>logback</module>
         <module>slf4j</module>
     </modules>
 
