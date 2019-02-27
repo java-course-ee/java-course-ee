@@ -24,6 +24,7 @@
         <module>JQuery</module>
         <module>JSF</module>
         <module>JUnit</module>
+        <module>Kafka</module>
         <module>Logging</module>
         <module>Maven</module>
         <module>Mockito</module>
