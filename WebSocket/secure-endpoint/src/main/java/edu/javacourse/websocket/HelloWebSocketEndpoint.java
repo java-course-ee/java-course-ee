@@ -33,4 +33,11 @@ public class HelloWebSocketEndpoint {
         log.debug("Hello WebSocket closed: Reason: ", reason.getReasonPhrase());
     }
 
+    @OnError
+    public void onError(Session session, Throwable throwable) {
+        log.info("The session is an optional parameter. Error happened for session id: {}", session.getId());
+        log.error(throwable.getMessage());
+        throwable.printStackTrace();
+    }
+
 }
