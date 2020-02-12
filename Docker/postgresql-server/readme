@@ -1,4 +1,4 @@
 docker build --tag postgresql-local .
-docker run --name postgresql-local -e POSTGRES_PASSWORD=postgres -d postgresql-local:latest
+docker run --name postgresql-local -e POSTGRES_PASSWORD=postgres -v data:/var/lib/postgresql/data -p 5432:5432 -d postgresql-local:latest
 docker container rm postgresql-local
 docker image rm postgresql-local
