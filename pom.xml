@@ -13,6 +13,7 @@
         <module>ActiveMQ</module>
         <module>Camel</module>
         <module>Concurrency</module>
+        <module>Docker</module>
         <module>DWR</module>
         <module>EJB</module>
         <module>Hawtio</module>

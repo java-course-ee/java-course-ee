@@ -1,0 +1,7 @@
+version: "3"
+services:
+  docker-app:
+    container_name: remote-jmx
+    build: ./
+    ports:
+      - "10010:10010/tcp"
