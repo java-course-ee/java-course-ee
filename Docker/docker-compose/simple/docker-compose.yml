@@ -1,0 +1,5 @@
+version: "3"
+services:
+  greeting:
+    container_name: greeting
+    build: ./image
