@@ -1,0 +1,17 @@
+version: "3.5"
+services:
+  app:
+    container_name: app
+    build: ./app
+    ports:
+      - 8080:8080/tcp
+    restart: always
+    depends_on:
+      - db
+  db:
+    container_name: db
+    image: postgresql-local:latest
+    build: ../../postgresql-server
+    restart: always
+    volumes:
+      - "./data:/var/lib/postgresql/data"

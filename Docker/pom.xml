@@ -10,6 +10,7 @@
     <name>Docker</name>
 
     <modules>
+        <module>docker-compose/complex/app</module>
         <module>remote-jmx</module>
     </modules>
 
