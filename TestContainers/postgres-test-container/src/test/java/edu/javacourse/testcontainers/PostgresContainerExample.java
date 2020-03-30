@@ -12,7 +12,7 @@ import java.sql.ResultSet;
 public class PostgresContainerExample {
 
     @ClassRule
-    public static PostgreSQLContainer postgreSQLContainer = (PostgreSQLContainer) new PostgreSQLContainer()
+    public static PostgreSQLContainer postgreSQLContainer = (PostgreSQLContainer) new PostgreSQLContainer("postgres:12.2")
             .withDatabaseName("testdb")
             .withUsername("sa")
             .withPassword("sa")
