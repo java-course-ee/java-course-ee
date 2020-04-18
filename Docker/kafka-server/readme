@@ -1,0 +1,7 @@
+docker build --tag activemq-server:5.11.1 .
+docker container create --name activemq-server -p 61616:61616/tcp -p 8161:8161/tcp activemq-server:5.11.1
+docker container start activemq-server
+...
+docker container stop activemq-server
+docker container rm activemq-server
+docker image rm activemq-server:5.11.1
