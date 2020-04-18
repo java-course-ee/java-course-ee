@@ -2,22 +2,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>edu.javacourse</groupId>
-    <artifactId>spring</artifactId>
+    <groupId>edu.javacourse.spring</groupId>
+    <artifactId>boot</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>Spring</name>
+    <name>Spring Boot</name>
 
     <modules>
-        <module>Boot</module>
-        <module>Integration</module>
-        <module>IoC</module>
-        <module>JDBC</module>
-        <!--module>MVC</module-->
-        <module>Spring-JMS</module>
-        <module>Spring-REST</module>
-        <module>WS</module>
+        <module>command-line-arguments</module>
     </modules>
 
 </project>
