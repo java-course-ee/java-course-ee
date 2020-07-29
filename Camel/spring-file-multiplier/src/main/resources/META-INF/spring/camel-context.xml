@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
+
+    <bean id="multiplier" class="edu.javacourse.camel.simpleroute.Multiplier"/>
+    <bean id="aggregator" class="edu.javacourse.camel.simpleroute.SplitAggregator"/>
+
+    <camelContext xmlns="http://camel.apache.org/schema/spring">
+        <route>
+            <from uri="file:Camel/spring-file-multiplier/inbox?charset=utf-8&amp;noop=true"/>
+            <log message="File body: ${body}"/>
+            <split strategyRef="aggregator">
+                <tokenize token="\n"/>
+                <log message="Line before transformation: ${body}"/>
+                <convertBodyTo type="java.lang.Integer"/>
+                <transform>
+                    <method ref="multiplier"/>
+                </transform>
+                <log message="Line after transformation: ${body}"/>
+            </split>
+            <log message="After split aggregation: ${body}"/>
+            <to uri="file:Camel/spring-file-multiplier/outbox?charset=utf-8"/>
+        </route>
+    </camelContext>
+
+</beans>

@@ -10,6 +10,7 @@
     <name>Camel</name>
 
     <modules>
+        <module>spring-file-multiplier</module>
         <module>spring-route</module>
         <module>dsl-route</module>
         <module>camel-activemq</module>
