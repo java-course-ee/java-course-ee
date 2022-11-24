@@ -50,7 +50,7 @@
         <ee.version>8.0.1</ee.version>
         <slf4j.version>1.7.25</slf4j.version>
         <spring.version>5.2.1.RELEASE</spring.version>
-        <hibernate.version>5.1.11.Final</hibernate.version>
+        <hibernate.version>5.3.20.Final</hibernate.version>
         <zk.version>8.5.0</zk.version>
         <vaadin.version>8.2.1</vaadin.version>
         <spring-integration.version>5.0.0.RELEASE</spring-integration.version>
